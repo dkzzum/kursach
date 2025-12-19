@@ -1,0 +1,142 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.74127389-1620-4162-ae56-6518f9501428",
+            "link": "https://music.yandex.ru/playlists/lk.74127389-1620-4162-ae56-6518f9501428",
+            "kind": 3,
+            "available": true,
+            "trackCount": 5,
+            "visibility": "public",
+            "collective": false,
+            "revision": 10,
+            "created": "2017-06-02T16:09:01+00:00",
+            "modified": "2023-05-03T18:36:58+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2022-12-08T06:33:10+00:00",
+                    "id": 82841920,
+                    "title": "In Blur",
+                    "available": true,
+                    "durationMs": 329900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1048524,
+                            "name": "Deafheaven",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15528469,
+                            "title": "Infinite Granite",
+                            "type": null,
+                            "genre": "postmetal",
+                            "releaseDate": "2021-08-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T13:25:20+00:00",
+                    "id": 43477119,
+                    "title": "Zetsubou",
+                    "available": true,
+                    "durationMs": 257260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19237,
+                            "name": "MUCC",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 541377,
+                            "title": "Homurauta",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2006-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-08-06T20:39:06+00:00",
+                    "id": 74728512,
+                    "title": "怪物",
+                    "available": true,
+                    "durationMs": 205480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8468474,
+                            "name": "YOASOBI",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19152613,
+                            "title": "THE BOOK 2",
+                            "type": null,
+                            "genre": "japanesepop",
+                            "releaseDate": "2021-12-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-05-25T20:31:59+00:00",
+                    "id": 104093650,
+                    "title": "Как правильно дружить с девочками?",
+                    "available": true,
+                    "durationMs": 1628050,
+                    "type": "podcast-episode",
+                    "artists": {},
+                    "albums": {
+                        "1": {
+                            "id": 21538024,
+                            "title": "Ты же мальчик",
+                            "type": "podcast",
+                            "genre": "podcasts",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-05-25T13:40:55+00:00",
+                    "id": 83926622,
+                    "title": "Albion",
+                    "available": true,
+                    "durationMs": 210360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3141577,
+                            "name": "Cam Cole",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16230138,
+                            "title": "Crooked Hill",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2021-07-30T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 76589903,
+        "login": "pawlow.nik",
+        "name": "Nikolai Pavlov",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "64.8831"
+}

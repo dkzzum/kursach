@@ -1,0 +1,143 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.5d7f57c8-a272-4367-9d72-4f5384d369f3",
+            "link": "https://music.yandex.ru/playlists/lk.5d7f57c8-a272-4367-9d72-4f5384d369f3",
+            "kind": 3,
+            "available": true,
+            "trackCount": 5,
+            "visibility": "public",
+            "collective": false,
+            "revision": 2617,
+            "created": "2020-04-19T11:40:34+00:00",
+            "modified": "2025-11-09T14:15:07+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-11-09T14:15:07+00:00",
+                    "id": 135754036,
+                    "title": "conspiracy - super slowed",
+                    "available": true,
+                    "durationMs": 162670,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6542503,
+                            "name": "isq",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35244861,
+                            "title": "conspiracy",
+                            "type": "single",
+                            "releaseDate": "2024-12-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-02T21:02:37+00:00",
+                    "id": 139288498,
+                    "title": "Last Christmas (Slowed + Reverb)",
+                    "available": true,
+                    "durationMs": 313080,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 24218489,
+                            "name": "Slowed Audios",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36717141,
+                            "title": "Last Christmas (Slowed + Reverb)",
+                            "type": "single",
+                            "releaseDate": "2023-09-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-30T22:31:34+00:00",
+                    "id": 35823162,
+                    "title": "Le perv",
+                    "available": true,
+                    "durationMs": 256000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1715422,
+                            "name": "Carpenter Brut",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4484983,
+                            "title": "TRILOGY",
+                            "type": null,
+                            "releaseDate": "2017-07-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-09T14:42:59+00:00",
+                    "id": 99413724,
+                    "title": "The Rumbling (From \"Attack on Titan\")",
+                    "available": true,
+                    "durationMs": 89790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 14200982,
+                            "name": "Ghost Fight",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 20764799,
+                            "title": "The Rumbling (From \"Attack on Titan\")",
+                            "type": "single",
+                            "releaseDate": "2022-01-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-04T21:45:20+00:00",
+                    "id": 84676557,
+                    "title": "My War (From \"Attack on Titan\")",
+                    "available": true,
+                    "durationMs": 90830,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3725507,
+                            "name": "NateWantsToBattle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16082859,
+                            "title": "My War (From \"Attack on Titan\")",
+                            "type": "single",
+                            "releaseDate": "2021-06-14T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 1041000633,
+        "login": "nikite13let",
+        "name": "Никита Севостьянов",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "63.5737"
+}

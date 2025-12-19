@@ -1,0 +1,298 @@
+{
+    "playlists": {
+        "Samsung SM-J100H": {
+            "name": "Samsung SM-J100H",
+            "playlistUuid": "998bbdf0-4591-2f7e-1272-c0755ba9239d",
+            "link": "https://music.yandex.ru/playlists/998bbdf0-4591-2f7e-1272-c0755ba9239d",
+            "kind": 1000,
+            "available": true,
+            "trackCount": 10,
+            "visibility": "public",
+            "collective": false,
+            "revision": 1,
+            "created": "2016-12-13T15:59:27+00:00",
+            "modified": "2016-12-13T15:59:27+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 707386,
+                    "title": "Breathe",
+                    "available": true,
+                    "durationMs": 334050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12674,
+                            "name": "The Prodigy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11644773,
+                            "title": "The Fat of the Land - Expanded Edition",
+                            "type": null,
+                            "releaseDate": "2012-12-03T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 15786178,
+                    "title": "Haydn: Die Schöpfung, Hob.XXI:2 / Part 2 - Und Gott sah jedes Ding, was er gemacht hatte",
+                    "available": true,
+                    "durationMs": 27930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 387913,
+                            "name": "Kim Borg",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 943105,
+                            "name": "Gerhard Steeger",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 2613098,
+                            "name": "Unknown Cello Player",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 83202,
+                            "name": "Герберт фон Караян",
+                            "available": true
+                        },
+                        "5": {
+                            "id": 48039,
+                            "name": "Йозеф Гайдн",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14647149,
+                            "title": "Easter - Haydn",
+                            "type": null,
+                            "releaseDate": "2021-04-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 2394072,
+                    "title": "Dream a Dream",
+                    "available": true,
+                    "durationMs": 218580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 191790,
+                            "name": "Captain Jack",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 236762,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "releaseDate": "2005-12-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 29611476,
+                    "title": "Heathens",
+                    "available": true,
+                    "durationMs": 195920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 792433,
+                            "name": "twenty one pilots",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3656952,
+                            "title": "«Отряд самоубийц»",
+                            "type": "compilation",
+                            "releaseDate": "2016-08-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 25727188,
+                    "title": "Hello",
+                    "available": true,
+                    "durationMs": 295500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 37027,
+                            "name": "Adele",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3579166,
+                            "title": "25",
+                            "type": null,
+                            "releaseDate": "2015-11-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 30049955,
+                    "title": "Lost on You",
+                    "available": true,
+                    "durationMs": 210800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4492661,
+                            "name": "LP",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3626367,
+                            "title": "Lost On You",
+                            "type": "single",
+                            "releaseDate": "2016-12-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 24663745,
+                    "title": "Ocean Drive",
+                    "available": true,
+                    "durationMs": 206310,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 654830,
+                            "name": "Duke Dumont",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10413303,
+                            "title": "Duality",
+                            "type": null,
+                            "releaseDate": "2020-04-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 22860184,
+                    "title": "Stole the Show",
+                    "available": true,
+                    "durationMs": 222860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3023150,
+                            "name": "Kygo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38365342,
+                            "title": "Cloud Nine",
+                            "type": null,
+                            "releaseDate": "2016-05-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 29044560,
+                    "title": "Sub Pielea Mea",
+                    "available": true,
+                    "durationMs": 228000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3299032,
+                            "name": "Carla's Dreams",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32807005,
+                            "title": "Sub Pielea Mea",
+                            "type": "single",
+                            "releaseDate": "2016-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2016-12-13T15:59:27+00:00",
+                    "id": 29569939,
+                    "title": "Tuesday",
+                    "available": true,
+                    "durationMs": 241870,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 323672,
+                            "name": "Burak Yeter",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4445076,
+                            "name": "Danelle Sandoval",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3558237,
+                            "title": "Tuesday",
+                            "type": "single",
+                            "releaseDate": "2016-06-17T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": null,
+            "link": "https://music.yandex.ru/playlists/None",
+            "kind": 3,
+            "available": false,
+            "trackCount": 0,
+            "visibility": "public",
+            "collective": false,
+            "revision": 0,
+            "created": "2025-11-11T19:09:44+00:00",
+            "modified": "2025-11-11T19:09:44+00:00",
+            "isBanner": false,
+            "tracks": []
+        }
+    },
+    "owner": {
+        "uid": 443345147,
+        "login": "fima.tivin",
+        "name": "Fima Tivin",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "65.0937"
+}

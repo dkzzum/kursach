@@ -1,0 +1,27 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.452879bd-09a1-4587-bf6e-ed2215f5641e",
+            "link": "https://music.yandex.ru/playlists/lk.452879bd-09a1-4587-bf6e-ed2215f5641e",
+            "kind": 3,
+            "available": false,
+            "trackCount": 0,
+            "visibility": "public",
+            "collective": false,
+            "revision": 1,
+            "created": "2022-12-28T23:08:12+00:00",
+            "modified": "2022-12-28T23:12:40+00:00",
+            "isBanner": false,
+            "tracks": []
+        }
+    },
+    "owner": {
+        "uid": 164754483,
+        "login": "Yaskogame",
+        "name": "Yaskogame",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "64.0776"
+}

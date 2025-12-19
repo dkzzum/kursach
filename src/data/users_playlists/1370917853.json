@@ -1,0 +1,168 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.6f345c04-9bd1-4047-b4f7-944992836673",
+            "link": "https://music.yandex.ru/playlists/lk.6f345c04-9bd1-4047-b4f7-944992836673",
+            "kind": 3,
+            "available": true,
+            "trackCount": 5,
+            "visibility": "public",
+            "collective": false,
+            "revision": 24,
+            "created": "2022-12-24T11:09:54+00:00",
+            "modified": "2025-10-03T16:13:31+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-10-03T16:13:31+00:00",
+                    "id": 418024,
+                    "title": "Monster",
+                    "available": true,
+                    "durationMs": 178010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 49258,
+                            "name": "Skillet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2259369,
+                            "title": "Vital Signs",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2013-06-25T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-20T20:43:17+00:00",
+                    "id": 240214,
+                    "title": "Golden Brown",
+                    "available": true,
+                    "durationMs": 210490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 56933,
+                            "name": "The Stranglers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9886200,
+                            "title": "100 Greatest Throwback Songs",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2020-02-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-05T06:29:59+00:00",
+                    "id": 102825092,
+                    "title": "superswag pt. 1",
+                    "available": true,
+                    "durationMs": 177850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12835079,
+                            "name": "ilyproxy",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 29592,
+                            "name": "Leander",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 9170083,
+                            "name": "Hadesthegrim",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 16273804,
+                            "name": "eversonder",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21884057,
+                            "title": "superswag pt. 1",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2021-05-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-02T20:36:09+00:00",
+                    "id": 139448248,
+                    "title": "Nope your too late i already died",
+                    "available": true,
+                    "durationMs": 90110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 23945943,
+                            "name": "helvuxx",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 20077382,
+                            "name": "wifiskeleton",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36756001,
+                            "title": "Nope your too late i already died",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2025-05-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-02T20:33:56+00:00",
+                    "id": 178495,
+                    "title": "In the End",
+                    "available": true,
+                    "durationMs": 216880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12360955,
+                            "title": "Hybrid Theory",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2020-10-09T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 1370917853,
+        "login": "am1232211",
+        "name": "andrei",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "65.4594"
+}

@@ -1,0 +1,1124 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.9b02d507-e492-42a4-93ad-781748ee5682",
+            "link": "https://music.yandex.ru/playlists/lk.9b02d507-e492-42a4-93ad-781748ee5682",
+            "kind": 3,
+            "available": true,
+            "trackCount": 39,
+            "visibility": "public",
+            "collective": false,
+            "revision": 229,
+            "created": "2018-11-28T08:38:43+00:00",
+            "modified": "2025-11-13T15:51:10+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-11-13T15:51:10+00:00",
+                    "id": 15165925,
+                    "title": "Silver Star",
+                    "available": true,
+                    "durationMs": 181650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1833962,
+                            "name": "Hypnogaja",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1657272,
+                            "title": "Below Sunset",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2005-04-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-10T21:21:40+00:00",
+                    "id": 2805945,
+                    "title": "Good Vibrations",
+                    "available": true,
+                    "durationMs": 255410,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4517,
+                            "name": "The Beach Boys",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 301685,
+                            "title": "The Smile Sessions",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2011-10-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-10T06:59:22+00:00",
+                    "id": 90289223,
+                    "title": "Why Why Why",
+                    "available": true,
+                    "durationMs": 210580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6541131,
+                            "name": "Des Rocs",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17821001,
+                            "title": "A Real Good Person in a Real Bad Place",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2021-09-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-06T07:37:31+00:00",
+                    "id": 25790,
+                    "title": "Lay All Your Love On Me",
+                    "available": true,
+                    "durationMs": 272500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9367,
+                            "name": "ABBA",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2484799,
+                            "title": "The Essential Collection",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2012-05-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-02T09:16:40+00:00",
+                    "id": 6689368,
+                    "title": "Yonkers",
+                    "available": true,
+                    "durationMs": 249330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 593298,
+                            "name": "Tyler, The Creator",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1012103,
+                            "title": "Goblin",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2011-05-09T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-01T10:41:48+00:00",
+                    "id": 5345670,
+                    "title": "Supremacy",
+                    "available": true,
+                    "durationMs": 295370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12048,
+                            "name": "Muse",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 588849,
+                            "title": "The 2nd Law",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2012-06-27T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-31T08:57:59+00:00",
+                    "id": 142619741,
+                    "title": "Duvet",
+                    "available": true,
+                    "durationMs": 203660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 817413,
+                            "name": "bôa",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38104875,
+                            "title": "Twilight",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2001-03-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-29T09:34:59+00:00",
+                    "id": 43115126,
+                    "title": "Nina Cried Power",
+                    "available": true,
+                    "durationMs": 225210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1401151,
+                            "name": "Hozier",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 29751,
+                            "name": "Mavis Staples",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30793044,
+                            "title": "Wasteland, Baby!",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2019-03-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-28T07:47:49+00:00",
+                    "id": 141681044,
+                    "title": "OVERLOAD",
+                    "available": true,
+                    "durationMs": 247360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7918695,
+                            "name": "Tantron",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 7209387,
+                            "name": "Grace Barton",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37713993,
+                            "title": "OVERLOAD",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2025-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-25T18:03:28+00:00",
+                    "id": 141466667,
+                    "title": "Bitter End",
+                    "available": true,
+                    "durationMs": 196110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10057391,
+                            "name": "Freaks & Geeks",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3820218,
+                            "name": "Blooom",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 4669848,
+                            "name": "Cameron Hayes",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37622138,
+                            "title": "Bitter End",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2025-09-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-26T12:45:17+00:00",
+                    "id": 63682202,
+                    "title": "Immortal",
+                    "available": true,
+                    "durationMs": 160000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 732936,
+                            "name": "Subshock",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 781279,
+                            "name": "Ricky West",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10151404,
+                            "title": "Immortal",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-23T07:56:14+00:00",
+                    "id": 84200043,
+                    "title": "Black Sheep",
+                    "available": true,
+                    "durationMs": 294060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 97238,
+                            "name": "Metric",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3973807,
+                            "name": "Brie Larson",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15934732,
+                            "title": "Black Sheep",
+                            "type": "single",
+                            "genre": "rock",
+                            "releaseDate": "2021-06-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-18T03:55:15+00:00",
+                    "id": 140015164,
+                    "title": "Бей меня",
+                    "available": true,
+                    "durationMs": 127730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19281619,
+                            "name": "влад пиво",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 21742011,
+                            "name": "Merryattack",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36989073,
+                            "title": "Бей меня",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2025-06-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-16T09:05:35+00:00",
+                    "id": 66165339,
+                    "title": "Моя империя",
+                    "available": true,
+                    "durationMs": 249640,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 674289,
+                            "name": "Арктида",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10766255,
+                            "title": "Мой друг",
+                            "type": null,
+                            "genre": "epicmetal",
+                            "releaseDate": "2012-12-27T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-31T12:26:52+00:00",
+                    "id": 122568308,
+                    "title": "Count Me Out",
+                    "available": true,
+                    "durationMs": 283640,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 543582,
+                            "name": "Kendrick Lamar",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 125488,
+                            "name": "Eckhart Tolle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29663746,
+                            "title": "Mr. Morale & The Big Steppers",
+                            "type": null,
+                            "genre": "foreignrap",
+                            "releaseDate": "2022-05-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-29T14:51:26+00:00",
+                    "id": 83153199,
+                    "title": "INVISIBLE",
+                    "available": true,
+                    "durationMs": 191450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 40619,
+                            "name": "Duran Duran",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21213645,
+                            "title": "FUTURE PAST",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2021-10-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-28T15:37:50+00:00",
+                    "id": 137760760,
+                    "title": "KPOP",
+                    "available": true,
+                    "durationMs": 135760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5603656,
+                            "name": "Artox",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 733289,
+                            "name": "Alert",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36048179,
+                            "title": "KPOP",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-03-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-26T10:39:21+00:00",
+                    "id": 55393156,
+                    "title": "Warp 1.9",
+                    "available": true,
+                    "durationMs": 142000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 40325,
+                            "name": "The Bloody Beetroots",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 40324,
+                            "name": "Steve Aoki",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 6343352,
+                            "name": "Made By Tsuki",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8090092,
+                            "title": "Warp 1.9",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2019-08-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-26T06:45:35+00:00",
+                    "id": 66940276,
+                    "title": "Serpent",
+                    "available": true,
+                    "durationMs": 189320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 781279,
+                            "name": "Ricky West",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10958380,
+                            "title": "Serpent",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-06-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-22T00:30:24+00:00",
+                    "id": 140898473,
+                    "title": "Illegal ( pinkpanth )",
+                    "available": true,
+                    "durationMs": 149530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 20215643,
+                            "name": "RhythmRebel",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 17937962,
+                            "name": "TommyMuzzic",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1413836,
+                            "name": "speed up",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 22094072,
+                            "name": "MysticMuse",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37364850,
+                            "title": "Illegal ( pinkpanth )",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2025-05-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-16T13:29:38+00:00",
+                    "id": 138414582,
+                    "title": "На грани болевого порога",
+                    "available": true,
+                    "durationMs": 129300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4998257,
+                            "name": "Планка",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 11056236,
+                            "name": "FADE031",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36312542,
+                            "title": "На грани болевого порога",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-07T17:43:42+00:00",
+                    "id": 120707423,
+                    "title": "nas ne dogonyat",
+                    "available": true,
+                    "durationMs": 194170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10662347,
+                            "name": "Tatli",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28843987,
+                            "title": "nas ne dogonyat",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2022-07-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-24T22:31:45+00:00",
+                    "id": 76514649,
+                    "title": "dashstar*",
+                    "available": true,
+                    "durationMs": 198090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7327502,
+                            "name": "Knock2",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13511771,
+                            "title": "dashstar*",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2021-02-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-18T12:59:28+00:00",
+                    "id": 136439011,
+                    "title": "Закричу на весь мир",
+                    "available": true,
+                    "durationMs": 157200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6824678,
+                            "name": "ТРАВМА",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35544098,
+                            "title": "Закричу на весь мир",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2025-02-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-05T06:09:12+00:00",
+                    "id": 95853694,
+                    "title": "No Escape From The Bass",
+                    "available": true,
+                    "durationMs": 296220,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11787025,
+                            "name": "HighThere",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19580516,
+                            "title": "No Escape From The Bass",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2021-12-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-02T06:13:40+00:00",
+                    "id": 133226321,
+                    "title": "hey now",
+                    "available": true,
+                    "durationMs": 217470,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 543582,
+                            "name": "Kendrick Lamar",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 7241380,
+                            "name": "Dody6",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34123013,
+                            "title": "GNX",
+                            "type": null,
+                            "genre": "foreignrap",
+                            "releaseDate": "2024-11-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-15T13:30:36+00:00",
+                    "id": 137216719,
+                    "title": "Washing Machine Heart",
+                    "available": true,
+                    "durationMs": 128210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 23924947,
+                            "name": "Mitski Russia",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35826062,
+                            "title": "Washing Machine Heart",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2025-03-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-11T09:50:05+00:00",
+                    "id": 5218471,
+                    "title": "Don't Like.1",
+                    "available": true,
+                    "durationMs": 283740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 644,
+                            "name": "Kanye West",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 999162,
+                            "name": "Chief Keef",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 125460,
+                            "name": "Pusha T",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 443529,
+                            "name": "Big Sean",
+                            "available": true
+                        },
+                        "5": {
+                            "id": 2608,
+                            "name": "Jadakiss",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19236279,
+                            "title": "Def Jam Midwest",
+                            "type": "compilation",
+                            "genre": "rap",
+                            "releaseDate": "2021-11-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-17T17:35:07+00:00",
+                    "id": 135128180,
+                    "title": "CRAZY",
+                    "available": true,
+                    "durationMs": 164590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 16639638,
+                            "name": "LE SSERAFIM",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34946495,
+                            "title": "CRAZY",
+                            "type": null,
+                            "genre": "kpop",
+                            "releaseDate": "2024-08-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-21T16:58:23+00:00",
+                    "id": 52428661,
+                    "title": "Lies",
+                    "available": true,
+                    "durationMs": 170990,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 441095,
+                            "name": "ScHoolboy Q",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1724834,
+                            "name": "Ty Dolla $ign",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 157005,
+                            "name": "YG",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7380834,
+                            "title": "CrasH Talk",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2019-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-19T11:17:35+00:00",
+                    "id": 101724297,
+                    "title": "Maschenny",
+                    "available": true,
+                    "durationMs": 146970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8422661,
+                            "name": "Purely Blue",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21487346,
+                            "title": "Maschenny",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2020-08-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-07T13:05:23+00:00",
+                    "id": 125629069,
+                    "title": "Not Like Us",
+                    "available": true,
+                    "durationMs": 274190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 543582,
+                            "name": "Kendrick Lamar",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31067153,
+                            "title": "Not Like Us",
+                            "type": "single",
+                            "genre": "foreignrap",
+                            "releaseDate": "2024-05-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-05T12:26:21+00:00",
+                    "id": 122568892,
+                    "title": "Mr. Morale",
+                    "available": true,
+                    "durationMs": 210840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 543582,
+                            "name": "Kendrick Lamar",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 16358615,
+                            "name": "Tanna Leone",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 125488,
+                            "name": "Eckhart Tolle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29663746,
+                            "title": "Mr. Morale & The Big Steppers",
+                            "type": null,
+                            "genre": "foreignrap",
+                            "releaseDate": "2022-05-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-29T07:34:23+00:00",
+                    "id": 5471471,
+                    "title": "Backseat Freestyle",
+                    "available": true,
+                    "durationMs": 212710,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 543582,
+                            "name": "Kendrick Lamar",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1174459,
+                            "title": "good kid, m.A.A.d city",
+                            "type": null,
+                            "genre": "foreignrap",
+                            "releaseDate": "2013-06-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-25T15:29:12+00:00",
+                    "id": 122553953,
+                    "title": "Paper Plates",
+                    "available": true,
+                    "durationMs": 153740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2625,
+                            "name": "Pharrell Williams",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1426524,
+                            "name": "A$AP Ferg",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 15828481,
+                            "name": "NIGO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29658467,
+                            "title": "I Know NIGO!",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2022-03-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-27T14:21:04+00:00",
+                    "id": 122313242,
+                    "title": "Crime And Punishment",
+                    "available": true,
+                    "durationMs": 290720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10575737,
+                            "name": "Ado",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29590705,
+                            "title": "Ado's Utattemita Album",
+                            "type": null,
+                            "genre": "japanesepop",
+                            "releaseDate": "2023-12-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-21T15:09:55+00:00",
+                    "id": 115683802,
+                    "title": "Feel The Fiyaaaah",
+                    "available": true,
+                    "durationMs": 189420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3038432,
+                            "name": "Metro Boomin",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 631822,
+                            "name": "A$AP Rocky",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 5297106,
+                            "name": "Takeoff",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29636875,
+                            "title": "HEROES & VILLAINS",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2023-02-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-01T07:15:32+00:00",
+                    "id": 122567773,
+                    "title": "N95",
+                    "available": true,
+                    "durationMs": 195950,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 543582,
+                            "name": "Kendrick Lamar",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29663746,
+                            "title": "Mr. Morale & The Big Steppers",
+                            "type": null,
+                            "genre": "foreignrap",
+                            "releaseDate": "2022-05-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-10-11T07:52:50+00:00",
+                    "id": 56808593,
+                    "title": "Vintage Chanel",
+                    "available": true,
+                    "durationMs": 195990,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4394516,
+                            "name": "Powers Pleasant",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1118489,
+                            "name": "Joey Bada$$",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 3333253,
+                            "name": "Kirk Knight",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 5001046,
+                            "name": "Meechy Darko",
+                            "available": true
+                        },
+                        "5": {
+                            "id": 5296594,
+                            "name": "Zombie Juice",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8447535,
+                            "title": "Life Is Beautiful",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2019-08-23T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 696784557,
+        "login": "elektr0n1k73",
+        "name": "Александр С.",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "67.9792"
+}

@@ -1,0 +1,3278 @@
+{
+    "playlists": {
+        "Для зарядки": {
+            "name": "Для зарядки",
+            "playlistUuid": "069c98c0-fe10-19a2-b429-3202a92ef371",
+            "link": "https://music.yandex.ru/playlists/069c98c0-fe10-19a2-b429-3202a92ef371",
+            "kind": 1000,
+            "available": true,
+            "trackCount": 4,
+            "visibility": "public",
+            "collective": false,
+            "revision": 7,
+            "created": "2024-12-31T05:10:09+00:00",
+            "modified": "2025-02-11T13:09:22+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2024-12-31T05:23:58+00:00",
+                    "id": 148345,
+                    "title": "Californication",
+                    "available": true,
+                    "durationMs": 329730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-11T13:09:22+00:00",
+                    "id": 132140667,
+                    "title": "Highway To Hell",
+                    "available": true,
+                    "durationMs": 265780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 191175,
+                            "name": "AC/DC",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33691089,
+                            "title": "Highway To Melbourne 1988",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2024-10-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-31T05:28:43+00:00",
+                    "id": 43375501,
+                    "title": "The Great Pretender",
+                    "available": true,
+                    "durationMs": 325490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 27420,
+                            "name": "Myles Kennedy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5769162,
+                            "title": "Living the Dream",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2018-09-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-31T05:10:09+00:00",
+                    "id": 33952843,
+                    "title": "Animals",
+                    "available": true,
+                    "durationMs": 242180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159682,
+                            "title": "Snakes 'n' Ladders",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1989-01-01T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.799d7f01-b8a0-45c6-991f-46562689ff83",
+            "link": "https://music.yandex.ru/playlists/lk.799d7f01-b8a0-45c6-991f-46562689ff83",
+            "kind": 3,
+            "available": true,
+            "trackCount": 127,
+            "visibility": "public",
+            "collective": false,
+            "revision": 136,
+            "created": "2018-07-29T11:42:37+00:00",
+            "modified": "2025-11-16T06:46:02+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-11-16T06:46:02+00:00",
+                    "id": 51939106,
+                    "title": "Did Ya Mama Ever Tell Ya",
+                    "available": true,
+                    "durationMs": 186820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 28511,
+                            "name": "Slade",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7277124,
+                            "title": "Nobody's Fools",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1976-03-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-07T05:56:03+00:00",
+                    "id": 26679787,
+                    "title": "Éblouie par la nuit",
+                    "available": true,
+                    "durationMs": 237860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 226412,
+                            "name": "Zaz",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5413599,
+                            "title": "Sur la route",
+                            "type": null,
+                            "genre": "estrada",
+                            "releaseDate": "2016-05-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-07T05:48:39+00:00",
+                    "id": 5219339,
+                    "title": "Love of Your Life",
+                    "available": true,
+                    "durationMs": 246820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 575647,
+                            "title": "Never Is a Long Time / Love of Your Life",
+                            "type": "single",
+                            "genre": "rock",
+                            "releaseDate": "2012-09-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-29T18:03:21+00:00",
+                    "id": 83625,
+                    "title": "Memory Motel",
+                    "available": true,
+                    "durationMs": 426760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6601,
+                            "name": "The Rolling Stones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7585,
+                            "title": "Black And Blue",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-09-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-20T20:05:55+00:00",
+                    "id": 28580963,
+                    "title": "A Whiter Shade of Pale",
+                    "available": true,
+                    "durationMs": 242540,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4684,
+                            "name": "Procol Harum",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3419127,
+                            "title": "Burning Love 2",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2016-02-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-20T19:02:23+00:00",
+                    "id": 33952815,
+                    "title": "Where Are You Now",
+                    "available": true,
+                    "durationMs": 235200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159719,
+                            "title": "The Singles",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2012-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-20T18:27:17+00:00",
+                    "id": 137775,
+                    "title": "You and Me",
+                    "available": true,
+                    "durationMs": 306570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17664,
+                            "name": "Alice Cooper",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6252133,
+                            "name": "California Boys' Choir",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2875469,
+                            "title": "The Studio Albums 1969-1983",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2015-07-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-16T18:20:31+00:00",
+                    "id": 93473188,
+                    "title": "Le jardin des larmes",
+                    "available": true,
+                    "durationMs": 241850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 226412,
+                            "name": "Zaz",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12998,
+                            "name": "Till Lindemann",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18836084,
+                            "title": "Isa",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2021-10-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-16T07:09:43+00:00",
+                    "id": 29934,
+                    "title": "Hair Of The Dog",
+                    "available": true,
+                    "durationMs": 251580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 217365,
+                            "title": "The Anthology",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2009-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-14T06:30:07+00:00",
+                    "id": 773554,
+                    "title": "Knockin' On Heaven's Door",
+                    "available": true,
+                    "durationMs": 447300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 86259,
+                            "title": "Live Era '87-'93",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1999-11-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-13T06:29:27+00:00",
+                    "id": 69287223,
+                    "title": "Zombie",
+                    "available": true,
+                    "durationMs": 307810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7444,
+                            "name": "The Cranberries",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37814765,
+                            "title": "No Need To Argue",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1994-10-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-13T06:10:38+00:00",
+                    "id": 536826,
+                    "title": "Mother Maria",
+                    "available": true,
+                    "durationMs": 319650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 49209,
+                            "name": "Beth Hart",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 61552,
+                            "title": "Slash",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2010-05-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-11T06:12:30+00:00",
+                    "id": 683499,
+                    "title": "Funny Funny",
+                    "available": true,
+                    "durationMs": 167700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15749,
+                            "name": "Sweet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 306405,
+                            "title": "Reeling In The Decades",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2011-11-04T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-11T05:56:46+00:00",
+                    "id": 17311707,
+                    "title": "When a Blind Man Cries",
+                    "available": true,
+                    "durationMs": 261450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3554,
+                            "name": "Ian Gillan",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 199634,
+                            "name": "Jeff Healey",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 11540,
+                            "name": "Jon Lord",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1908343,
+                            "title": "Gillan's Inn",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2011-10-21T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-07T05:43:39+00:00",
+                    "id": 141272981,
+                    "title": "Mama I'm Coming Home",
+                    "available": true,
+                    "durationMs": 328530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3274,
+                            "name": "Ozzy Osbourne",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37534974,
+                            "title": "Phoenix 1996",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2025-07-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-06T06:01:40+00:00",
+                    "id": 33935186,
+                    "title": "C'est La Vie",
+                    "available": true,
+                    "durationMs": 260050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5982,
+                            "name": "Emerson, Lake & Palmer",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4157543,
+                            "title": "Works, Vol. 1",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1977-03-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-05T05:41:42+00:00",
+                    "id": 57641136,
+                    "title": "In The Wake Of Poseidon",
+                    "available": true,
+                    "durationMs": 476860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 918322,
+                            "name": "King Crimson",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7930611,
+                            "title": "In The Wake Of Poseidon",
+                            "type": null,
+                            "genre": "prog",
+                            "releaseDate": "2015-04-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-04T06:05:18+00:00",
+                    "id": 73494458,
+                    "title": "Canon and Gigue in D Major, P.37: I. Canon",
+                    "available": true,
+                    "durationMs": 320990,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6708255,
+                            "name": "Julius Frederick Rinaldi",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1700226,
+                            "name": "J.S. Bach Orchestra",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1563759,
+                            "name": "Walter Rinaldi",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 12148,
+                            "name": "Иоганн Пахельбель",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15845140,
+                            "title": "Vivaldi: The Four Seasons - Violin Concerto from L' Estro Armonico & Alla Rustica / Bach: Air on the G String - Cantata No. 51 & Oboe Adagio / Walter Rinaldi: Guitar & Orchestral Works / Pachelbel: Canon in D",
+                            "type": null,
+                            "genre": "classical",
+                            "releaseDate": "2021-06-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-02T14:52:48+00:00",
+                    "id": 17370452,
+                    "title": "D'yer Mak'er",
+                    "available": true,
+                    "durationMs": 262740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 68227,
+                            "name": "Led Zeppelin",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5789742,
+                            "title": "Led Zeppelin x Led Zeppelin",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2018-09-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-02T14:44:16+00:00",
+                    "id": 17370475,
+                    "title": "Over the Hills and Far Away",
+                    "available": true,
+                    "durationMs": 290930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 68227,
+                            "name": "Led Zeppelin",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5789742,
+                            "title": "Led Zeppelin x Led Zeppelin",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2018-09-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-02T14:31:39+00:00",
+                    "id": 17370469,
+                    "title": "Ramble On",
+                    "available": true,
+                    "durationMs": 274000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 68227,
+                            "name": "Led Zeppelin",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5789742,
+                            "title": "Led Zeppelin x Led Zeppelin",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2018-09-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-01T05:27:39+00:00",
+                    "id": 88738,
+                    "title": "Street Of Dreams",
+                    "available": true,
+                    "durationMs": 286340,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4418928,
+                            "title": "Chinese Democracy",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2008-11-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-01T05:18:57+00:00",
+                    "id": 139930712,
+                    "title": "Mr. Crowley",
+                    "available": true,
+                    "durationMs": 339690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3274,
+                            "name": "Ozzy Osbourne",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36955496,
+                            "title": "Memphis 1982",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2025-06-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-28T05:56:38+00:00",
+                    "id": 51953508,
+                    "title": "Ooh La La In L.A",
+                    "available": true,
+                    "durationMs": 231980,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 28511,
+                            "name": "Slade",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12207113,
+                            "title": "Cum On Feel the Hitz: The Best of Slade",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2020-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-20T06:13:16+00:00",
+                    "id": 1195963,
+                    "title": "Greensleeves",
+                    "available": true,
+                    "durationMs": 159180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87173,
+                            "name": "Jethro Tull",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 129451,
+                            "title": "Christmas Album",
+                            "type": null,
+                            "genre": "folkrock",
+                            "releaseDate": "2009-02-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-20T05:59:00+00:00",
+                    "id": 34155818,
+                    "title": "Pearls in Her Hair",
+                    "available": true,
+                    "durationMs": 330040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 200076,
+                            "name": "Omega",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4193345,
+                            "title": "Anthology 1968-1979",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-17T05:53:55+00:00",
+                    "id": 92218,
+                    "title": "14 Years",
+                    "available": true,
+                    "durationMs": 261350,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29647711,
+                            "title": "Use Your Illusion",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2022-11-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-30T06:04:17+00:00",
+                    "id": 55039,
+                    "title": "Janie's Got A Gun",
+                    "available": true,
+                    "durationMs": 328560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 14606,
+                            "name": "Aerosmith",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 220130,
+                            "title": "Tough Love: Best Of The Ballads",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2011-05-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-22T05:21:01+00:00",
+                    "id": 71270,
+                    "title": "Rainbow Eyes",
+                    "available": true,
+                    "durationMs": 441600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6921,
+                            "name": "Rainbow",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4456570,
+                            "title": "Since You Been Gone",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2017-05-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-16T06:27:19+00:00",
+                    "id": 58785915,
+                    "title": "Oh Come All Ye Faithful",
+                    "available": true,
+                    "durationMs": 279960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 58469,
+                            "name": "Twisted Sister",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9449873,
+                            "title": "Jingle Bell Rock",
+                            "type": "compilation",
+                            "genre": null,
+                            "releaseDate": "2019-12-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-14T20:13:46+00:00",
+                    "id": 33939069,
+                    "title": "Boots of Spanish Leather",
+                    "available": true,
+                    "durationMs": 299360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15748,
+                            "name": "Dan McCafferty",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4157950,
+                            "title": "Dan McCafferty",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1975-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-26T05:45:23+00:00",
+                    "id": 55263637,
+                    "title": "Anastasia",
+                    "available": true,
+                    "durationMs": 540940,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4898629,
+                            "name": "Myles Kennedy And The Conspirators",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8765988,
+                            "title": "Living The Dream Tour",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2019-09-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-25T06:31:02+00:00",
+                    "id": 9728,
+                    "title": "God Gave Rock 'N' Roll To You II",
+                    "available": true,
+                    "durationMs": 318810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7147,
+                            "name": "Kiss",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 85617,
+                            "title": "KISS Box Set",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2001-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-25T06:21:04+00:00",
+                    "id": 555583,
+                    "title": "Illusion",
+                    "available": true,
+                    "durationMs": 302330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6939,
+                            "name": "Uriah Heep",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 59559,
+                            "title": "Innocent Victim",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2008-07-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-11T05:18:19+00:00",
+                    "id": 88742,
+                    "title": "Sorry",
+                    "available": true,
+                    "durationMs": 374180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4418928,
+                            "title": "Chinese Democracy",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2008-11-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-10T05:56:19+00:00",
+                    "id": 73942379,
+                    "title": "For Evigt",
+                    "available": true,
+                    "durationMs": 384570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 236585,
+                            "name": "Volbeat",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12887112,
+                            "title": "Rewind, Replay, Rebound",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2020-11-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-30T05:06:09+00:00",
+                    "id": 301144,
+                    "title": "Smoke On The Water",
+                    "available": true,
+                    "durationMs": 343440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6920,
+                            "name": "Deep Purple",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30853,
+                            "title": "Very Best Of Made In Japan",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2003-03-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-10T05:28:28+00:00",
+                    "id": 108501306,
+                    "title": "Belladonna",
+                    "available": true,
+                    "durationMs": 268500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87197,
+                            "name": "UFO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23941247,
+                            "title": "No Heavy Petting",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2023-01-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-24T05:42:40+00:00",
+                    "id": 16832538,
+                    "title": "Goodbye Yellow Brick Road",
+                    "available": true,
+                    "durationMs": 192820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 668,
+                            "name": "Elton John",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29609822,
+                            "title": "Diamonds",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-15T05:10:30+00:00",
+                    "id": 34083,
+                    "title": "Used To Love Her",
+                    "available": true,
+                    "durationMs": 191360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5514524,
+                            "title": "Appetite For Destruction",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1987-07-29T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-15T05:07:28+00:00",
+                    "id": 1603308,
+                    "title": "Love Hurts",
+                    "available": true,
+                    "durationMs": 231730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 161144,
+                            "title": "80s Monster Ballads",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2008-10-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-15T05:00:08+00:00",
+                    "id": 17301,
+                    "title": "What It Is",
+                    "available": true,
+                    "durationMs": 296500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3019,
+                            "name": "Mark Knopfler",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2501088,
+                            "title": "The Best Of Dire Straits & Mark Knopfler - Private Investigations",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2005-11-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-11T05:36:07+00:00",
+                    "id": 92242,
+                    "title": "So Fine",
+                    "available": true,
+                    "durationMs": 246360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29647711,
+                            "title": "Use Your Illusion",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2022-11-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-27T05:16:38+00:00",
+                    "id": 122332344,
+                    "title": "Perhaps",
+                    "available": true,
+                    "durationMs": 228400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29596338,
+                            "title": "Perhaps",
+                            "type": "single",
+                            "genre": "rock",
+                            "releaseDate": "2023-08-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-25T14:44:04+00:00",
+                    "id": 43816904,
+                    "title": "The Sound of Silence",
+                    "available": true,
+                    "durationMs": 292120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48827,
+                            "name": "Disturbed",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 27420,
+                            "name": "Myles Kennedy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5846584,
+                            "title": "Evolution",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2018-10-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-24T14:42:48+00:00",
+                    "id": 33952736,
+                    "title": "Heart's Grown Cold",
+                    "available": true,
+                    "durationMs": 254130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159719,
+                            "title": "The Singles",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2012-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-22T12:06:26+00:00",
+                    "id": 24835592,
+                    "title": "The Sound Of Silence",
+                    "available": true,
+                    "durationMs": 248460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48827,
+                            "name": "Disturbed",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2911935,
+                            "title": "Immortalized",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2015-08-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T06:20:51+00:00",
+                    "id": 28036267,
+                    "title": "Always Somewhere",
+                    "available": true,
+                    "durationMs": 297520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 90,
+                            "name": "Scorpions",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4986719,
+                            "title": "Lovedrive",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1979-01-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-06T06:44:28+00:00",
+                    "id": 82062357,
+                    "title": "Why Worry?",
+                    "available": true,
+                    "durationMs": 504810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10731,
+                            "name": "Dire Straits",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15276889,
+                            "title": "Brothers In Arms",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1985-05-13T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-05T12:25:54+00:00",
+                    "id": 151218,
+                    "title": "Fairytale of New York",
+                    "available": true,
+                    "durationMs": 272460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 43401,
+                            "name": "The Pogues",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 23266,
+                            "name": "Kirsty MacColl",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 330268,
+                            "title": "Original Album Series",
+                            "type": null,
+                            "genre": "folkrock",
+                            "releaseDate": "2011-11-04T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-01T11:00:03+00:00",
+                    "id": 103839,
+                    "title": "Frühling in Paris",
+                    "available": true,
+                    "durationMs": 284920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 13002,
+                            "name": "Rammstein",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9897,
+                            "title": "Liebe Ist Für Alle Da",
+                            "type": null,
+                            "genre": "industrial",
+                            "releaseDate": "2009-10-16T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-01T10:55:17+00:00",
+                    "id": 33952700,
+                    "title": "I Don't Want to Go On Without You",
+                    "available": true,
+                    "durationMs": 225020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159719,
+                            "title": "The Singles",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2012-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-18T14:02:19+00:00",
+                    "id": 18694,
+                    "title": "Live And Let Die",
+                    "available": true,
+                    "durationMs": 182200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-18T14:02:14+00:00",
+                    "id": 92230,
+                    "title": "Estranged",
+                    "available": true,
+                    "durationMs": 563890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29647711,
+                            "title": "Use Your Illusion",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2022-11-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-18T14:02:08+00:00",
+                    "id": 92212,
+                    "title": "Civil War",
+                    "available": true,
+                    "durationMs": 460490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-18T14:01:59+00:00",
+                    "id": 92238,
+                    "title": "Knockin' On Heaven's Door",
+                    "available": true,
+                    "durationMs": 336140,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-18T13:53:37+00:00",
+                    "id": 48969,
+                    "title": "Paradise City",
+                    "available": true,
+                    "durationMs": 406170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-15T13:20:21+00:00",
+                    "id": 150854,
+                    "title": "We're Not Gonna Take It",
+                    "available": true,
+                    "durationMs": 219660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 58469,
+                            "name": "Twisted Sister",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2539712,
+                            "title": "Twisted Sister: Essentials",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2002-09-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-13T06:11:16+00:00",
+                    "id": 57243879,
+                    "title": "Zombie",
+                    "available": true,
+                    "durationMs": 320890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7444,
+                            "name": "The Cranberries",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8592661,
+                            "title": "Live 2010 - Zenith Paris, 22.03.10",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2012-02-06T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-12T11:52:54+00:00",
+                    "id": 31620,
+                    "title": "Ode To My Family",
+                    "available": true,
+                    "durationMs": 270780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7444,
+                            "name": "The Cranberries",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 89827,
+                            "title": "Treasure Box : The Complete Sessions 1991-99",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2002-06-19T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-11T13:09:59+00:00",
+                    "id": 132140667,
+                    "title": "Highway To Hell",
+                    "available": true,
+                    "durationMs": 265780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 191175,
+                            "name": "AC/DC",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33691089,
+                            "title": "Highway To Melbourne 1988",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2024-10-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-08T11:02:23+00:00",
+                    "id": 90217,
+                    "title": "Lady In Black",
+                    "available": true,
+                    "durationMs": 211930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6939,
+                            "name": "Uriah Heep",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8394,
+                            "title": "Easy Livin' - The Singles A's & B's",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2006-10-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-07T06:34:06+00:00",
+                    "id": 21685874,
+                    "title": "Stargazer",
+                    "available": true,
+                    "durationMs": 502300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6921,
+                            "name": "Rainbow",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2486993,
+                            "title": "Rising",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1976-05-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-05T05:35:35+00:00",
+                    "id": 33952675,
+                    "title": "Please Don't Judas Me",
+                    "available": true,
+                    "durationMs": 584160,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159665,
+                            "title": "Hair of the Dog",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1975-04-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-27T06:45:53+00:00",
+                    "id": 31093971,
+                    "title": "The Sound of Silence",
+                    "available": true,
+                    "durationMs": 253100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48827,
+                            "name": "Disturbed",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3765853,
+                            "title": "The Sound of Silence",
+                            "type": "single",
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-09-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-13T18:46:13+00:00",
+                    "id": 170051,
+                    "title": "Snow (Hey Oh)",
+                    "available": true,
+                    "durationMs": 334660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-13T05:57:22+00:00",
+                    "id": 72043776,
+                    "title": "She's A Rainbow",
+                    "available": true,
+                    "durationMs": 253720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6601,
+                            "name": "The Rolling Stones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29595422,
+                            "title": "Forty Licks",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2023-07-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-07T11:32:45+00:00",
+                    "id": 2295008,
+                    "title": "Thank God It's Christmas",
+                    "available": true,
+                    "durationMs": 259500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 79215,
+                            "name": "Queen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 227551,
+                            "title": "The Platinum Collection",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-07T11:21:44+00:00",
+                    "id": 1195960,
+                    "title": "Another Christmas Song",
+                    "available": true,
+                    "durationMs": 212040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87173,
+                            "name": "Jethro Tull",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 129451,
+                            "title": "Christmas Album",
+                            "type": null,
+                            "genre": "folkrock",
+                            "releaseDate": "2009-02-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-31T05:47:58+00:00",
+                    "id": 93907310,
+                    "title": "Paranoid",
+                    "available": true,
+                    "durationMs": 166690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3276,
+                            "name": "Black Sabbath",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12360864,
+                            "title": "Paranoid",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "1970-09-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-31T05:47:51+00:00",
+                    "id": 18705,
+                    "title": "Don't Cry",
+                    "available": true,
+                    "durationMs": 284090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-25T06:36:23+00:00",
+                    "id": 36949091,
+                    "title": "A whiter shade of pale",
+                    "available": true,
+                    "durationMs": 238850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4684,
+                            "name": "Procol Harum",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27528837,
+                            "title": "Ten Songs for you",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-25T05:28:43+00:00",
+                    "id": 72762,
+                    "title": "What's Up?",
+                    "available": true,
+                    "durationMs": 295520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7423,
+                            "name": "4 Non Blondes",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 87073,
+                            "title": "Bigger, Better, Faster, More!",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "1996-07-24T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-23T06:01:14+00:00",
+                    "id": 20479652,
+                    "title": "Starman",
+                    "available": true,
+                    "durationMs": 251840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4650,
+                            "name": "David Bowie",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2335682,
+                            "title": "Nothing Has Changed (The Best of David Bowie)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-11-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-19T05:51:53+00:00",
+                    "id": 34084,
+                    "title": "Patience",
+                    "available": true,
+                    "durationMs": 354400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-12T06:15:45+00:00",
+                    "id": 330786,
+                    "title": "Street Spirit (Fade Out)",
+                    "available": true,
+                    "durationMs": 252400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36825,
+                            "name": "Radiohead",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389006,
+                            "title": "The Bends",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1995-03-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-12T05:38:08+00:00",
+                    "id": 2785516,
+                    "title": "The Passenger",
+                    "available": true,
+                    "durationMs": 285440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6925,
+                            "name": "Iggy Pop",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 298956,
+                            "title": "Route 66 - Highway to Hell",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-06T05:51:01+00:00",
+                    "id": 492796,
+                    "title": "Belladonna",
+                    "available": true,
+                    "durationMs": 272560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87197,
+                            "name": "UFO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 52352,
+                            "title": "No Heavy Petting",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1976-05-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-03T06:06:34+00:00",
+                    "id": 5356,
+                    "title": "She's Gone",
+                    "available": true,
+                    "durationMs": 291580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3276,
+                            "name": "Black Sabbath",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9534,
+                            "title": "Technical Ecstasy",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "1987-11-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-26T07:04:52+00:00",
+                    "id": 6596929,
+                    "title": "Dust in the wind",
+                    "available": true,
+                    "durationMs": 237770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 171302,
+                            "name": "Kansas",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 711470,
+                            "title": "Work in Progress",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2006-12-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-21T05:53:31+00:00",
+                    "id": 683491,
+                    "title": "The Ballroom Blitz",
+                    "available": true,
+                    "durationMs": 239700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15749,
+                            "name": "Sweet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5942927,
+                            "title": "Best of British Rock",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2018-10-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-15T06:20:55+00:00",
+                    "id": 148337,
+                    "title": "Otherside",
+                    "available": true,
+                    "durationMs": 255370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-15T06:13:11+00:00",
+                    "id": 38803002,
+                    "title": "Hotel California",
+                    "available": true,
+                    "durationMs": 422320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 242425,
+                            "name": "The Eagles",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33558053,
+                            "title": "At The Summit, Houston, 1976",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2024-10-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-22T06:01:27+00:00",
+                    "id": 4087,
+                    "title": "Iron Man",
+                    "available": true,
+                    "durationMs": 354770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3276,
+                            "name": "Black Sabbath",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3826520,
+                            "title": "The Ultimate Collection",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2016-10-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-09T05:34:00+00:00",
+                    "id": 9836938,
+                    "title": "Run Of The Mill",
+                    "available": true,
+                    "durationMs": 511620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 171309,
+                            "name": "Judas Priest",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1048523,
+                            "title": "Rocka Rolla",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2013-01-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-07T04:51:37+00:00",
+                    "id": 78178577,
+                    "title": "Paint It, Black",
+                    "available": true,
+                    "durationMs": 203800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6601,
+                            "name": "The Rolling Stones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13946080,
+                            "title": "Paint It, Black / Stupid Girl / Long Long While",
+                            "type": "single",
+                            "genre": "rock",
+                            "releaseDate": "1966-05-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-30T06:10:38+00:00",
+                    "id": 37408185,
+                    "title": "Have You Ever Seen The Rain",
+                    "available": true,
+                    "durationMs": 160660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 798,
+                            "name": "Creedence Clearwater Revival",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4738629,
+                            "title": "The Singles Collection",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2010-03-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-27T14:37:40+00:00",
+                    "id": 51494200,
+                    "title": "Highway To Hell",
+                    "available": true,
+                    "durationMs": 224110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 191175,
+                            "name": "AC/DC",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8298434,
+                            "title": "Shot Down In Flames",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2019-08-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-19T04:54:49+00:00",
+                    "id": 67846072,
+                    "title": "Gyöngyhajú lány",
+                    "available": true,
+                    "durationMs": 348750,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 200076,
+                            "name": "Omega",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11182979,
+                            "title": "Das deutsche Album",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2020-05-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-13T05:16:11+00:00",
+                    "id": 215050,
+                    "title": "Montage from Twin Peaks (Girl Talk / Birds in Hell / Laura Palmer's Theme / Falling)",
+                    "available": true,
+                    "durationMs": 330400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 13890,
+                            "name": "Angelo Badalamenti",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21944,
+                            "title": "«Твин Пикс: Сквозь огонь»",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": "1992-08-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-09T04:45:32+00:00",
+                    "id": 148349,
+                    "title": "Give It Away",
+                    "available": true,
+                    "durationMs": 282900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-30T14:37:59+00:00",
+                    "id": 3576496,
+                    "title": "Smoke On The Water",
+                    "available": true,
+                    "durationMs": 512490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6920,
+                            "name": "Deep Purple",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 384828,
+                            "title": "Live at Montreux 2011",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2011-11-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-30T14:37:50+00:00",
+                    "id": 148336,
+                    "title": "Under the Bridge",
+                    "available": true,
+                    "durationMs": 264300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-27T04:50:55+00:00",
+                    "id": 220499,
+                    "title": "Riders on the Storm",
+                    "available": true,
+                    "durationMs": 434720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 29060,
+                            "name": "The Doors",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1957004,
+                            "title": "Weird Scenes Inside the Gold Mine",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2014-04-19T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-26T06:39:53+00:00",
+                    "id": 598975,
+                    "title": "The Chain",
+                    "available": true,
+                    "durationMs": 268200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 57862,
+                            "name": "Fleetwood Mac",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 948628,
+                            "title": "Rumours",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1977-02-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-23T06:27:11+00:00",
+                    "id": 33952676,
+                    "title": "Love Hurts",
+                    "available": true,
+                    "durationMs": 232120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159719,
+                            "title": "The Singles",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2012-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-23T05:17:26+00:00",
+                    "id": 88727,
+                    "title": "This I Love",
+                    "available": true,
+                    "durationMs": 334370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4418928,
+                            "title": "Chinese Democracy",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2008-11-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-22T06:11:22+00:00",
+                    "id": 18686,
+                    "title": "November Rain",
+                    "available": true,
+                    "durationMs": 536960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11311,
+                            "name": "Guns N' Roses",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12241368,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-20T05:02:14+00:00",
+                    "id": 33952843,
+                    "title": "Animals",
+                    "available": true,
+                    "durationMs": 242180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6891,
+                            "name": "Nazareth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4159682,
+                            "title": "Snakes 'n' Ladders",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "1989-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-19T04:58:03+00:00",
+                    "id": 57641702,
+                    "title": "Epitaph (BBC Radio Sessions, 1969)",
+                    "available": true,
+                    "durationMs": 428780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 918322,
+                            "name": "King Crimson",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7909454,
+                            "title": "Epitaph",
+                            "type": null,
+                            "genre": "prog",
+                            "releaseDate": "2018-09-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-13T06:49:45+00:00",
+                    "id": 301147,
+                    "title": "Child In Time",
+                    "available": true,
+                    "durationMs": 255090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6920,
+                            "name": "Deep Purple",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30853,
+                            "title": "Very Best Of Made In Japan",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2003-03-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-13T06:16:05+00:00",
+                    "id": 83322,
+                    "title": "Angie",
+                    "available": true,
+                    "durationMs": 272380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6601,
+                            "name": "The Rolling Stones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 217931,
+                            "title": "The Rolling Stones Singles Box Set (1971-2006)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2011-04-11T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-13T06:12:46+00:00",
+                    "id": 1710810,
+                    "title": "Another One Bites The Dust",
+                    "available": true,
+                    "durationMs": 214620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 79215,
+                            "name": "Queen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 227551,
+                            "title": "The Platinum Collection",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-13T05:43:31+00:00",
+                    "id": 214489,
+                    "title": "Can't Stop",
+                    "available": true,
+                    "durationMs": 269000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-13T05:35:49+00:00",
+                    "id": 79978407,
+                    "title": "Stairway to Heaven",
+                    "available": true,
+                    "durationMs": 482830,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 68227,
+                            "name": "Led Zeppelin",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5789742,
+                            "title": "Led Zeppelin x Led Zeppelin",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2018-09-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-12T05:44:32+00:00",
+                    "id": 805284,
+                    "title": "The Temple Of The King",
+                    "available": true,
+                    "durationMs": 282010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6921,
+                            "name": "Rainbow",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4456570,
+                            "title": "Since You Been Gone",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2017-05-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-12T05:42:06+00:00",
+                    "id": 178529,
+                    "title": "Numb",
+                    "available": true,
+                    "durationMs": 187520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21940,
+                            "title": "Meteora",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2003-03-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 77716760,
+                    "title": "Heat Above",
+                    "available": true,
+                    "durationMs": 341250,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 72045808,
+                    "title": "My Way, Soon",
+                    "available": true,
+                    "durationMs": 255210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 79333669,
+                    "title": "Broken Bells",
+                    "available": true,
+                    "durationMs": 350640,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829427,
+                    "title": "Built By Nations",
+                    "available": true,
+                    "durationMs": 238980,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 74241484,
+                    "title": "Age of Machine",
+                    "available": true,
+                    "durationMs": 413520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829429,
+                    "title": "Tears of Rain",
+                    "available": true,
+                    "durationMs": 230130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829430,
+                    "title": "Stardust Chords",
+                    "available": true,
+                    "durationMs": 297480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829431,
+                    "title": "Light My Love",
+                    "available": true,
+                    "durationMs": 270860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829432,
+                    "title": "Caravel",
+                    "available": true,
+                    "durationMs": 295680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829434,
+                    "title": "The Barbarians",
+                    "available": true,
+                    "durationMs": 320700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829435,
+                    "title": "Trip the Light Fantastic",
+                    "available": true,
+                    "durationMs": 273340,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-11T09:04:07+00:00",
+                    "id": 80829436,
+                    "title": "The Weight of Dreams",
+                    "available": true,
+                    "durationMs": 531330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2527262,
+                            "name": "Greta Van Fleet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14856610,
+                            "title": "The Battle at Garden’s Gate",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-03T13:08:21+00:00",
+                    "id": 550051,
+                    "title": "Beautiful Dangerous",
+                    "available": true,
+                    "durationMs": 280500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3465,
+                            "name": "Fergie",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 61552,
+                            "title": "Slash",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2010-05-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-03T12:57:37+00:00",
+                    "id": 550056,
+                    "title": "Gotten",
+                    "available": true,
+                    "durationMs": 304170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 10920,
+                            "name": "Adam Levine",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 61552,
+                            "title": "Slash",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2010-05-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-03T12:48:50+00:00",
+                    "id": 43375501,
+                    "title": "The Great Pretender",
+                    "available": true,
+                    "durationMs": 325490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 27420,
+                            "name": "Myles Kennedy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5769162,
+                            "title": "Living the Dream",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2018-09-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-03T12:37:22+00:00",
+                    "id": 550058,
+                    "title": "Crucify the Dead",
+                    "available": true,
+                    "durationMs": 246260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3274,
+                            "name": "Ozzy Osbourne",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 61552,
+                            "title": "Slash",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2010-05-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-03T12:32:00+00:00",
+                    "id": 4172147,
+                    "title": "Anastasia",
+                    "available": true,
+                    "durationMs": 367280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11314,
+                            "name": "Slash",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 27420,
+                            "name": "Myles Kennedy",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1078830,
+                            "name": "The Conspirators",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 471510,
+                            "title": "Apocalyptic Love",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2012-05-11T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-11-24T05:43:58+00:00",
+                    "id": 1710811,
+                    "title": "We Will Rock You",
+                    "available": true,
+                    "durationMs": 121860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 79215,
+                            "name": "Queen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 227551,
+                            "title": "The Platinum Collection",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-11-24T05:43:39+00:00",
+                    "id": 148345,
+                    "title": "Californication",
+                    "available": true,
+                    "durationMs": 329730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-11-24T05:39:12+00:00",
+                    "id": 1703893,
+                    "title": "Paint It Black",
+                    "available": true,
+                    "durationMs": 224130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6601,
+                            "name": "The Rolling Stones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 419460,
+                            "title": "Hot Rocks (1964-1971)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1972-01-11T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 154712435,
+        "login": "klaudia.mitina",
+        "name": "Klaudia Mitina",
+        "sex": "female",
+        "verified": false
+    },
+    "rating": "66.7364"
+}

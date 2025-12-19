@@ -1,0 +1,1482 @@
+{
+    "playlists": {
+        "Роцк": {
+            "name": "Роцк",
+            "playlistUuid": "6898c714-3f4f-b627-822c-eaeb34c4d5d2",
+            "link": "https://music.yandex.ru/playlists/6898c714-3f4f-b627-822c-eaeb34c4d5d2",
+            "kind": 1002,
+            "available": true,
+            "trackCount": 8,
+            "visibility": "public",
+            "collective": false,
+            "revision": 9,
+            "created": "2025-09-04T18:02:11+00:00",
+            "modified": "2025-09-15T17:17:26+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-09-15T17:17:26+00:00",
+                    "id": 34634,
+                    "title": "Break Stuff",
+                    "available": true,
+                    "durationMs": 166650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9278,
+                            "name": "Limp Bizkit",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2874,
+                            "title": "Greatest Hitz",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2005-11-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:59:54+00:00",
+                    "id": 96064,
+                    "title": "Faint",
+                    "available": true,
+                    "durationMs": 162100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21940,
+                            "title": "Meteora",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2003-03-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:41:48+00:00",
+                    "id": 150010,
+                    "title": "Decadence",
+                    "available": true,
+                    "durationMs": 204780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48827,
+                            "name": "Disturbed",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14547,
+                            "title": "Ten Thousand Fists",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2005-09-19T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:36:41+00:00",
+                    "id": 12694708,
+                    "title": "Nine Thou",
+                    "available": true,
+                    "durationMs": 243040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 127209,
+                            "name": "Styles of Beyond",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 9561690,
+                            "name": "Grant Mohrman",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11362898,
+                            "title": "Grant Mohrman Remixes",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2020-07-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:29:29+00:00",
+                    "id": 178495,
+                    "title": "In the End",
+                    "available": true,
+                    "durationMs": 216880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12360955,
+                            "title": "Hybrid Theory",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2020-10-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:13:43+00:00",
+                    "id": 9962693,
+                    "title": "Can You Feel My Heart",
+                    "available": true,
+                    "durationMs": 227290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 43108,
+                            "name": "Bring Me The Horizon",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4810543,
+                            "title": "2004 - 2013",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2017-11-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:13:31+00:00",
+                    "id": 113662,
+                    "title": "Rock & Roll Queen",
+                    "available": true,
+                    "durationMs": 169940,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41871,
+                            "name": "The Subways",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15621,
+                            "title": "Young For Eternity",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2005-07-04T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T18:03:17+00:00",
+                    "id": 138214017,
+                    "title": "high enough",
+                    "available": true,
+                    "durationMs": 132790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21905095,
+                            "name": "nowayback",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36233092,
+                            "title": "high enough",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-05-09T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Light weight Baby! (AURA)": {
+            "name": "Light weight Baby! (AURA)",
+            "playlistUuid": "fbaa18d6-bb0d-ec6d-98e0-7ec208808904",
+            "link": "https://music.yandex.ru/playlists/fbaa18d6-bb0d-ec6d-98e0-7ec208808904",
+            "kind": 1001,
+            "available": true,
+            "trackCount": 15,
+            "visibility": "public",
+            "collective": false,
+            "revision": 20,
+            "created": "2025-04-08T20:54:07+00:00",
+            "modified": "2025-09-11T17:58:12+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-09-05T19:27:09+00:00",
+                    "id": 134297984,
+                    "title": "MATUSHKA ULTRAFUNK",
+                    "available": true,
+                    "durationMs": 144460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19330949,
+                            "name": "satirin",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34550023,
+                            "title": "MATUSHKA ULTRAFUNK",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2024-12-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-05T16:40:19+00:00",
+                    "id": 137863880,
+                    "title": "RITMO DE SALTO",
+                    "available": true,
+                    "durationMs": 89970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 22956262,
+                            "name": "NXGHT!",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 23371043,
+                            "name": "BEATHXVEN",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 9975902,
+                            "name": "Vaito",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36087815,
+                            "title": "RITMO DE SALTO",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-15T18:52:33+00:00",
+                    "id": 137971071,
+                    "title": "MONTAGEM ALUCINANTE",
+                    "available": true,
+                    "durationMs": 170650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19457934,
+                            "name": "DJ ORBITAL",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 18943062,
+                            "name": "Rushex",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 9652838,
+                            "name": "mc pl alves",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36130435,
+                            "title": "MONTAGEM ALUCINANTE",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T14:35:53+00:00",
+                    "id": 140110885,
+                    "title": "COM MEDO",
+                    "available": true,
+                    "durationMs": 69730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 18959766,
+                            "name": "Sayfalse",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 11876449,
+                            "name": "Scythermane",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37032132,
+                            "title": "COM MEDO!",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-03-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T14:34:00+00:00",
+                    "id": 138054264,
+                    "title": "LUNA BALA",
+                    "available": true,
+                    "durationMs": 124110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12395550,
+                            "name": "Yb Wasg'ood",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6866105,
+                            "name": "Ariis",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36163248,
+                            "title": "LUNA BALA",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T14:26:11+00:00",
+                    "id": 129164691,
+                    "title": "AVANGARD",
+                    "available": true,
+                    "durationMs": 199450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17590207,
+                            "name": "LONOWN",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37728515,
+                            "title": "Avangard",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-06-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T14:23:29+00:00",
+                    "id": 135868701,
+                    "title": "NUNCA MUDA?",
+                    "available": true,
+                    "durationMs": 81530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11876449,
+                            "name": "Scythermane",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 22956262,
+                            "name": "NXGHT!",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 5966783,
+                            "name": "Mc Fabinho da Osk",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36574760,
+                            "title": "NUNCA MUDA?",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-07-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T14:21:19+00:00",
+                    "id": 139532468,
+                    "title": "DIA DELÍCIA",
+                    "available": true,
+                    "durationMs": 75510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4209597,
+                            "name": "NAKAMA",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 14370598,
+                            "name": "MC Staff",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 24122573,
+                            "name": "ΣP",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38594526,
+                            "title": "DIA DELÍCIA",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T14:14:23+00:00",
+                    "id": 139044510,
+                    "title": "LOS VOLTAJE",
+                    "available": true,
+                    "durationMs": 99280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 18959766,
+                            "name": "Sayfalse",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12395550,
+                            "name": "Yb Wasg'ood",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 6866105,
+                            "name": "Ariis",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36574597,
+                            "title": "LOS VOLTAJE",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-18T07:20:30+00:00",
+                    "id": 130947593,
+                    "title": "Z-SLIDE",
+                    "available": true,
+                    "durationMs": 90000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9437758,
+                            "name": "Phxntxm",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19771363,
+                            "name": "Norx",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33218133,
+                            "title": "Z-SLIDE",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2024-09-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-13T16:38:38+00:00",
+                    "id": 135472587,
+                    "title": "NUNCA MUDA?",
+                    "available": true,
+                    "durationMs": 81970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11876449,
+                            "name": "Scythermane",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 22956262,
+                            "name": "NXGHT!",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 5966783,
+                            "name": "Mc Fabinho da Osk",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36574760,
+                            "title": "NUNCA MUDA?",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-07-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-09T19:54:37+00:00",
+                    "id": 125756421,
+                    "title": "X-SLIDE",
+                    "available": true,
+                    "durationMs": 89180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17957732,
+                            "name": "2KE",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 18796288,
+                            "name": "808iuli",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31127946,
+                            "title": "X-SLIDE",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-05-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-08T21:02:48+00:00",
+                    "id": 130291100,
+                    "title": "Ascensão do Mal",
+                    "available": true,
+                    "durationMs": 127380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19322177,
+                            "name": "SHINARI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 16994537,
+                            "name": "ZXLXN",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 18688313,
+                            "name": "phonk killazz",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 21452371,
+                            "name": "DJ ZN07",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32945809,
+                            "title": "Ascensão do Mal",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2024-08-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-08T20:56:08+00:00",
+                    "id": 114054012,
+                    "title": "Mexican Phonk Eki",
+                    "available": true,
+                    "durationMs": 98060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11175741,
+                            "name": "NUEKI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12855016,
+                            "name": "TOLCHONOV",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25955004,
+                            "title": "Mexican Phonk Eki",
+                            "type": null,
+                            "genre": "phonkgenre",
+                            "releaseDate": "2023-06-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-08T20:54:07+00:00",
+                    "id": 131301821,
+                    "title": "FUNK INFERNAL (SLOWED)",
+                    "available": true,
+                    "durationMs": 106360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2992583,
+                            "name": "DYGO",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19332841,
+                            "name": "Mxng0",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33359899,
+                            "title": "FUNK INFERNAL (SLOWED)",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-09-27T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "The First one": {
+            "name": "The First one",
+            "playlistUuid": "211112d6-61b3-bc84-9f15-3ad3de316865",
+            "link": "https://music.yandex.ru/playlists/211112d6-61b3-bc84-9f15-3ad3de316865",
+            "kind": 1000,
+            "available": true,
+            "trackCount": 5,
+            "visibility": "public",
+            "collective": false,
+            "revision": 6,
+            "created": "2025-03-21T20:12:50+00:00",
+            "modified": "2025-11-11T16:31:21+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-11-11T16:31:21+00:00",
+                    "id": 118579364,
+                    "title": "VVV",
+                    "available": true,
+                    "durationMs": 227610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17913873,
+                            "name": "mikeeysmind",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19792786,
+                            "name": "Sanikwave",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30153858,
+                            "title": "VVV",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2024-03-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-11-04T23:35:22+00:00",
+                    "id": 139803303,
+                    "title": "СВАГА",
+                    "available": true,
+                    "durationMs": 98180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21811933,
+                            "name": "HELLOVERCAVI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6142275,
+                            "name": "SODA LUV",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36904692,
+                            "title": "СВАГА",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2025-06-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-07T11:14:16+00:00",
+                    "id": 135424055,
+                    "title": "Ты мой (Phonk Remix)",
+                    "available": true,
+                    "durationMs": 105230,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10586824,
+                            "name": "EVASHA",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35086726,
+                            "title": "Ты мой (Phonk Remix)",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2025-01-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T17:51:51+00:00",
+                    "id": 138207906,
+                    "title": "Fake ID",
+                    "available": true,
+                    "durationMs": 229500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3879764,
+                            "name": "kizaru",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 11307507,
+                            "name": "ICEGERGERT",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36229847,
+                            "title": "Fake ID",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2025-04-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-21T20:12:50+00:00",
+                    "id": 122666509,
+                    "title": "I Don't Care",
+                    "available": true,
+                    "durationMs": 144300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21643733,
+                            "name": "cvdence.",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29727914,
+                            "title": "I Don't Care",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-02-13T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.b32d3fbd-294b-4558-980c-4bbdf7d8c346",
+            "link": "https://music.yandex.ru/playlists/lk.b32d3fbd-294b-4558-980c-4bbdf7d8c346",
+            "kind": 3,
+            "available": true,
+            "trackCount": 21,
+            "visibility": "public",
+            "collective": false,
+            "revision": 73,
+            "created": "2023-05-09T17:03:49+00:00",
+            "modified": "2025-10-07T11:53:18+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-09-10T03:55:31+00:00",
+                    "id": 148092,
+                    "title": "The Only",
+                    "available": true,
+                    "durationMs": 171100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48811,
+                            "name": "Static-X",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14351,
+                            "title": "Shadow Zone",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2003-10-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T19:49:57+00:00",
+                    "id": 135859147,
+                    "title": "PASSO BEM SOLTO",
+                    "available": true,
+                    "durationMs": 108880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6203498,
+                            "name": "ATLXS",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35470856,
+                            "title": "PASSO BEM SOLTO",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-02-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:42+00:00",
+                    "id": 139044510,
+                    "title": "LOS VOLTAJE",
+                    "available": true,
+                    "durationMs": 99280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 18959766,
+                            "name": "Sayfalse",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12395550,
+                            "name": "Yb Wasg'ood",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 6866105,
+                            "name": "Ariis",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36574597,
+                            "title": "LOS VOLTAJE",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:41+00:00",
+                    "id": 139532468,
+                    "title": "DIA DELÍCIA",
+                    "available": true,
+                    "durationMs": 75510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4209597,
+                            "name": "NAKAMA",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 14370598,
+                            "name": "MC Staff",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 24122573,
+                            "name": "ΣP",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38594526,
+                            "title": "DIA DELÍCIA",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:40+00:00",
+                    "id": 129164691,
+                    "title": "AVANGARD",
+                    "available": true,
+                    "durationMs": 199450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17590207,
+                            "name": "LONOWN",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37728515,
+                            "title": "Avangard",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-06-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:40+00:00",
+                    "id": 135868701,
+                    "title": "NUNCA MUDA?",
+                    "available": true,
+                    "durationMs": 81530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11876449,
+                            "name": "Scythermane",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 22956262,
+                            "name": "NXGHT!",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 5966783,
+                            "name": "Mc Fabinho da Osk",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36574760,
+                            "title": "NUNCA MUDA?",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-07-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:39+00:00",
+                    "id": 138054264,
+                    "title": "LUNA BALA",
+                    "available": true,
+                    "durationMs": 124110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12395550,
+                            "name": "Yb Wasg'ood",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6866105,
+                            "name": "Ariis",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36163248,
+                            "title": "LUNA BALA",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:38+00:00",
+                    "id": 140110885,
+                    "title": "COM MEDO",
+                    "available": true,
+                    "durationMs": 69730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 18959766,
+                            "name": "Sayfalse",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 11876449,
+                            "name": "Scythermane",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37032132,
+                            "title": "COM MEDO!",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-03-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-17T12:53:37+00:00",
+                    "id": 137971071,
+                    "title": "MONTAGEM ALUCINANTE",
+                    "available": true,
+                    "durationMs": 170650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19457934,
+                            "name": "DJ ORBITAL",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 18943062,
+                            "name": "Rushex",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 9652838,
+                            "name": "mc pl alves",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36130435,
+                            "title": "MONTAGEM ALUCINANTE",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-04-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-10T15:38:07+00:00",
+                    "id": 135118187,
+                    "title": "ERA!",
+                    "available": true,
+                    "durationMs": 118080,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8224401,
+                            "name": "Andromeda",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 23248299,
+                            "name": "MVSTERIOUS",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34941951,
+                            "title": "ERA!",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2025-01-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-01T19:23:55+00:00",
+                    "id": 59277953,
+                    "title": "Кусь",
+                    "available": true,
+                    "durationMs": 138790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5688391,
+                            "name": "SQWOZ BAB",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9071216,
+                            "title": "Кусь",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2019-11-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:39+00:00",
+                    "id": 114054012,
+                    "title": "Mexican Phonk Eki",
+                    "available": true,
+                    "durationMs": 98060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11175741,
+                            "name": "NUEKI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12855016,
+                            "name": "TOLCHONOV",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25955004,
+                            "title": "Mexican Phonk Eki",
+                            "type": null,
+                            "genre": "phonkgenre",
+                            "releaseDate": "2023-06-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:39+00:00",
+                    "id": 131301821,
+                    "title": "FUNK INFERNAL (SLOWED)",
+                    "available": true,
+                    "durationMs": 106360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2992583,
+                            "name": "DYGO",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19332841,
+                            "name": "Mxng0",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33359899,
+                            "title": "FUNK INFERNAL (SLOWED)",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-09-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:38+00:00",
+                    "id": 130291100,
+                    "title": "Ascensão do Mal",
+                    "available": true,
+                    "durationMs": 127380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19322177,
+                            "name": "SHINARI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 16994537,
+                            "name": "ZXLXN",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 18688313,
+                            "name": "phonk killazz",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 21452371,
+                            "name": "DJ ZN07",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32945809,
+                            "title": "Ascensão do Mal",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2024-08-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:37+00:00",
+                    "id": 125756421,
+                    "title": "X-SLIDE",
+                    "available": true,
+                    "durationMs": 89180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17957732,
+                            "name": "2KE",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 18796288,
+                            "name": "808iuli",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31127946,
+                            "title": "X-SLIDE",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-05-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:37+00:00",
+                    "id": 131974726,
+                    "title": "too much",
+                    "available": true,
+                    "durationMs": 157860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21890666,
+                            "name": "bullish",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33624516,
+                            "title": "too much",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-10-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:36+00:00",
+                    "id": 135472587,
+                    "title": "NUNCA MUDA?",
+                    "available": true,
+                    "durationMs": 81970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11876449,
+                            "name": "Scythermane",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 22956262,
+                            "name": "NXGHT!",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 5966783,
+                            "name": "Mc Fabinho da Osk",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36574760,
+                            "title": "NUNCA MUDA?",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2025-07-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:36+00:00",
+                    "id": 130947593,
+                    "title": "Z-SLIDE",
+                    "available": true,
+                    "durationMs": 90000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9437758,
+                            "name": "Phxntxm",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19771363,
+                            "name": "Norx",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33218133,
+                            "title": "Z-SLIDE",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2024-09-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:31+00:00",
+                    "id": 122666509,
+                    "title": "I Don't Care",
+                    "available": true,
+                    "durationMs": 144300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21643733,
+                            "name": "cvdence.",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29727914,
+                            "title": "I Don't Care",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-02-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-08T19:02:31+00:00",
+                    "id": 138207906,
+                    "title": "Fake ID",
+                    "available": true,
+                    "durationMs": 229500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3879764,
+                            "name": "kizaru",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 11307507,
+                            "name": "ICEGERGERT",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36229847,
+                            "title": "Fake ID",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2025-04-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-09T00:38:23+00:00",
+                    "id": 109771798,
+                    "title": "Карл Маркс. «Капитал». Часть 1",
+                    "available": true,
+                    "durationMs": 602800,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 17967159,
+                            "name": "Ксеноморф Пожилой",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24313863,
+                            "title": "Карл Маркс. «Капитал»",
+                            "type": "audiobook",
+                            "genre": "nonfictionliterature",
+                            "releaseDate": null
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 1006626270,
+        "login": "AnLibery",
+        "name": "Андрей У.",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "63.1308"
+}

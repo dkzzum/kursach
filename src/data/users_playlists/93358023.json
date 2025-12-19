@@ -1,0 +1,304 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.72fc892f-9231-4d6b-80eb-802ff797e7ee",
+            "link": "https://music.yandex.ru/playlists/lk.72fc892f-9231-4d6b-80eb-802ff797e7ee",
+            "kind": 3,
+            "available": true,
+            "trackCount": 12,
+            "visibility": "public",
+            "collective": false,
+            "revision": 13,
+            "created": "2017-11-01T14:25:49+00:00",
+            "modified": "2025-04-13T17:20:07+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-04-13T17:20:07+00:00",
+                    "id": 23880847,
+                    "title": "The Great Divide",
+                    "available": true,
+                    "durationMs": 88260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 61429,
+                            "name": "Anti-Flag",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2767618,
+                            "title": "American Spring",
+                            "type": null,
+                            "releaseDate": "2015-05-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-29T14:47:38+00:00",
+                    "id": 23277446,
+                    "title": "Fabled World",
+                    "available": true,
+                    "durationMs": 194350,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 61429,
+                            "name": "Anti-Flag",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2767618,
+                            "title": "American Spring",
+                            "type": null,
+                            "releaseDate": "2015-05-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-29T14:36:44+00:00",
+                    "id": 35153268,
+                    "title": "Fake Happy",
+                    "available": true,
+                    "durationMs": 235700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 49430,
+                            "name": "Paramore",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4365023,
+                            "title": "After Laughter",
+                            "type": null,
+                            "releaseDate": "2017-05-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-29T14:31:37+00:00",
+                    "id": 30794098,
+                    "title": "I Don't Like Me Anymore",
+                    "available": true,
+                    "durationMs": 150050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64589,
+                            "name": "NOFX",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5448876,
+                            "title": "First Ditch Effort",
+                            "type": null,
+                            "releaseDate": "2016-10-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-29T14:20:00+00:00",
+                    "id": 148390,
+                    "title": "Until the Day I Die",
+                    "available": true,
+                    "durationMs": 235560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 54416,
+                            "name": "Story Of The Year",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14381,
+                            "title": "Page Avenue",
+                            "type": null,
+                            "releaseDate": "2003-09-16T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-28T15:52:02+00:00",
+                    "id": 148395,
+                    "title": "And the Hero Will Drown",
+                    "available": true,
+                    "durationMs": 191100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 54416,
+                            "name": "Story Of The Year",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14381,
+                            "title": "Page Avenue",
+                            "type": null,
+                            "releaseDate": "2003-09-16T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-28T15:41:12+00:00",
+                    "id": 317671,
+                    "title": "Stacy's Mom",
+                    "available": true,
+                    "durationMs": 198080,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 43983,
+                            "name": "Fountains of Wayne",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 44940,
+                            "title": "Welcome Interstate Managers",
+                            "type": null,
+                            "releaseDate": "2003-06-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-28T14:48:36+00:00",
+                    "id": 135775,
+                    "title": "Born for This",
+                    "available": true,
+                    "durationMs": 238620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 49430,
+                            "name": "Paramore",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21360,
+                            "title": "Riot!",
+                            "type": null,
+                            "releaseDate": "2007-06-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-28T14:47:03+00:00",
+                    "id": 2204704,
+                    "title": "Memories",
+                    "available": true,
+                    "durationMs": 205530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 45303,
+                            "name": "Panic! At The Disco",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 218478,
+                            "title": "Vices & Virtues",
+                            "type": null,
+                            "releaseDate": "2011-03-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-28T14:35:15+00:00",
+                    "id": 135046,
+                    "title": "Red Flag",
+                    "available": true,
+                    "durationMs": 198170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 44167,
+                            "name": "Billy Talent",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2291897,
+                            "title": "Hits",
+                            "type": null,
+                            "releaseDate": "2014-10-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-28T14:19:42+00:00",
+                    "id": 5886527,
+                    "title": "May 16",
+                    "available": true,
+                    "durationMs": 177940,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 316749,
+                            "name": "Lagwagon",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3122451,
+                            "title": "Let's Talk About Feelings",
+                            "type": null,
+                            "releaseDate": "1998-11-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-07-25T19:03:52+00:00",
+                    "id": 35931198,
+                    "title": "До свидания...",
+                    "available": true,
+                    "durationMs": 223970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 218099,
+                            "name": "Земфира",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4502794,
+                            "title": "До свидания...",
+                            "type": null,
+                            "releaseDate": null
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 93358023,
+        "login": "FobosShadow94",
+        "name": "FobosShadow",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "62.8991"
+}

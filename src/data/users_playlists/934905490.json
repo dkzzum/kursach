@@ -1,0 +1,27 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.1e787e91-92e3-4a9c-aca9-504dbeeaa831",
+            "link": "https://music.yandex.ru/playlists/lk.1e787e91-92e3-4a9c-aca9-504dbeeaa831",
+            "kind": 3,
+            "available": false,
+            "trackCount": 0,
+            "visibility": "public",
+            "collective": false,
+            "revision": 2,
+            "created": "2024-01-30T17:56:29+00:00",
+            "modified": "2024-01-30T17:56:31+00:00",
+            "isBanner": false,
+            "tracks": []
+        }
+    },
+    "owner": {
+        "uid": 934905490,
+        "login": "madness.oldster",
+        "name": "madness.oldster",
+        "sex": "unknown",
+        "verified": false
+    },
+    "rating": "63.1136"
+}

@@ -1,0 +1,192 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.3e169266-1c94-41c2-bc1c-43bf0c5d3ec8",
+            "link": "https://music.yandex.ru/playlists/lk.3e169266-1c94-41c2-bc1c-43bf0c5d3ec8",
+            "kind": 3,
+            "available": true,
+            "trackCount": 6,
+            "visibility": "public",
+            "collective": false,
+            "revision": 12,
+            "created": "2018-02-10T19:50:55+00:00",
+            "modified": "2018-10-18T18:25:34+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2018-10-18T18:12:03+00:00",
+                    "id": 21696786,
+                    "title": "Shooting Stars",
+                    "available": true,
+                    "durationMs": 235800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 631662,
+                            "name": "Bag Raiders",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4418828,
+                            "title": "Bag Raiders",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2012-03-30T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2018-10-18T08:48:08+00:00",
+                    "id": 23929070,
+                    "title": "Revel in Your Time",
+                    "available": true,
+                    "durationMs": 251110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3723110,
+                            "name": "GUNSHIP",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 767532,
+                            "name": "Miami Nights 1984",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2775295,
+                            "title": "GUNSHIP",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2015-07-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2018-10-18T08:47:27+00:00",
+                    "id": 103018,
+                    "title": "Relax, Take It Easy",
+                    "available": true,
+                    "durationMs": 219950,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17373,
+                            "name": "MIKA",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9653,
+                            "title": "Relax / Lollipop Bundle",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2007-12-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2018-07-25T14:33:32+00:00",
+                    "id": 41862623,
+                    "title": "All For You",
+                    "available": true,
+                    "durationMs": 219630,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21239327,
+                            "name": "Olly Alexander (Years & Years)",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 21239326,
+                            "name": "Olly Alexander",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1014863,
+                            "name": "Years & Years",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6856861,
+                            "title": "Palo Santo",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2019-02-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2018-02-27T17:06:37+00:00",
+                    "id": 30917800,
+                    "title": "Whole Heart",
+                    "available": true,
+                    "durationMs": 225200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4125777,
+                            "name": "GRYFFIN",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1632596,
+                            "name": "Bipolar Sunshine",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3741519,
+                            "title": "Whole Heart",
+                            "type": "single",
+                            "genre": "indie",
+                            "releaseDate": "2016-08-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2018-02-27T17:06:37+00:00",
+                    "id": 24522533,
+                    "title": "Mountain at My Gates",
+                    "available": true,
+                    "durationMs": 244290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64169,
+                            "name": "Foals",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13767036,
+                            "title": "What Went Down",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-08-28T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 470243724,
+        "login": "acousticsea",
+        "name": "acousticsea",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "66.9863"
+}

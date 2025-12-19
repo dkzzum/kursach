@@ -1,0 +1,1606 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.ff77d389-6456-4651-a407-4ee141ddbb3c",
+            "link": "https://music.yandex.ru/playlists/lk.ff77d389-6456-4651-a407-4ee141ddbb3c",
+            "kind": 3,
+            "available": true,
+            "trackCount": 66,
+            "visibility": "public",
+            "collective": false,
+            "revision": 120,
+            "created": "2021-07-31T13:47:43+00:00",
+            "modified": "2025-10-25T23:08:12+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-10-25T23:08:12+00:00",
+                    "id": 43410088,
+                    "title": "Не под этим солнцем",
+                    "available": true,
+                    "durationMs": 234490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 31218,
+                            "name": "БАНД'ЭРОС",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1610952,
+                            "title": "Кундалини",
+                            "type": null,
+                            "releaseDate": "2012-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-13T10:54:10+00:00",
+                    "id": 16298499,
+                    "title": "Dernière danse",
+                    "available": true,
+                    "durationMs": 213490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 188209,
+                            "name": "Indila",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2352556,
+                            "title": "Mini World",
+                            "type": null,
+                            "releaseDate": "2014-11-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-07T22:52:58+00:00",
+                    "id": 91340238,
+                    "title": "Дом Периньон",
+                    "available": true,
+                    "durationMs": 174840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4952161,
+                            "name": "Пошлая Молли",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3185166,
+                            "name": "Элджей",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18170107,
+                            "title": "Дом Периньон",
+                            "type": "single",
+                            "releaseDate": "2021-09-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-07T21:44:18+00:00",
+                    "id": 107773575,
+                    "title": "#HABIBATI",
+                    "available": true,
+                    "durationMs": 153000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4952161,
+                            "name": "Пошлая Молли",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 7269477,
+                            "name": "HOFMANNITA",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23686909,
+                            "title": "#HABIBATI",
+                            "type": "single",
+                            "releaseDate": "2022-10-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-22T11:19:57+00:00",
+                    "id": 126850921,
+                    "title": "Шоколадка",
+                    "available": true,
+                    "durationMs": 168890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9006017,
+                            "name": "Минаева",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31577846,
+                            "title": "Шоколадка",
+                            "type": "single",
+                            "releaseDate": "2024-06-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-29T23:21:38+00:00",
+                    "id": 420960,
+                    "title": "Twist in My Sobriety",
+                    "available": true,
+                    "durationMs": 290780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 72271,
+                            "name": "Tanita Tikaram",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1598374,
+                            "title": "The Best of Tanita Tikaram",
+                            "type": null,
+                            "releaseDate": "1988-09-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-29T22:52:15+00:00",
+                    "id": 35544143,
+                    "title": "I Will Survive",
+                    "available": true,
+                    "durationMs": 225780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4530,
+                            "name": "Gloria Gaynor",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4437707,
+                            "title": "70's Love",
+                            "type": "compilation",
+                            "releaseDate": "2017-06-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-29T22:25:57+00:00",
+                    "id": 20878422,
+                    "title": "Ольга",
+                    "available": true,
+                    "durationMs": 299290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 189548,
+                            "name": "Гарик Сукачёв",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 189550,
+                            "name": "Неприкасаемые",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2384375,
+                            "title": "Лучшее, Ч. 1",
+                            "type": null,
+                            "releaseDate": "2022-03-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-24T09:11:24+00:00",
+                    "id": 14309434,
+                    "title": "Kangaroo Court",
+                    "available": true,
+                    "durationMs": 223160,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1437490,
+                            "name": "Capital Cities",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1596658,
+                            "name": "Sebu Simonian",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 501979,
+                            "name": "Ryan Merchant",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1953677,
+                            "title": "In A Tidal Wave Of Mystery",
+                            "type": null,
+                            "releaseDate": "2014-05-07T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-22T11:28:14+00:00",
+                    "id": 133951876,
+                    "title": "Посмотри в глаза",
+                    "available": true,
+                    "durationMs": 145430,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21022190,
+                            "name": "BEARWOLF",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34418842,
+                            "title": "Посмотри в глаза",
+                            "type": "single",
+                            "releaseDate": "2024-12-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-30T15:19:31+00:00",
+                    "id": 79177545,
+                    "title": "Follow You",
+                    "available": true,
+                    "durationMs": 175640,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 675068,
+                            "name": "Imagine Dragons",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 26456028,
+                            "title": "Mercury - Acts 1 & 2",
+                            "type": null,
+                            "releaseDate": "2022-07-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-30T07:44:57+00:00",
+                    "id": 65484352,
+                    "title": "Femme Like U",
+                    "available": true,
+                    "durationMs": 137890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7494976,
+                            "name": "Monaldin",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6294505,
+                            "name": "Emma Peters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10598920,
+                            "title": "Femme Like U",
+                            "type": "single",
+                            "releaseDate": "2020-11-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-30T07:40:38+00:00",
+                    "id": 6024172,
+                    "title": "На берегу безымянной реки",
+                    "available": true,
+                    "durationMs": 254460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41138,
+                            "name": "Nautilus Pompilius",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3113823,
+                            "title": "Серебряный век",
+                            "type": null,
+                            "releaseDate": "2015-12-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-30T07:39:09+00:00",
+                    "id": 96666134,
+                    "title": "Do It To It",
+                    "available": true,
+                    "durationMs": 207360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6123392,
+                            "name": "ACRAZE",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19825400,
+                            "title": "Countdown 2022",
+                            "type": "compilation",
+                            "releaseDate": "2021-12-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-30T07:26:36+00:00",
+                    "id": 9747971,
+                    "title": "Runaway",
+                    "available": true,
+                    "durationMs": 140860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 25435,
+                            "name": "Del Shannon",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 753619,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "releaseDate": "2013-02-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-26T11:43:14+00:00",
+                    "id": 137258881,
+                    "title": "i like the way you kiss me",
+                    "available": true,
+                    "durationMs": 142590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 23936580,
+                            "name": "Artemas Russia",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35843751,
+                            "title": "i like the way you kiss me",
+                            "type": "single",
+                            "releaseDate": "2025-03-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-21T07:04:02+00:00",
+                    "id": 115841300,
+                    "title": "Flowers",
+                    "available": true,
+                    "durationMs": 201540,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17847647,
+                            "name": "Daciva",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37555112,
+                            "title": "Flowers",
+                            "type": "single",
+                            "releaseDate": "2025-07-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-28T12:29:11+00:00",
+                    "id": 123665488,
+                    "title": "Amathole",
+                    "available": true,
+                    "durationMs": 165850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7918181,
+                            "name": "Joezi",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4056159,
+                            "name": "Lizwi",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30197498,
+                            "title": "Amathole",
+                            "type": "single",
+                            "releaseDate": "2024-03-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-28T12:28:44+00:00",
+                    "id": 135130357,
+                    "title": "Понедельник",
+                    "available": true,
+                    "durationMs": 125620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4620935,
+                            "name": "Dreams Shadow",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34947585,
+                            "title": "Понедельник",
+                            "type": "single",
+                            "releaseDate": "2025-01-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-28T12:26:04+00:00",
+                    "id": 109844406,
+                    "title": "Колыбельная",
+                    "available": true,
+                    "durationMs": 255730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9814706,
+                            "name": "Белолуна",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24332672,
+                            "title": "В девках быть",
+                            "type": null,
+                            "releaseDate": "2022-12-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-28T12:23:56+00:00",
+                    "id": 122395705,
+                    "title": "Ali Ali",
+                    "available": true,
+                    "durationMs": 124000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12355480,
+                            "name": "Diorange",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 188157,
+                            "name": "A.R.Rahman",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 2762792,
+                            "name": "Nooran Sisters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29611867,
+                            "title": "Ali Ali",
+                            "type": "single",
+                            "releaseDate": "2023-06-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-28T12:20:53+00:00",
+                    "id": 131858250,
+                    "title": "Tava Aqui",
+                    "available": true,
+                    "durationMs": 163000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4925859,
+                            "name": "French Fuse",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 22735222,
+                            "name": "Ruan Vitor Vaqueirinho",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33577669,
+                            "title": "Tava Aqui",
+                            "type": "single",
+                            "releaseDate": "2024-10-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-28T12:16:32+00:00",
+                    "id": 136848644,
+                    "title": "Homay",
+                    "available": true,
+                    "durationMs": 244660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 23765954,
+                            "name": "AY YOLA",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38395257,
+                            "title": "Ural Batyr",
+                            "type": null,
+                            "releaseDate": "2025-10-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-26T15:32:51+00:00",
+                    "id": 37802393,
+                    "title": "Одинокая птица",
+                    "available": true,
+                    "durationMs": 283480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41145,
+                            "name": "Вячеслав Бутусов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4801605,
+                            "title": "Гудбай, Америка!",
+                            "type": null,
+                            "releaseDate": "2017-11-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-11T13:23:16+00:00",
+                    "id": 16431037,
+                    "title": "Пиропо  Maлaгеньo (Фламенко)",
+                    "available": true,
+                    "durationMs": 130280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2711686,
+                            "name": "Испанское Фламенко",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1798258,
+                            "title": "Фламенко",
+                            "type": null,
+                            "releaseDate": "2014-02-21T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-25T13:59:54+00:00",
+                    "id": 96089,
+                    "title": "Song 2",
+                    "available": true,
+                    "durationMs": 121880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36807,
+                            "name": "Blur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31140,
+                            "title": "Blur: The Best Of",
+                            "type": null,
+                            "releaseDate": "2000-10-23T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-25T13:02:15+00:00",
+                    "id": 214488,
+                    "title": "On Mercury",
+                    "available": true,
+                    "durationMs": 207660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-25T13:02:15+00:00",
+                    "id": 60120,
+                    "title": "Die, Die My Darling",
+                    "available": true,
+                    "durationMs": 146560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3121,
+                            "name": "Metallica",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4981,
+                            "title": "Garage Inc.",
+                            "type": null,
+                            "releaseDate": "2008-08-18T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-09-20T14:28:24+00:00",
+                    "id": 29238706,
+                    "title": "Дурак и молния",
+                    "available": true,
+                    "durationMs": 114330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10101,
+                            "title": "Камнем по голове",
+                            "type": null,
+                            "releaseDate": "1996-05-24T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-09T14:52:15+00:00",
+                    "id": 50688539,
+                    "title": "Северный флот",
+                    "available": true,
+                    "durationMs": 130770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7019819,
+                            "title": "Бунт на корабле",
+                            "type": null,
+                            "releaseDate": "2004-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-09T14:52:15+00:00",
+                    "id": 29213423,
+                    "title": "Отражение",
+                    "available": true,
+                    "durationMs": 332770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10253,
+                            "title": "Продавец кошмаров",
+                            "type": null,
+                            "releaseDate": "2006-05-24T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-03-10T12:53:08+00:00",
+                    "id": 50688576,
+                    "title": "Воспоминания о былой любви",
+                    "available": true,
+                    "durationMs": 295740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7019820,
+                            "title": "Как в старой сказке",
+                            "type": null,
+                            "releaseDate": "2001-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-02-18T13:07:45+00:00",
+                    "id": 32745361,
+                    "title": "Страна чудес",
+                    "available": true,
+                    "durationMs": 251970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41120,
+                            "name": "СерьГа",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 302312,
+                            "title": "Страна чудес",
+                            "type": null,
+                            "releaseDate": "2000-10-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-03-28T19:04:27+00:00",
+                    "id": 56204557,
+                    "title": "Dance Monkey",
+                    "available": true,
+                    "durationMs": 209430,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7847834,
+                            "name": "Tones And I",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16852325,
+                            "title": "Welcome To The Madhouse",
+                            "type": null,
+                            "releaseDate": "2021-07-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-02-14T20:58:04+00:00",
+                    "id": 9769,
+                    "title": "I Was Made For Lovin' You",
+                    "available": true,
+                    "durationMs": 268440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7147,
+                            "name": "Kiss",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 85617,
+                            "title": "KISS Box Set",
+                            "type": null,
+                            "releaseDate": "2001-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-02-05T09:17:36+00:00",
+                    "id": 91824655,
+                    "title": "Михаил Булгаков. «Записки юного врача». Часть 4",
+                    "available": true,
+                    "durationMs": 1737020,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13276279,
+                            "name": "Вячеслав Манылов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18332331,
+                            "title": "Михаил Булгаков. «Записки юного врача»",
+                            "type": "audiobook",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:13:39+00:00",
+                    "id": 672465,
+                    "title": "Dust in the wind",
+                    "available": true,
+                    "durationMs": 203180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 171302,
+                            "name": "Kansas",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36674865,
+                            "title": "Dust in the wind",
+                            "type": "single",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:05:23+00:00",
+                    "id": 78057,
+                    "title": "Friday I'm In Love",
+                    "available": true,
+                    "durationMs": 214400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8143,
+                            "name": "The Cure",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2505679,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "releaseDate": "2001-11-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:04:45+00:00",
+                    "id": 27374644,
+                    "title": "Let It Be",
+                    "available": true,
+                    "durationMs": 243010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 35004,
+                            "name": "The Beatles",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3277368,
+                            "title": "Let It Be",
+                            "type": null,
+                            "releaseDate": "1970-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:03:48+00:00",
+                    "id": 362085,
+                    "title": "Space Oddity",
+                    "available": true,
+                    "durationMs": 316650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4650,
+                            "name": "David Bowie",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2335682,
+                            "title": "Nothing Has Changed (The Best of David Bowie)",
+                            "type": null,
+                            "releaseDate": "2014-11-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:03:41+00:00",
+                    "id": 147965,
+                    "title": "Losing My Religion",
+                    "available": true,
+                    "durationMs": 267730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48108,
+                            "name": "R.E.M.",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3385153,
+                            "title": "In Time: The Best Of R.E.M. 1988-2003",
+                            "type": null,
+                            "releaseDate": "2003-08-27T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:03:26+00:00",
+                    "id": 1710798,
+                    "title": "Under Pressure",
+                    "available": true,
+                    "durationMs": 244740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 79215,
+                            "name": "Queen",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4650,
+                            "name": "David Bowie",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 227551,
+                            "title": "The Platinum Collection",
+                            "type": null,
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-01-02T12:03:20+00:00",
+                    "id": 52100,
+                    "title": "Don't Speak",
+                    "available": true,
+                    "durationMs": 262740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9524,
+                            "name": "No Doubt",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21082088,
+                            "title": "The Singles Collection",
+                            "type": null,
+                            "releaseDate": "2003-10-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-29T12:58:03+00:00",
+                    "id": 73641930,
+                    "title": "Прикоснись ко мне",
+                    "available": true,
+                    "durationMs": 249610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2701786,
+                            "name": "ZOLOTO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12964201,
+                            "title": "Всё вернётся",
+                            "type": null,
+                            "releaseDate": "2020-12-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-29T12:57:45+00:00",
+                    "id": 94557103,
+                    "title": "Мы сегодня дома",
+                    "available": true,
+                    "durationMs": 252000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2840412,
+                            "name": "Nikola Negorod",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19182034,
+                            "title": "Мы сегодня дома",
+                            "type": "single",
+                            "releaseDate": "2021-11-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-29T12:56:14+00:00",
+                    "id": 43645261,
+                    "title": "True Detective",
+                    "available": true,
+                    "durationMs": 165500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 347043,
+                            "name": "TV Themes",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8483244,
+                            "title": "TV Blinders - The Great Crime Drama TV Themes",
+                            "type": null,
+                            "releaseDate": "2019-07-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-26T09:19:05+00:00",
+                    "id": 44564617,
+                    "title": "Big Little Lies",
+                    "available": true,
+                    "durationMs": 94440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 347043,
+                            "name": "TV Themes",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8483244,
+                            "title": "TV Blinders - The Great Crime Drama TV Themes",
+                            "type": null,
+                            "releaseDate": "2019-07-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-01T08:14:59+00:00",
+                    "id": 148340,
+                    "title": "Road Trippin'",
+                    "available": true,
+                    "durationMs": 204970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-01T08:14:59+00:00",
+                    "id": 214484,
+                    "title": "The Zephyr Song",
+                    "available": true,
+                    "durationMs": 231930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-01T08:06:20+00:00",
+                    "id": 29512999,
+                    "title": "Goodbye Angels",
+                    "available": true,
+                    "durationMs": 268730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3550565,
+                            "title": "The Getaway",
+                            "type": null,
+                            "releaseDate": "2016-06-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-08-21T08:49:51+00:00",
+                    "id": 69269,
+                    "title": "Kryptonite",
+                    "available": true,
+                    "durationMs": 234600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3633,
+                            "name": "3 Doors Down",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6929565,
+                            "title": "The Better Life",
+                            "type": null,
+                            "releaseDate": "2000-02-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-03-22T12:48:30+00:00",
+                    "id": 29513000,
+                    "title": "Sick Love",
+                    "available": true,
+                    "durationMs": 221440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3550565,
+                            "title": "The Getaway",
+                            "type": null,
+                            "releaseDate": "2016-06-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-03-22T12:48:30+00:00",
+                    "id": 148337,
+                    "title": "Otherside",
+                    "available": true,
+                    "durationMs": 255370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-03-12T11:18:21+00:00",
+                    "id": 1264345,
+                    "title": "Hey Now Now",
+                    "available": true,
+                    "durationMs": 210460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 317356,
+                            "name": "The Cloud Room",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 134661,
+                            "title": "The Cloud Room",
+                            "type": null,
+                            "releaseDate": "2024-02-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-01-31T15:37:24+00:00",
+                    "id": 17785183,
+                    "title": "Mind Over Matter",
+                    "available": true,
+                    "durationMs": 244690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 421678,
+                            "name": "Young the Giant",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1966865,
+                            "title": "Mind Over Matter",
+                            "type": null,
+                            "releaseDate": "2014-01-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-10-19T08:06:53+00:00",
+                    "id": 818304,
+                    "title": "Firework",
+                    "available": true,
+                    "durationMs": 227890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6856,
+                            "name": "Katy Perry",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 421063,
+                            "title": "Teenage Dream: The Complete Confection",
+                            "type": null,
+                            "releaseDate": "2012-03-23T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-10-13T08:39:02+00:00",
+                    "id": 805089,
+                    "title": "Sail",
+                    "available": true,
+                    "durationMs": 259090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 232608,
+                            "name": "AWOLNATION",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14023549,
+                            "title": "Megalithic Symphony",
+                            "type": null,
+                            "releaseDate": "2021-03-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-09-04T14:40:11+00:00",
+                    "id": 28932675,
+                    "title": "Dark Necessities",
+                    "available": true,
+                    "durationMs": 302000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3550565,
+                            "title": "The Getaway",
+                            "type": null,
+                            "releaseDate": "2016-06-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-09-04T14:32:39+00:00",
+                    "id": 2690884,
+                    "title": "Ethiopia",
+                    "available": true,
+                    "durationMs": 230700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-09-04T14:30:38+00:00",
+                    "id": 52603584,
+                    "title": "Under the Bridge",
+                    "available": true,
+                    "durationMs": 290530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8374576,
+                            "title": "Red Hot Chilli Peppers Anthology Vol .2",
+                            "type": null,
+                            "releaseDate": "2019-08-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-09-04T14:28:37+00:00",
+                    "id": 214489,
+                    "title": "Can't Stop",
+                    "available": true,
+                    "durationMs": 269000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36833,
+                            "name": "Red Hot Chili Peppers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2390201,
+                            "title": "The Studio Album Collection 1991-2011",
+                            "type": null,
+                            "releaseDate": "2014-12-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-08-28T13:23:28+00:00",
+                    "id": 354251,
+                    "title": "If There Is Something",
+                    "available": true,
+                    "durationMs": 394490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 37076,
+                            "name": "Roxy Music",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6068240,
+                            "name": "Griff Rhys Jones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35644,
+                            "title": "The Early Years",
+                            "type": null,
+                            "releaseDate": "2003-03-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-08-25T09:26:25+00:00",
+                    "id": 139086,
+                    "title": "Starlight",
+                    "available": true,
+                    "durationMs": 243290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12048,
+                            "name": "Muse",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 50197,
+                            "title": "Black Holes and Revelations",
+                            "type": null,
+                            "releaseDate": "2006-06-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-08-25T09:10:43+00:00",
+                    "id": 31581264,
+                    "title": "Song To Say Goodbye",
+                    "available": true,
+                    "durationMs": 233210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36830,
+                            "name": "Placebo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3830779,
+                            "title": "A Place For Us To Dream",
+                            "type": null,
+                            "releaseDate": "2016-10-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-08-25T09:07:02+00:00",
+                    "id": 765627,
+                    "title": "Je veux",
+                    "available": true,
+                    "durationMs": 215930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 226412,
+                            "name": "Zaz",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5413603,
+                            "title": "Zaz",
+                            "type": null,
+                            "releaseDate": "2010-05-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-08-25T09:04:40+00:00",
+                    "id": 44137831,
+                    "title": "Old Yellow Bricks",
+                    "available": true,
+                    "durationMs": 193190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 208167,
+                            "name": "Arctic Monkeys",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4246651,
+                            "title": "Favourite Worst Nightmare",
+                            "type": null,
+                            "releaseDate": "2007-04-22T00:00:00+04:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 862394464,
+        "login": "Lanokh08",
+        "name": "Лена А",
+        "sex": "female",
+        "verified": false
+    },
+    "rating": "64.4578"
+}

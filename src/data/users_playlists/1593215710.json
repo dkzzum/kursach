@@ -1,0 +1,1530 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.1bdd3c9a-e899-45a4-a38a-e830256539a2",
+            "link": "https://music.yandex.ru/playlists/lk.1bdd3c9a-e899-45a4-a38a-e830256539a2",
+            "kind": 3,
+            "available": true,
+            "trackCount": 58,
+            "visibility": "public",
+            "collective": false,
+            "revision": 324,
+            "created": "2022-05-21T15:52:20+00:00",
+            "modified": "2025-11-11T02:11:39+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-09-14T16:25:50+00:00",
+                    "id": 129765428,
+                    "title": "Chipi Chipi Chapa Chapa",
+                    "available": true,
+                    "durationMs": 221780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15673560,
+                            "name": "Akdas Hayat",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32737922,
+                            "title": "Chipi Chipi Chapa Chapa",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2024-01-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-14T16:25:13+00:00",
+                    "id": 28123381,
+                    "title": "Звезда по имени Солнце",
+                    "available": true,
+                    "durationMs": 190560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 953565,
+                            "name": "Виктор Цой",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3359369,
+                            "title": "Игла Remix",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": "2010-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-14T16:25:12+00:00",
+                    "id": 64332821,
+                    "title": "Никого не жалко (Из к/ф \"Бумер\")",
+                    "available": true,
+                    "durationMs": 200820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 168852,
+                            "name": "Сергей Шнуров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10321150,
+                            "title": "Лучшее из к/ф \"Бумер\" и \"Бумер. Фильм второй\"",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2014-11-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-14T16:24:31+00:00",
+                    "id": 108530792,
+                    "title": "Fly Me to the Moon",
+                    "available": true,
+                    "durationMs": 131840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11187843,
+                            "name": "Hajilo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23950032,
+                            "title": "Fly Me to the Moon",
+                            "type": "single",
+                            "genre": "lounge",
+                            "releaseDate": "2022-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-14T03:52:42+00:00",
+                    "id": 628727,
+                    "title": "Billie Jean",
+                    "available": true,
+                    "durationMs": 293960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 972,
+                            "name": "Michael Jackson",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16899660,
+                            "title": "Popular Classics",
+                            "type": "compilation",
+                            "genre": "alternative",
+                            "releaseDate": "2021-07-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T06:54:48+00:00",
+                    "id": 18002572,
+                    "title": "Осенний сон",
+                    "available": true,
+                    "durationMs": 310260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2965995,
+                            "name": "Exemplary Orchestra of Interior Forces of USSR MOI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 2646459,
+                            "name": "Victor Makarov",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2064894,
+                            "title": "Старинные вальсы",
+                            "type": "compilation",
+                            "genre": "classical",
+                            "releaseDate": "2004-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T06:52:02+00:00",
+                    "id": 43144830,
+                    "title": "Я люблю вас так безумно",
+                    "available": true,
+                    "durationMs": 145810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 700754,
+                            "name": "Вадим Козин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12346947,
+                            "title": "Великие исполнители России XX века: Лучшие романсы",
+                            "type": "compilation",
+                            "genre": "folk",
+                            "releaseDate": "2006-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-19T11:33:53+00:00",
+                    "id": 132126332,
+                    "title": "Burning Desires",
+                    "available": true,
+                    "durationMs": 138750,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12809713,
+                            "name": "Sān-Z",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6630633,
+                            "name": "HOYO-MiX",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33685275,
+                            "title": "Burning Desires",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-10-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-10T07:54:37+00:00",
+                    "id": 9641075,
+                    "title": "Вальс цветов из балета «Щелкунчик»",
+                    "available": true,
+                    "durationMs": 436790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1465449,
+                            "name": "Большой симфонический оркестр им. П.И. Чайковского",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 112995,
+                            "name": "Владимир Федосеев",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1551,
+                            "name": "Пётр Ильич Чайковский",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1025670,
+                            "title": "The Russian Souvenir",
+                            "type": null,
+                            "genre": "classical",
+                            "releaseDate": "2008-01-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-26T11:33:06+00:00",
+                    "id": 63991274,
+                    "title": "Интернационал",
+                    "available": true,
+                    "durationMs": 237560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3712766,
+                            "name": "Академический большой хор Всесоюзного радио и Центрального телевидения",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6206834,
+                            "name": "Александр Гаук",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 2558068,
+                            "name": "Большой симфонический оркестр Всесоюзного радио и Центрального телевидения",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10230098,
+                            "title": "Песни российского пролетариата",
+                            "type": "compilation",
+                            "genre": "folk",
+                            "releaseDate": "1998-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T14:07:10+00:00",
+                    "id": 105572298,
+                    "title": "Imperial Japanese March",
+                    "available": true,
+                    "durationMs": 146750,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 16980529,
+                            "name": "Hikaru Matsumoto",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22881007,
+                            "title": "Imperial Japanese March",
+                            "type": "single",
+                            "genre": "folk",
+                            "releaseDate": "2022-06-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-30T16:01:06+00:00",
+                    "id": 33095671,
+                    "title": "Let's Go Sunning",
+                    "available": true,
+                    "durationMs": 104060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 228371,
+                            "name": "Jack Shaindlin",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4041097,
+                            "title": "Dance Orchestra",
+                            "type": null,
+                            "genre": "soundtrack",
+                            "releaseDate": "1998-04-22T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-27T14:03:48+00:00",
+                    "id": 109614371,
+                    "title": "Набоков Владимир. «Лолита». Часть 2",
+                    "available": true,
+                    "durationMs": 119170,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 4769448,
+                            "name": "Алексей Багдасаров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24278831,
+                            "title": "Набоков Владимир. «Лолита»",
+                            "type": "audiobook",
+                            "genre": "fiction",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-27T13:52:17+00:00",
+                    "id": 109614369,
+                    "title": "Набоков Владимир. «Лолита». Часть 1",
+                    "available": true,
+                    "durationMs": 612170,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 4769448,
+                            "name": "Алексей Багдасаров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24278831,
+                            "title": "Набоков Владимир. «Лолита»",
+                            "type": "audiobook",
+                            "genre": "fiction",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-14T18:52:28+00:00",
+                    "id": 48576299,
+                    "title": "Bad Piggies Theme",
+                    "available": true,
+                    "durationMs": 160670,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6595254,
+                            "name": "Ilmari Hakkola",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6621085,
+                            "title": "Bad Piggies",
+                            "type": "compilation",
+                            "genre": "soundtrack",
+                            "releaseDate": "2012-09-27T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-14T18:44:19+00:00",
+                    "id": 241314,
+                    "title": "Wedding March (Entr'acte to Act 5)",
+                    "available": true,
+                    "durationMs": 309130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5487,
+                            "name": "Андре Превин",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 15273,
+                            "name": "Феликс Мендельсон",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 44308,
+                            "title": "Mendelssohn-Bartholdy: Ein Sommernachtstraum [A Midsummer Night's Dream] Opp. 21 and 61 (incidental music)",
+                            "type": null,
+                            "genre": "classicalmasterpieces",
+                            "releaseDate": "1977-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-14T18:42:34+00:00",
+                    "id": 36220661,
+                    "title": "Валькирия, WWV 86B, действие III: Полёт валькирий",
+                    "available": true,
+                    "durationMs": 283500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 306177,
+                            "name": "Евгений Светланов",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 2776183,
+                            "name": "Государственный симфонический оркестр СССР",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 27958,
+                            "name": "Рихард Вагнер",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9526010,
+                            "title": "Вагнер: Симфонические фрагменты из опер",
+                            "type": null,
+                            "genre": "classical",
+                            "releaseDate": "1981-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-14T18:42:19+00:00",
+                    "id": 16480302,
+                    "title": "Serenade No. 13 for Strings in G Major, K. 525 \"Eine Kleine Nachtmusik\": I. Allegro",
+                    "available": true,
+                    "durationMs": 333190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9170,
+                            "name": "Вольфганг Амадей Моцарт",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 643501,
+                            "name": "Apollo Symphony Orchestra",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1856772,
+                            "title": "Classical Masters: The Finest Works from the Most Influential Classic Composers",
+                            "type": "compilation",
+                            "genre": "classical",
+                            "releaseDate": "2014-03-27T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-18T20:01:04+00:00",
+                    "id": 78305681,
+                    "title": "Откат",
+                    "available": true,
+                    "durationMs": 249020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 155946,
+                            "name": "DJ SMASH",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1598994,
+                            "name": "Семён Слепаков",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13986177,
+                            "title": "Новый мир",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2012-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-18T19:58:54+00:00",
+                    "id": 107981542,
+                    "title": "Бяки-буки",
+                    "available": true,
+                    "durationMs": 104670,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3098973,
+                            "name": "Надежда Бабкина",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23757846,
+                            "title": "Новые Бременские",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-31T19:27:46+00:00",
+                    "id": 91771837,
+                    "title": "Waterfront Dance",
+                    "available": true,
+                    "durationMs": 251970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9816053,
+                            "name": "Takako Mamiya",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18314287,
+                            "title": "82 Love Trip",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1982-11-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-20T11:25:07+00:00",
+                    "id": 5010761,
+                    "title": "Puttin' On the Ritz",
+                    "available": true,
+                    "durationMs": 114390,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 332307,
+                            "name": "Piano Piano",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1137,
+                            "name": "Ирвинг Берлин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 552414,
+                            "title": "Piano Instrumental",
+                            "type": null,
+                            "genre": "classical",
+                            "releaseDate": "2012-01-19T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-06T15:33:44+00:00",
+                    "id": 36816689,
+                    "title": "Звенит январская вьюга",
+                    "available": true,
+                    "durationMs": 183600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2717655,
+                            "name": "Нина Бродская",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4773760,
+                            "title": "Новогоднее застолье",
+                            "type": "compilation",
+                            "genre": "rusestrada",
+                            "releaseDate": "2013-12-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-06T15:31:12+00:00",
+                    "id": 107792228,
+                    "title": "Разговор со счастьем",
+                    "available": true,
+                    "durationMs": 155850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 233551,
+                            "name": "Валерий Золотухин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23757780,
+                            "title": "Иван Васильевич меняет профессию",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-13T16:25:59+00:00",
+                    "id": 3143581,
+                    "title": "Brother Louie",
+                    "available": true,
+                    "durationMs": 232360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 310975,
+                            "name": "Modern Group",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 333594,
+                            "title": "Modern Talking Mania",
+                            "type": null,
+                            "genre": "estrada",
+                            "releaseDate": "2010-03-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-13T16:24:05+00:00",
+                    "id": 16118658,
+                    "title": "When Johnny Comes Marching Home",
+                    "available": true,
+                    "durationMs": 95340,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1167454,
+                            "name": "The Lansdowne Orchestra",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 619096,
+                            "name": "Alfred Ralston",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 2658554,
+                            "name": "The George Mitchell Chorale",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1758389,
+                            "title": "The Blue and the Grey",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "1960-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-09T06:08:02+00:00",
+                    "id": 366853,
+                    "title": "Утренняя гимнастика",
+                    "available": true,
+                    "durationMs": 96900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 118708,
+                            "name": "Владимир Высоцкий",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37174,
+                            "title": "Концерты в Казани",
+                            "type": null,
+                            "genre": "rusbards",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-03-17T16:25:34+00:00",
+                    "id": 5480917,
+                    "title": "Piano Concerto No. 1 in B-Flat Minor, Op. 23: I. Allegro non troppo e molto maestoso - Allegro con spirito (excerpt)",
+                    "available": true,
+                    "durationMs": 175740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 503567,
+                            "name": "Tbilisi Symphony Orchestra",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6027419,
+                            "name": "Джансуг Кахидзе",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1551,
+                            "name": "Пётр Ильич Чайковский",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37168012,
+                            "title": "The Best Of Classic - Vol. 6",
+                            "type": "compilation",
+                            "genre": "classical",
+                            "releaseDate": "2025-05-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-03-17T16:22:42+00:00",
+                    "id": 15512620,
+                    "title": " Symphony No.5 In C Minor, Op.67 - 1. Allegro con brio",
+                    "available": true,
+                    "durationMs": 436790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 28523,
+                            "name": "Berliner Philharmoniker",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 83202,
+                            "name": "Герберт фон Караян",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 22233,
+                            "name": "Ludwig van Beethoven",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1713679,
+                            "title": "Beethoven: 9 Symphonies; Overtures",
+                            "type": null,
+                            "genre": "classicalmasterpieces",
+                            "releaseDate": "1993-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-03-17T16:19:56+00:00",
+                    "id": 1319511,
+                    "title": "Symphony No.40 In G-Minor 1st Mvt.",
+                    "available": true,
+                    "durationMs": 222980,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9170,
+                            "name": "Вольфганг Амадей Моцарт",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 138829,
+                            "title": "Mozart 1",
+                            "type": null,
+                            "genre": "classical",
+                            "releaseDate": "2009-06-29T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-03-17T16:19:25+00:00",
+                    "id": 36887039,
+                    "title": "Suite No. 2 in B Minor, BWV 1067: VII. Badinerie",
+                    "available": true,
+                    "durationMs": 95500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 92029,
+                            "name": "Bath Festival Orchestra",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 83212,
+                            "name": "Yehudi Menuhin",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1227,
+                            "name": "Johann Sebastian Bach",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4656419,
+                            "title": "Bach Orchestral Suites",
+                            "type": null,
+                            "genre": "classical",
+                            "releaseDate": "2017-08-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-03-15T13:59:19+00:00",
+                    "id": 1026248,
+                    "title": "A Wonderful Guy",
+                    "available": true,
+                    "durationMs": 115670,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 289765,
+                            "name": "Tex Beneke",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 116939,
+                            "title": "Tex Beneke And His Music In The Miller Mood",
+                            "type": null,
+                            "genre": "country",
+                            "releaseDate": "2006-01-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-02-08T14:52:04+00:00",
+                    "id": 46834585,
+                    "title": "Песня о жадном Билли (из м/ф «Остров сокровищ»)",
+                    "available": true,
+                    "durationMs": 147630,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6226779,
+                            "name": "Олег Шеременко",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3072534,
+                            "name": "Владимир Быстряков",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 6609824,
+                            "name": "артисты театра «Гротеск»",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6323142,
+                            "title": "Владимир Быстряков. Старый город в ритме дождя",
+                            "type": "compilation",
+                            "genre": "rusestrada",
+                            "releaseDate": "2018-12-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-21T16:51:43+00:00",
+                    "id": 91771834,
+                    "title": "Midnight Joke",
+                    "available": true,
+                    "durationMs": 288150,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9816053,
+                            "name": "Takako Mamiya",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18314287,
+                            "title": "82 Love Trip",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1982-11-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-11-13T08:42:04+00:00",
+                    "id": 20571016,
+                    "title": "Washington Post - Marching Music",
+                    "available": true,
+                    "durationMs": 152080,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3167862,
+                            "name": "Patriotic Fathers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2343253,
+                            "title": "4th of July",
+                            "type": null,
+                            "genre": null,
+                            "releaseDate": "2007-05-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-10-29T15:39:14+00:00",
+                    "id": 1516482,
+                    "title": "Maybe",
+                    "available": true,
+                    "durationMs": 185010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 28772,
+                            "name": "The Ink Spots",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 168293,
+                            "title": "If I Didn't Care",
+                            "type": "compilation",
+                            "genre": "rnb",
+                            "releaseDate": "2009-10-20T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-10-28T14:56:55+00:00",
+                    "id": 35778620,
+                    "title": "Песенка ни прочто, или что случилось в африке",
+                    "available": true,
+                    "durationMs": 122560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 118708,
+                            "name": "Владимир Высоцкий",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4477293,
+                            "title": "Новый звук",
+                            "type": null,
+                            "genre": "rusbards",
+                            "releaseDate": "2008-04-04T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-10-28T14:56:55+00:00",
+                    "id": 773594,
+                    "title": "Johnny Guitar",
+                    "available": true,
+                    "durationMs": 178420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3946,
+                            "name": "Peggy Lee",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 86261,
+                            "title": "Black Coffee: Best of the Decca Years",
+                            "type": null,
+                            "genre": "vocaljazz",
+                            "releaseDate": "1999-03-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:29+00:00",
+                    "id": 91862585,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 20",
+                    "available": true,
+                    "durationMs": 2270,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:29+00:00",
+                    "id": 91862594,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 22",
+                    "available": true,
+                    "durationMs": 2135630,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:29+00:00",
+                    "id": 91862600,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 23",
+                    "available": true,
+                    "durationMs": 1341050,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:29+00:00",
+                    "id": 91862602,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 24",
+                    "available": true,
+                    "durationMs": 1140070,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:29+00:00",
+                    "id": 91862605,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 25",
+                    "available": true,
+                    "durationMs": 2290,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862530,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 5",
+                    "available": true,
+                    "durationMs": 14180,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862532,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 6",
+                    "available": true,
+                    "durationMs": 2134900,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862533,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 7",
+                    "available": true,
+                    "durationMs": 1882560,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862534,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 8",
+                    "available": true,
+                    "durationMs": 2180,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862535,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 9",
+                    "available": true,
+                    "durationMs": 11460,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862537,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 10",
+                    "available": true,
+                    "durationMs": 1484440,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862542,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 11",
+                    "available": true,
+                    "durationMs": 1474550,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862548,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 12",
+                    "available": true,
+                    "durationMs": 2220,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862555,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 13",
+                    "available": true,
+                    "durationMs": 11620,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862557,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 14",
+                    "available": true,
+                    "durationMs": 1722590,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:58:08+00:00",
+                    "id": 91862564,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 15",
+                    "available": true,
+                    "durationMs": 1036450,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:57:48+00:00",
+                    "id": 91862524,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 2",
+                    "available": true,
+                    "durationMs": 2220140,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:57:48+00:00",
+                    "id": 91862526,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 3",
+                    "available": true,
+                    "durationMs": 1993690,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-07T16:57:48+00:00",
+                    "id": 91862527,
+                    "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)». Часть 4",
+                    "available": true,
+                    "durationMs": 1990,
+                    "type": "audiobook",
+                    "artists": {
+                        "1": {
+                            "id": 13288024,
+                            "name": "Дмитрий Шабров",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18343148,
+                            "title": "Артур Конан Дойл. «Приключения Шерлока Холмса и доктора Ватсона (Сборник)»",
+                            "type": "audiobook",
+                            "genre": "crimeandmystery",
+                            "releaseDate": "2019-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-06-14T17:30:49+00:00",
+                    "id": 46080909,
+                    "title": "Crimewave",
+                    "available": true,
+                    "durationMs": 258450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 49522,
+                            "name": "Crystal Castles",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38880752,
+                            "title": "Crystal Castles",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2008-03-18T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 1593215710,
+        "login": "vadimmmasloff",
+        "name": "Alver_ON",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "63.0141"
+}

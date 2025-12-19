@@ -1,0 +1,442 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.fc8b22e9-50f5-4450-a17e-5b961e0d4f44",
+            "link": "https://music.yandex.ru/playlists/lk.fc8b22e9-50f5-4450-a17e-5b961e0d4f44",
+            "kind": 3,
+            "available": true,
+            "trackCount": 16,
+            "visibility": "public",
+            "collective": false,
+            "revision": 18,
+            "created": "2022-03-25T10:08:57+00:00",
+            "modified": "2025-09-26T00:06:26+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-09-13T11:23:21+00:00",
+                    "id": 7315060,
+                    "title": "Perhaps, Perhaps, Perhaps",
+                    "available": true,
+                    "durationMs": 141410,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 681053,
+                            "name": "Halie Loren",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 773807,
+                            "title": "They Oughta Write a Song",
+                            "type": null,
+                            "genre": "vocaljazz",
+                            "releaseDate": "2008-11-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-13T07:38:35+00:00",
+                    "id": 10398268,
+                    "title": "Tu Vuó Fá L' Americano",
+                    "available": true,
+                    "durationMs": 183260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1609462,
+                            "name": "The Lucky Duckies",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1124803,
+                            "title": "Glamour & Nostalgia - Part Two",
+                            "type": null,
+                            "genre": "folk",
+                            "releaseDate": "2013-04-22T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-21T20:55:00+00:00",
+                    "id": 140287354,
+                    "title": "Армяне",
+                    "available": true,
+                    "durationMs": 104630,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 16801976,
+                            "name": "Jahaik",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 21342833,
+                            "name": "BI6GEST",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37103372,
+                            "title": "Армяне",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2025-06-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-21T20:44:09+00:00",
+                    "id": 120481313,
+                    "title": "ШАРАУТ",
+                    "available": true,
+                    "durationMs": 191520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 158454,
+                            "name": "GUF",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 9084675,
+                            "name": "BALLER",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 3971885,
+                            "name": "V $ X V PRiNCE",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28741738,
+                            "title": "ШАРАУТ",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2023-12-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-21T18:26:59+00:00",
+                    "id": 131947201,
+                    "title": "Веснушки",
+                    "available": true,
+                    "durationMs": 106590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8873506,
+                            "name": "Koles",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33612900,
+                            "title": "Веснушки",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2024-10-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-21T18:12:25+00:00",
+                    "id": 131484547,
+                    "title": "Постоянка",
+                    "available": true,
+                    "durationMs": 130530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9204165,
+                            "name": "Татем",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 9848241,
+                            "name": "Koles & Paha",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 19267126,
+                            "name": "Pritulenko",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33432733,
+                            "title": "Постоянка",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2024-09-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-06T17:50:24+00:00",
+                    "id": 111413368,
+                    "title": "Никогда НЕ",
+                    "available": true,
+                    "durationMs": 139500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8339778,
+                            "name": "Vspak",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24893161,
+                            "title": "Метаморфоз",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2023-03-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-10T16:55:22+00:00",
+                    "id": 111383136,
+                    "title": "Мужчинам не просто",
+                    "available": true,
+                    "durationMs": 183600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10059248,
+                            "name": "Анна Егоян",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24881606,
+                            "title": "Высшая точка чувств",
+                            "type": null,
+                            "genre": "folk",
+                            "releaseDate": "2020-10-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-10T16:35:31+00:00",
+                    "id": 66222387,
+                    "title": "Не встретимся снова",
+                    "available": true,
+                    "durationMs": 193560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6464104,
+                            "name": "Обильный",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5363584,
+                            "name": "Meekh",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28031460,
+                            "title": "2012-2021",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2022-10-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T19:22:57+00:00",
+                    "id": 37253970,
+                    "title": "Молчи и обнимай меня крепче",
+                    "available": true,
+                    "durationMs": 184380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5262098,
+                            "name": "Шура Кузнецова",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4714091,
+                            "title": "Молчи и обнимай меня крепче",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2015-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T19:20:37+00:00",
+                    "id": 93625673,
+                    "title": "Молодые мы",
+                    "available": true,
+                    "durationMs": 190240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5451801,
+                            "name": "Драгни",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18883344,
+                            "title": "Три осенние песни",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2021-10-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T19:17:50+00:00",
+                    "id": 25321242,
+                    "title": "В комнате цветных пелерин",
+                    "available": true,
+                    "durationMs": 172290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15520884,
+                            "name": "Марія Чайковська",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2983115,
+                            "title": "Целуй меня",
+                            "type": null,
+                            "genre": "rusbards",
+                            "releaseDate": "2015-11-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T19:15:39+00:00",
+                    "id": 74606437,
+                    "title": "Душевная",
+                    "available": true,
+                    "durationMs": 129390,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1556385,
+                            "name": "HENSY",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13050305,
+                            "title": "Душевная",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2020-12-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T19:13:11+00:00",
+                    "id": 112330683,
+                    "title": "Однажды",
+                    "available": true,
+                    "durationMs": 145710,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10996869,
+                            "name": "TEMNEE",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25237890,
+                            "title": "Однажды",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2023-03-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-04T18:31:35+00:00",
+                    "id": 112773424,
+                    "title": "Сестра",
+                    "available": true,
+                    "durationMs": 144720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 18194277,
+                            "name": "Айдос Кожахметов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25418006,
+                            "title": "Сестра",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2023-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-04T16:37:06+00:00",
+                    "id": 84670890,
+                    "title": "Ты была права",
+                    "available": true,
+                    "durationMs": 118350,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41191,
+                            "name": "Баста",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16081235,
+                            "title": "Ты была права",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2021-06-07T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 924071487,
+        "login": "arshak.chobanyan",
+        "name": "arshak chobanyan",
+        "sex": "unknown",
+        "verified": false
+    },
+    "rating": "65.8327"
+}

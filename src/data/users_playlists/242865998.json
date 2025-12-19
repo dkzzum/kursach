@@ -1,0 +1,27 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.4946e5b7-4809-4b8f-9fc7-6dac1e370c63",
+            "link": "https://music.yandex.ru/playlists/lk.4946e5b7-4809-4b8f-9fc7-6dac1e370c63",
+            "kind": 3,
+            "available": false,
+            "trackCount": 0,
+            "visibility": "public",
+            "collective": false,
+            "revision": 0,
+            "created": "2019-08-31T12:28:41+00:00",
+            "modified": "2019-08-31T15:37:04+00:00",
+            "isBanner": false,
+            "tracks": []
+        }
+    },
+    "owner": {
+        "uid": 242865998,
+        "login": "pavelzherdev7",
+        "name": "pavelzherdev7",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "68.4392"
+}

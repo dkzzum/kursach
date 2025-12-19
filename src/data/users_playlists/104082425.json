@@ -1,0 +1,4645 @@
+{
+    "playlists": {
+        "Литтл": {
+            "name": "Литтл",
+            "playlistUuid": "5c409d64-1efd-dce7-ac80-7245afc086d2",
+            "link": "https://music.yandex.ru/playlists/5c409d64-1efd-dce7-ac80-7245afc086d2",
+            "kind": 1000,
+            "available": true,
+            "trackCount": 102,
+            "visibility": "public",
+            "collective": false,
+            "revision": 6,
+            "created": "2021-05-12T20:46:17+00:00",
+            "modified": "2021-05-12T21:09:56+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2021-05-12T20:46:44+00:00",
+                    "id": 65713819,
+                    "title": "Hypnodancer",
+                    "available": true,
+                    "durationMs": 187840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10654186,
+                            "title": "Hypnodancer",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2020-05-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:46:44+00:00",
+                    "id": 59831454,
+                    "title": "Go Bananas",
+                    "available": true,
+                    "durationMs": 162300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9194255,
+                            "title": "GO BANANAS",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2019-11-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:46:44+00:00",
+                    "id": 63591534,
+                    "title": "UNO",
+                    "available": true,
+                    "durationMs": 160750,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10130567,
+                            "title": "UNO",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2020-03-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 74843090,
+                    "title": "БЫВШИЙ",
+                    "available": true,
+                    "durationMs": 156920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5688391,
+                            "name": "SQWOZ BAB",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13113666,
+                            "title": "БЫВШИЙ",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2020-12-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 44075306,
+                    "title": "Вино",
+                    "available": true,
+                    "durationMs": 181460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 64496155,
+                    "title": "Плачу на техно",
+                    "available": true,
+                    "durationMs": 160000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4027035,
+                            "name": "CREAM SODA",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10362566,
+                            "title": "Плачу на техно",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2020-04-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 30523782,
+                    "title": "Эба",
+                    "available": true,
+                    "durationMs": 126010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 74247712,
+                    "title": "Пока молодой",
+                    "available": true,
+                    "durationMs": 157280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6019372,
+                            "name": "Мэйби Бэйби",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12966521,
+                            "title": "Пока молодой",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2020-12-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 58906953,
+                    "title": "БАМБАЛЕЙЛА",
+                    "available": true,
+                    "durationMs": 175000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 44555172,
+                    "title": "На лицо",
+                    "available": true,
+                    "durationMs": 178360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 41209,
+                            "name": "SEREBRO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32301789,
+                            "title": "11",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2024-07-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 34725599,
+                    "title": "Сом",
+                    "available": true,
+                    "durationMs": 169740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 42599,
+                            "name": "Zest",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 34977671,
+                    "title": "Чай, сахар",
+                    "available": true,
+                    "durationMs": 173150,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 37585940,
+                    "title": "Курточка Stone Island",
+                    "available": true,
+                    "durationMs": 192720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 42119652,
+                    "title": "Шашлындос",
+                    "available": true,
+                    "durationMs": 177570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 68410444,
+                    "title": "Choco",
+                    "available": true,
+                    "durationMs": 107360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11338645,
+                            "title": "Choco",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2020-07-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 34725601,
+                    "title": "33",
+                    "available": true,
+                    "durationMs": 107120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4871666,
+                            "name": "CRIS TAYLOR",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4291704,
+                            "title": "Хлеб должен быть в каждом доме",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2017-04-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 47300144,
+                    "title": "Ну ты понял",
+                    "available": true,
+                    "durationMs": 99510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 57176702,
+                    "title": "ЕБОБО",
+                    "available": true,
+                    "durationMs": 158000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8987087,
+                            "title": "ЗВЁЗДЫ",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 44075311,
+                    "title": "КМС",
+                    "available": true,
+                    "durationMs": 156470,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27583922,
+                            "title": "Хлеб должен быть в каждом доме 2",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2018-10-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:56:32+00:00",
+                    "id": 34977668,
+                    "title": "Камерун",
+                    "available": true,
+                    "durationMs": 230760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38631912,
+                            "title": "ЛЕГЕНДЫ",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2025-10-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 54011471,
+                    "title": "Танцы",
+                    "available": true,
+                    "durationMs": 198870,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7916987,
+                            "title": "Forte & Piano",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2019-07-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 72875163,
+                    "title": "Я делаю шаг",
+                    "available": true,
+                    "durationMs": 219320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12754747,
+                            "title": "Shoot Me",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2020-11-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 36734146,
+                    "title": "Кайфмэн",
+                    "available": true,
+                    "durationMs": 193680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4864535,
+                            "title": "Forever Young, Forever Drunk",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2017-12-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 44802655,
+                    "title": "No Rules",
+                    "available": true,
+                    "durationMs": 169010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6009021,
+                            "title": "Три внутри",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2018-11-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 34703886,
+                    "title": "Russian Style",
+                    "available": true,
+                    "durationMs": 247720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4288331,
+                            "title": "Полная шляпа",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2017-04-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 41271962,
+                    "title": "Наружу изнутри",
+                    "available": true,
+                    "durationMs": 321360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5398039,
+                            "title": "Наружу изнутри",
+                            "type": "single",
+                            "genre": "allrock",
+                            "releaseDate": "2018-05-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 62311737,
+                    "title": "Последний герой",
+                    "available": true,
+                    "durationMs": 235320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9810980,
+                            "title": "Последний герой",
+                            "type": "single",
+                            "genre": "allrock",
+                            "releaseDate": "2020-02-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 54736178,
+                    "title": "Да, это про нас",
+                    "available": true,
+                    "durationMs": 167480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7916987,
+                            "title": "Forte & Piano",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2019-07-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T20:57:52+00:00",
+                    "id": 34703882,
+                    "title": "Да, со мной не просто",
+                    "available": true,
+                    "durationMs": 127520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4288331,
+                            "title": "Полная шляпа",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2017-04-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 54047235,
+                    "title": "I'm OK",
+                    "available": true,
+                    "durationMs": 187010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7763785,
+                            "title": "I'm OK",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2019-06-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 78868919,
+                    "title": "Sex Machine",
+                    "available": true,
+                    "durationMs": 146940,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14229530,
+                            "title": "Sex Machine",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2021-03-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 41048435,
+                    "title": "Faradenza",
+                    "available": true,
+                    "durationMs": 149770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5357306,
+                            "title": "Antipositive, Pt. 1",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 47028718,
+                    "title": "Слэмятся пацаны",
+                    "available": true,
+                    "durationMs": 187820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 161247,
+                            "name": "Руки Вверх!",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6358184,
+                            "title": "Слэмятся пацаны",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2018-12-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 69827710,
+                    "title": "Tacos",
+                    "available": true,
+                    "durationMs": 138140,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11735202,
+                            "title": "Tacos",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2020-08-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 32313117,
+                    "title": "Life in da Trash",
+                    "available": true,
+                    "durationMs": 201760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3936206,
+                            "title": "With Russia from Love",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2014-03-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 57114682,
+                    "title": "Arriba",
+                    "available": true,
+                    "durationMs": 152900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4772494,
+                            "name": "Tatarka",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 1559452,
+                            "name": "Clean Bandit",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8537993,
+                            "title": "Arriba",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2019-08-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 25162964,
+                    "title": "Give Me Your Money",
+                    "available": true,
+                    "durationMs": 197600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3155218,
+                            "title": "Funeral Rave",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2016-11-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 59161554,
+                    "title": "Rock-Paper-Scissors",
+                    "available": true,
+                    "durationMs": 164810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9194255,
+                            "title": "GO BANANAS",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2019-11-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 38136115,
+                    "title": "Lolly Bomb",
+                    "available": true,
+                    "durationMs": 233980,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4859057,
+                            "title": "Lolly Bomb",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2017-12-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 41048434,
+                    "title": "AntIPositive",
+                    "available": true,
+                    "durationMs": 213430,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5357306,
+                            "title": "Antipositive, Pt. 1",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 78336480,
+                    "title": "Mamma Maria",
+                    "available": true,
+                    "durationMs": 170990,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13996236,
+                            "title": "CIAO 2020",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2021-02-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 26507405,
+                    "title": "Big Dick",
+                    "available": true,
+                    "durationMs": 160000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3155218,
+                            "title": "Funeral Rave",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2016-11-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 81273954,
+                    "title": "Every Day I`m Drinking",
+                    "available": true,
+                    "durationMs": 197900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15020898,
+                            "title": "V",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2021-04-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 33941135,
+                    "title": "U Can Take",
+                    "available": true,
+                    "durationMs": 231770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4772494,
+                            "name": "Tatarka",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4158334,
+                            "title": "U Can Take",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2017-02-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 34520079,
+                    "title": "Rave On",
+                    "available": true,
+                    "durationMs": 204880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4672855,
+                            "name": "DenDerty",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4255418,
+                            "title": "Rave On",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2017-03-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 73213620,
+                    "title": "Suck My Dick 2020",
+                    "available": true,
+                    "durationMs": 150000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12683593,
+                            "title": "Suck My Dick 2020",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2020-11-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 41048433,
+                    "title": "Ak-47",
+                    "available": true,
+                    "durationMs": 182040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5357306,
+                            "title": "Antipositive, Pt. 1",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 59831453,
+                    "title": "Pop On The Top",
+                    "available": true,
+                    "durationMs": 195510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9194255,
+                            "title": "GO BANANAS",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2019-11-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 41048432,
+                    "title": "Punks Not Dead",
+                    "available": true,
+                    "durationMs": 138480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5357306,
+                            "title": "Antipositive, Pt. 1",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 32313121,
+                    "title": "Every Day I'm Drinking",
+                    "available": true,
+                    "durationMs": 160560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3936206,
+                            "title": "With Russia from Love",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2014-03-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 43717000,
+                    "title": "Follow Me",
+                    "available": true,
+                    "durationMs": 237590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5826496,
+                            "title": "Antipositive, Pt. 2",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-10-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 32313123,
+                    "title": "Russian Hooligans",
+                    "available": true,
+                    "durationMs": 184500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3936206,
+                            "title": "With Russia from Love",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2014-03-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 43716999,
+                    "title": "Skibidi",
+                    "available": true,
+                    "durationMs": 163280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6876395,
+                            "title": "Skibidi",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2019-02-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 32313118,
+                    "title": "Public Enemy",
+                    "available": true,
+                    "durationMs": 188000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3936206,
+                            "title": "With Russia from Love",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2014-03-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 32313125,
+                    "title": "We Will Push a Button",
+                    "available": true,
+                    "durationMs": 112000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3936206,
+                            "title": "With Russia from Love",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2014-03-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 26507408,
+                    "title": "Dead Unicorn",
+                    "available": true,
+                    "durationMs": 275400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3193544,
+                            "name": "Taras Umanskiy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3155218,
+                            "title": "Funeral Rave",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2016-11-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 41048438,
+                    "title": "Hate You",
+                    "available": true,
+                    "durationMs": 124550,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5357306,
+                            "title": "Antipositive, Pt. 1",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 26507406,
+                    "title": "Fucking Asshole",
+                    "available": true,
+                    "durationMs": 186500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3155218,
+                            "title": "Funeral Rave",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2016-11-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 52838178,
+                    "title": "Rave in Peace",
+                    "available": true,
+                    "durationMs": 237040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7473039,
+                            "title": "Rave in Peace",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2019-10-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 36784391,
+                    "title": "Winaloto",
+                    "available": true,
+                    "durationMs": 207560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4247393,
+                            "title": "Winaloto",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2017-05-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 47168056,
+                    "title": "Pussy Money Weed",
+                    "available": true,
+                    "durationMs": 214620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4875514,
+                            "title": "Pussy Money Weed",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2018-01-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 46502125,
+                    "title": "Little Molly",
+                    "available": true,
+                    "durationMs": 170300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5418194,
+                            "title": "Little Molly",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2018-05-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 36789193,
+                    "title": "Euroz Dollaz Yeniz",
+                    "available": true,
+                    "durationMs": 224050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11131573,
+                            "title": "Euros Dollar Yeniz",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2014-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 36784393,
+                    "title": "Guez Whoz Bak",
+                    "available": true,
+                    "durationMs": 203030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3150959,
+                            "title": "Guez Whoz Bak",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2016-01-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 45435878,
+                    "title": "X-Ray",
+                    "available": true,
+                    "durationMs": 228300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6097368,
+                            "title": "X-Ray",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2018-11-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 36789192,
+                    "title": "Tokyo Drift",
+                    "available": true,
+                    "durationMs": 141680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11131573,
+                            "title": "Euros Dollar Yeniz",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2014-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 45691164,
+                    "title": "HORSE B4 PORSCHE",
+                    "available": true,
+                    "durationMs": 205280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4252545,
+                            "name": "Tommy Cash",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6136954,
+                            "title": "¥€$",
+                            "type": null,
+                            "genre": "hyperpopgenre",
+                            "releaseDate": "2018-11-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 32581494,
+                    "title": "Altyn",
+                    "available": true,
+                    "durationMs": 180880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4772494,
+                            "name": "Tatarka",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3973076,
+                            "title": "Altyn",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2016-12-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 72805575,
+                    "title": "KAWAII",
+                    "available": true,
+                    "durationMs": 127330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4772494,
+                            "name": "Tatarka",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22722701,
+                            "title": "KАWAII",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2022-06-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 37023438,
+                    "title": "Pussy Power",
+                    "available": true,
+                    "durationMs": 202600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4772494,
+                            "name": "Tatarka",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4679392,
+                            "title": "Pussy Power",
+                            "type": "single",
+                            "genre": "foreignrap",
+                            "releaseDate": "2017-09-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:04:44+00:00",
+                    "id": 72805580,
+                    "title": "LOCO",
+                    "available": true,
+                    "durationMs": 159250,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4772494,
+                            "name": "Tatarka",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12566732,
+                            "title": "GOLDEN FLOWER",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2020-10-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 58171204,
+                    "title": "AIRPODS",
+                    "available": true,
+                    "durationMs": 180000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8987087,
+                            "title": "ЗВЁЗДЫ",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 51675538,
+                    "title": "200 ден",
+                    "available": true,
+                    "durationMs": 138360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30408254,
+                            "title": "200 ден",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2019-04-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 65875670,
+                    "title": "ШАРФИК",
+                    "available": true,
+                    "durationMs": 195000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4097111,
+                            "name": "ДЕТИ RAVE",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13627826,
+                            "title": "FANAT",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2020-06-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 35494789,
+                    "title": "Район",
+                    "available": true,
+                    "durationMs": 163680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4429593,
+                            "title": "Район",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2017-05-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 35006163,
+                    "title": "21",
+                    "available": true,
+                    "durationMs": 168620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23662140,
+                            "title": "Белый",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 44075298,
+                    "title": "Дружба",
+                    "available": true,
+                    "durationMs": 162770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27583922,
+                            "title": "Хлеб должен быть в каждом доме 2",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2018-10-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 58906954,
+                    "title": "GUCCI",
+                    "available": true,
+                    "durationMs": 141580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8987087,
+                            "title": "ЗВЁЗДЫ",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 58906961,
+                    "title": "МОЛОДОСТЬ",
+                    "available": true,
+                    "durationMs": 163200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8987087,
+                            "title": "ЗВЁЗДЫ",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 44075310,
+                    "title": "Как забыть тот день",
+                    "available": true,
+                    "durationMs": 171310,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27583922,
+                            "title": "Хлеб должен быть в каждом доме 2",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2018-10-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 34977669,
+                    "title": "Рэп, цепи",
+                    "available": true,
+                    "durationMs": 152030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2222988,
+                            "title": "Чёрный",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2013-11-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 37887639,
+                    "title": "АЛИЭКСПРЕССГЭНГ",
+                    "available": true,
+                    "durationMs": 178320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5056591,
+                            "name": "Джарахов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17756476,
+                            "title": "Пушка",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 33823706,
+                    "title": "Секс с Oxxxymiron",
+                    "available": true,
+                    "durationMs": 160000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4140653,
+                            "title": "Секс с Oxxxymiron",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2017-02-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 37887648,
+                    "title": "Девочка с концерта Little Big",
+                    "available": true,
+                    "durationMs": 184000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17756476,
+                            "title": "Пушка",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 35006155,
+                    "title": "Поехали ко мне",
+                    "available": true,
+                    "durationMs": 190790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23662140,
+                            "title": "Белый",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 44075312,
+                    "title": "Дырка",
+                    "available": true,
+                    "durationMs": 154240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27583922,
+                            "title": "Хлеб должен быть в каждом доме 2",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2018-10-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 35988333,
+                    "title": "Мохер",
+                    "available": true,
+                    "durationMs": 225990,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 165110,
+                            "name": "Дискотека Авария",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17756476,
+                            "title": "Пушка",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 53839063,
+                    "title": "ОПА",
+                    "available": true,
+                    "durationMs": 118020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7721862,
+                            "title": "ОПА",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2019-06-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 35006153,
+                    "title": "Мой рэп",
+                    "available": true,
+                    "durationMs": 124700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23662140,
+                            "title": "Белый",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 60268155,
+                    "title": "СИЛА ЕСТЬ УМА НЕ НАДО",
+                    "available": true,
+                    "durationMs": 175440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3608179,
+                            "name": "Big Russian Boss",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9296074,
+                            "title": "G.O.L.D.",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-12-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 36748390,
+                    "title": "Спиннер",
+                    "available": true,
+                    "durationMs": 170000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4634787,
+                            "title": "Спиннер",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-07-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 58906958,
+                    "title": "ЧТО ЗА ТРЕК",
+                    "available": true,
+                    "durationMs": 196370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8987087,
+                            "title": "ЗВЁЗДЫ",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 58906945,
+                    "title": "ХОРОВОД",
+                    "available": true,
+                    "durationMs": 116570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8987087,
+                            "title": "ЗВЁЗДЫ",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 37887647,
+                    "title": "Drum and Bass",
+                    "available": true,
+                    "durationMs": 240100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17756476,
+                            "title": "Пушка",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 59333636,
+                    "title": "Rave is Dead Let's Dance",
+                    "available": true,
+                    "durationMs": 215030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9083845,
+                            "title": "Rave is Dead Let's Dance",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2019-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 37887645,
+                    "title": "Белочка",
+                    "available": true,
+                    "durationMs": 196360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17756476,
+                            "title": "Пушка",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 35006154,
+                    "title": "Яйца",
+                    "available": true,
+                    "durationMs": 95520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23662140,
+                            "title": "Белый",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 37887641,
+                    "title": "Хочу причёску как у Pharaoh",
+                    "available": true,
+                    "durationMs": 218130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17756476,
+                            "title": "Пушка",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-11-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 34725597,
+                    "title": "Был",
+                    "available": true,
+                    "durationMs": 118460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3183564,
+                            "name": "ХЛЕБ",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4871666,
+                            "name": "CRIS TAYLOR",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4291704,
+                            "title": "Хлеб должен быть в каждом доме",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2017-04-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 34703887,
+                    "title": "Every Day I'm Drinking",
+                    "available": true,
+                    "durationMs": 186030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4288331,
+                            "title": "Полная шляпа",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2017-04-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 37740335,
+                    "title": "Forever Young Forever Drunk",
+                    "available": true,
+                    "durationMs": 227370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5494989,
+                            "name": "Just Femi",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4864535,
+                            "title": "Forever Young, Forever Drunk",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2017-12-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-12T21:09:56+00:00",
+                    "id": 54736180,
+                    "title": "Цирк",
+                    "available": true,
+                    "durationMs": 233060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7916987,
+                            "title": "Forte & Piano",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2019-07-01T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.1a6ced6d-fe74-4445-afef-be9281790151",
+            "link": "https://music.yandex.ru/playlists/lk.1a6ced6d-fe74-4445-afef-be9281790151",
+            "kind": 3,
+            "available": true,
+            "trackCount": 77,
+            "visibility": "public",
+            "collective": false,
+            "revision": 133,
+            "created": "2021-05-12T20:38:39+00:00",
+            "modified": "2025-09-13T17:18:49+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-09-13T17:18:49+00:00",
+                    "id": 23703762,
+                    "title": "Aliens Attack",
+                    "available": true,
+                    "durationMs": 437020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3732348,
+                            "name": "Outside The Universe",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2740622,
+                            "title": "Aliens Attack - Single",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2015-05-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-09T10:44:10+00:00",
+                    "id": 67351217,
+                    "title": "The Future",
+                    "available": true,
+                    "durationMs": 458450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 655857,
+                            "name": "Burn In Noise",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 653020,
+                            "name": "Electric Universe",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11059437,
+                            "title": "We Stand",
+                            "type": null,
+                            "genre": "trance",
+                            "releaseDate": "2020-06-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-08T12:35:34+00:00",
+                    "id": 130181802,
+                    "title": "Tensei",
+                    "available": true,
+                    "durationMs": 289720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4631911,
+                            "name": "Birat Bitz",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 9846152,
+                            "name": "Daleth Fasola",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32905297,
+                            "title": "Tensei",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-08-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T17:50:33+00:00",
+                    "id": 54208114,
+                    "title": "Laywa",
+                    "available": true,
+                    "durationMs": 500740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1549477,
+                            "name": "Spectra Sonics",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7800519,
+                            "title": "Laywa",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2019-06-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T17:37:09+00:00",
+                    "id": 32281670,
+                    "title": "Magic Portal",
+                    "available": true,
+                    "durationMs": 406670,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4736478,
+                            "name": "Alpha Portal",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 776469,
+                            "name": "Magik",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 10466521,
+                            "name": "Magik (UK)",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8783527,
+                            "title": "The Magik Collection",
+                            "type": null,
+                            "genre": "trance",
+                            "releaseDate": "2019-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T17:31:42+00:00",
+                    "id": 64152741,
+                    "title": "Balikali",
+                    "available": true,
+                    "durationMs": 516410,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8550951,
+                            "name": "Dead Musicians Society",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4971407,
+                            "name": "Aura Vortex",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 162602,
+                            "name": "Blazy",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 13766927,
+                            "name": "Undercover",
+                            "available": true
+                        },
+                        "5": {
+                            "id": 8957485,
+                            "name": "Dead Musicians Society & Aura Vortex & Blazy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10270400,
+                            "title": "The Sound Of Psy-Trance, Vol. 01",
+                            "type": "compilation",
+                            "genre": "trance",
+                            "releaseDate": "2020-04-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T17:15:11+00:00",
+                    "id": 77372206,
+                    "title": "Synergia",
+                    "available": true,
+                    "durationMs": 401130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 731985,
+                            "name": "Mystical Complex",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 10819913,
+                            "name": "Mystical Complex & Sajanka",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 10819914,
+                            "name": "Sajanka",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14431756,
+                            "title": "Synergia",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2018-10-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-04T17:05:05+00:00",
+                    "id": 52717392,
+                    "title": "Shiva",
+                    "available": true,
+                    "durationMs": 399260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 90621,
+                            "name": "Avalon",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 576412,
+                            "name": "WAIO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7441735,
+                            "title": "Nano Sonic Sound System, Vol. 5",
+                            "type": "compilation",
+                            "genre": "trance",
+                            "releaseDate": "2017-07-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-03T11:33:30+00:00",
+                    "id": 79793648,
+                    "title": "Immunity",
+                    "available": true,
+                    "durationMs": 435200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 749546,
+                            "name": "Z-Cat",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3849822,
+                            "name": "Jumpstreet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14539453,
+                            "title": "Immunity",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2021-04-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-09-01T05:14:25+00:00",
+                    "id": 64287370,
+                    "title": "Multiverso",
+                    "available": true,
+                    "durationMs": 324500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 756782,
+                            "name": "Chapeleiro",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3888041,
+                            "name": "Freakaholics",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10307412,
+                            "title": "Tribos",
+                            "type": null,
+                            "genre": "trance",
+                            "releaseDate": "2020-04-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-31T18:42:13+00:00",
+                    "id": 55031557,
+                    "title": "Acid Rain",
+                    "available": true,
+                    "durationMs": 488480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4736478,
+                            "name": "Alpha Portal",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7993669,
+                            "title": "Dimension 005 (Compiled by Alpha Portal)",
+                            "type": "compilation",
+                            "genre": "trance",
+                            "releaseDate": "2019-07-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-26T18:29:28+00:00",
+                    "id": 131948264,
+                    "title": "Sukuna",
+                    "available": true,
+                    "durationMs": 174000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10451120,
+                            "name": "elMefti",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33613338,
+                            "title": "Sukuna",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-18T18:06:23+00:00",
+                    "id": 134920946,
+                    "title": "World Domination",
+                    "available": true,
+                    "durationMs": 214280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4440614,
+                            "name": "Izzy Vadim",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34846390,
+                            "title": "Atomic Bomb",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-18T16:59:08+00:00",
+                    "id": 106576415,
+                    "title": "Kyrios",
+                    "available": true,
+                    "durationMs": 229120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3668319,
+                            "name": "Sitri",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23248156,
+                            "title": "Bulldog",
+                            "type": null,
+                            "genre": "dnb",
+                            "releaseDate": "2022-09-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-21T15:29:58+00:00",
+                    "id": 53071931,
+                    "title": "Maharani Hi-Tech",
+                    "available": true,
+                    "durationMs": 416000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3269633,
+                            "name": "Henrique Camacho",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7558209,
+                            "title": "Maharani Remixes",
+                            "type": null,
+                            "genre": "trance",
+                            "releaseDate": "2019-01-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-20T12:27:29+00:00",
+                    "id": 138250087,
+                    "title": "Hustlin'",
+                    "available": true,
+                    "durationMs": 268800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 483968,
+                            "name": "Macky Gee",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36246824,
+                            "title": "Hustlin'",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-20T08:01:31+00:00",
+                    "id": 108701402,
+                    "title": "Boom",
+                    "available": true,
+                    "durationMs": 157640,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1371890,
+                            "name": "FSB",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24010756,
+                            "title": "8D 2022",
+                            "type": "compilation",
+                            "genre": "dance",
+                            "releaseDate": "2022-01-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-20T07:41:56+00:00",
+                    "id": 123223503,
+                    "title": "Stomp",
+                    "available": true,
+                    "durationMs": 252910,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 16789683,
+                            "name": "Geehee",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 21105262,
+                            "name": "Tunnel Factory",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29991577,
+                            "title": "Stomp",
+                            "type": "single",
+                            "genre": "techno",
+                            "releaseDate": "2024-03-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T12:13:55+00:00",
+                    "id": 98922748,
+                    "title": "Mega Bass",
+                    "available": true,
+                    "durationMs": 365120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15695453,
+                            "name": "Audio Creator Sistem",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 20604044,
+                            "title": "Mega Bass",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-07-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-26T09:37:06+00:00",
+                    "id": 69589933,
+                    "title": "Eslava",
+                    "available": true,
+                    "durationMs": 297110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3269633,
+                            "name": "Henrique Camacho",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14596295,
+                            "title": "Pandora (Album)",
+                            "type": null,
+                            "genre": "trance",
+                            "releaseDate": "2021-04-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-07T11:46:05+00:00",
+                    "id": 73502774,
+                    "title": "Overdrive",
+                    "available": true,
+                    "durationMs": 285260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1595818,
+                            "name": "Levela",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12765774,
+                            "title": "Overdrive / Messy",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2010-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-07T11:10:35+00:00",
+                    "id": 131963088,
+                    "title": "Включите Мне Драмнбейс",
+                    "available": true,
+                    "durationMs": 212420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19437580,
+                            "name": "Nuwei",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 8307338,
+                            "name": "ONEDER",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33619937,
+                            "title": "Включите Мне Драмнбейс",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2024-11-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T20:24:09+00:00",
+                    "id": 112832721,
+                    "title": "Chuva 2.0",
+                    "available": true,
+                    "durationMs": 252430,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 756782,
+                            "name": "Chapeleiro",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3269633,
+                            "name": "Henrique Camacho",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25441553,
+                            "title": "Chuva 2.0",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2023-04-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-02T21:43:31+00:00",
+                    "id": 62064340,
+                    "title": "Lapa Drums",
+                    "available": true,
+                    "durationMs": 245450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3685648,
+                            "name": "Mozey",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9747457,
+                            "title": "The Lady Killaz",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2020-01-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-12T11:16:13+00:00",
+                    "id": 118095227,
+                    "title": "Веселиться в атмосфере пиздеца",
+                    "available": true,
+                    "durationMs": 151330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5129628,
+                            "name": "Пневмослон",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27692427,
+                            "title": "Потяжелее",
+                            "type": null,
+                            "genre": "ska",
+                            "releaseDate": "2023-10-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-02-09T10:06:18+00:00",
+                    "id": 128783347,
+                    "title": "Give Them Hell",
+                    "available": true,
+                    "durationMs": 298970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1600967,
+                            "name": "Opsen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32356857,
+                            "title": "Give Them Hell",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-09-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-01-04T16:11:16+00:00",
+                    "id": 108801995,
+                    "title": "OVERDRIVE",
+                    "available": true,
+                    "durationMs": 260170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 18492041,
+                            "name": "1NVERTER",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24046324,
+                            "title": "PRESSURE EP",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2022-11-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-26T11:41:24+00:00",
+                    "id": 129880734,
+                    "title": "Depart The Ends",
+                    "available": true,
+                    "durationMs": 275860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11787025,
+                            "name": "HighThere",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 59102,
+                            "name": "Miro",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32787456,
+                            "title": "Depart The Ends / Naughty",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-09-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-19T12:55:59+00:00",
+                    "id": 132968182,
+                    "title": "Thats What Im Talkin Bout",
+                    "available": true,
+                    "durationMs": 226280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7359967,
+                            "name": "Kleu",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 732670,
+                            "name": "Isaac Maya",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34030120,
+                            "title": "Thats What Im Talkin Bout",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2024-11-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-30T19:41:57+00:00",
+                    "id": 61519132,
+                    "title": "Trojan",
+                    "available": true,
+                    "durationMs": 249760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3722436,
+                            "name": "Gydra",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23449558,
+                            "title": "Junk Box",
+                            "type": null,
+                            "genre": "dnb",
+                            "releaseDate": "2022-09-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-15T12:49:29+00:00",
+                    "id": 119249597,
+                    "title": "Ice Cold",
+                    "available": true,
+                    "durationMs": 177930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 311068,
+                            "name": "State of Mind",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28207647,
+                            "title": "Ice Cold / Amerika March",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2023-12-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-02T22:48:53+00:00",
+                    "id": 51560456,
+                    "title": "Дурь",
+                    "available": true,
+                    "durationMs": 191240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3404212,
+                            "name": "Нейромонах Феофан",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6822257,
+                            "title": "Ивушка",
+                            "type": null,
+                            "genre": "dnb",
+                            "releaseDate": "2019-02-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-11-01T00:26:15+00:00",
+                    "id": 21458633,
+                    "title": "Под драм легко",
+                    "available": true,
+                    "durationMs": 164910,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3404212,
+                            "name": "Нейромонах Феофан",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2455685,
+                            "title": "В душе драм, в сердце светлая Русь!",
+                            "type": null,
+                            "genre": "dnb",
+                            "releaseDate": "2015-01-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:11:50+00:00",
+                    "id": 97216055,
+                    "title": "White Mercedes",
+                    "available": true,
+                    "durationMs": 178590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6843376,
+                            "name": "Choomba",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1989547,
+                            "name": "Restricted",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 20000179,
+                            "title": "White Mercedes",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2021-12-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:10:10+00:00",
+                    "id": 17232605,
+                    "title": "Tsunami",
+                    "available": true,
+                    "durationMs": 186350,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2573627,
+                            "name": "DVBBS",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 2573625,
+                            "name": "Borgeous",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12533754,
+                            "title": "Tsunami",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2013-09-06T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:10:03+00:00",
+                    "id": 52467702,
+                    "title": "Push It To The Limit",
+                    "available": true,
+                    "durationMs": 295810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 632210,
+                            "name": "Qo",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 21152094,
+                            "name": "Trilo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7388929,
+                            "title": "Push It To The Limit",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2019-05-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:06:09+00:00",
+                    "id": 112743776,
+                    "title": "Gitara",
+                    "available": true,
+                    "durationMs": 345780,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2443508,
+                            "name": "Mandragora",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25405401,
+                            "title": "Gitara",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2023-05-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:05:13+00:00",
+                    "id": 81544885,
+                    "title": "Pólvora",
+                    "available": true,
+                    "durationMs": 256020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 756782,
+                            "name": "Chapeleiro",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15106840,
+                            "title": "Acelero",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2021-06-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:05:04+00:00",
+                    "id": 90661811,
+                    "title": "Stepper",
+                    "available": true,
+                    "durationMs": 204130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10293571,
+                            "name": "Zigi SC",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17952330,
+                            "title": "Stepper",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2021-09-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-26T09:05:01+00:00",
+                    "id": 66997966,
+                    "title": "POW POW POW",
+                    "available": true,
+                    "durationMs": 168000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 30642,
+                            "name": "Kaskade",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1971326,
+                            "name": "Chemical Surf",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10974270,
+                            "title": "POW POW POW",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-06-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-10-08T18:24:09+00:00",
+                    "id": 127639441,
+                    "title": "bailejungle",
+                    "available": true,
+                    "durationMs": 163440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 774632,
+                            "name": "Urbandawn",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31893599,
+                            "title": "bailejungle",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2024-08-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-14T23:21:21+00:00",
+                    "id": 66193391,
+                    "title": "White Rabbit",
+                    "available": true,
+                    "durationMs": 295380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6795814,
+                            "name": "ShortRound",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10772829,
+                            "title": "White Rabbit",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2020-06-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-12T02:15:51+00:00",
+                    "id": 114577542,
+                    "title": "i love techno",
+                    "available": true,
+                    "durationMs": 98220,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9573324,
+                            "name": "Kiraw",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 26183177,
+                            "title": "i love techno",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2023-06-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-12T01:15:35+00:00",
+                    "id": 118653128,
+                    "title": "Activision",
+                    "available": true,
+                    "durationMs": 228110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9967956,
+                            "name": "Basswell",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27943190,
+                            "title": "Activision",
+                            "type": "single",
+                            "genre": "techno",
+                            "releaseDate": "2023-03-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-08T08:27:48+00:00",
+                    "id": 34991871,
+                    "title": "Тотальное Самоубийство",
+                    "available": true,
+                    "durationMs": 308610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4672855,
+                            "name": "DenDerty",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1433342,
+                            "name": "Dizelkraft",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27811094,
+                            "title": "Тотальное самоубийство Remixes",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2016-12-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-08T08:00:14+00:00",
+                    "id": 111916141,
+                    "title": "Vapo Vapo",
+                    "available": true,
+                    "durationMs": 160180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2443508,
+                            "name": "Mandragora",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25078862,
+                            "title": "Vapo Vapo",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2023-03-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-08T07:33:38+00:00",
+                    "id": 70490474,
+                    "title": "Banken",
+                    "available": true,
+                    "durationMs": 131610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2975341,
+                            "name": "Bass Shock",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 775062,
+                            "name": "Pat B",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11910467,
+                            "title": "Banken",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-09-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-08T07:02:31+00:00",
+                    "id": 110625485,
+                    "title": "Двигай Спорт",
+                    "available": true,
+                    "durationMs": 148610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7722599,
+                            "name": "Эфедессита",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 16514249,
+                            "name": "Samson Gossel",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24600599,
+                            "title": "Двигай Спорт",
+                            "type": "single",
+                            "genre": "hardcore",
+                            "releaseDate": "2023-02-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-08T06:58:09+00:00",
+                    "id": 118903831,
+                    "title": "Motivation",
+                    "available": true,
+                    "durationMs": 162730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 984750,
+                            "name": "S.A.Y.",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28052575,
+                            "title": "rave",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2023-11-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-08-08T05:27:48+00:00",
+                    "id": 121491304,
+                    "title": "BREEZY",
+                    "available": true,
+                    "durationMs": 90500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11175741,
+                            "name": "NUEKI",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12855016,
+                            "name": "TOLCHONOV",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 19556836,
+                            "name": "DJ FKU",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29211111,
+                            "title": "BREEZY",
+                            "type": null,
+                            "genre": "phonkgenre",
+                            "releaseDate": "2024-01-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-30T00:48:03+00:00",
+                    "id": 126526949,
+                    "title": "Rave Is Life",
+                    "available": true,
+                    "durationMs": 203500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10057391,
+                            "name": "Freaks & Geeks",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31446955,
+                            "title": "Rave Is Life",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2024-06-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-29T23:45:32+00:00",
+                    "id": 121055664,
+                    "title": "Bass",
+                    "available": true,
+                    "durationMs": 125560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8472943,
+                            "name": "CJDJ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29003151,
+                            "title": "Bass",
+                            "type": "single",
+                            "genre": "dnb",
+                            "releaseDate": "2024-01-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-02T16:28:48+00:00",
+                    "id": 115611375,
+                    "title": "Alarm",
+                    "available": true,
+                    "durationMs": 278850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 535908,
+                            "name": "ATMOS",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 26645106,
+                            "title": "Alarm",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2023-08-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-02T16:16:03+00:00",
+                    "id": 59014789,
+                    "title": "Глицин",
+                    "available": true,
+                    "durationMs": 175540,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8252889,
+                            "name": "DJ ПЕРЕКРЫТ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9013131,
+                            "title": "Бум бум бам бам",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2019-06-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-02T16:14:02+00:00",
+                    "id": 118415166,
+                    "title": "Push Up",
+                    "available": true,
+                    "durationMs": 234000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7310743,
+                            "name": "Creeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27833637,
+                            "title": "Push Up",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2023-10-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-07-02T16:06:26+00:00",
+                    "id": 87134478,
+                    "title": "Don't Tell Me Shit",
+                    "available": true,
+                    "durationMs": 273530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 987221,
+                            "name": "Detest",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16813288,
+                            "title": "Glamerous Cool Kids Stuff",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2021-07-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-05-17T14:35:31+00:00",
+                    "id": 120535777,
+                    "title": "DRIFT KING",
+                    "available": true,
+                    "durationMs": 172800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 17724219,
+                            "name": "Saymooon",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28767657,
+                            "title": "DRIFT KING",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-01-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-05-17T14:32:30+00:00",
+                    "id": 120002860,
+                    "title": "C.L.I.T.",
+                    "available": true,
+                    "durationMs": 187070,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12598716,
+                            "name": "Crispy Noise",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34403956,
+                            "title": "C.L.I.T.",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-12-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-05-03T18:53:22+00:00",
+                    "id": 114117368,
+                    "title": "LFG PSYCHO",
+                    "available": true,
+                    "durationMs": 159910,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6278546,
+                            "name": "Sub Zero Project",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 775085,
+                            "name": "MC Stretch",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25982259,
+                            "title": "LFG PSYCHO",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2023-06-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-05-01T15:04:34+00:00",
+                    "id": 77300921,
+                    "title": "Overdose Party",
+                    "available": true,
+                    "durationMs": 177910,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4509932,
+                            "name": "Furyan",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1194110,
+                            "name": "LSD",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15205676,
+                            "title": "Summer of Hardcore 2021",
+                            "type": "compilation",
+                            "genre": "techno",
+                            "releaseDate": "2021-05-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-01-30T06:56:02+00:00",
+                    "id": 38899198,
+                    "title": "Make Me Bounce",
+                    "available": true,
+                    "durationMs": 157230,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 971920,
+                            "name": "Crisis Era",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5001052,
+                            "title": "No Filter, Vol. 1",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2018-02-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-11-03T06:10:09+00:00",
+                    "id": 104806652,
+                    "title": "Hesitate",
+                    "available": true,
+                    "durationMs": 170150,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 380837,
+                            "name": "Picco",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22603320,
+                            "title": "Hesitate",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2022-06-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-10-29T22:57:06+00:00",
+                    "id": 58807372,
+                    "title": "Klaplongen",
+                    "available": true,
+                    "durationMs": 145500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8218711,
+                            "name": "Sickmode",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8960506,
+                            "title": "Klaplongen",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2019-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-08-17T23:25:26+00:00",
+                    "id": 4564839,
+                    "title": "Rock N' Rave",
+                    "available": true,
+                    "durationMs": 174400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 703371,
+                            "name": "Francesco Zeta",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 514002,
+                            "title": "Unmistakable",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2012-03-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-08-14T02:11:07+00:00",
+                    "id": 77690929,
+                    "title": "Тараканы",
+                    "available": true,
+                    "durationMs": 140420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6907498,
+                            "name": "PALC",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 9763280,
+                            "name": "BassnPanda",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13799708,
+                            "title": "Тараканы",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-12-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-08-14T00:28:29+00:00",
+                    "id": 115082851,
+                    "title": "Makeba",
+                    "available": true,
+                    "durationMs": 137140,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19543038,
+                            "name": "TR3NACRIA",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 26428335,
+                            "title": "Makeba",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2023-06-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-08-11T10:24:27+00:00",
+                    "id": 60174693,
+                    "title": "On My Mind",
+                    "available": true,
+                    "durationMs": 189260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6311,
+                            "name": "Diplo",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 8044661,
+                            "name": "SIDEPIECE",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13026001,
+                            "title": "On My Mind",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-12-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-08-11T08:07:13+00:00",
+                    "id": 81656009,
+                    "title": "Milkshake",
+                    "available": true,
+                    "durationMs": 170580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5506666,
+                            "name": "TRFN",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15145977,
+                            "title": "Milkshake",
+                            "type": "single",
+                            "genre": "edmgenre",
+                            "releaseDate": "2021-05-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-07-27T06:44:17+00:00",
+                    "id": 43327393,
+                    "title": "Shivaya",
+                    "available": true,
+                    "durationMs": 286320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 787229,
+                            "name": "Omiki",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 442496,
+                            "name": "Melicia",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5761389,
+                            "title": "Shivaya",
+                            "type": "single",
+                            "genre": "trance",
+                            "releaseDate": "2018-09-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-07-27T05:34:33+00:00",
+                    "id": 110207862,
+                    "title": "My Wing",
+                    "available": true,
+                    "durationMs": 246000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 883025,
+                            "name": "Billx",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5942226,
+                            "name": "Otyken",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24445099,
+                            "title": "My Wing",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2022-12-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-07-27T02:15:35+00:00",
+                    "id": 110356696,
+                    "title": "Unholy",
+                    "available": true,
+                    "durationMs": 144840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12649087,
+                            "name": "Badscandal",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 11048202,
+                            "name": "Nito-Onna",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24504734,
+                            "title": "Unholy",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2022-11-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-07-09T09:32:45+00:00",
+                    "id": 107951067,
+                    "title": "Uletay",
+                    "available": true,
+                    "durationMs": 161160,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9987979,
+                            "name": "ONEIL",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12928271,
+                            "name": "ORGAN",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 439874,
+                            "name": "TITOV",
+                            "available": true
+                        },
+                        "4": {
+                            "id": 3716620,
+                            "name": "FAVIA",
+                            "available": true
+                        },
+                        "5": {
+                            "id": 4189,
+                            "name": "Александр Порфирьевич Бородин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23747783,
+                            "title": "Uletay",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2022-11-04T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-06-28T06:56:20+00:00",
+                    "id": 110513907,
+                    "title": "Bloody Mary",
+                    "available": true,
+                    "durationMs": 179390,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6386743,
+                            "name": "BLVCK CROWZ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24562802,
+                            "title": "Bloody Mary",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2023-01-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-09-09T21:50:49+00:00",
+                    "id": 75133911,
+                    "title": "2 Phút Hơn",
+                    "available": true,
+                    "durationMs": 183830,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1340369,
+                            "name": "Pháo",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 12623251,
+                            "name": "KAIZ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13177556,
+                            "title": "2 Phút Hơn",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-12-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-06-06T17:11:11+00:00",
+                    "id": 50008390,
+                    "title": "Jungle Reprezentah",
+                    "available": true,
+                    "durationMs": 252630,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1323029,
+                            "name": "Lowriderz",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5129391,
+                            "name": "Smoky D",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6883838,
+                            "title": "Time Of Night Selection 2019",
+                            "type": "compilation",
+                            "genre": "dnb",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-13T04:41:49+00:00",
+                    "id": 51422266,
+                    "title": "DEUTSCHLAND",
+                    "available": true,
+                    "durationMs": 322330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 13002,
+                            "name": "Rammstein",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7524923,
+                            "title": "Rammstein",
+                            "type": null,
+                            "genre": "industrial",
+                            "releaseDate": "2019-05-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2021-05-13T04:41:49+00:00",
+                    "id": 23984044,
+                    "title": "We Kill Giants",
+                    "available": true,
+                    "durationMs": 208790,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 607253,
+                            "name": "Hyper",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2783016,
+                            "title": "We Kill Giants",
+                            "type": "compilation",
+                            "genre": "industrial",
+                            "releaseDate": "2015-06-08T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 104082425,
+        "login": "lyubimov.igor-lyubimov",
+        "name": "lyubimov.igor-lyubimov",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "63.2324"
+}

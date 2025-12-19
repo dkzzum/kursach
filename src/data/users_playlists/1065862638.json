@@ -1,0 +1,3400 @@
+{
+    "playlists": {
+        "Для Марго": {
+            "name": "Для Марго",
+            "playlistUuid": "fc3abb4e-b301-f176-a777-000000000000",
+            "link": "https://music.yandex.ru/playlists/fc3abb4e-b301-f176-a777-000000000000",
+            "kind": 1000,
+            "available": true,
+            "trackCount": 68,
+            "visibility": "public",
+            "collective": false,
+            "revision": 72,
+            "created": "2022-10-19T21:03:59+00:00",
+            "modified": "2022-10-20T06:15:44+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2022-10-19T21:04:43+00:00",
+                    "id": 580265,
+                    "title": "Spanish Sahara",
+                    "available": true,
+                    "durationMs": 409560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64169,
+                            "name": "Foals",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13733252,
+                            "title": "Total Life Forever",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2010-05-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:04:50+00:00",
+                    "id": 24968741,
+                    "title": "Lonely Hunter",
+                    "available": true,
+                    "durationMs": 277210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64169,
+                            "name": "Foals",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13767036,
+                            "title": "What Went Down",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:05:57+00:00",
+                    "id": 24931686,
+                    "title": "London Thunder",
+                    "available": true,
+                    "durationMs": 254420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64169,
+                            "name": "Foals",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13767036,
+                            "title": "What Went Down",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:08:02+00:00",
+                    "id": 216376,
+                    "title": "Blvd. Nights",
+                    "available": true,
+                    "durationMs": 188130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48121,
+                            "name": "Team Sleep",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22062,
+                            "title": "Team Sleep",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2005-05-09T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:09:25+00:00",
+                    "id": 216374,
+                    "title": "Ever (Foreign Flag)",
+                    "available": true,
+                    "durationMs": 171800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48121,
+                            "name": "Team Sleep",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22062,
+                            "title": "Team Sleep",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2005-05-09T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:09:44+00:00",
+                    "id": 69567398,
+                    "title": "Голова - тюрьма",
+                    "available": true,
+                    "durationMs": 142560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5019600,
+                            "name": "Джуна",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37863883,
+                            "title": "Тюрьма",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2020-08-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:09:52+00:00",
+                    "id": 34658572,
+                    "title": "Закат",
+                    "available": true,
+                    "durationMs": 235940,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5019600,
+                            "name": "Джуна",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4276300,
+                            "title": "Джуна",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2017-04-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:09:57+00:00",
+                    "id": 34658564,
+                    "title": "Ни ты, ни я",
+                    "available": true,
+                    "durationMs": 215480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5019600,
+                            "name": "Джуна",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4276300,
+                            "title": "Джуна",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2017-04-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:10:06+00:00",
+                    "id": 38753632,
+                    "title": "Лучшее средство",
+                    "available": true,
+                    "durationMs": 273770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5019600,
+                            "name": "Джуна",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4974801,
+                            "title": "Высший пилотаж",
+                            "type": null,
+                            "genre": "local-indie",
+                            "releaseDate": "2018-01-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:11:41+00:00",
+                    "id": 77693845,
+                    "title": "Ни на одной",
+                    "available": true,
+                    "durationMs": 202040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5854471,
+                            "name": "Нина Смит",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13800631,
+                            "title": "Ни на одной",
+                            "type": "single",
+                            "genre": "rock",
+                            "releaseDate": "2019-02-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:12:58+00:00",
+                    "id": 20500737,
+                    "title": "Тяжело и медленно",
+                    "available": true,
+                    "durationMs": 314820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3033108,
+                            "name": "Пионерлагерь Пыльная Радуга",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30787929,
+                            "title": "ХЛАМ",
+                            "type": null,
+                            "genre": "local-indie",
+                            "releaseDate": "2013-05-05T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:13:11+00:00",
+                    "id": 31983293,
+                    "title": "Я передумал",
+                    "available": true,
+                    "durationMs": 275740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3033108,
+                            "name": "Пионерлагерь Пыльная Радуга",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22645291,
+                            "title": "Правда о потерянном времени",
+                            "type": null,
+                            "genre": "local-indie",
+                            "releaseDate": "2015-09-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:13:26+00:00",
+                    "id": 31983287,
+                    "title": "БЗВ",
+                    "available": true,
+                    "durationMs": 436430,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3033108,
+                            "name": "Пионерлагерь Пыльная Радуга",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22645291,
+                            "title": "Правда о потерянном времени",
+                            "type": null,
+                            "genre": "local-indie",
+                            "releaseDate": "2015-09-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:16:13+00:00",
+                    "id": 9481,
+                    "title": "Farewell To The Fairground",
+                    "available": true,
+                    "durationMs": 256570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1525,
+                            "name": "White Lies",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9062106,
+                            "title": "To Lose My Life ...",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2009-01-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:16:22+00:00",
+                    "id": 48209718,
+                    "title": "Tokyo",
+                    "available": true,
+                    "durationMs": 292370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1525,
+                            "name": "White Lies",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6945581,
+                            "title": "FIVE",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2019-02-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:17:52+00:00",
+                    "id": 281259,
+                    "title": "Rest My Chemistry",
+                    "available": true,
+                    "durationMs": 300500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87072,
+                            "name": "Interpol",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28420,
+                            "title": "Our Love To Admire",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2007-07-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:17:56+00:00",
+                    "id": 358550,
+                    "title": "Evil",
+                    "available": true,
+                    "durationMs": 215820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87072,
+                            "name": "Interpol",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33315744,
+                            "title": "Antics",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2024-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:18:05+00:00",
+                    "id": 69526159,
+                    "title": "Obstacle 1",
+                    "available": true,
+                    "durationMs": 216460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 87072,
+                            "name": "Interpol",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12375980,
+                            "title": "Obstacle 1",
+                            "type": "single",
+                            "genre": "indie",
+                            "releaseDate": "2003-09-15T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:19:49+00:00",
+                    "id": 19195308,
+                    "title": "Wonderwall",
+                    "available": true,
+                    "durationMs": 258810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36794,
+                            "name": "Oasis",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37826757,
+                            "title": "Chicago 1998",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2025-08-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:20:48+00:00",
+                    "id": 630829,
+                    "title": "Sex on Fire",
+                    "available": true,
+                    "durationMs": 197710,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 29695,
+                            "name": "Kings Of Leon",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3531313,
+                            "title": "Hard Rock Live",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2016-05-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:22:02+00:00",
+                    "id": 26553,
+                    "title": "Just Like Heaven",
+                    "available": true,
+                    "durationMs": 212010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8143,
+                            "name": "The Cure",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2505679,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "newwave",
+                            "releaseDate": "2001-11-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:25:14+00:00",
+                    "id": 26766,
+                    "title": "Kyoto Song",
+                    "available": true,
+                    "durationMs": 256370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8143,
+                            "name": "The Cure",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8663,
+                            "title": "The Head On The Door",
+                            "type": null,
+                            "genre": "newwave",
+                            "releaseDate": "2006-08-14T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:25:30+00:00",
+                    "id": 21878861,
+                    "title": "Apart",
+                    "available": true,
+                    "durationMs": 394000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8143,
+                            "name": "The Cure",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2514680,
+                            "title": "Wish",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1992-04-20T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:26:35+00:00",
+                    "id": 21878861,
+                    "title": "Apart",
+                    "available": true,
+                    "durationMs": 394000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8143,
+                            "name": "The Cure",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2514680,
+                            "title": "Wish",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1992-04-20T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:27:08+00:00",
+                    "id": 145363,
+                    "title": "Love Will Tear Us Apart",
+                    "available": true,
+                    "durationMs": 206860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 56012,
+                            "name": "Joy Division",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 44684,
+                            "title": "The Best Of",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:27:23+00:00",
+                    "id": 432070,
+                    "title": "Atmosphere",
+                    "available": true,
+                    "durationMs": 250410,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 56012,
+                            "name": "Joy Division",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 44684,
+                            "title": "The Best Of",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:28:09+00:00",
+                    "id": 31581264,
+                    "title": "Song To Say Goodbye",
+                    "available": true,
+                    "durationMs": 233210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36830,
+                            "name": "Placebo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3830779,
+                            "title": "A Place For Us To Dream",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2016-10-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:28:30+00:00",
+                    "id": 453649,
+                    "title": "Pure Morning",
+                    "available": true,
+                    "durationMs": 254760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36830,
+                            "name": "Placebo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6314826,
+                            "title": "Without You I'm Nothing",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1998-10-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:28:40+00:00",
+                    "id": 453654,
+                    "title": "Without You I'm Nothing",
+                    "available": true,
+                    "durationMs": 248890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36830,
+                            "name": "Placebo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6314826,
+                            "title": "Without You I'm Nothing",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1998-10-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:29:37+00:00",
+                    "id": 31581258,
+                    "title": "Without You I'm Nothing",
+                    "available": true,
+                    "durationMs": 251060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36830,
+                            "name": "Placebo",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4650,
+                            "name": "David Bowie",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3830779,
+                            "title": "A Place For Us To Dream",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2016-10-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:30:03+00:00",
+                    "id": 358786,
+                    "title": "Bubblegun",
+                    "available": true,
+                    "durationMs": 313020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36830,
+                            "name": "Placebo",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6394328,
+                            "title": "Black Market Music: B-Sides",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2015-11-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:31:42+00:00",
+                    "id": 556868,
+                    "title": "Disappearer",
+                    "available": true,
+                    "durationMs": 308000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21422,
+                            "name": "Sonic Youth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 59714,
+                            "title": "Goo",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2005-09-13T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:32:06+00:00",
+                    "id": 463836,
+                    "title": "O Children",
+                    "available": true,
+                    "durationMs": 411380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 101973,
+                            "name": "Nick Cave & The Bad Seeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4334256,
+                            "title": "Lovely Creatures - The Best of Nick Cave and The Bad Seeds (1984-2014)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-05-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:32:13+00:00",
+                    "id": 2214608,
+                    "title": "Into My Arms",
+                    "available": true,
+                    "durationMs": 256120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 101973,
+                            "name": "Nick Cave & The Bad Seeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4334256,
+                            "title": "Lovely Creatures - The Best of Nick Cave and The Bad Seeds (1984-2014)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-05-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:35:12+00:00",
+                    "id": 772184,
+                    "title": "Down By The Water",
+                    "available": true,
+                    "durationMs": 194500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3400,
+                            "name": "PJ Harvey",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 89384,
+                            "title": "To Bring You My Love",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1995-02-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:35:37+00:00",
+                    "id": 73413754,
+                    "title": "Dronning Ellisiv",
+                    "available": true,
+                    "durationMs": 272610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2991288,
+                            "name": "Myrkur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12741353,
+                            "title": "Dronning Ellisiv",
+                            "type": "single",
+                            "genre": "folkmetal",
+                            "releaseDate": "2020-12-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:35:49+00:00",
+                    "id": 60023477,
+                    "title": "Leaves of Yggdrasil",
+                    "available": true,
+                    "durationMs": 240330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2991288,
+                            "name": "Myrkur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9239244,
+                            "title": "Folkesange",
+                            "type": null,
+                            "genre": "folkmetal",
+                            "releaseDate": "2020-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:36:10+00:00",
+                    "id": 35680306,
+                    "title": "Ulvinde",
+                    "available": true,
+                    "durationMs": 263920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2991288,
+                            "name": "Myrkur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4461849,
+                            "title": "Mareridt",
+                            "type": null,
+                            "genre": "folkmetal",
+                            "releaseDate": "2017-09-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:36:14+00:00",
+                    "id": 35680305,
+                    "title": "Funeral",
+                    "available": true,
+                    "durationMs": 179560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 964124,
+                            "name": "Chelsea Wolfe",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 2991288,
+                            "name": "Myrkur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4461849,
+                            "title": "Mareridt",
+                            "type": null,
+                            "genre": "folkmetal",
+                            "releaseDate": "2017-09-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:38:10+00:00",
+                    "id": 133083,
+                    "title": "Change (In the House of Flies)",
+                    "available": true,
+                    "durationMs": 299530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:38:16+00:00",
+                    "id": 216207,
+                    "title": "Passenger",
+                    "available": true,
+                    "durationMs": 368660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:38:21+00:00",
+                    "id": 215846,
+                    "title": "Be Quiet and Drive (Far Away)",
+                    "available": true,
+                    "durationMs": 308130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:38:28+00:00",
+                    "id": 575859,
+                    "title": "Sextape",
+                    "available": true,
+                    "durationMs": 241530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:39:04+00:00",
+                    "id": 178599,
+                    "title": "Kimdracula",
+                    "available": true,
+                    "durationMs": 194300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:39:38+00:00",
+                    "id": 148505,
+                    "title": "Helena",
+                    "available": true,
+                    "durationMs": 204730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48814,
+                            "name": "My Chemical Romance",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14393,
+                            "title": "Three Cheers for Sweet Revenge",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2004-06-08T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:40:34+00:00",
+                    "id": 20435106,
+                    "title": "Napoleon Solo",
+                    "available": true,
+                    "durationMs": 288060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 30891,
+                            "name": "At The Drive-In",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3805733,
+                            "title": "In / Casino / Out",
+                            "type": null,
+                            "genre": "posthardcore",
+                            "releaseDate": "2016-09-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:43:27+00:00",
+                    "id": 333480,
+                    "title": "Everything in Its Right Place",
+                    "available": true,
+                    "durationMs": 251420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36825,
+                            "name": "Radiohead",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19028505,
+                            "title": "KID A MNESIA",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2021-11-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:43:56+00:00",
+                    "id": 333462,
+                    "title": "The National Anthem",
+                    "available": true,
+                    "durationMs": 351690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36825,
+                            "name": "Radiohead",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19028505,
+                            "title": "KID A MNESIA",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2021-11-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:44:20+00:00",
+                    "id": 52334483,
+                    "title": "Wake Me When It's Over",
+                    "available": true,
+                    "durationMs": 251580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7444,
+                            "name": "The Cranberries",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7363222,
+                            "title": "In the End",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2019-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:44:56+00:00",
+                    "id": 73359177,
+                    "title": "Ridiculous Thoughts",
+                    "available": true,
+                    "durationMs": 273420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7444,
+                            "name": "The Cranberries",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37814765,
+                            "title": "No Need To Argue",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1994-10-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:47:11+00:00",
+                    "id": 72746835,
+                    "title": "Печаль",
+                    "available": true,
+                    "durationMs": 224060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2915287,
+                            "name": "Мэd Dог",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12548973,
+                            "title": "На заре",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2001-03-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:47:22+00:00",
+                    "id": 72746836,
+                    "title": "Назови меня рекой",
+                    "available": true,
+                    "durationMs": 232960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2915287,
+                            "name": "Мэd Dог",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12548973,
+                            "title": "На заре",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2001-03-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-19T21:49:46+00:00",
+                    "id": 89021972,
+                    "title": "Return",
+                    "available": true,
+                    "durationMs": 316440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 650652,
+                            "name": "Emma Ruth Rundle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17412079,
+                            "title": "Engine of Hell",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2021-11-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T05:49:26+00:00",
+                    "id": 813057,
+                    "title": "Blues From Beyond The Grave",
+                    "available": true,
+                    "durationMs": 275540,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21421,
+                            "name": "Thurston Moore",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 90785,
+                            "title": "Psychic Hearts",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2007-07-05T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T05:53:18+00:00",
+                    "id": 28106,
+                    "title": "I Miss You",
+                    "available": true,
+                    "durationMs": 227810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8498,
+                            "name": "blink-182",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3595068,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-10-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T05:55:12+00:00",
+                    "id": 17026,
+                    "title": "The Adventure",
+                    "available": true,
+                    "durationMs": 312530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10625,
+                            "name": "Angels & Airwaves",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2493,
+                            "title": "We Don't Need To Whisper",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2006-06-08T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:01:06+00:00",
+                    "id": 334090,
+                    "title": "More Than This",
+                    "available": true,
+                    "durationMs": 255320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 37076,
+                            "name": "Roxy Music",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 46800,
+                            "title": "More Than This - The Best Of Bryan Ferry And Roxy Music",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2003-03-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:01:39+00:00",
+                    "id": 631714,
+                    "title": "Perfect day",
+                    "available": true,
+                    "durationMs": 221850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6394,
+                            "name": "Lou Reed",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24533628,
+                            "title": "Ten songs for you",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:02:47+00:00",
+                    "id": 8454,
+                    "title": "Pale Blue Eyes",
+                    "available": true,
+                    "durationMs": 338260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6386,
+                            "name": "The Velvet Underground",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5728190,
+                            "title": "The Velvet Underground",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2014-11-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:03:32+00:00",
+                    "id": 2841625,
+                    "title": "Losing My Religion",
+                    "available": true,
+                    "durationMs": 267750,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48108,
+                            "name": "R.E.M.",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3935337,
+                            "title": "Part Lies, Part Heart, Part Truth, Part Garbage: 1982-2011",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2011-11-11T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:03:38+00:00",
+                    "id": 2841619,
+                    "title": "Everybody Hurts",
+                    "available": true,
+                    "durationMs": 316860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48108,
+                            "name": "R.E.M.",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3935337,
+                            "title": "Part Lies, Part Heart, Part Truth, Part Garbage: 1982-2011",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2011-11-11T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:05:59+00:00",
+                    "id": 41570,
+                    "title": "Sing for Absolution",
+                    "available": true,
+                    "durationMs": 294580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2981374,
+                            "name": "Heaven is Shining",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21352969,
+                            "title": "Psycho",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2022-02-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:06:12+00:00",
+                    "id": 41598,
+                    "title": "Hysteria",
+                    "available": true,
+                    "durationMs": 227440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12048,
+                            "name": "Muse",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 50060,
+                            "title": "Hysteria",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2009-05-22T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:06:46+00:00",
+                    "id": 198011,
+                    "title": "City of Delusion",
+                    "available": true,
+                    "durationMs": 288260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 12048,
+                            "name": "Muse",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 50197,
+                            "title": "Black Holes and Revelations",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2006-06-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:11:35+00:00",
+                    "id": 55928667,
+                    "title": "Vicarious",
+                    "available": true,
+                    "durationMs": 426000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 551053,
+                            "name": "Tool",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38048347,
+                            "title": "10,000 Days",
+                            "type": null,
+                            "genre": "prog",
+                            "releaseDate": "2006-04-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:13:44+00:00",
+                    "id": 55928656,
+                    "title": "Forty Six & 2",
+                    "available": true,
+                    "durationMs": 363000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 551053,
+                            "name": "Tool",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38048348,
+                            "title": "Ænima",
+                            "type": null,
+                            "genre": "prog",
+                            "releaseDate": "1996-09-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:15:02+00:00",
+                    "id": 456166,
+                    "title": "Magdalena",
+                    "available": true,
+                    "durationMs": 246060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 107953,
+                            "name": "A Perfect Circle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 47291,
+                            "title": "Mer De Noms",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2000-05-23T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-20T06:15:44+00:00",
+                    "id": 456182,
+                    "title": "Judith",
+                    "available": true,
+                    "durationMs": 247260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 107953,
+                            "name": "A Perfect Circle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1679151,
+                            "title": "Three Sixty",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2013-11-19T00:00:00+04:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.d3934ad6-fb5b-45b2-b2e7-9edca977c6a0",
+            "link": "https://music.yandex.ru/playlists/lk.d3934ad6-fb5b-45b2-b2e7-9edca977c6a0",
+            "kind": 3,
+            "available": true,
+            "trackCount": 72,
+            "visibility": "public",
+            "collective": false,
+            "revision": 87,
+            "created": "2022-10-19T21:38:32+00:00",
+            "modified": "2025-10-10T10:39:03+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-10-01T13:32:02+00:00",
+                    "id": 30298253,
+                    "title": "Spit It Out",
+                    "available": true,
+                    "durationMs": 161960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19159216,
+                            "name": "SOFT PLAY",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3805675,
+                            "title": "Take Control",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2016-09-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-01T13:20:44+00:00",
+                    "id": 788826,
+                    "title": "Muscle Junkie",
+                    "available": true,
+                    "durationMs": 196330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 230590,
+                            "name": "Violent Soho",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 87880,
+                            "title": "Violent Soho",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2010-03-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-15T06:54:20+00:00",
+                    "id": 96262705,
+                    "title": "Цунами",
+                    "available": true,
+                    "durationMs": 217930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3033108,
+                            "name": "Пионерлагерь Пыльная Радуга",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 249991,
+                            "name": "Oxxxymiron",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19714096,
+                            "title": "Цунами",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2021-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-28T18:05:54+00:00",
+                    "id": 738800,
+                    "title": "Milquetoast",
+                    "available": true,
+                    "durationMs": 235120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 13469,
+                            "name": "Helmet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 89033,
+                            "title": "Betty",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2008-02-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:59:36+00:00",
+                    "id": 19011261,
+                    "title": "The Devil in I",
+                    "available": true,
+                    "durationMs": 342820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48196,
+                            "name": "Slipknot",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2260378,
+                            "title": ".5: The Gray Chapter",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2014-10-15T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:59:33+00:00",
+                    "id": 391631,
+                    "title": "Wait and Bleed",
+                    "available": true,
+                    "durationMs": 147840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48196,
+                            "name": "Slipknot",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2289276,
+                            "title": "The Studio Album Collection 1999–2008",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2014-10-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:59:31+00:00",
+                    "id": 391784,
+                    "title": "Duality",
+                    "available": true,
+                    "durationMs": 252610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48196,
+                            "name": "Slipknot",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2289276,
+                            "title": "The Studio Album Collection 1999–2008",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2014-10-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:59:20+00:00",
+                    "id": 2285653,
+                    "title": "Gold Cobra",
+                    "available": true,
+                    "durationMs": 233530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9278,
+                            "name": "Limp Bizkit",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 226532,
+                            "title": "Gold Cobra",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2011-06-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:59:16+00:00",
+                    "id": 34623,
+                    "title": "My Generation",
+                    "available": true,
+                    "durationMs": 221020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9278,
+                            "name": "Limp Bizkit",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2874,
+                            "title": "Greatest Hitz",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2005-11-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:59:03+00:00",
+                    "id": 43669897,
+                    "title": "Bartzabel",
+                    "available": true,
+                    "durationMs": 301280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 293896,
+                            "name": "Behemoth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7168506,
+                            "title": "I Loved You at Your Darkest",
+                            "type": null,
+                            "genre": "deathmetal",
+                            "releaseDate": "2018-10-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:58:45+00:00",
+                    "id": 23721379,
+                    "title": "Hævnen",
+                    "available": true,
+                    "durationMs": 203290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2991288,
+                            "name": "Myrkur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2742999,
+                            "title": "M",
+                            "type": null,
+                            "genre": "folkmetal",
+                            "releaseDate": "2015-08-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:58:13+00:00",
+                    "id": 24968741,
+                    "title": "Lonely Hunter",
+                    "available": true,
+                    "durationMs": 277210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64169,
+                            "name": "Foals",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13767036,
+                            "title": "What Went Down",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:58:10+00:00",
+                    "id": 24522533,
+                    "title": "Mountain at My Gates",
+                    "available": true,
+                    "durationMs": 244290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64169,
+                            "name": "Foals",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13767036,
+                            "title": "What Went Down",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-08-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:57:50+00:00",
+                    "id": 432072,
+                    "title": "Transmission",
+                    "available": true,
+                    "durationMs": 217190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 56012,
+                            "name": "Joy Division",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 44684,
+                            "title": "The Best Of",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:57:48+00:00",
+                    "id": 145363,
+                    "title": "Love Will Tear Us Apart",
+                    "available": true,
+                    "durationMs": 206860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 56012,
+                            "name": "Joy Division",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 44684,
+                            "title": "The Best Of",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:57:15+00:00",
+                    "id": 6024113,
+                    "title": "Матерь богов",
+                    "available": true,
+                    "durationMs": 267610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41138,
+                            "name": "Nautilus Pompilius",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3113823,
+                            "title": "Серебряный век",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2015-12-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:57:11+00:00",
+                    "id": 6024130,
+                    "title": "Дыхание",
+                    "available": true,
+                    "durationMs": 219240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41138,
+                            "name": "Nautilus Pompilius",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3113823,
+                            "title": "Серебряный век",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2015-12-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:57:07+00:00",
+                    "id": 53728703,
+                    "title": "Чёрные птицы",
+                    "available": true,
+                    "durationMs": 203500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41138,
+                            "name": "Nautilus Pompilius",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10270,
+                            "title": "Наугад",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "1994-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:56:51+00:00",
+                    "id": 37696614,
+                    "title": "Долгая счастливая жизнь",
+                    "available": true,
+                    "durationMs": 325400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 42528,
+                            "name": "Гражданская оборона",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4784435,
+                            "title": "Долгая счастливая жизнь",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2004-06-15T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:56:47+00:00",
+                    "id": 37696653,
+                    "title": "Нечего терять",
+                    "available": true,
+                    "durationMs": 229050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 42528,
+                            "name": "Гражданская оборона",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4784443,
+                            "title": "Лунный переворот",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "1996-10-15T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:56:20+00:00",
+                    "id": 2388,
+                    "title": "Ain't No Sunshine",
+                    "available": true,
+                    "durationMs": 250740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 972,
+                            "name": "Michael Jackson",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3640073,
+                            "title": "Hello World - The Motown Solo Collection",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2009-07-31T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:56:12+00:00",
+                    "id": 628727,
+                    "title": "Billie Jean",
+                    "available": true,
+                    "durationMs": 293960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 972,
+                            "name": "Michael Jackson",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16899660,
+                            "title": "Popular Classics",
+                            "type": "compilation",
+                            "genre": "alternative",
+                            "releaseDate": "2021-07-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:55:53+00:00",
+                    "id": 2214608,
+                    "title": "Into My Arms",
+                    "available": true,
+                    "durationMs": 256120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 101973,
+                            "name": "Nick Cave & The Bad Seeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4334256,
+                            "title": "Lovely Creatures - The Best of Nick Cave and The Bad Seeds (1984-2014)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-05-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:55:47+00:00",
+                    "id": 2214590,
+                    "title": "Red Right Hand",
+                    "available": true,
+                    "durationMs": 372570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 101973,
+                            "name": "Nick Cave & The Bad Seeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4334256,
+                            "title": "Lovely Creatures - The Best of Nick Cave and The Bad Seeds (1984-2014)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-05-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:55:24+00:00",
+                    "id": 45220184,
+                    "title": "Шлюха",
+                    "available": true,
+                    "durationMs": 282820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2892605,
+                            "name": "Психея",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6069558,
+                            "title": "Шлюха",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2006-12-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:55:19+00:00",
+                    "id": 35908572,
+                    "title": "Сид Spears",
+                    "available": true,
+                    "durationMs": 245380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2892605,
+                            "name": "Психея",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1932462,
+                            "title": "Каждую секунду пространства",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2002-10-05T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:55:05+00:00",
+                    "id": 75432976,
+                    "title": "The Beginning Of The End",
+                    "available": true,
+                    "durationMs": 274110,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2884033,
+                            "name": "✝✝✝ (Crosses)",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13250856,
+                            "title": "The Beginning Of The End",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2020-12-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:56+00:00",
+                    "id": 34658567,
+                    "title": "Самолёт",
+                    "available": true,
+                    "durationMs": 174720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5019600,
+                            "name": "Джуна",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4276300,
+                            "title": "Джуна",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2017-04-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:48+00:00",
+                    "id": 2308839,
+                    "title": "Take Me Out",
+                    "available": true,
+                    "durationMs": 237100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 16406,
+                            "name": "Franz Ferdinand",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5908781,
+                            "title": "Franz Ferdinand",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2004-02-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:36+00:00",
+                    "id": 21048,
+                    "title": "Stay Together For The Kids",
+                    "available": true,
+                    "durationMs": 239540,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8498,
+                            "name": "blink-182",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3595068,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-10-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:33+00:00",
+                    "id": 21043,
+                    "title": "The Rock Show",
+                    "available": true,
+                    "durationMs": 171600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8498,
+                            "name": "blink-182",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3595068,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-10-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:30+00:00",
+                    "id": 28124,
+                    "title": "Adam's Song",
+                    "available": true,
+                    "durationMs": 249600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8498,
+                            "name": "blink-182",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3595068,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-10-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:27+00:00",
+                    "id": 29580769,
+                    "title": "She's Out Of Her Mind",
+                    "available": true,
+                    "durationMs": 162720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8498,
+                            "name": "blink-182",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4345731,
+                            "title": "California",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2017-05-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:54:22+00:00",
+                    "id": 28106,
+                    "title": "I Miss You",
+                    "available": true,
+                    "durationMs": 227810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8498,
+                            "name": "blink-182",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3595068,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-10-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:53:23+00:00",
+                    "id": 215600,
+                    "title": "Engine No. 9",
+                    "available": true,
+                    "durationMs": 204880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:53:17+00:00",
+                    "id": 215605,
+                    "title": "Bored",
+                    "available": true,
+                    "durationMs": 245970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:53:14+00:00",
+                    "id": 215602,
+                    "title": "7 Words",
+                    "available": true,
+                    "durationMs": 223890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:53:07+00:00",
+                    "id": 133083,
+                    "title": "Change (In the House of Flies)",
+                    "available": true,
+                    "durationMs": 299530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:53:04+00:00",
+                    "id": 215846,
+                    "title": "Be Quiet and Drive (Far Away)",
+                    "available": true,
+                    "durationMs": 308130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48770,
+                            "name": "Deftones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3389746,
+                            "title": "The Studio Album Collection",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2016-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-05T22:52:28+00:00",
+                    "id": 632004,
+                    "title": "Perfect day",
+                    "available": true,
+                    "durationMs": 221850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6394,
+                            "name": "Lou Reed",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24533628,
+                            "title": "Ten songs for you",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-12-10T01:58:37+00:00",
+                    "id": 47280162,
+                    "title": "Febersvan",
+                    "available": true,
+                    "durationMs": 447680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6666457,
+                            "name": "Gaupa",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16017105,
+                            "title": "GAUPA",
+                            "type": null,
+                            "genre": "stonerrock",
+                            "releaseDate": "2018-06-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-24T00:47:24+00:00",
+                    "id": 39217682,
+                    "title": "Can't Get Away",
+                    "available": true,
+                    "durationMs": 182020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2412630,
+                            "name": "Turnstile",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5053673,
+                            "title": "Time & Space",
+                            "type": null,
+                            "genre": "hardcore",
+                            "releaseDate": "2018-02-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-24T00:47:20+00:00",
+                    "id": 4663892,
+                    "title": "Delicate",
+                    "available": true,
+                    "durationMs": 297360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 878161,
+                            "name": "Headplate",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 522953,
+                            "title": "Delicate",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2002-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-06-24T00:38:28+00:00",
+                    "id": 85543535,
+                    "title": "If You Say So",
+                    "available": true,
+                    "durationMs": 151510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2400619,
+                            "name": "The Dead Love",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16342249,
+                            "title": "If You Say So",
+                            "type": "single",
+                            "genre": "rock",
+                            "releaseDate": "2021-07-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-23T13:50:15+00:00",
+                    "id": 37728296,
+                    "title": "Real Thing",
+                    "available": true,
+                    "durationMs": 116450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2412630,
+                            "name": "Turnstile",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5053673,
+                            "title": "Time & Space",
+                            "type": null,
+                            "genre": "hardcore",
+                            "releaseDate": "2018-02-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-21T03:32:48+00:00",
+                    "id": 47161234,
+                    "title": "Infinity",
+                    "available": true,
+                    "durationMs": 146310,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3898479,
+                            "name": "Skegss",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6384432,
+                            "title": "My Own Mess",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2018-09-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-13T01:56:27+00:00",
+                    "id": 30311620,
+                    "title": "Touch Me",
+                    "available": true,
+                    "durationMs": 217970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4536086,
+                            "name": "Dolores Haze",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3669174,
+                            "title": "The Haze Is Forever",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-11-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-13T01:52:08+00:00",
+                    "id": 314746,
+                    "title": "Ever Fallen In Love (With Someone You Shouldn't've)?",
+                    "available": true,
+                    "durationMs": 164280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 34721,
+                            "name": "Buzzcocks",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5900031,
+                            "title": "Ever Fallen In Love? Buzzcocks Finest",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-06-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-13T01:47:43+00:00",
+                    "id": 46426897,
+                    "title": "Tiny Planets",
+                    "available": true,
+                    "durationMs": 117560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9329930,
+                            "name": "Sports",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3017091,
+                            "title": "Ghost Babes Compilation, Vol. 2",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2015-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-12T00:38:16+00:00",
+                    "id": 36434943,
+                    "title": "Get These Things out of My Head",
+                    "available": true,
+                    "durationMs": 194170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2829631,
+                            "name": "Pale Honey",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4585562,
+                            "title": "Devotion",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2017-10-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-12T00:32:47+00:00",
+                    "id": 51583749,
+                    "title": "Pet Sematary",
+                    "available": true,
+                    "durationMs": 204700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5062096,
+                            "name": "Starcrawler",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7246482,
+                            "title": "Pet Sematary",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2019-04-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-12T00:31:25+00:00",
+                    "id": 25104746,
+                    "title": "My Head Hurts",
+                    "available": true,
+                    "durationMs": 169580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 550,
+                            "name": "Wavves",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2988310,
+                            "title": "V",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2015-06-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2024-04-12T00:14:42+00:00",
+                    "id": 47161242,
+                    "title": "Stop",
+                    "available": true,
+                    "durationMs": 143180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3898479,
+                            "name": "Skegss",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6384432,
+                            "title": "My Own Mess",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2018-09-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-20T12:25:18+00:00",
+                    "id": 108206739,
+                    "title": "Never Come Back",
+                    "available": true,
+                    "durationMs": 199240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1039096,
+                            "name": "KAS PRODUCT",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23868062,
+                            "title": "TRY OUT",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "1982-06-06T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-20T12:25:18+00:00",
+                    "id": 69430754,
+                    "title": "Famine Asylum",
+                    "available": true,
+                    "durationMs": 250090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 334995,
+                            "name": "Nothing",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11614627,
+                            "title": "The Great Dismal",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-10-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-20T12:25:18+00:00",
+                    "id": 34306623,
+                    "title": "I Like To Smile When I'm Sad",
+                    "available": true,
+                    "durationMs": 185490,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 23876895,
+                            "name": "FREAK",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4241599,
+                            "title": "I Like To Smile When I'm Sad",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2017-03-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-20T12:25:18+00:00",
+                    "id": 36619700,
+                    "title": "Not Done",
+                    "available": true,
+                    "durationMs": 239590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1613967,
+                            "name": "Bloody Knees",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4613284,
+                            "title": "Maybe It's Easy",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-10-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-16T12:34:11+00:00",
+                    "id": 463851,
+                    "title": "Abbatoir Blues",
+                    "available": true,
+                    "durationMs": 238620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 101973,
+                            "name": "Nick Cave & The Bad Seeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 210905,
+                            "title": "Abattoir Blues/The Lyre of Orpheus",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2004-09-20T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-16T12:26:33+00:00",
+                    "id": 61875736,
+                    "title": "Paradise Lost, a poem by John Milton",
+                    "available": true,
+                    "durationMs": 167960,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48746,
+                            "name": "The Used",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17830579,
+                            "title": "Heartwork",
+                            "type": null,
+                            "genre": "posthardcore",
+                            "releaseDate": "2021-09-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-12-16T12:24:51+00:00",
+                    "id": 61111663,
+                    "title": "Kawasaki Backflip",
+                    "available": true,
+                    "durationMs": 144010,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8247935,
+                            "name": "Dogleg",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9913155,
+                            "title": "Melee",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2020-03-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-09-10T21:51:26+00:00",
+                    "id": 148516,
+                    "title": "I'm Not Okay (I Promise)",
+                    "available": true,
+                    "durationMs": 188500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48814,
+                            "name": "My Chemical Romance",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14393,
+                            "title": "Three Cheers for Sweet Revenge",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2004-06-08T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2023-08-24T11:46:56+00:00",
+                    "id": 112870622,
+                    "albumId": 25457654
+                },
+                {
+                    "timestamp": "2023-06-30T17:31:07+00:00",
+                    "id": 548143,
+                    "title": "The Weeping Song",
+                    "available": true,
+                    "durationMs": 265140,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 101973,
+                            "name": "Nick Cave & The Bad Seeds",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4334256,
+                            "title": "Lovely Creatures - The Best of Nick Cave and The Bad Seeds (1984-2014)",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2017-05-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-11-26T11:52:11+00:00",
+                    "id": 315868,
+                    "title": "Sandy",
+                    "available": true,
+                    "durationMs": 219370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 93443,
+                            "name": "Bitch Alert",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 50553,
+                            "title": "Pink Bunnies Get Hit By Big Trucks - Selected Shouts",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2008-05-14T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-31T16:21:08+00:00",
+                    "id": 76102915,
+                    "title": "Ramp",
+                    "available": true,
+                    "durationMs": 182860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8768908,
+                            "name": "Phlegtum",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13430413,
+                            "title": "II",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2021-01-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-31T16:12:50+00:00",
+                    "id": 82850630,
+                    "title": "Feeling Real",
+                    "available": true,
+                    "durationMs": 313340,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11778483,
+                            "name": "cursetheknife",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15531197,
+                            "title": "Thank You For Being Here",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2021-05-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-29T21:49:41+00:00",
+                    "id": 35540664,
+                    "title": "16 Psyche",
+                    "available": true,
+                    "durationMs": 258580,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 964124,
+                            "name": "Chelsea Wolfe",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4700768,
+                            "title": "Hiss Spun",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2017-09-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-29T21:43:48+00:00",
+                    "id": 28673050,
+                    "title": "The Giving Tree",
+                    "available": true,
+                    "durationMs": 363280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1699763,
+                            "name": "If These Trees Could Talk",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3432526,
+                            "title": "The Bones of a Dying World",
+                            "type": null,
+                            "genre": "postrock",
+                            "releaseDate": "2016-06-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-29T21:43:48+00:00",
+                    "id": 35680306,
+                    "title": "Ulvinde",
+                    "available": true,
+                    "durationMs": 263920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2991288,
+                            "name": "Myrkur",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4461849,
+                            "title": "Mareridt",
+                            "type": null,
+                            "genre": "folkmetal",
+                            "releaseDate": "2017-09-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-29T21:43:48+00:00",
+                    "id": 46409994,
+                    "title": "When I'm Small",
+                    "available": true,
+                    "durationMs": 249060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1126913,
+                            "name": "Phantogram",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6257329,
+                            "title": "Eyelid Movies",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2014-01-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-29T21:43:48+00:00",
+                    "id": 30199030,
+                    "title": "Protection",
+                    "available": true,
+                    "durationMs": 298840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 650652,
+                            "name": "Emma Ruth Rundle",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3653060,
+                            "title": "Marked for Death",
+                            "type": null,
+                            "genre": "indie",
+                            "releaseDate": "2016-09-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2022-10-29T16:09:43+00:00",
+                    "id": 55927921,
+                    "title": "Sapphire",
+                    "available": true,
+                    "durationMs": 300500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 523152,
+                            "name": "Alcest",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8233683,
+                            "title": "Spiritual Instinct",
+                            "type": null,
+                            "genre": "postmetal",
+                            "releaseDate": "2019-10-25T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 1065862638,
+        "login": "mihail.tchakchurin",
+        "name": "mihail.tchakchurin",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "63.7071"
+}

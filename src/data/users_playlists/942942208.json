@@ -1,0 +1,764 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.c7e15cd6-e1e3-4de7-bbea-5bdcf753f9d8",
+            "link": "https://music.yandex.ru/playlists/lk.c7e15cd6-e1e3-4de7-bbea-5bdcf753f9d8",
+            "kind": 3,
+            "available": true,
+            "trackCount": 29,
+            "visibility": "public",
+            "collective": false,
+            "revision": 1,
+            "created": "2019-12-05T09:54:21+00:00",
+            "modified": "2019-12-05T09:54:21+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 631623,
+                    "title": "Sweet Dreams (Are Made of This)",
+                    "available": true,
+                    "durationMs": 217090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 118895,
+                            "name": "Eurythmics",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4781,
+                            "name": "Annie Lennox",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 9606,
+                            "name": "Dave Stewart",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 16899660,
+                            "title": "Popular Classics",
+                            "type": "compilation",
+                            "genre": "alternative",
+                            "releaseDate": "2021-07-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 95995,
+                    "title": "Cold As Ice",
+                    "available": true,
+                    "durationMs": 203130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36749,
+                            "name": "Foreigner",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 395142,
+                            "title": "Original Album Series",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2012-01-13T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 10822,
+                    "title": "Sunny",
+                    "available": true,
+                    "durationMs": 169320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 978,
+                            "name": "Marvin Gaye",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12037758,
+                            "title": "Соул в городе",
+                            "type": "compilation",
+                            "genre": "soul",
+                            "releaseDate": "2020-09-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 30358597,
+                    "title": "Nobody Knows",
+                    "available": true,
+                    "durationMs": 188570,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 680426,
+                            "name": "The Lumineers",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3674856,
+                            "title": "Пит и его дракон",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": "2016-07-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 32504832,
+                    "title": "A Lovely Night",
+                    "available": true,
+                    "durationMs": 236500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 673280,
+                            "name": "Ryan Gosling",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4423856,
+                            "name": "Emma Stone",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3962240,
+                            "title": "«Ла-Ла Ленд»",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": "2016-12-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 18088708,
+                    "title": "Don't",
+                    "available": true,
+                    "durationMs": 219840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 381067,
+                            "name": "Ed Sheeran",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3066903,
+                            "title": "x",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2015-11-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 21254,
+                    "title": "Cool",
+                    "available": true,
+                    "durationMs": 189670,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7348,
+                            "name": "Gwen Stefani",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2711,
+                            "title": "Love. Angel. Music. Baby.",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2004-11-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 14422944,
+                    "title": "Riptide",
+                    "available": true,
+                    "durationMs": 204280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1630184,
+                            "name": "Vance Joy",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2132454,
+                            "title": "Dream Your Life Away",
+                            "type": null,
+                            "genre": "foreignbard",
+                            "releaseDate": "2014-09-08T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 36817859,
+                    "title": "Bitter Sweet Symphony",
+                    "available": true,
+                    "durationMs": 357260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36787,
+                            "name": "The Verve",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4644898,
+                            "title": "Urban Hymns",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "1997-09-29T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 43765066,
+                    "title": "Shallow",
+                    "available": true,
+                    "durationMs": 217210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1438,
+                            "name": "Lady Gaga",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1387223,
+                            "name": "Bradley Cooper",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5834903,
+                            "title": "«Звезда родилась»",
+                            "type": null,
+                            "genre": "films",
+                            "releaseDate": "2018-10-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 370429,
+                    "title": "Boulevard of Broken Dreams",
+                    "available": true,
+                    "durationMs": 261260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36762,
+                            "name": "Green Day",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 41332,
+                            "title": "Boulevard of Broken Dreams",
+                            "type": "single",
+                            "genre": "punk",
+                            "releaseDate": "2009-06-16T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 17227506,
+                    "title": "I Need a Dollar",
+                    "available": true,
+                    "durationMs": 244420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2832675,
+                            "name": "Allen Block",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5088358,
+                            "title": "I Need a Dollar",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2010-11-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 25933008,
+                    "title": "Sweet Lovin",
+                    "available": true,
+                    "durationMs": 202210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2430776,
+                            "name": "Sigala",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 30958,
+                            "name": "Bryn Christopher",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5796636,
+                            "title": "Brighter Days",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2018-09-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 21114428,
+                    "title": "Glory",
+                    "available": true,
+                    "durationMs": 272160,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3505,
+                            "name": "Common",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 6814,
+                            "name": "John Legend",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2413282,
+                            "title": "Glory",
+                            "type": "single",
+                            "genre": "soundtrack",
+                            "releaseDate": "2014-12-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 22001762,
+                    "title": "See You Again",
+                    "available": true,
+                    "durationMs": 229520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48300,
+                            "name": "Wiz Khalifa",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 1955013,
+                            "name": "Charlie Puth",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2532510,
+                            "title": "See You Again",
+                            "type": "single",
+                            "genre": "films",
+                            "releaseDate": "2015-03-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 645159,
+                    "title": "Mrs. Robinson",
+                    "available": true,
+                    "durationMs": 243840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 58121,
+                            "name": "Simon & Garfunkel",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8520700,
+                            "title": "The Real Classics Film",
+                            "type": "compilation",
+                            "genre": "soundtrack",
+                            "releaseDate": "2019-08-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 21717275,
+                    "title": "Crazy in Love",
+                    "available": true,
+                    "durationMs": 251720,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 27995,
+                            "name": "Beyoncé",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9997983,
+                            "title": "Beyoncé I Am...Tour Instrumentals",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2020-02-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 609639,
+                    "title": "ghostbusters",
+                    "available": true,
+                    "durationMs": 245240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 569086,
+                            "name": "TENTEN",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37552995,
+                            "title": "ghostbusters",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2025-07-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 30879748,
+                    "title": "I Wanna Be Loved by You",
+                    "available": true,
+                    "durationMs": 170260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 53887,
+                            "name": "Marilyn Monroe",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5214231,
+                            "title": "A Qualcuno Piace Caldo",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2018-03-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 672447,
+                    "title": "I Don't Want to Miss a Thing",
+                    "available": true,
+                    "durationMs": 298090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 14606,
+                            "name": "Aerosmith",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29614712,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2023-08-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 647314,
+                    "title": "You Make My Dreams",
+                    "available": true,
+                    "durationMs": 191480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 873729,
+                            "name": "Daryl Hall & John Oates",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 173601,
+                            "title": "(500) Days of Summer (Music from the Motion Picture)",
+                            "type": "compilation",
+                            "genre": "soundtrack",
+                            "releaseDate": "2009-07-10T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 10171,
+                    "title": "Lovefool",
+                    "available": true,
+                    "durationMs": 198240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5953,
+                            "name": "The Cardigans",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6393,
+                            "title": "Best Of",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-01-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 9142378,
+                    "title": "The Time of My Life",
+                    "available": true,
+                    "durationMs": 278130,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3375,
+                            "name": "Bill Medley",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 21875,
+                            "name": "Jennifer Warnes",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 961381,
+                            "title": "FILMS IN LOVE, Vol. 3",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2013-01-21T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 71235,
+                    "title": "Where Is The Love?",
+                    "available": true,
+                    "durationMs": 273810,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 451,
+                            "name": "Black Eyed Peas",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29592384,
+                            "title": "Elephunk",
+                            "type": null,
+                            "genre": "rnb",
+                            "releaseDate": "2023-12-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 27965,
+                    "title": "Every Breath You Take",
+                    "available": true,
+                    "durationMs": 253920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 15029,
+                            "name": "The Police",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2497648,
+                            "title": "The Police",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2007-06-11T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 628432,
+                    "title": "Knockin' On Heaven's Door",
+                    "available": true,
+                    "durationMs": 149910,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1665,
+                            "name": "Bob Dylan",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3029956,
+                            "title": "«Рок на Востоке»",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": "2015-10-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 305397,
+                    "title": "My Father's Son",
+                    "available": true,
+                    "durationMs": 269770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6919,
+                            "name": "Joe Cocker",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3716035,
+                            "title": "The Album Recordings: 1984-2007",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2015-12-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 694683,
+                    "title": "Highway to Hell",
+                    "available": true,
+                    "durationMs": 209090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6724533,
+                            "name": "Oz Rocks",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6976558,
+                            "title": "We Will Rock You",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2011-07-20T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-12-05T09:54:21+00:00",
+                    "id": 10814889,
+                    "title": "Wake Me Up",
+                    "available": true,
+                    "durationMs": 246800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 312616,
+                            "name": "Avicii",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36661737,
+                            "title": "Avicii Forever",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2025-05-16T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 942942208,
+        "login": "owl.orekhova",
+        "name": "owl.orekhova",
+        "sex": "female",
+        "verified": false
+    },
+    "rating": "64.6478"
+}

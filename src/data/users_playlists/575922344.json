@@ -1,0 +1,2557 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.72c9fe47-88fb-432f-8682-9f2b4b9a897c",
+            "link": "https://music.yandex.ru/playlists/lk.72c9fe47-88fb-432f-8682-9f2b4b9a897c",
+            "kind": 3,
+            "available": true,
+            "trackCount": 103,
+            "visibility": "public",
+            "collective": false,
+            "revision": 133,
+            "created": "2025-03-10T09:44:04+00:00",
+            "modified": "2025-10-26T18:35:35+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2025-10-26T18:35:35+00:00",
+                    "id": 79913541,
+                    "title": "Революция",
+                    "available": true,
+                    "durationMs": 190400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3694187,
+                            "name": "Quest Pistols Show",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14577042,
+                            "title": "5 Stars EP - Back to 2000s",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2021-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T16:46:27+00:00",
+                    "id": 39089626,
+                    "title": "Орбит без сахара",
+                    "available": true,
+                    "durationMs": 137740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 161243,
+                            "name": "Сплин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 60058,
+                            "title": "Гранатовый альбом",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "1998-04-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T16:35:04+00:00",
+                    "id": 31328206,
+                    "title": "Хочется",
+                    "available": true,
+                    "durationMs": 180100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 159009,
+                            "name": "Градусы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3796696,
+                            "title": "Градус 100",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2016-06-03T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T16:31:38+00:00",
+                    "id": 483382,
+                    "title": "I Kissed A Girl",
+                    "available": true,
+                    "durationMs": 176760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6856,
+                            "name": "Katy Perry",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 51178,
+                            "title": "One Of The Boys",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2008-06-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T16:28:02+00:00",
+                    "id": 112804297,
+                    "title": "Лесник (Из сериала «Король и Шут»)",
+                    "available": true,
+                    "durationMs": 140310,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25429101,
+                            "title": "Король и Шут (Официальный саундтрек), Часть 1",
+                            "type": null,
+                            "genre": "tvseries",
+                            "releaseDate": "2023-04-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T15:57:17+00:00",
+                    "id": 179320,
+                    "title": "Inside the Fire",
+                    "available": true,
+                    "durationMs": 231040,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 48827,
+                            "name": "Disturbed",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 18206,
+                            "title": "Indestructible",
+                            "type": null,
+                            "genre": "alternativemetal",
+                            "releaseDate": "2008-04-29T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T15:55:52+00:00",
+                    "id": 33007086,
+                    "title": "Human",
+                    "available": true,
+                    "durationMs": 190900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4779863,
+                            "name": "John \"The Ragin Cajun\" Jones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4028391,
+                            "title": "Im Only Human After All",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2017-02-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T15:55:30+00:00",
+                    "id": 178529,
+                    "title": "Numb",
+                    "available": true,
+                    "durationMs": 187520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21940,
+                            "title": "Meteora",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2003-03-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T15:51:52+00:00",
+                    "id": 50685846,
+                    "title": "Прыгну со скалы",
+                    "available": true,
+                    "durationMs": 192820,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7019257,
+                            "title": "Акустический альбом",
+                            "type": null,
+                            "genre": "folkrock",
+                            "releaseDate": "1999-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T15:44:31+00:00",
+                    "id": 14701552,
+                    "title": "How You Remind Me",
+                    "available": true,
+                    "durationMs": 224600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36784,
+                            "name": "Nickelback",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1610687,
+                            "title": "The Best of Nickelback, Vol. 1",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2013-11-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-26T15:36:13+00:00",
+                    "id": 58306159,
+                    "title": "Gold",
+                    "available": true,
+                    "durationMs": 185070,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1672579,
+                            "name": "Tolan Shaw",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 17239917,
+                            "title": "Singer Songwriter: Indie Pop",
+                            "type": null,
+                            "genre": "foreignbard",
+                            "releaseDate": "2021-08-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-04T23:49:13+00:00",
+                    "id": 69357579,
+                    "title": "Киты как люди: разумный мозг, свой язык, песни и ритуалы",
+                    "available": true,
+                    "durationMs": 1402220,
+                    "type": "podcast-episode",
+                    "artists": {},
+                    "albums": {
+                        "1": {
+                            "id": 6411659,
+                            "title": "Истории.doc",
+                            "type": "podcast",
+                            "genre": null,
+                            "releaseDate": "2019-01-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-04T17:49:21+00:00",
+                    "id": 78982868,
+                    "title": "Киты и их тайная жизнь",
+                    "available": true,
+                    "durationMs": 2546020,
+                    "type": "podcast-episode",
+                    "artists": {},
+                    "albums": {
+                        "1": {
+                            "id": 14284967,
+                            "title": "Мозг",
+                            "type": "podcast",
+                            "genre": "podcasts",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-04T17:48:44+00:00",
+                    "id": 82459494,
+                    "title": "8. Китообразные: где обитают, кто самый осторожный. Кто их предки?",
+                    "available": true,
+                    "durationMs": 1070810,
+                    "type": "podcast-episode",
+                    "artists": {},
+                    "albums": {
+                        "1": {
+                            "id": 14465045,
+                            "title": "В мире дайвинга и туризма | Подкаст Эхо Москвы",
+                            "type": "podcast",
+                            "genre": "podcasts",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-10-04T16:22:46+00:00",
+                    "id": 140731042,
+                    "title": "Шёлк",
+                    "available": true,
+                    "durationMs": 146000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9376188,
+                            "name": "Ваня Дмитриенко",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37293134,
+                            "title": "Шёлк",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2025-07-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-25T15:46:47+00:00",
+                    "id": 17563812,
+                    "title": "Для тебя",
+                    "available": true,
+                    "durationMs": 147900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 156427,
+                            "name": "Звери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 486804,
+                            "title": "Голод",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2003-05-16T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-24T16:30:22+00:00",
+                    "id": 68668291,
+                    "title": "Сегодня",
+                    "available": true,
+                    "durationMs": 203480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 189598,
+                            "name": "Манго-Манго",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11406031,
+                            "title": "Сегодня",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2014-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-13T16:54:41+00:00",
+                    "id": 136650605,
+                    "title": "потанцуй со мной",
+                    "available": true,
+                    "durationMs": 209910,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6310447,
+                            "name": "тима ищет свет",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35629463,
+                            "title": "потанцуй со мной",
+                            "type": "single",
+                            "genre": "local-indie",
+                            "releaseDate": "2025-03-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-08-13T16:52:40+00:00",
+                    "id": 79790133,
+                    "title": "волна",
+                    "available": true,
+                    "durationMs": 190830,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6310447,
+                            "name": "тима ищет свет",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14538571,
+                            "title": "зеркало",
+                            "type": null,
+                            "genre": "local-indie",
+                            "releaseDate": "2021-04-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T18:03:37+00:00",
+                    "id": 139805680,
+                    "title": "Не пугайся, детка",
+                    "available": true,
+                    "durationMs": 144760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3366580,
+                            "name": "Константин Меладзе",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5419370,
+                            "name": "Harddope",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 22733272,
+                            "name": "FURSOV",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36905863,
+                            "title": "Не пугайся, детка",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2025-06-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T17:51:47+00:00",
+                    "id": 138552018,
+                    "title": "LOVE AGAIN",
+                    "available": true,
+                    "durationMs": 175030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10878798,
+                            "name": "XOLIDAYBOY",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 36371780,
+                            "title": "LOVE AGAIN",
+                            "type": "single",
+                            "genre": "rusrock",
+                            "releaseDate": "2025-04-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T17:43:47+00:00",
+                    "id": 64220,
+                    "title": "Wake Up Call",
+                    "available": true,
+                    "durationMs": 196620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 26046,
+                            "name": "Maroon 5",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3015881,
+                            "title": "Singles",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2015-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T17:43:06+00:00",
+                    "id": 9570,
+                    "title": "I Got You (I Feel Good)",
+                    "available": true,
+                    "durationMs": 167340,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 606,
+                            "name": "James Brown",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35201554,
+                            "title": "Star Time",
+                            "type": null,
+                            "genre": "rnb",
+                            "releaseDate": "1991-05-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-17T17:40:13+00:00",
+                    "id": 54081164,
+                    "title": "The Big Bang [As Featured in \"Mob Wives\"]",
+                    "available": true,
+                    "durationMs": 164480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 673441,
+                            "name": "Rock Mafia",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7770992,
+                            "title": "The Big Bang [As Featured in \"Mob Wives\"]",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2016-03-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-15T15:24:41+00:00",
+                    "id": 4109326,
+                    "title": "Make It Bun Dem",
+                    "available": true,
+                    "durationMs": 213690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 419326,
+                            "name": "Skrillex",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 15409,
+                            "name": "Damian Marley",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 562951,
+                            "title": "Make It Bun Dem After Hours EP",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2012-08-28T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-14T13:31:52+00:00",
+                    "id": 124904083,
+                    "title": "Вечно молодой",
+                    "available": true,
+                    "durationMs": 218970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10906992,
+                            "name": "ГРАНЖ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30749279,
+                            "title": "Вечно молодой",
+                            "type": "single",
+                            "genre": "rusrock",
+                            "releaseDate": "2024-04-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-14T13:14:14+00:00",
+                    "id": 598495,
+                    "title": "Кто ты?",
+                    "available": true,
+                    "durationMs": 205190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 159009,
+                            "name": "Градусы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 62234,
+                            "title": "Голая",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-14T13:09:58+00:00",
+                    "id": 17563761,
+                    "title": "Всё, что тебя касается",
+                    "available": true,
+                    "durationMs": 201350,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 156427,
+                            "name": "Звери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1713772,
+                            "title": "Лучшие",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2013-01-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-14T13:06:18+00:00",
+                    "id": 137251015,
+                    "title": "Не пугайся, детка",
+                    "available": true,
+                    "durationMs": 215900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3366580,
+                            "name": "Константин Меладзе",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35840314,
+                            "title": "Не пугайся, детка",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2025-03-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-06T15:17:31+00:00",
+                    "id": 100356634,
+                    "title": "Hit the road jack",
+                    "available": true,
+                    "durationMs": 135310,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5399217,
+                            "name": "Yann Muller",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21049682,
+                            "title": "Best acoustic covers",
+                            "type": null,
+                            "genre": "relax",
+                            "releaseDate": "2022-02-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-06T14:56:44+00:00",
+                    "id": 17563734,
+                    "title": "Я с тобой",
+                    "available": true,
+                    "durationMs": 236120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 156427,
+                            "name": "Звери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 168834,
+                            "title": "Дальше",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2008-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-06T14:50:21+00:00",
+                    "id": 2214166,
+                    "title": "Голая",
+                    "available": true,
+                    "durationMs": 247400,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 159009,
+                            "name": "Градусы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 62234,
+                            "title": "Голая",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-06T14:46:35+00:00",
+                    "id": 122757595,
+                    "title": "Пожары",
+                    "available": true,
+                    "durationMs": 197770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10878798,
+                            "name": "XOLIDAYBOY",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29769921,
+                            "title": "Пожары",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2024-02-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-07-06T14:45:01+00:00",
+                    "id": 129946039,
+                    "title": "Кустурица",
+                    "available": true,
+                    "durationMs": 173000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41173,
+                            "name": "Братья Грим",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32813148,
+                            "title": "Братья Грим",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2005-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-28T18:16:43+00:00",
+                    "id": 43566461,
+                    "title": "Я хочу быть с тобой",
+                    "available": true,
+                    "durationMs": 261500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41138,
+                            "name": "Nautilus Pompilius",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5801396,
+                            "title": "Легенды русского рока: Nautilus Pompilius",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "1996-06-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-27T15:03:09+00:00",
+                    "id": 54516116,
+                    "title": "Tom's Diner",
+                    "available": true,
+                    "durationMs": 269320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3971041,
+                            "name": "AnnenMayKantereit",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5643498,
+                            "name": "Giant Rooks",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7864023,
+                            "title": "Tom's Diner",
+                            "type": "single",
+                            "genre": "indie",
+                            "releaseDate": "2019-06-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-27T14:59:59+00:00",
+                    "id": 14406010,
+                    "title": "One Way or Another (From \"One Direction: This Is Us\")",
+                    "available": true,
+                    "durationMs": 157830,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2409324,
+                            "name": "Movies Band",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1571558,
+                            "title": "Top Songs from Hit Movies",
+                            "type": "compilation",
+                            "genre": "soundtrack",
+                            "releaseDate": "2013-08-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T16:17:13+00:00",
+                    "id": 16422867,
+                    "title": "Because I'm Happy",
+                    "available": true,
+                    "durationMs": 234420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2710612,
+                            "name": "Wild Because I",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1797093,
+                            "title": "Because I'm Happy",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2014-02-20T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:26:37+00:00",
+                    "id": 75642961,
+                    "title": "Венера-Юпитер",
+                    "available": true,
+                    "durationMs": 127290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9376188,
+                            "name": "Ваня Дмитриенко",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13303939,
+                            "title": "Венера-Юпитер",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2021-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:21:13+00:00",
+                    "id": 42938803,
+                    "title": "25 этаж",
+                    "available": true,
+                    "durationMs": 273700,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 431044,
+                            "name": "Корни",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 220312,
+                            "title": "Дневники Паши Артемьева",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2005-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:19:10+00:00",
+                    "id": 25301457,
+                    "title": "Это не девочка",
+                    "available": true,
+                    "durationMs": 197230,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3049830,
+                            "name": "Те100стерон",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3099476,
+                            "title": "Лети",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2015-11-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:18:25+00:00",
+                    "id": 112804299,
+                    "title": "Камнем по голове (Из сериала «Король и Шут»)",
+                    "available": true,
+                    "durationMs": 160180,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25429101,
+                            "title": "Король и Шут (Официальный саундтрек), Часть 1",
+                            "type": null,
+                            "genre": "tvseries",
+                            "releaseDate": "2023-04-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:12:41+00:00",
+                    "id": 82304736,
+                    "title": "А мы не ангелы, парень",
+                    "available": true,
+                    "durationMs": 186260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7313807,
+                            "name": "Алексей Понамарев",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15358644,
+                            "title": "А мы не ангелы, парень",
+                            "type": "single",
+                            "genre": "rusrock",
+                            "releaseDate": "2010-01-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:08:17+00:00",
+                    "id": 31883152,
+                    "title": "Московская песня",
+                    "available": true,
+                    "durationMs": 192560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 42586,
+                            "name": "Сергей Трофимов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3873834,
+                            "title": "Лучшие песни",
+                            "type": null,
+                            "genre": "shanson",
+                            "releaseDate": "2016-10-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T08:04:08+00:00",
+                    "id": 29238706,
+                    "title": "Дурак и молния",
+                    "available": true,
+                    "durationMs": 114330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10101,
+                            "title": "Камнем по голове",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "1996-05-24T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:57:57+00:00",
+                    "id": 76978707,
+                    "title": "Wellerman",
+                    "available": true,
+                    "durationMs": 134030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10771138,
+                            "name": "The Wellermen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 19006882,
+                            "title": "Silent Night",
+                            "type": null,
+                            "genre": null,
+                            "releaseDate": "2021-11-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:57:11+00:00",
+                    "id": 595258,
+                    "title": "Я свободен",
+                    "available": true,
+                    "durationMs": 433090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 168372,
+                            "name": "Кипелов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 63576,
+                            "title": "Вавилон",
+                            "type": null,
+                            "genre": "classicmetal",
+                            "releaseDate": "2004-03-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:53:49+00:00",
+                    "id": 130327124,
+                    "title": "Этот город",
+                    "available": true,
+                    "durationMs": 187150,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 188974,
+                            "name": "Браво",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32960797,
+                            "title": "The Best Of",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2016-07-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:43:46+00:00",
+                    "id": 28130240,
+                    "title": "Город Сочи",
+                    "available": true,
+                    "durationMs": 181440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 42586,
+                            "name": "Сергей Трофимов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3873834,
+                            "title": "Лучшие песни",
+                            "type": null,
+                            "genre": "shanson",
+                            "releaseDate": "2016-10-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:39:28+00:00",
+                    "id": 31750626,
+                    "title": "Девушки как звёзды",
+                    "available": true,
+                    "durationMs": 243280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 167066,
+                            "name": "Андрей Губин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3855297,
+                            "title": "Коллекция",
+                            "type": null,
+                            "genre": "rusestrada",
+                            "releaseDate": "2014-04-30T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:35:31+00:00",
+                    "id": 67269825,
+                    "title": "Sweet Dreams",
+                    "available": true,
+                    "durationMs": 158530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 161659,
+                            "name": "Klaas",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 11037465,
+                            "title": "Sweet Dreams",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2020-07-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:31:19+00:00",
+                    "id": 17563784,
+                    "title": "Районы-кварталы",
+                    "available": true,
+                    "durationMs": 204460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 156427,
+                            "name": "Звери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 486805,
+                            "title": "Районы-кварталы",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2004-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:29:22+00:00",
+                    "id": 34703882,
+                    "title": "Да, со мной не просто",
+                    "available": true,
+                    "durationMs": 127520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4652316,
+                            "name": "The Hatters",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4288331,
+                            "title": "Полная шляпа",
+                            "type": null,
+                            "genre": "allrock",
+                            "releaseDate": "2017-04-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:19:45+00:00",
+                    "id": 28123186,
+                    "title": "Как на войне",
+                    "available": true,
+                    "durationMs": 245050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41134,
+                            "name": "Агата Кристи",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 10283,
+                            "title": "Избранное",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2008-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:18:41+00:00",
+                    "id": 29016012,
+                    "title": "Хали-гали, паратрупер",
+                    "available": true,
+                    "durationMs": 245060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 677799,
+                            "name": "Леприконсы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3482617,
+                            "title": "Нам с тобою было супер",
+                            "type": null,
+                            "genre": "ska",
+                            "releaseDate": "1999-04-03T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-09T07:15:42+00:00",
+                    "id": 121695185,
+                    "title": "Это здорово",
+                    "available": true,
+                    "durationMs": 139200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3193502,
+                            "name": "Нодар Ревия",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29301081,
+                            "title": "Это здорово",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2024-02-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:35:12+00:00",
+                    "id": 28123935,
+                    "title": "Ночь",
+                    "available": true,
+                    "durationMs": 222220,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 167066,
+                            "name": "Андрей Губин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3855297,
+                            "title": "Коллекция",
+                            "type": null,
+                            "genre": "rusestrada",
+                            "releaseDate": "2014-04-30T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:33:10+00:00",
+                    "id": 108028599,
+                    "title": "Самолеты",
+                    "available": true,
+                    "durationMs": 173510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8406047,
+                            "name": "Женя Трофимов",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23771791,
+                            "title": "что бы она пела",
+                            "type": "single",
+                            "genre": "rusrock",
+                            "releaseDate": "2022-10-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:29:52+00:00",
+                    "id": 17563781,
+                    "title": "Всё, что касается",
+                    "available": true,
+                    "durationMs": 209840,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 156427,
+                            "name": "Звери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 486805,
+                            "title": "Районы-кварталы",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2004-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:26:36+00:00",
+                    "id": 83675201,
+                    "title": "Седьмой лепесток",
+                    "available": true,
+                    "durationMs": 174920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2556283,
+                            "name": "Максим Круженков",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 41113,
+                            "name": "Hi-Fi",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15780920,
+                            "title": "Седьмой лепесток",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2021-06-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:22:29+00:00",
+                    "id": 50685843,
+                    "title": "Кукла колдуна",
+                    "available": true,
+                    "durationMs": 203920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41052,
+                            "name": "Король и Шут",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7019257,
+                            "title": "Акустический альбом",
+                            "type": null,
+                            "genre": "folkrock",
+                            "releaseDate": "1999-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:18:10+00:00",
+                    "id": 34084451,
+                    "title": "Моё сердце",
+                    "available": true,
+                    "durationMs": 249930,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 161243,
+                            "name": "Сплин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4181557,
+                            "title": "25-й кадр",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2017-02-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:15:43+00:00",
+                    "id": 582507,
+                    "title": "Режиссер",
+                    "available": true,
+                    "durationMs": 219350,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 159009,
+                            "name": "Градусы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 62234,
+                            "title": "Голая",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:14:44+00:00",
+                    "id": 136084563,
+                    "title": "Кухни",
+                    "available": true,
+                    "durationMs": 140800,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8621539,
+                            "name": "Бонд с кнопкой",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38587466,
+                            "title": "Дом",
+                            "type": null,
+                            "genre": "local-indie",
+                            "releaseDate": "2025-10-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-06-08T15:07:21+00:00",
+                    "id": 37849394,
+                    "title": "I Feel Like I'm Drowning",
+                    "available": true,
+                    "durationMs": 185520,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5457159,
+                            "name": "Two Feet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5834900,
+                            "title": "A 20 Something Fuck",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2018-10-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T09:37:45+00:00",
+                    "id": 121982275,
+                    "title": "It's My Life",
+                    "available": true,
+                    "durationMs": 224600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1859,
+                            "name": "Bon Jovi",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14843820,
+                            "title": "Pride Parade 2021",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2021-04-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T09:18:07+00:00",
+                    "id": 53404,
+                    "title": "Smells Like Teen Spirit",
+                    "available": true,
+                    "durationMs": 301970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9262,
+                            "name": "Nirvana",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5576245,
+                            "title": "Nirvana",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2002-10-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T09:09:22+00:00",
+                    "id": 9769,
+                    "title": "I Was Made For Lovin' You",
+                    "available": true,
+                    "durationMs": 268440,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7147,
+                            "name": "Kiss",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 85617,
+                            "title": "KISS Box Set",
+                            "type": null,
+                            "genre": "hardrock",
+                            "releaseDate": "2001-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T09:06:12+00:00",
+                    "id": 6095218,
+                    "title": "Careless Whisper",
+                    "available": true,
+                    "durationMs": 230420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1140471,
+                            "name": "Kiara Rocks",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 58441,
+                            "name": "Sebastian Bach",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 670457,
+                            "title": "Todos os Meus Passos",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2012-10-02T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T08:57:23+00:00",
+                    "id": 37258117,
+                    "title": "Я так соскучился",
+                    "available": true,
+                    "durationMs": 408870,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3315646,
+                            "name": "Порнофильмы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4714779,
+                            "title": "В диапазоне между отчаянием и надеждой",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2017-10-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-05-05T08:44:29+00:00",
+                    "id": 104680644,
+                    "title": "Take Me to Church",
+                    "available": true,
+                    "durationMs": 245620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 604839,
+                            "name": "The Lone Wolf",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 73209,
+                            "name": "Tommy Vext",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22561007,
+                            "title": "Take Me to Church",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2022-05-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-28T10:32:03+00:00",
+                    "id": 131557378,
+                    "title": "Царица",
+                    "available": true,
+                    "durationMs": 227680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 22782192,
+                            "name": "Берегите себя и лес",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33459378,
+                            "title": "Царица",
+                            "type": "single",
+                            "genre": "allrock",
+                            "releaseDate": "2024-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-28T10:22:48+00:00",
+                    "id": 137278723,
+                    "title": "Вечно молодой",
+                    "available": true,
+                    "durationMs": 218970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10906992,
+                            "name": "ГРАНЖ",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35852393,
+                            "title": "Свет во тьме",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2025-03-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-28T10:10:44+00:00",
+                    "id": 116984608,
+                    "title": "25 Этаж",
+                    "available": true,
+                    "durationMs": 190120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5975207,
+                            "name": "Kor-Lay",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 27204496,
+                            "title": "25 Этаж",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2023-08-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-28T10:06:52+00:00",
+                    "id": 122522298,
+                    "title": "Sweet Dreams (Are Made Of This)",
+                    "available": true,
+                    "durationMs": 198830,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9439680,
+                            "name": "Michele Morrone",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 29646086,
+                            "title": "Double",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2023-09-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-28T08:46:47+00:00",
+                    "id": 136508162,
+                    "title": "Nothing Breaks Like a Heart",
+                    "available": true,
+                    "durationMs": 218510,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5462192,
+                            "name": "Damiano David",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35571760,
+                            "title": "Nothing Breaks Like a Heart",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2025-01-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-21T14:13:29+00:00",
+                    "id": 25301458,
+                    "title": "Это не женщина",
+                    "available": true,
+                    "durationMs": 190480,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3049830,
+                            "name": "Те100стерон",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3099476,
+                            "title": "Лети",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2015-11-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-21T14:09:30+00:00",
+                    "id": 63827,
+                    "title": "This Love",
+                    "available": true,
+                    "durationMs": 205740,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 26046,
+                            "name": "Maroon 5",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3015881,
+                            "title": "Singles",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2015-09-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-21T13:58:07+00:00",
+                    "id": 17563796,
+                    "title": "До скорой встречи!",
+                    "available": true,
+                    "durationMs": 255630,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 156427,
+                            "name": "Звери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4336999,
+                            "title": "Когда мы вместе, никто не круче",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2006-03-26T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-21T13:53:48+00:00",
+                    "id": 33106632,
+                    "title": "The Big Bang",
+                    "available": true,
+                    "durationMs": 159940,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 673441,
+                            "name": "Rock Mafia",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9401953,
+                            "title": "The Big Bang",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2010-10-29T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-21T13:45:26+00:00",
+                    "id": 43431814,
+                    "title": "Кажется",
+                    "available": true,
+                    "durationMs": 239060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41128,
+                            "name": "Uma2rman",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 62993,
+                            "title": "Куда приводят мечты",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "2008-03-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-20T15:50:02+00:00",
+                    "id": 132482941,
+                    "title": "Привет",
+                    "available": true,
+                    "durationMs": 216000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8406047,
+                            "name": "Женя Трофимов",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19015339,
+                            "name": "Комната культуры",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33836431,
+                            "title": "Привет",
+                            "type": "single",
+                            "genre": "rusrock",
+                            "releaseDate": "2024-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-20T14:48:27+00:00",
+                    "id": 79913540,
+                    "title": "Ты так красива",
+                    "available": true,
+                    "durationMs": 173380,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3694187,
+                            "name": "Quest Pistols Show",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 14577042,
+                            "title": "5 Stars EP - Back to 2000s",
+                            "type": "compilation",
+                            "genre": "pop",
+                            "releaseDate": "2021-03-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-20T14:46:11+00:00",
+                    "id": 3480521,
+                    "title": "Everybody Talks",
+                    "available": true,
+                    "durationMs": 177280,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 231302,
+                            "name": "Neon Trees",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1878841,
+                            "title": "Picture Show",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2012-04-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-20T14:43:57+00:00",
+                    "id": 113285377,
+                    "title": "Мания",
+                    "available": true,
+                    "durationMs": 191200,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10878798,
+                            "name": "XOLIDAYBOY",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25635984,
+                            "title": "Мания",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2023-04-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-20T14:42:30+00:00",
+                    "id": 115632231,
+                    "title": "Океаны",
+                    "available": true,
+                    "durationMs": 166500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10878798,
+                            "name": "XOLIDAYBOY",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 26654240,
+                            "title": "Трибьют Валерии",
+                            "type": "compilation",
+                            "genre": "ruspop",
+                            "releaseDate": "2023-07-28T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-17T14:53:35+00:00",
+                    "id": 78094569,
+                    "title": "la di die",
+                    "available": true,
+                    "durationMs": 195190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9704644,
+                            "name": "Nessa Barrett",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 9212724,
+                            "name": "Jaden Hossler",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13922764,
+                            "title": "la di die",
+                            "type": "single",
+                            "genre": "allrock",
+                            "releaseDate": "2021-02-19T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-04-09T14:12:23+00:00",
+                    "id": 136157870,
+                    "title": "Nasty Jamz (Sexy Batman)",
+                    "available": true,
+                    "durationMs": 84530,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 24304823,
+                            "name": "Coolzone",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35417607,
+                            "title": "Nasty Jamz (Sexy Batman)",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2025-02-18T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-16T06:00:36+00:00",
+                    "id": 128182496,
+                    "title": "Gata only",
+                    "available": true,
+                    "durationMs": 184690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 8963476,
+                            "name": "Cartex",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32115159,
+                            "title": "Gata only",
+                            "type": "single",
+                            "genre": "pop",
+                            "releaseDate": "2024-07-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-15T15:11:10+00:00",
+                    "id": 109573467,
+                    "title": "Удаляй",
+                    "available": true,
+                    "durationMs": 171850,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10181860,
+                            "name": "Akmal'",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 24271269,
+                            "title": "Удаляй",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2022-12-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-15T09:26:08+00:00",
+                    "id": 125866390,
+                    "title": "Раневская",
+                    "available": true,
+                    "durationMs": 227710,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10181860,
+                            "name": "Akmal'",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31172691,
+                            "title": "Раневская",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2024-05-31T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-15T09:23:09+00:00",
+                    "id": 129399444,
+                    "title": "Мир нам завидовал",
+                    "available": true,
+                    "durationMs": 187330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 10181860,
+                            "name": "Akmal'",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32586897,
+                            "title": "Мир нам завидовал",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2024-08-16T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-12T10:02:45+00:00",
+                    "id": 134564959,
+                    "title": "Шоколадка (Barabanov Remix)",
+                    "available": true,
+                    "durationMs": 127210,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9006017,
+                            "name": "Минаева",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 23713004,
+                            "name": "Barabanov",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34677032,
+                            "title": "Шоколадка (Remixes)",
+                            "type": null,
+                            "genre": "electronics",
+                            "releaseDate": "2024-12-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T18:52:58+00:00",
+                    "id": 62211026,
+                    "title": "Минус на минус",
+                    "available": true,
+                    "durationMs": 183320,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5451801,
+                            "name": "Драгни",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2739903,
+                            "title": "Варежки",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2015-04-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T11:41:14+00:00",
+                    "id": 112981114,
+                    "title": "Tangars",
+                    "available": true,
+                    "durationMs": 182160,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 19116189,
+                            "name": "Eld Hose",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25505222,
+                            "title": "Tangars",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2023-04-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T11:29:21+00:00",
+                    "id": 131169780,
+                    "title": "Люби меня долго",
+                    "available": true,
+                    "durationMs": 122300,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 587015,
+                            "name": "Ирина Дубцова",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33304771,
+                            "title": "Люби меня долго",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-09-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T11:23:58+00:00",
+                    "id": 132760175,
+                    "title": "NAS NE DOGONYAT FUNK!",
+                    "available": true,
+                    "durationMs": 136610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 308409,
+                            "name": "ANDROMEDA",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 19807166,
+                            "name": "LVGHTER",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 21791927,
+                            "name": "socialblade",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 38022226,
+                            "title": "EVOLUTION FUNK VOL. II",
+                            "type": null,
+                            "genre": "dance",
+                            "releaseDate": "2025-08-30T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T11:19:36+00:00",
+                    "id": 126858001,
+                    "title": "Zachem",
+                    "available": true,
+                    "durationMs": 112500,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 9513630,
+                            "name": "6YNTHMANE",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 190602,
+                            "name": "5sta Family",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 22421485,
+                            "name": "BAbyBoi",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 31581049,
+                            "title": "Zachem",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-06-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T11:18:38+00:00",
+                    "id": 124626410,
+                    "title": "The Lost Soul Down X Lost Soul",
+                    "available": true,
+                    "durationMs": 118310,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 21552060,
+                            "name": "Dubineitors",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 30624530,
+                            "title": "The Lost Soul Down X Lost Soul",
+                            "type": "single",
+                            "genre": "rap",
+                            "releaseDate": "2024-04-10T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T09:51:25+00:00",
+                    "id": 132895731,
+                    "title": "the lost soul down",
+                    "available": true,
+                    "durationMs": 105000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 646449,
+                            "name": "Velours",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34000510,
+                            "title": "the lost soul down",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2024-11-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T09:48:25+00:00",
+                    "id": 133794996,
+                    "title": "Give It to Me (Slowed)",
+                    "available": true,
+                    "durationMs": 173920,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 26267,
+                            "name": "Knox",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 34359466,
+                            "title": "Give It to Me (Slowed)",
+                            "type": "single",
+                            "genre": "electronics",
+                            "releaseDate": "2024-12-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T09:44:45+00:00",
+                    "id": 136103148,
+                    "title": "Let Me Down",
+                    "available": true,
+                    "durationMs": 122090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5040985,
+                            "name": "Dan Korshunov",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 16867516,
+                            "name": "Autxmn Love",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35391612,
+                            "title": "Let Me Down",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2025-02-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2025-03-10T09:44:04+00:00",
+                    "id": 136601426,
+                    "title": "Break Your Funk",
+                    "available": true,
+                    "durationMs": 137140,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5040985,
+                            "name": "Dan Korshunov",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 35609807,
+                            "title": "Break Your Funk",
+                            "type": "single",
+                            "genre": "phonkgenre",
+                            "releaseDate": "2025-03-07T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 575922344,
+        "login": "chelton1103082010",
+        "name": "chelton1103082010",
+        "sex": "female",
+        "verified": false
+    },
+    "rating": "63.8919"
+}

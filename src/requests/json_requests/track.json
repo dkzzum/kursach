@@ -1,0 +1,128 @@
+{
+    "invocationInfo": {
+        "req-id": "1764796433193018-8942168892626966267",
+        "hostname": "music-web-default-production-music-99.klg.yp-c.yandex.net",
+        "exec-duration-millis": 6
+    },
+    "result": [
+        {
+            "id": "104102778",
+            "realId": "104102778",
+            "title": "\u041e\u0442\u043f\u0443\u0441\u043a\u0430\u0439",
+            "major": {
+                "id": 0,
+                "name": "-"
+            },
+            "available": true,
+            "availableForPremiumUsers": true,
+            "availableFullWithoutPermission": false,
+            "availableForOptions": [
+                "bookmate"
+            ],
+            "disclaimers": [],
+            "storageDir": "",
+            "durationMs": 207320,
+            "fileSize": 0,
+            "r128": {
+                "i": -7.13,
+                "tp": -0.01
+            },
+            "fade": {
+                "inStart": 0.5,
+                "inStop": 1.6,
+                "outStart": 201.2,
+                "outStop": 206.2
+            },
+            "previewDurationMs": 30000,
+            "artists": [
+                {
+                    "id": 8095900,
+                    "name": "\u0422\u0440\u0438 \u0434\u043d\u044f \u0434\u043e\u0436\u0434\u044f",
+                    "various": false,
+                    "composer": false,
+                    "available": true,
+                    "cover": {
+                        "type": "from-artist-photos",
+                        "uri": "avatars.yandex.net/get-music-content/14728505/16fdacb5.p.8095900/%%",
+                        "prefix": "16fdacb5.p.8095900/"
+                    },
+                    "genres": [],
+                    "disclaimers": []
+                }
+            ],
+            "albums": [
+                {
+                    "id": 22347956,
+                    "title": "\u041e\u0442\u043f\u0443\u0441\u043a\u0430\u0439",
+                    "type": "single",
+                    "metaType": "music",
+                    "year": 2022,
+                    "releaseDate": "2022-04-29T00:00:00+03:00",
+                    "coverUri": "avatars.yandex.net/get-music-content/6202531/1663e219.a.22347956-1/%%",
+                    "ogImage": "avatars.yandex.net/get-music-content/6202531/1663e219.a.22347956-1/%%",
+                    "genre": "pop",
+                    "trackCount": 1,
+                    "likesCount": 16142,
+                    "recent": false,
+                    "veryImportant": false,
+                    "artists": [
+                        {
+                            "id": 8095900,
+                            "name": "\u0422\u0440\u0438 \u0434\u043d\u044f \u0434\u043e\u0436\u0434\u044f",
+                            "various": false,
+                            "composer": false,
+                            "available": true,
+                            "cover": {
+                                "type": "from-artist-photos",
+                                "uri": "avatars.yandex.net/get-music-content/14728505/16fdacb5.p.8095900/%%",
+                                "prefix": "16fdacb5.p.8095900/"
+                            },
+                            "genres": [],
+                            "disclaimers": []
+                        }
+                    ],
+                    "labels": [
+                        {
+                            "id": 4423637,
+                            "name": "Under exclusive license to Make It Music, \u2117 2022 IZBA"
+                        }
+                    ],
+                    "available": true,
+                    "availableForPremiumUsers": true,
+                    "availableForOptions": [
+                        "bookmate"
+                    ],
+                    "availableForMobile": true,
+                    "availablePartially": false,
+                    "bests": [],
+                    "disclaimers": [],
+                    "listeningFinished": false,
+                    "trackPosition": {
+                        "volume": 1,
+                        "index": 1
+                    }
+                }
+            ],
+            "coverUri": "avatars.yandex.net/get-music-content/6202531/1663e219.a.22347956-1/%%",
+            "derivedColors": {
+                "average": "#8f2324",
+                "waveText": "#ffc1c2",
+                "miniPlayer": "#f67879",
+                "accent": "#f23f40"
+            },
+            "ogImage": "avatars.yandex.net/get-music-content/6202531/1663e219.a.22347956-1/%%",
+            "lyricsAvailable": true,
+            "type": "music",
+            "rememberPosition": false,
+            "trackSharingFlag": "COVER_ONLY",
+            "lyricsInfo": {
+                "hasAvailableSyncLyrics": true,
+                "hasAvailableTextLyrics": true
+            },
+            "trackSource": "OWN",
+            "specialAudioResources": [
+                "smart_preview"
+            ]
+        }
+    ]
+}

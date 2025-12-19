@@ -1,0 +1,1403 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.e378b4ed-677f-4d5a-8917-41e6f95d148f",
+            "link": "https://music.yandex.ru/playlists/lk.e378b4ed-677f-4d5a-8917-41e6f95d148f",
+            "kind": 3,
+            "available": true,
+            "trackCount": 55,
+            "visibility": "public",
+            "collective": false,
+            "revision": 135,
+            "created": "2015-12-23T19:46:10+00:00",
+            "modified": "2019-05-13T17:26:48+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2019-05-13T17:26:48+00:00",
+                    "id": 51061238,
+                    "title": "Кино",
+                    "available": true,
+                    "durationMs": 260540,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4853656,
+                            "name": "Kid Sole",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 5214938,
+                            "name": "IROH",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7095587,
+                            "title": "Все ненавидят Кидди 2",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2019-03-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-04-14T09:48:17+00:00",
+                    "id": 1704603,
+                    "title": "Сентябрь",
+                    "available": true,
+                    "durationMs": 244760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 157479,
+                            "name": "Stigmata",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 22870600,
+                            "title": "Stigmata",
+                            "type": null,
+                            "genre": "metalcoregenre",
+                            "releaseDate": "2007-09-12T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-04-14T09:42:56+00:00",
+                    "id": 42764778,
+                    "title": "Ты меня не ищи (Cover)",
+                    "available": true,
+                    "durationMs": 211190,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 212467,
+                            "name": "EVO",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5662526,
+                            "title": "За грани видимой вселенной",
+                            "type": null,
+                            "genre": "metalcoregenre",
+                            "releaseDate": "2018-08-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-28T17:07:29+00:00",
+                    "id": 48592006,
+                    "title": "Космос",
+                    "available": true,
+                    "durationMs": 227690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3246342,
+                            "name": "Скриптонит",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3136458,
+                            "name": "Charusha",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 28716998,
+                            "title": "Romantic Collection",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2023-12-29T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T13:04:04+00:00",
+                    "id": 38883870,
+                    "title": "Атлантида",
+                    "available": true,
+                    "durationMs": 142250,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2938031,
+                            "name": "Markul",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4998131,
+                            "title": "Атлантида",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2018-03-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T13:00:04+00:00",
+                    "id": 16408714,
+                    "title": "Больше нет тепла на двоих",
+                    "available": true,
+                    "durationMs": 280030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2686299,
+                            "name": "kavabanga Depo kolibri",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1795825,
+                            "title": "Бесконечный шум",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2014-02-15T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:58:01+00:00",
+                    "id": 17198078,
+                    "title": "Не сходи с ума",
+                    "available": true,
+                    "durationMs": 229050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 168857,
+                            "name": "Тимати",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12976277,
+                            "title": "Black Star",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2006-11-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:41:19+00:00",
+                    "id": 732388,
+                    "title": "ариведерчи",
+                    "available": true,
+                    "durationMs": 166060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 218099,
+                            "name": "Земфира",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 81430,
+                            "title": "земфира",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:39:36+00:00",
+                    "id": 45499814,
+                    "title": "Life",
+                    "available": true,
+                    "durationMs": 188000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5007577,
+                            "name": "Zivert",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 8797258,
+                            "title": "Vinyl #1. Deluxe Version",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2019-09-27T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:35:09+00:00",
+                    "id": 41786897,
+                    "title": "Цветок",
+                    "available": true,
+                    "durationMs": 184360,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5129397,
+                            "name": "HammAli & Navai",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5494185,
+                            "title": "Цветок",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2018-06-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:32:08+00:00",
+                    "id": 41478249,
+                    "title": "На Луне",
+                    "available": true,
+                    "durationMs": 166370,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4443004,
+                            "name": "PHARAOH",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5436972,
+                            "title": "На Луне",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2018-06-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:31:44+00:00",
+                    "id": 40053650,
+                    "title": "Выдыхай",
+                    "available": true,
+                    "durationMs": 192610,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 160970,
+                            "name": "Noize MC",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 25433372,
+                            "title": "The Greatest Hits, Vol. 1",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2008-06-17T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:31:44+00:00",
+                    "id": 31782487,
+                    "title": "За спиной",
+                    "available": true,
+                    "durationMs": 251030,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4680819,
+                            "name": "Честный",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3860093,
+                            "title": "Годы",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-27T12:31:44+00:00",
+                    "id": 37329921,
+                    "title": "Когда исчезнет Слово",
+                    "available": true,
+                    "durationMs": 176660,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1636897,
+                            "name": "MOT",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4727272,
+                            "title": "Добрая Музыка Клавиш",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2017-10-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-25T11:55:30+00:00",
+                    "id": 135075,
+                    "title": "Whispers in the Dark",
+                    "available": true,
+                    "durationMs": 193260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 49258,
+                            "name": "Skillet",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 13100,
+                            "title": "Whispers in the Dark",
+                            "type": "single",
+                            "genre": "alternative",
+                            "releaseDate": "2006-09-19T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-25T11:54:49+00:00",
+                    "id": 132469,
+                    "title": "Far Away",
+                    "available": true,
+                    "durationMs": 238170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36784,
+                            "name": "Nickelback",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 37477,
+                            "title": "All the Right Reasons",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2005-09-26T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-25T11:53:47+00:00",
+                    "id": 34272198,
+                    "title": "Давай навсегда",
+                    "available": true,
+                    "durationMs": 231270,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3292790,
+                            "name": "Мари Краймбрери",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21948668,
+                            "title": "ННКН",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2017-04-07T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-25T11:51:46+00:00",
+                    "id": 35367570,
+                    "title": "Зажигалки",
+                    "available": true,
+                    "durationMs": 159420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 796797,
+                            "name": "ЕГОР КРИД",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4328143,
+                            "title": "Что они знают?",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2017-05-23T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-25T11:48:04+00:00",
+                    "id": 48591846,
+                    "title": "Каменные цветы",
+                    "available": true,
+                    "durationMs": 277900,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41191,
+                            "name": "Баста",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 41187,
+                            "name": "Смоки Мо",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 413023,
+                            "name": "Елена Ваенга",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2449062,
+                            "title": "Баста / Смоки Мо",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2015-01-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T21:00:29+00:00",
+                    "id": 20045346,
+                    "title": "Океан",
+                    "available": true,
+                    "durationMs": 238220,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 962765,
+                            "name": "L'One",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 2563477,
+                            "name": "Фидель",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2261652,
+                            "title": "Одинокая вселенная",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": null
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T21:00:09+00:00",
+                    "id": 795836,
+                    "title": "Shape Of My Heart",
+                    "available": true,
+                    "durationMs": 279220,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 680,
+                            "name": "Sting",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9172879,
+                            "title": "25 Years",
+                            "type": null,
+                            "genre": "pop",
+                            "releaseDate": "2019-11-15T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T21:00:09+00:00",
+                    "id": 39174039,
+                    "title": "Соло",
+                    "available": true,
+                    "durationMs": 184860,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1636897,
+                            "name": "MOT",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5046321,
+                            "title": "Соло",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2018-02-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:59:48+00:00",
+                    "id": 39089632,
+                    "title": "Выхода нет",
+                    "available": true,
+                    "durationMs": 227650,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 161243,
+                            "name": "Сплин",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 60058,
+                            "title": "Гранатовый альбом",
+                            "type": null,
+                            "genre": "rusrock",
+                            "releaseDate": "1998-04-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:50:20+00:00",
+                    "id": 44103080,
+                    "title": "Sunflower",
+                    "available": true,
+                    "durationMs": 157560,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3454418,
+                            "name": "Post Malone",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 3606849,
+                            "name": "Swae Lee",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 32833196,
+                            "title": "The Diamond Collection",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2023-04-21T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:45:00+00:00",
+                    "id": 1020189,
+                    "title": "All The Things She Said",
+                    "available": true,
+                    "durationMs": 171730,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 289252,
+                            "name": "Madbones",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 116491,
+                            "title": "Simple Frames",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-10-25T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:43:40+00:00",
+                    "id": 32291816,
+                    "title": "Прости. Прощай. Привет",
+                    "available": true,
+                    "durationMs": 309000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3315646,
+                            "name": "Порнофильмы",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 23925019,
+                            "title": "Как в последний раз",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2016-10-14T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:42:00+00:00",
+                    "id": 654151,
+                    "title": "The Kids Aren't Alright",
+                    "available": true,
+                    "durationMs": 179760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 64592,
+                            "name": "The Offspring",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 1813070,
+                            "title": "Greatest Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2005-06-21T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:42:00+00:00",
+                    "id": 41473,
+                    "title": "Foxtrot Uniform Charlie Kilo",
+                    "available": true,
+                    "durationMs": 171970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 11952,
+                            "name": "Bloodhound Gang",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 204706,
+                            "title": "Show Us Your Hits",
+                            "type": null,
+                            "genre": "punk",
+                            "releaseDate": "2011-01-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:41:20+00:00",
+                    "id": 35505245,
+                    "title": "I Got Love",
+                    "available": true,
+                    "durationMs": 276680,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4611844,
+                            "name": "Miyagi & Эндшпиль",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 588511,
+                            "name": "Рем Дигга",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 20559909,
+                            "title": "I Got Love",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2016-09-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:39:39+00:00",
+                    "id": 50854781,
+                    "title": "Со мной",
+                    "available": true,
+                    "durationMs": 192000,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5608856,
+                            "name": "MATRANG",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7052572,
+                            "title": "Со мной",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2019-03-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:38:59+00:00",
+                    "id": 544616,
+                    "title": "Opposite Of Adults",
+                    "available": true,
+                    "durationMs": 191600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 157763,
+                            "name": "Chiddy Bang",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 157765,
+                            "name": "Noah Beresin",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 157764,
+                            "name": "Chidera Anamege",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 433840,
+                            "title": "The Preview",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2010-10-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:34:38+00:00",
+                    "id": 38716160,
+                    "title": "Spotlight",
+                    "available": true,
+                    "durationMs": 177600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4004846,
+                            "name": "Marshmello",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4966796,
+                            "title": "Spotlight",
+                            "type": "single",
+                            "genre": "foreignrap",
+                            "releaseDate": "2018-01-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T20:27:18+00:00",
+                    "id": 69542,
+                    "title": "Big City Life",
+                    "available": true,
+                    "durationMs": 240890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 27906,
+                            "name": "Mattafix",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6634251,
+                            "title": "Signs Of A Struggle",
+                            "type": null,
+                            "genre": "rap",
+                            "releaseDate": "2008-12-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T19:25:06+00:00",
+                    "id": 670577,
+                    "title": "Open Your Eyes",
+                    "available": true,
+                    "durationMs": 188970,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 118909,
+                            "name": "Guano Apes",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4727143,
+                            "title": "Proud Like a God XX",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2017-10-06T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T19:18:40+00:00",
+                    "id": 2218181,
+                    "title": "Я теряю корни",
+                    "available": true,
+                    "durationMs": 182890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 431044,
+                            "name": "Корни",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 220214,
+                            "title": "На века",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2003-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T18:08:52+00:00",
+                    "id": 21642264,
+                    "title": "Зима",
+                    "available": true,
+                    "durationMs": 202150,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 666984,
+                            "name": "Artik & Asti",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3250010,
+                            "title": "Здесь и сейчас",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2016-02-12T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T18:08:52+00:00",
+                    "id": 31828036,
+                    "title": "Осколки",
+                    "available": true,
+                    "durationMs": 269770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 666984,
+                            "name": "Artik & Asti",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12766066,
+                            "title": "#РайОдинНаДвоих",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2013-10-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T17:39:01+00:00",
+                    "id": 23468160,
+                    "title": "Очень-очень",
+                    "available": true,
+                    "durationMs": 180760,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 666984,
+                            "name": "Artik & Asti",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12766066,
+                            "title": "#РайОдинНаДвоих",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2013-10-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T17:38:19+00:00",
+                    "id": 31828028,
+                    "title": "Облака",
+                    "available": true,
+                    "durationMs": 218330,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 666984,
+                            "name": "Artik & Asti",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12766066,
+                            "title": "#РайОдинНаДвоих",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2013-10-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T17:09:23+00:00",
+                    "id": 33146010,
+                    "title": "Сопрано",
+                    "available": true,
+                    "durationMs": 209450,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1636897,
+                            "name": "MOT",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 64248,
+                            "name": "Ани Лорак",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4048254,
+                            "title": "Сопрано",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2017-01-24T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T17:08:36+00:00",
+                    "id": 24183557,
+                    "title": "Берегу",
+                    "available": true,
+                    "durationMs": 192050,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 796797,
+                            "name": "ЕГОР КРИД",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2811785,
+                            "title": "Холостяк",
+                            "type": null,
+                            "genre": "ruspop",
+                            "releaseDate": "2015-04-02T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:57:55+00:00",
+                    "id": 328683,
+                    "title": "Bring Me To Life",
+                    "available": true,
+                    "durationMs": 237290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 110173,
+                            "name": "Evanescence",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 33097,
+                            "title": "Fallen",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2009-09-14T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:57:34+00:00",
+                    "id": 39702,
+                    "title": "Pieces",
+                    "available": true,
+                    "durationMs": 181600,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 5950,
+                            "name": "Sum 41",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2490405,
+                            "title": "All the Good Shit: 14 Solid Gold Hits 2000-2008",
+                            "type": null,
+                            "genre": "alternative",
+                            "releaseDate": "2009-03-17T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:55:33+00:00",
+                    "id": 178537,
+                    "title": "Easier to Run",
+                    "available": true,
+                    "durationMs": 204170,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 21940,
+                            "title": "Meteora",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2003-03-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:51:50+00:00",
+                    "id": 178502,
+                    "title": "With You",
+                    "available": true,
+                    "durationMs": 203260,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12360955,
+                            "title": "Hybrid Theory",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2020-10-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:51:50+00:00",
+                    "id": 178496,
+                    "title": "A Place for My Head",
+                    "available": true,
+                    "durationMs": 184640,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 36800,
+                            "name": "Linkin Park",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 12360955,
+                            "title": "Hybrid Theory",
+                            "type": null,
+                            "genre": "numetal",
+                            "releaseDate": "2020-10-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:51:28+00:00",
+                    "id": 31198889,
+                    "title": "Половина моя",
+                    "available": true,
+                    "durationMs": 240880,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4611844,
+                            "name": "Miyagi & Эндшпиль",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 20561643,
+                            "title": "Hajime, Pt. 1",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2016-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:51:28+00:00",
+                    "id": 31198888,
+                    "title": "Санавабич",
+                    "available": true,
+                    "durationMs": 185690,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4611844,
+                            "name": "Miyagi & Эндшпиль",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 20561643,
+                            "title": "Hajime, Pt. 1",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2016-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:49:46+00:00",
+                    "id": 27898784,
+                    "title": "Sunshine Lady",
+                    "available": true,
+                    "durationMs": 260460,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3719594,
+                            "name": "Jah Khalib",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3332468,
+                            "title": "Все что мы любим",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2016-03-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:48:04+00:00",
+                    "id": 27898777,
+                    "title": "Сжигая дотла",
+                    "available": true,
+                    "durationMs": 251890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3719594,
+                            "name": "Jah Khalib",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3332468,
+                            "title": "Все что мы любим",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2016-03-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:48:04+00:00",
+                    "id": 27898780,
+                    "title": "Давай улетим далеко",
+                    "available": true,
+                    "durationMs": 253100,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 3719594,
+                            "name": "Jah Khalib",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3332468,
+                            "title": "Все что мы любим",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2016-03-11T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T16:44:28+00:00",
+                    "id": 49212866,
+                    "title": "Сколько лет",
+                    "available": true,
+                    "durationMs": 223420,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1636897,
+                            "name": "MOT",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6739310,
+                            "title": "Сколько лет",
+                            "type": "single",
+                            "genre": "ruspop",
+                            "releaseDate": "2019-02-05T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T01:04:55+00:00",
+                    "id": 19722850,
+                    "title": "В жизни так бывает",
+                    "available": true,
+                    "durationMs": 267290,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41071,
+                            "name": "Многоточие",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 2221415,
+                            "title": "Жизнь и свобода",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2001-12-25T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T01:03:54+00:00",
+                    "id": 29213459,
+                    "title": "Я поднимаюсь над землёй",
+                    "available": true,
+                    "durationMs": 224120,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 41191,
+                            "name": "Баста",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3510632,
+                            "title": "Баста 5. Часть 2",
+                            "type": null,
+                            "genre": "rusrap",
+                            "releaseDate": "2016-05-13T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-03-24T01:03:54+00:00",
+                    "id": 29175370,
+                    "title": "Рапапам",
+                    "available": true,
+                    "durationMs": 333870,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1969823,
+                            "name": "9 грамм",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4611844,
+                            "name": "Miyagi & Эндшпиль",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 15939488,
+                            "title": "Рапапам",
+                            "type": "single",
+                            "genre": "rusrap",
+                            "releaseDate": "2016-05-18T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 349719786,
+        "login": "artusha.gerasimov",
+        "name": "Артур Герасимов",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "64.3732"
+}

@@ -1,0 +1,27 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.186d0126-1b85-44b6-8456-40cf53673aa7",
+            "link": "https://music.yandex.ru/playlists/lk.186d0126-1b85-44b6-8456-40cf53673aa7",
+            "kind": 3,
+            "available": false,
+            "trackCount": 0,
+            "visibility": "public",
+            "collective": false,
+            "revision": 0,
+            "created": "2022-05-17T19:11:09+00:00",
+            "modified": "2022-05-17T19:11:10+00:00",
+            "isBanner": false,
+            "tracks": []
+        }
+    },
+    "owner": {
+        "uid": 142862400,
+        "login": "kovalev.daniil.kdm",
+        "name": "kovalev.daniil.kdm",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "65.534"
+}

@@ -1,0 +1,164 @@
+{
+    "playlists": {
+        "классика": {
+            "name": "классика",
+            "playlistUuid": "ac499389-b5cc-8e87-066d-e9d03b7ea760",
+            "link": "https://music.yandex.ru/playlists/ac499389-b5cc-8e87-066d-e9d03b7ea760",
+            "kind": 1000,
+            "available": true,
+            "trackCount": 2,
+            "visibility": "public",
+            "collective": false,
+            "revision": 3,
+            "created": "2019-02-18T04:39:52+00:00",
+            "modified": "2019-02-18T04:42:10+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2019-02-18T04:39:52+00:00",
+                    "id": 1710820,
+                    "title": "Killer Queen",
+                    "available": true,
+                    "durationMs": 181020,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 79215,
+                            "name": "Queen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 227551,
+                            "title": "The Platinum Collection",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-02-18T04:42:10+00:00",
+                    "id": 694683,
+                    "title": "Highway to Hell",
+                    "available": true,
+                    "durationMs": 209090,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 6724533,
+                            "name": "Oz Rocks",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 6976558,
+                            "title": "We Will Rock You",
+                            "type": "compilation",
+                            "genre": "rock",
+                            "releaseDate": "2011-07-20T00:00:00+04:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.c50b2108-ab18-4d8e-88bd-327fae3d8f85",
+            "link": "https://music.yandex.ru/playlists/lk.c50b2108-ab18-4d8e-88bd-327fae3d8f85",
+            "kind": 3,
+            "available": true,
+            "trackCount": 3,
+            "visibility": "public",
+            "collective": false,
+            "revision": 8,
+            "created": "2019-02-18T04:39:38+00:00",
+            "modified": "2019-05-28T12:49:44+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2019-05-28T12:49:44+00:00",
+                    "id": 41048435,
+                    "title": "Faradenza",
+                    "available": true,
+                    "durationMs": 149770,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 1280361,
+                            "name": "Little Big",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 5357306,
+                            "title": "Antipositive, Pt. 1",
+                            "type": null,
+                            "genre": "edmgenre",
+                            "releaseDate": "2018-05-08T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-05-28T12:42:36+00:00",
+                    "id": 51746220,
+                    "title": "Do It",
+                    "available": true,
+                    "durationMs": 208890,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 2977894,
+                            "name": "Ilkay Sencan",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7239102,
+                            "title": "Do It",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2019-04-22T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-05-02T07:54:00+00:00",
+                    "id": 52295995,
+                    "title": "Radio",
+                    "available": true,
+                    "durationMs": 277390,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 13002,
+                            "name": "Rammstein",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 7524923,
+                            "title": "Rammstein",
+                            "type": null,
+                            "genre": "industrial",
+                            "releaseDate": "2019-05-17T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 685737603,
+        "login": "v.novikova1",
+        "name": "v.novikova1",
+        "sex": "female",
+        "verified": false
+    },
+    "rating": "63.0334"
+}

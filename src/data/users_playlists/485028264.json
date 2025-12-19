@@ -1,0 +1,158 @@
+{
+    "playlists": {
+        "Мне нравится": {
+            "name": "Мне нравится",
+            "playlistUuid": "lk.62938397-8b2d-41ea-8002-e2b1332f5105",
+            "link": "https://music.yandex.ru/playlists/lk.62938397-8b2d-41ea-8002-e2b1332f5105",
+            "kind": 3,
+            "available": true,
+            "trackCount": 5,
+            "visibility": "public",
+            "collective": false,
+            "revision": 4,
+            "created": "2019-09-30T10:09:21+00:00",
+            "modified": "2019-12-31T10:22:44+00:00",
+            "isBanner": false,
+            "tracks": [
+                {
+                    "timestamp": "2019-12-31T10:22:44+00:00",
+                    "id": 60725701,
+                    "title": "Тектоник",
+                    "available": true,
+                    "durationMs": 170340,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 7319320,
+                            "name": "Александр Гудков",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9415410,
+                            "title": "Тектоник",
+                            "type": "single",
+                            "genre": "dance",
+                            "releaseDate": "2019-12-20T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-09-30T10:10:47+00:00",
+                    "id": 35179976,
+                    "title": "Come and Get Your Love",
+                    "available": true,
+                    "durationMs": 176590,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 138028,
+                            "name": "Redbone",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 4369931,
+                            "title": "Come And Get Your Love",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2008-06-01T00:00:00+04:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-09-30T10:09:21+00:00",
+                    "id": 32558143,
+                    "title": "Credits",
+                    "available": true,
+                    "durationMs": 219240,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 4080983,
+                            "name": "Justin Hurwitz",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 3969883,
+                            "title": "«Ла-Ла Ленд»",
+                            "type": null,
+                            "genre": "films",
+                            "releaseDate": "2016-12-09T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-09-30T10:09:21+00:00",
+                    "id": 1710810,
+                    "title": "Another One Bites The Dust",
+                    "available": true,
+                    "durationMs": 214620,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 79215,
+                            "name": "Queen",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 227551,
+                            "title": "The Platinum Collection",
+                            "type": null,
+                            "genre": "rock",
+                            "releaseDate": "2011-01-01T00:00:00+03:00"
+                        }
+                    }
+                },
+                {
+                    "timestamp": "2019-09-30T10:09:21+00:00",
+                    "id": 57904287,
+                    "title": "Don’t Call Me Angel",
+                    "available": true,
+                    "durationMs": 190060,
+                    "type": "music",
+                    "artists": {
+                        "1": {
+                            "id": 638312,
+                            "name": "Ariana Grande",
+                            "available": true
+                        },
+                        "2": {
+                            "id": 4813,
+                            "name": "Miley Cyrus",
+                            "available": true
+                        },
+                        "3": {
+                            "id": 643850,
+                            "name": "Lana Del Rey",
+                            "available": true
+                        }
+                    },
+                    "albums": {
+                        "1": {
+                            "id": 9092920,
+                            "title": "«Ангелы Чарли»",
+                            "type": "compilation",
+                            "genre": "films",
+                            "releaseDate": "2019-11-01T00:00:00+03:00"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "owner": {
+        "uid": 485028264,
+        "login": "pizalov",
+        "name": "Павел Запалов inst @slow_jp",
+        "sex": "male",
+        "verified": false
+    },
+    "rating": "66.1115"
+}
