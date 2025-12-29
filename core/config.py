@@ -1,67 +1,8 @@
-
-cookies_ym = {
-    "L": "ZglGU11fAU5AVlpNCFBxbGNDdQ1oYEZ+Ij88Nz8g.1755465239.16251.382117.f00be40ab94bf1da0e8522cf41fc49b8",
-    "Session_id": "3:1766434278.5.1.1745767302917:TvDruQ:4f82.1.2:1|1442696724.-1.2.3:1745767302|1537003491.65.2.2:65.3:1745767367|2167429108.3265767.2.2:3265767.3:1749033069|3:11529382.688049.4vHnLtvQqWG9DqMh2P4jJx4fM2g",
-    "_yasc": "qu9afENvZgqlZmivQ3HVx/xkfEGyuzsW0LFgFR1Vg/UYoe3dyVzqjD9xvrYDpK9sz0EXfTkCNI8ZaI7FvmzoSPrFdKt60g==",
-    "_ym_d": "1761549984",
-    "_ym_uid": "1745767251811010481",
-    "alice_uuid": "6d897161-a274-40f9-b754-33448CA5734E",
-    "amcuid": "4703738411746650970",
-    "ancQTZw": "1",
-    "bh": "ElEiQ2hyb21pdW0iO3Y9IjE0MCIsICJOb3Q9QT9CcmFuZCI7dj0iMjQiLCAiWWFCcm93c2VyIjt2PSIyNS4xMCIsICJZb3dzZXIiO3Y9IjIuNSIaBSJhcm0iIg4iMjUuMTAuMi4xMTg2IioCPzAyAiIiOgcibWFjT1MiQggiMjYuMS4wIkoEIjY0IlJqIkNocm9taXVtIjt2PSIxNDAuMC43MzM5LjExODYiLCAiTm90PUE/QnJhbmQiO3Y9IjI0LjAuMC4wIiwgIllhQnJvd3NlciI7dj0iMjUuMTAuMi4xMTg2IiwgIllvd3NlciI7dj0iMi41IloCPzBgirisygZqI9zK0bYBu/GfqwT61obMCNLR7esD/Lmv/wff/fvzDd21zYcI",
-    "csrftoken": "bLnWPmJ0OPe0t7woekZOfVK6zx5MyULkHPnhzP2tarZuT7kaAsavAVb8dCF9II5Z",
-    "font_loaded": "YSv1",
-    "gdpr": "0",
-    "i": "EN2k25CH5kZiC/x1u1PsAYC6P70pfHS2BjLnuh5fBH7ePNyzR6vz5H2NwuSnweZJMttYw3Z2/cwItct03dipC4mWi6M=",
-    "is_gdpr": "0",
-    "is_gdpr_b": "CJjWLhDt6AIoAg==",
-    "isa": "fyn/6G9URg1bkuD5i+uYndObKZa3b2pcu+bbRPBoZBY0jWPVHqJ0jlM11Sh15b4nTmCG4JXXLO8nJ00OIEKR1Ky3ONA=",
-    "my": "YwA=",
-    "sae": "0:6d897161-a274-40f9-b754-33448CA5734E:p:25.10.2.1186:m:d:RU:20230811",
-    "sessar": "1.1504434.CiAJtFg0eHDpJnTciHJV2nFzE2tdZlaD-BvNOrRByKQEgQ.m5wMuk_MejZmHkXpZOfYyOxeNT1ls-AHh-YDjBd-2KE",
-    "sessionid2": "3:1766434278.5.1.1745767302917:TvDruQ:4f82.1.2:1|1442696724.-1.2.3:1745767302|1537003491.65.2.2:65.3:1745767367|2167429108.3265767.2.2:3265767.3:1749033069|3:11529382.688049.fakesign0000000000000000000",
-    "skid": "669221501746111799",
-    "utm_source": "yandex",
-    "yandex_login": "dkzzum",
-    "yandexuid": "6487430611745834695",
-    "yashr": "2352989301745834695",
-    "ymex": "1793373777.yrts.1761837777",
-    "yp": "1793373777.cld.1955450#1782976305.dc_neuro.10#1768056229.hdrc.1#2081883971.pcs.1#1798061251.swntab.833820238#1781854820.szm.2%3A1440x900%3A1440x820#2070825239.udn.cDrQlNCw0L3QuNC7#2070825210.multib.1#1768336198.gph.225_124#1768765231.csc.1#1766951015.dlp.2#1766591775.uc.ru#1766591775.duc.ru",
-    "ys": "def_bro.1#udn.cDrQlNCw0L3QuNC7#wprid.1766525250172450-2633302081833944831-balancer-l7leveler-kubr-yp-vla-69-BAL#c_chck.2511167810",
-    "yuidss": "6487430611745834695"
-}
-
-headers_ym_base = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Referer": "https://music.yandex.ru/",
-    "Connection": "keep-alive",
-}
-
-headers_ym_all = {
-    "accept": "*/*",
-    "accept-encoding": "gzip, deflate, br, zstd",
-    "accept-language": "ru",
-    "origin": "https://music.yandex.ru",
-    "priority": "u=1, i",
-    "referer": "https://music.yandex.ru/",
-    "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"YaBrowser\";v=\"25.10\", \"Yowser\";v=\"2.5\"",
-    "sec-ch-ua-arch": "\"arm\"",
-    "sec-ch-ua-bitness": "\"64\"",
-    "sec-ch-ua-full-version-list": "\"Chromium\";v=\"140.0.7339.2546\", \"Not=A?Brand\";v=\"24.0.0.0\", \"YaBrowser\";v=\"25.10.0.2546\", \"Yowser\";v=\"2.5\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"macOS\"",
-    "sec-ch-ua-platform-version": "\"26.1.0\"",
-    "sec-ch-ua-wow64": "?0",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "same-site",
-    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36",
-    "x-request-id": "53bbbcf1-f293-4dbf-ad81-8fc807f80e9b",
-    "x-requested-with": "XMLHttpRequest",
-    "x-retpath-y": "https://music.yandex.ru/collection",
-    "x-yandex-music-client": "YandexMusicWebNext/1.0.0",
-    "x-yandex-music-multi-auth-user-id": "1537003491",
-    "x-yandex-music-without-invocation-info": "1"
-}
+access_token = '15f56a5915f56a5915f56a595116cb70c8115f515f56a597cb79e1252b183d4ccc4f7fd'
+api_id = 31634371
+api_hash = '603a033c91d43d322826945ed9b9e750'
+phone = 'Samsung Galaxy S23'
+app_version = 'Telegram Android 12.2.3'
+system_lang_code = 'en'
+lang_code = 'en'
+session = 'session1'
