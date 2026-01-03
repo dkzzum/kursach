@@ -1,0 +1,9 @@
+pyspark==3.5.0
+pandas
+numpy
+# Для оптимизации передачи данных между Python и Java:
+pyarrow
+# Для будущего анализа текста (поляризация):
+nltk
+spacy
+pyrogram
