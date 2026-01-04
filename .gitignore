@@ -1,3 +1,21 @@
-.idea
-.venv
-.DS_Store
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# IntelliJ / VSCode
+.idea/
+.vscode/
+
+# Telegram Session (СЕКРЕТНО!)
+#*.session
+#*.session-journal
+
+# Data & Logs
+data/
+raw_data/
+spark-warehouse/
+metastore_db/
+derby.log
+*.log

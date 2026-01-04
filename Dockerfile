@@ -1,6 +1,13 @@
 # 1. Базовый образ
 FROM python:3.10-slim-bookworm
 
+# Устанавливаем GCC (убрали лишний слэш в конце)
+RUN apt-get update && apt-get install -y \
+    gcc \
+    build-essential \
+    python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # 2. Устанавливаем Java и утилиты
 RUN apt-get update && \
     apt-get install -y openjdk-17-jre-headless procps curl && \

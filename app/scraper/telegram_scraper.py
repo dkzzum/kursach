@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import os
+import sys
 import time
 from typing import List, Dict, Any, Optional
 
@@ -9,9 +10,10 @@ from pyrogram import Client
 from pyrogram.enums import ChatType
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
+from itertools import groupby
 
-# Импорт конфигов оставляем как есть
-from core.config import app_version, phone, lang_code, api_id, api_hash
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+from app.core.config import app_version, phone, lang_code, api_id, api_hash
 
 # Настройка логирования
 logging.basicConfig(
@@ -31,7 +33,7 @@ class TelegramSparkParser:
     def __init__(
             self,
             client: Client,
-            data_path: str = "./raw_data",
+            data_path: str = "./data/raw",
             batch_size_posts: int = 500,
             batch_size_comments: int = 1000
     ):
@@ -164,12 +166,25 @@ class TelegramSparkParser:
         except Exception as e:
             logger.error(f"❌ Критическая ошибка канала {channel_id}: {e}")
 
+
+
         finally:
-            # Сбрасываем остатки ("хвосты")
+
+            # Умный сброс остатков (группируем по дате, чтобы не создавать папку leftovers)
+
             if posts_buffer:
-                self._save_batch(posts_buffer, "posts", "leftovers")
+                # Сортируем, так как groupby требует отсортированных данных
+                posts_buffer.sort(key=lambda x: x['date'])
+                for date_key, group in groupby(posts_buffer, key=lambda x: x['date']):
+                    # БЫЛО: save_batch(...) -> ОШИБКА
+                    # СТАЛО: self._save_batch(...)
+                    self._save_batch(list(group), "posts", date_key)
             if comments_buffer:
-                self._save_batch(comments_buffer, "comments", "leftovers")
+                comments_buffer.sort(key=lambda x: x['date'])
+                for date_key, group in groupby(comments_buffer, key=lambda x: x['date']):
+                    # БЫЛО: save_batch(...) -> ОШИБКА
+                    # СТАЛО: self._save_batch(...)
+                    self._save_batch(list(group), "comments", date_key)
 
     async def get_channel_list(self) -> List[int]:
         """Сканирует подписки и возвращает ID каналов/групп."""
@@ -206,14 +221,20 @@ if __name__ == "__main__":
         lang_code=lang_code,
     )
 
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+    # Формируем правильный путь: /Users/.../kursch/data/raw
+    correct_data_path = os.path.join(base_dir, "data", "raw")
+    print(f"📂 Данные будут сохранены в: {correct_data_path}")
+
     # 2. Создаем наш парсер
     parser = TelegramSparkParser(
         client=pyro_client,
-        data_path="./raw_data",
+        data_path=correct_data_path,
         batch_size_posts=500,
         batch_size_comments=1000
     )
 
     # 3. Запускаем
     # Можно передать список ID, чтобы не сканировать всё: await parser.run([-100123456...])
-    pyro_client.run(parser.run(limit_per_channel=100))
+    pyro_client.run(parser.run(limit_per_channel=2500))

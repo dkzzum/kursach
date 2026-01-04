@@ -7,14 +7,16 @@ services:
     volumes:
       # 1. Пробрасываем ваш код внутрь контейнера
       - .:/app
-      # 2. Пробрасываем папку с данными (если она не внутри папки проекта)
-      # Если raw_data лежит внутри проекта, то первой строки достаточно.
+      - ./data/raw:/data/raw
+      - ./data/spark-warehouse:/opt/spark/work-dir/spark-warehouse
+      - ./data/reports:/data/reports
     environment:
       - SPARK_MODE=master
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
       - SPARK_RPC_ENCRYPTION_ENABLED=no
       - SPARK_LOCAL_IP=127.0.0.1
       - PYSPARK_PYTHON=python3
+      - SPARK_WORKER_DIR=/opt/spark/work-dir
     ports:
       - "4040:4040" # Spark UI (Веб-интерфейс для мониторинга задач)
       - "8080:8080" # Spark Master UI

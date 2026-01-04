@@ -7,3 +7,6 @@ pyarrow
 nltk
 spacy
 pyrogram
+tgcrypto
+matplotlib
+seaborn
