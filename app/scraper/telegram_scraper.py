@@ -4,16 +4,24 @@ import logging
 import os
 import sys
 import time
+import datetime
 from typing import List, Dict, Any, Optional
 
 from pyrogram import Client
 from pyrogram.enums import ChatType
 from pyrogram.errors import FloodWait
-from pyrogram.types import Message
-from itertools import groupby
 
+# Добавляем путь к конфигу
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-from app.core.config import app_version, phone, lang_code, api_id, api_hash
+try:
+    from app.core.config import app_version, phone, lang_code, api_id, api_hash
+except ImportError:
+    print("⚠️ Config not found. Using placeholders.")
+    api_id = 123456
+    api_hash = "your_hash_here"
+    app_version = "1.0"
+    phone = "Unknown"
+    lang_code = "en"
 
 # Настройка логирования
 logging.basicConfig(
@@ -25,216 +33,136 @@ logger = logging.getLogger(__name__)
 
 
 class TelegramSparkParser:
-    """
-    Класс для парсинга каналов Telegram и сохранения данных
-    в формате, совместимом со Spark (JSON с партиционированием по дате).
-    """
-
     def __init__(
             self,
-            client: Client,
+            session_name: str,
+            api_id: int,
+            api_hash: str,
             data_path: str = "./data/raw",
-            batch_size_posts: int = 500,
-            batch_size_comments: int = 1000
+            batch_size_posts: int = 500
     ):
-        self.app = client
+        self.session_name = session_name
+        self.api_id = api_id
+        self.api_hash = api_hash
         self.data_path = data_path
         self.batch_size_posts = batch_size_posts
-        self.batch_size_comments = batch_size_comments
 
-    def _save_batch(self, data: List[Dict], prefix: str, date_folder: str) -> None:
-        """Сохраняет пачку данных на диск и очищает буфер."""
+        # Генерируем ID запуска (один на весь скрипт)
+        self.run_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+
+        # --- ИСПРАВЛЕНИЕ 1: Глобальный буфер для всех каналов ---
+        self.global_buffer = []
+
+        os.makedirs(self.data_path, exist_ok=True)
+
+    def _save_batch(self, data: List[Dict], prefix: str) -> None:
+        """Сохраняет накопленные данные в файл."""
         if not data:
             return
 
-        # Структура: ./raw_data/posts/date=2024-01-01
-        folder = os.path.join(self.data_path, prefix, f"date={date_folder}")
-        os.makedirs(folder, exist_ok=True)
-
-        filename = f"{prefix}_{int(time.time())}_{os.urandom(4).hex()}.json"
-        filepath = os.path.join(folder, filename)
+        unique_id = int(time.time() * 1000)
+        filename = f"{prefix}_{self.run_timestamp}_{unique_id}.json"
+        full_path = os.path.join(self.data_path, filename)
 
         try:
-            with open(filepath, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=4)
-
-            logger.info(f"💾 [SAVED] {len(data)} объектов -> {filename}")
-
-            # Очищаем список inplace для экономии памяти
-            data.clear()
-
+            with open(full_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, default=str)
+            logger.info(f"💾 Saved BATCH: {filename} ({len(data)} records)")
         except Exception as e:
-            logger.error(f"⚠️ Ошибка сохранения файла {filepath}: {e}")
+            logger.error(f"❌ Error saving batch {filename}: {e}")
 
-    def _extract_post_payload(self, post: Message, channel_id: int, replies_count: int) -> Dict[str, Any]:
-        """Преобразует объект поста Pyrogram в словарь."""
-        return {
-            'channel_id': channel_id,
-            'post_id': post.id,
-            'date': post.date.strftime("%Y-%m-%d"),
-            'ts': int(post.date.timestamp()),
-            'text': str(post.text or post.caption or ""),
-            'views': post.views or 0,
-            'replies_count': replies_count
-        }
-
-    def _extract_comment_payload(self, comment: Message, post_id: int, channel_id: int) -> Dict[str, Any]:
-        """Преобразует объект комментария Pyrogram в словарь."""
-        text_content = str(comment.text or comment.caption or "")
-
-        author_id = comment.from_user.id if comment.from_user else 0
-        author_name = comment.from_user.first_name if comment.from_user else "Hidden/Deleted"
-
-        is_reply_to_user = False
-        if comment.reply_to_top_message_id:
-            is_reply_to_user = (comment.reply_to_message_id != comment.reply_to_top_message_id)
-
-        return {
-            'comment_id': comment.id,
-            'post_id': post_id,
-            'channel_id': channel_id,
-            'text': text_content,
-            'author_id': author_id,
-            'author_name': author_name,
-            'date': comment.date.strftime("%Y-%m-%d"),
-            'ts': int(comment.date.timestamp()),
-            'reply_to_msg_id': comment.reply_to_message_id,
-            'is_reply_to_user': is_reply_to_user
-        }
-
-    async def _safe_get_replies_count(self, channel_id: int, post_id: int) -> int:
-        """Получает количество комментариев с обработкой FloodWait."""
-        while True:
-            try:
-                return await self.app.get_discussion_replies_count(channel_id, post_id)
-            except FloodWait as e:
-                logger.warning(f"😴 FloodWait (Get Count): Ждем {e.value} сек...")
-                await asyncio.sleep(e.value + 1)
-            except Exception:
-                # Если комментарии отключены или пост удален
-                return 0
-
-    async def _process_comments(self, channel_id: int, post_id: int, comments_buffer: List[Dict]):
-        """Сбор комментариев для конкретного поста."""
-        try:
-            async for com in self.app.get_discussion_replies(channel_id, post_id):
-                com_obj = self._extract_comment_payload(com, post_id, channel_id)
-                comments_buffer.append(com_obj)
-
-                if len(comments_buffer) >= self.batch_size_comments:
-                    self._save_batch(comments_buffer, "comments", com_obj['date'])
-
-        except FloodWait as e:
-            logger.warning(f"😴 FloodWait (Fetching Comments): Ждем {e.value} сек...")
-            await asyncio.sleep(e.value + 2)
-        except Exception as e:
-            logger.error(f"   ⚠️ Ошибка сбора комментариев для поста {post_id}: {e}")
-
-    async def process_channel(self, channel_id: int, limit: int):
-        """Основной цикл обработки одного канала."""
-        logger.info(f"--- 🚀 Запуск обработки канала {channel_id} ---")
-
-        posts_buffer = []
-        comments_buffer = []
-
-        try:
-            chat = await self.app.get_chat(channel_id)
-            logger.info(f"Название канала: {chat.title}")
-
-            async for post in self.app.get_chat_history(channel_id, limit=limit):
-                if post.service:
-                    continue
-
-                # 1. Получаем кол-во ответов
-                replies_count = await self._safe_get_replies_count(channel_id, post.id)
-
-                # 2. Обработка поста
-                post_obj = self._extract_post_payload(post, channel_id, replies_count)
-                posts_buffer.append(post_obj)
-
-                if len(posts_buffer) >= self.batch_size_posts:
-                    self._save_batch(posts_buffer, "posts", post_obj['date'])
-
-                # 3. Обработка комментариев (если есть)
-                if replies_count > 0:
-                    logger.info(f"   ↳ Комментариев: {replies_count} (ID поста: {post.id})")
-                    await self._process_comments(channel_id, post.id, comments_buffer)
-
-                # Небольшая пауза между постами
-                await asyncio.sleep(1)
-
-        except Exception as e:
-            logger.error(f"❌ Критическая ошибка канала {channel_id}: {e}")
-
-
-
-        finally:
-
-            # Умный сброс остатков (группируем по дате, чтобы не создавать папку leftovers)
-
-            if posts_buffer:
-                # Сортируем, так как groupby требует отсортированных данных
-                posts_buffer.sort(key=lambda x: x['date'])
-                for date_key, group in groupby(posts_buffer, key=lambda x: x['date']):
-                    # БЫЛО: save_batch(...) -> ОШИБКА
-                    # СТАЛО: self._save_batch(...)
-                    self._save_batch(list(group), "posts", date_key)
-            if comments_buffer:
-                comments_buffer.sort(key=lambda x: x['date'])
-                for date_key, group in groupby(comments_buffer, key=lambda x: x['date']):
-                    # БЫЛО: save_batch(...) -> ОШИБКА
-                    # СТАЛО: self._save_batch(...)
-                    self._save_batch(list(group), "comments", date_key)
-
-    async def get_channel_list(self) -> List[int]:
-        """Сканирует подписки и возвращает ID каналов/групп."""
+    async def get_channel_list(self, app: Client) -> List[int]:
+        """Получает список каналов."""
+        logger.info("Fetching channel list...")
         group_ids = []
-        logger.info("--- 🔍 Сканирую подписки... ---")
-
-        async for dialog in self.app.get_dialogs():
-            if dialog.chat.type in [ChatType.CHANNEL, ChatType.SUPERGROUP]:
+        async for dialog in app.get_dialogs():
+            if dialog.chat.type in (ChatType.CHANNEL, ChatType.SUPERGROUP, ChatType.GROUP):
                 group_ids.append(dialog.chat.id)
-                logger.info(f"ID: {dialog.chat.id:<20} | Title: {dialog.chat.title}")
-
-        logger.info("-" * 60)
+        logger.info(f"Found {len(group_ids)} channels.")
         return group_ids
 
-    async def run(self, specific_channels: Optional[List[int]] = None, limit_per_channel: int = 100):
-        """Точка входа."""
-        async with self.app:
-            # Если передали конкретные ID, используем их, иначе сканируем все подписки
-            target_ids = specific_channels or await self.get_channel_list()
+    async def process_channel(self, app: Client, chat_id: int, limit: int):
+        """Парсит канал и складывает посты в ОБЩИЙ буфер."""
+        logger.info(f"Processing channel {chat_id}...")
+
+        try:
+            async for message in app.get_chat_history(chat_id, limit=limit):
+                if not message.text and not message.caption:
+                    continue
+
+                post_data = {
+                    "post_id": message.id,
+                    "channel_id": chat_id,
+                    "date": message.date,
+                    "text": message.text or message.caption or "",
+                    "views": message.views if message.views else 0,
+                    "type": "post"
+                }
+
+                # Добавляем в общий котел
+                self.global_buffer.append(post_data)
+
+                # --- ИСПРАВЛЕНИЕ 2: Проверяем размер ОБЩЕГО буфера ---
+                if len(self.global_buffer) >= self.batch_size_posts:
+                    self._save_batch(self.global_buffer, "posts")
+                    self.global_buffer = []  # Очищаем после сохранения
+
+        except FloodWait as e:
+            logger.warning(f"⏳ FloodWait: sleeping {e.value} seconds...")
+            await asyncio.sleep(e.value)
+        except Exception as e:
+            logger.error(f"Error accessing channel {chat_id}: {e}")
+
+    async def run(self, limit_per_channel: int = 100):
+        """Основной цикл."""
+
+        # --- ИСПРАВЛЕНИЕ 3: Создаем Client ВНУТРИ цикла asyncio ---
+        # Это решает ошибку 'attached to a different loop'
+        app = Client(
+            self.session_name,
+            api_id=self.api_id,
+            api_hash=self.api_hash,
+            app_version=app_version,
+            device_model=phone,
+            lang_code=lang_code,
+        )
+
+        async with app:
+            target_ids = await self.get_channel_list(app)
+            logger.info(f"Starting job. Run ID: {self.run_timestamp}")
 
             for gid in target_ids:
-                await self.process_channel(gid, limit=limit_per_channel)
+                await self.process_channel(app, gid, limit=limit_per_channel)
+
+            # --- ИСПРАВЛЕНИЕ 4: Сохраняем остатки в конце ---
+            # Если в буфере осталось 18 постов, их тоже надо сохранить перед выходом
+            if self.global_buffer:
+                logger.info(f"🧹 Flushing remaining {len(self.global_buffer)} posts...")
+                self._save_batch(self.global_buffer, "posts")
 
 
 # --- ЗАПУСК ---
 if __name__ == "__main__":
-    # 1. Создаем клиент Pyrogram
-    pyro_client = Client(
-        "session1",
+    # Определяем пути
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    data_output_path = os.path.join(current_dir, "data", "raw")
+    if not os.path.exists(data_output_path):
+        data_output_path = "data/raw"
+
+    print(f"📂 Storage path: {os.path.abspath(data_output_path)}")
+
+    # Инициализируем парсер (без создания клиента, только конфиг)
+    parser = TelegramSparkParser(
+        session_name="session1",
         api_id=api_id,
         api_hash=api_hash,
-        app_version=app_version,
-        device_model=phone,
-        lang_code=lang_code,
+        data_path=data_output_path,
+        batch_size_posts=500  # Теперь он честно будет ждать 500 постов
     )
 
-    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-    # Формируем правильный путь: /Users/.../kursch/data/raw
-    correct_data_path = os.path.join(base_dir, "data", "raw")
-    print(f"📂 Данные будут сохранены в: {correct_data_path}")
-
-    # 2. Создаем наш парсер
-    parser = TelegramSparkParser(
-        client=pyro_client,
-        data_path=correct_data_path,
-        batch_size_posts=500,
-        batch_size_comments=1000
-    )
-
-    # 3. Запускаем
-    # Можно передать список ID, чтобы не сканировать всё: await parser.run([-100123456...])
-    pyro_client.run(parser.run(limit_per_channel=1000))
+    try:
+        # Запускаем асинхронный цикл
+        asyncio.run(parser.run(limit_per_channel=50))
+        print("✅ Парсинг завершен успешно.")
+    except Exception as e:
+        print(f"❌ Критическая ошибка: {e}")

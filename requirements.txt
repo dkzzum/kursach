@@ -10,3 +10,4 @@ pyrogram
 tgcrypto
 matplotlib
 seaborn
+schedule
