@@ -1,13 +1,8 @@
 pyspark==3.5.0
-pandas
-numpy
-# Для оптимизации передачи данных между Python и Java:
-pyarrow
-# Для будущего анализа текста (поляризация):
-nltk
-spacy
-pyrogram
-tgcrypto
-matplotlib
-seaborn
-schedule
+pandas==2.0.3
+numpy==1.24.4
+pyarrow==14.0.1
+nltk==3.8.1
+spacy==3.7.5
+# Добавляем совместимую версию thinc явно, чтобы избежать конфликтов
+thinc<8.3.0
