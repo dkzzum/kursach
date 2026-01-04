@@ -1,0 +1,62 @@
+[
+    {
+        "comment_id": 57592,
+        "post_id": 15973,
+        "channel_id": -1001645624630,
+        "text": "Мышки есть везде,где есть еда, это нормально😌",
+        "author_id": 1059102421,
+        "author_name": "Дмитрий",
+        "date": "2025-11-09",
+        "ts": 1762679633,
+        "reply_to_msg_id": 57590,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 57594,
+        "post_id": 15969,
+        "channel_id": -1001645624630,
+        "text": "Молодцы👍",
+        "author_id": 8008432917,
+        "author_name": "Юлия",
+        "date": "2025-11-09",
+        "ts": 1762680113,
+        "reply_to_msg_id": 57584,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 57588,
+        "post_id": 15968,
+        "channel_id": -1001645624630,
+        "text": "Продвигать альтернативную идею❌\nОтменять всё, чтобы никто молодёжный больше не захотел приехать в Архангельск✅",
+        "author_id": 950591435,
+        "author_name": "𝓤𝓷𝓹𝓻𝓮𝓽𝓽𝔂",
+        "date": "2025-11-09",
+        "ts": 1762672944,
+        "reply_to_msg_id": 57570,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 57583,
+        "post_id": 15968,
+        "channel_id": -1001645624630,
+        "text": "Зря на концерт приехал?",
+        "author_id": 6894294055,
+        "author_name": "Max",
+        "date": "2025-11-09",
+        "ts": 1762671247,
+        "reply_to_msg_id": 57572,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 57582,
+        "post_id": 15957,
+        "channel_id": -1001645624630,
+        "text": "Капец",
+        "author_id": 8242774754,
+        "author_name": "Илья",
+        "date": "2025-11-09",
+        "ts": 1762670482,
+        "reply_to_msg_id": 57525,
+        "is_reply_to_user": true
+    }
+]

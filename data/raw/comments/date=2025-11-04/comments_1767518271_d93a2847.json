@@ -1,0 +1,26 @@
+[
+    {
+        "comment_id": 451327,
+        "post_id": 34559,
+        "channel_id": -1001013484985,
+        "text": "",
+        "author_id": 7136808206,
+        "author_name": "Timofey",
+        "date": "2025-11-04",
+        "ts": 1762227286,
+        "reply_to_msg_id": 447092,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 451326,
+        "post_id": 34559,
+        "channel_id": -1001013484985,
+        "text": "Нет ёбнутым покоя…",
+        "author_id": 7136808206,
+        "author_name": "Timofey",
+        "date": "2025-11-04",
+        "ts": 1762227254,
+        "reply_to_msg_id": 447092,
+        "is_reply_to_user": false
+    }
+]

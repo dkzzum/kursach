@@ -1,0 +1,74 @@
+[
+    {
+        "comment_id": 474523,
+        "post_id": 497,
+        "channel_id": -1001778020390,
+        "text": "Узнаем 8 марта)",
+        "author_id": 903949373,
+        "author_name": "M",
+        "date": "2024-03-05",
+        "ts": 1709652613,
+        "reply_to_msg_id": 474522,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 474521,
+        "post_id": 497,
+        "channel_id": -1001778020390,
+        "text": "Мы любим устраивать акции по любым поводам для наших клиентов 👩‍❤️‍👨",
+        "author_id": 903949373,
+        "author_name": "M",
+        "date": "2024-03-05",
+        "ts": 1709652532,
+        "reply_to_msg_id": 474512,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 474512,
+        "post_id": 497,
+        "channel_id": -1001778020390,
+        "text": "это уже вторая скидка)",
+        "author_id": 685380365,
+        "author_name": "Cheapest",
+        "date": "2024-03-05",
+        "ts": 1709652359,
+        "reply_to_msg_id": 474508,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 474508,
+        "post_id": 497,
+        "channel_id": -1001778020390,
+        "text": "Идут очень хорошо :)\nРазве есть что то плохое в скидках на новые тарифы?",
+        "author_id": 903949373,
+        "author_name": "M",
+        "date": "2024-03-05",
+        "ts": 1709652066,
+        "reply_to_msg_id": 474503,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 474505,
+        "post_id": 497,
+        "channel_id": -1001778020390,
+        "text": "уже пожалели о китайском открытии?",
+        "author_id": 685380365,
+        "author_name": "Cheapest",
+        "date": "2024-03-05",
+        "ts": 1709651965,
+        "reply_to_msg_id": 470007,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 474503,
+        "post_id": 497,
+        "channel_id": -1001778020390,
+        "text": "продажи походу не идут",
+        "author_id": 685380365,
+        "author_name": "Cheapest",
+        "date": "2024-03-05",
+        "ts": 1709651942,
+        "reply_to_msg_id": 470007,
+        "is_reply_to_user": false
+    }
+]

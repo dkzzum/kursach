@@ -13,9 +13,5 @@ __pycache__/
 #*.session-journal
 
 # Data & Logs
-data/
-raw_data/
-spark-warehouse/
-metastore_db/
-derby.log
-*.log
+#derby.log
+#*.log
