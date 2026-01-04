@@ -1,89 +1,77 @@
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, to_timestamp, regexp_replace, trim
+from pyspark.sql import functions as F
+from pyspark.sql.types import StringType
+import re
 import os
+import sys
 
-# 1. Инициализация Spark
-# Мы явно указываем Derby создавать служебные файлы в /tmp,
-# чтобы избежать проблем с блокировками на Mac.
-spark = SparkSession.builder \
-    .appName("TelegramETL_BronzeToSilver") \
-    .config("spark.sql.warehouse.dir", "file:///opt/spark/work-dir/spark-warehouse") \
-    .config("spark.driver.extraJavaOptions", "-Dderby.system.home=/tmp/derby") \
-    .config("spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version", "2") \
-    .enableHiveSupport() \
-    .getOrCreate()
-
-spark.sparkContext.setLogLevel("WARN")
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
+from app.core.config import get_spark_session
 
 
-def process_posts():
-    print("--- 🚀 Начало обработки POSTS (Bronze -> Silver) ---")
+def clean_text(text):
+    if text is None: return ""
+    text = re.sub(r'http\S+', '', text)
+    text = re.sub(r'[^а-яА-Яa-zA-Z0-9\s]', '', text)
+    return text.lower().strip()
 
-    # 1. Читаем сырые JSON (Bronze Layer)
-    raw_posts_path = "/data/raw/posts"
+
+def process_dataset(spark, source_path, table_name_bronze, table_name_silver, text_col_candidates):
+    print(f"\n--- Обработка папки: {source_path} ---")
+
     try:
-        df = spark.read.option("multiLine", True).json(raw_posts_path)
+        df_raw = spark.read \
+            .option("recursiveFileLookup", "true") \
+            .option("multiline", "true") \
+            .json(source_path) \
+            .cache()
+
+        valid_cols = [c for c in df_raw.columns if c != "_corrupt_record"]
+        if not valid_cols:
+            print(f"⚠️  В папке {source_path} нет валидных данных.")
+            return
     except Exception as e:
-        print(f"⚠️ Ошибка чтения постов (возможно папка пустая): {e}")
+        print(f"⚠️  Критическая ошибка чтения: {str(e)}")
         return
 
-    print(f"📥 Загружено сырых записей: {df.count()}")
+    count = df_raw.count()
+    print(f"✅ Прочитано записей: {count}")
 
-    # 2. Очистка данных (Transformation)
-    cleaned_df = df \
-        .dropDuplicates(['post_id', 'channel_id']) \
-        .withColumn("date_ts", to_timestamp(col("date"), "yyyy-MM-dd")) \
-        .withColumn("clean_text", regexp_replace(col("text"), "<[^>]+>", "")) \
-        .withColumn("clean_text", trim(col("clean_text"))) \
-        .filter(col("clean_text") != "")  # Убираем пустые посты
+    # --- СЕКРЕТНЫЙ ИНГРЕДИЕНТ: DROP ПЕРЕД ЗАПИСЬЮ ---
+    # Это гарантирует, что старая локация будет очищена
+    spark.sql(f"DROP TABLE IF EXISTS {table_name_bronze}")
 
-    # Примечание: regexp_replace("<[^>]+>", "") удаляет HTML теги (<b>, <br> и т.д.)
+    # Сохраняем Bronze
+    df_raw.write.mode("overwrite").saveAsTable(table_name_bronze)
+    print(f"✅ Слой Bronze готов: {table_name_bronze}")
 
-    print(f"✨ Записей после очистки: {cleaned_df.count()}")
+    # Очистка для Silver
+    clean_udf = F.udf(clean_text, StringType())
+    target_col = next((c for c in text_col_candidates if c in df_raw.columns), None)
 
-    # 3. Сохранение в Hive (Silver Layer)
-    # format("parquet") — сохраняем в эффективном формате
-    # saveAsTable — регистрирует таблицу в Hive metastore
-    table_name = "silver_posts"
-    cleaned_df.write \
-        .mode("overwrite") \
-        .format("parquet") \
-        .saveAsTable(table_name)
+    if target_col:
+        print(f"ℹ️  Очистка текстовой колонки: {target_col}")
+        df_silver = df_raw.withColumn("clean_text", clean_udf(F.col(target_col))) \
+            .filter(F.length(F.col("clean_text")) > 2)
 
-    print(f"💾 Таблица '{table_name}' успешно сохранена в Hive!")
-    print("-" * 30)
+        # Тоже удаляем перед записью
+        spark.sql(f"DROP TABLE IF EXISTS {table_name_silver}")
+        df_silver.write.mode("overwrite").saveAsTable(table_name_silver)
+        print(f"✅ Слой Silver готов: {table_name_silver}")
+    else:
+        print(f"❌ Текстовая колонка не найдена. Список колонок: {df_raw.columns}")
 
 
-def process_comments():
-    print("--- 🚀 Начало обработки COMMENTS (Bronze -> Silver) ---")
+def run_etl():
+    spark = get_spark_session("ETL_Final_Fix")
 
-    raw_comments_path = "/data/raw/comments"
-    try:
-        df = spark.read.option("multiLine", True).json(raw_comments_path)
-    except Exception:
-        print("⚠️ Комментарии не найдены.")
-        return
+    # Обрабатываем Посты
+    process_dataset(spark, "/data/raw/posts", "bronze_posts", "silver_posts", ["message", "content", "text"])
 
-    print(f"📥 Загружено сырых комментариев: {df.count()}")
+    # Обрабатываем Комментарии
+    process_dataset(spark, "/data/raw/comments", "bronze_comments", "silver_comments", ["message", "text", "comment"])
 
-    cleaned_df = df \
-        .dropDuplicates(['comment_id']) \
-        .withColumn("date_ts", to_timestamp(col("date"), "yyyy-MM-dd")) \
-        .withColumn("clean_text", regexp_replace(col("text"), "<[^>]+>", "")) \
-        .withColumn("clean_text", trim(col("clean_text")))
-
-    table_name = "silver_comments"
-    cleaned_df.write \
-        .mode("overwrite") \
-        .format("parquet") \
-        .saveAsTable(table_name)
-
-    print(f"💾 Таблица '{table_name}' успешно сохранена в Hive!")
+    spark.stop()
 
 
 if __name__ == "__main__":
-    process_posts()
-    process_comments()
-    spark.stop()
-
-# Запуск: docker exec -it spark_processor python etl_bronze_to_silver.py
+    run_etl()
