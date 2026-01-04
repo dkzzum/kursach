@@ -237,4 +237,4 @@ if __name__ == "__main__":
 
     # 3. Запускаем
     # Можно передать список ID, чтобы не сканировать всё: await parser.run([-100123456...])
-    pyro_client.run(parser.run(limit_per_channel=2500))
+    pyro_client.run(parser.run(limit_per_channel=1000))

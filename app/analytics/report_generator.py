@@ -30,7 +30,7 @@ def generate_activity_chart():
         # SQL: Группируем посты по датам
         df = spark.sql("""
                        SELECT to_date(date_ts) as post_date, count(*) as post_count
-                       FROM silver_posts
+                       FROM gold_posts
                        GROUP BY to_date(date_ts)
                        ORDER BY post_date
                        """).toPandas()
@@ -62,7 +62,7 @@ def generate_top_authors_chart():
         # SQL: Топ-10 авторов комментов
         df = spark.sql("""
                        SELECT author_name, count(*) as msg_count
-                       FROM silver_comments
+                       FROM gold_comments
                        WHERE author_name != 'Hidden/Deleted'
                        GROUP BY author_name
                        ORDER BY msg_count DESC
