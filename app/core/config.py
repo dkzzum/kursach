@@ -11,15 +11,11 @@ session = 'session1'
 
 
 def get_spark_session(app_name="TelegramToxicAnalysis"):
-    """
-    Создает SparkSession с поддержкой Hive.
-    Настройки указывают на контейнер hive-metastore внутри Docker-сети.
-    """
-    builder = SparkSession.builder \
+    return SparkSession.builder \
         .appName(app_name) \
         .config("spark.sql.catalogImplementation", "hive") \
         .config("spark.hadoop.hive.metastore.uris", "thrift://hive-metastore:9083") \
         .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
-        .enableHiveSupport()
-
-    return builder.getOrCreate()
+        .config("spark.hadoop.javax.jdo.option.ConnectionURL", "jdbc:derby:;databaseName=/data/metastore_db;create=true") \
+        .enableHiveSupport() \
+        .getOrCreate()

@@ -1,103 +1,103 @@
 import os
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, when
+import sys
+import time
+from pyspark.sql import functions as F
 from pyspark.sql.types import DoubleType
-from pyspark.ml.feature import Tokenizer, HashingTF, IDF, StopWordsRemover
+from pyspark.ml.feature import Tokenizer, HashingTF, IDF
 from pyspark.ml.classification import LogisticRegression
 from pyspark.ml import Pipeline
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
-# Настройки Spark
-spark = SparkSession.builder \
-    .appName("DestructiveContent_ML_Analysis") \
-    .config("spark.sql.warehouse.dir", "file:///opt/spark/work-dir/spark-warehouse") \
-    .config("spark.driver.extraJavaOptions", "-Dderby.system.home=/tmp/derby") \
-    .enableHiveSupport() \
-    .getOrCreate()
+# Добавляем путь к корню проекта
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
+from app.core.config import get_spark_session
 
+# Используем наш единый конфиг для Hive
+spark = get_spark_session("ML_Supervised_Scaling_Test")
 spark.sparkContext.setLogLevel("WARN")
 
 
-def run_supervised_learning():
-    print("\n--- 🎓 Запуск обучения с учителем (Supervised Learning) ---")
+def run_supervised_experiment(table_name='silver_comments'):
+    print("\n--- 🎓 Масштабируемое обучение (Supervised Learning) ---")
 
-    # 1. Читаем размеченный датасет (labeled.csv)
-    # Путь внутри контейнера (т.к. мы пробросили папку)
-    csv_path = "/app/app/ml/labeled.csv"
-
-    if not os.path.exists(csv_path):
-        # Если запускаем локально или путь другой, пробуем найти относительно скрипта
-        csv_path = os.path.join(os.path.dirname(__file__), "labeled.csv")
-
-    print(f"📂 Загрузка учебника: {csv_path}")
-
+    # 1. Загружаем размеченный "учебник" (CSV)
+    csv_path = "/app/ml/labeled.csv"
     try:
-        # Читаем CSV. Опция multiLine=True нужна, если в комментах есть переносы строк
-        train_df = spark.read.option("header", "true") \
+        train_base_df = spark.read.option("header", "true") \
             .option("inferSchema", "true") \
-            .option("quote", "\"") \
-            .option("escape", "\"") \
             .option("multiLine", "true") \
-            .csv(csv_path)
-
-        # Приводим типы: toxic должно быть числом (Double)
-        train_df = train_df.withColumn("label", col("toxic").cast(DoubleType())) \
+            .csv(csv_path) \
+            .withColumn("label", F.col("toxic").cast(DoubleType())) \
             .withColumnRenamed("comment", "text") \
-            .dropna()
-
-        print(f"📊 Размер обучающей выборки: {train_df.count()} строк")
-        train_df.groupBy("label").count().show()
-
+            .dropna(subset=["text"])
     except Exception as e:
         print(f"❌ Ошибка чтения CSV: {e}")
         return
 
-    # 2. Строим пайплайн обучения
-    # Tokenizer -> HashingTF -> IDF -> LogisticRegression
-    tokenizer = Tokenizer(inputCol="text", outputCol="words")
-    # Добавим стоп-слова (опционально, можно убрать, если мешает)
-    # remover = StopWordsRemover(inputCol="words", outputCol="filtered")
-    hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=20000)
-    idf = IDF(inputCol="rawFeatures", outputCol="features")
-    lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=20)
+    # 2. Список объемов данных для эксперимента (Scalability Test)
+    # 0.1 (10%), 0.5 (50%), 1.0 (100%)
+    fractions = [0.1, 0.5, 1.0]
+    results = []
 
-    pipeline = Pipeline(stages=[tokenizer, hashingTF, idf, lr])
+    for frac in fractions:
+        print(f"\n🔄 Тестирование объема: {int(frac * 100)}% данных...")
 
-    # 3. Обучаем модель (Fit)
-    print("🧠 Обучение модели...")
-    # Делим на train/test для проверки точности самой модели
-    (training_data, test_data) = train_df.randomSplit([0.8, 0.2], seed=42)
+        # Берем подвыборку
+        sample_df = train_base_df.sample(False, frac, seed=42)
+        count = sample_df.count()
 
-    model = pipeline.fit(training_data)
+        # Пайплайн
+        tokenizer = Tokenizer(inputCol="text", outputCol="words")
+        hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=20000)
+        idf = IDF(inputCol="rawFeatures", outputCol="features")
+        lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=20)
+        pipeline = Pipeline(stages=[tokenizer, hashingTF, idf, lr])
 
-    # 4. Проверяем качество на отложенной части датасета
-    predictions = model.transform(test_data)
-    evaluator = MulticlassClassificationEvaluator(labelCol="label", metricName="accuracy")
-    accuracy = evaluator.evaluate(predictions)
-    print(f"🎯 Точность модели (Accuracy) на тестовых данных: {accuracy:.4f}")
+        # Замеряем время
+        start_time = time.time()
+        (training_data, test_data) = sample_df.randomSplit([0.8, 0.2], seed=42)
+        model = pipeline.fit(training_data)
+        duration = time.time() - start_time
 
-    # 5. Применяем знания к НАШИМ данным (Gold)
-    print("\n--- 🚀 Применение модели к Gold данным ---")
+        # Проверка точности
+        predictions = model.transform(test_data)
+        evaluator = MulticlassClassificationEvaluator(labelCol="label", metricName="accuracy")
+        accuracy = evaluator.evaluate(predictions)
+
+        print(f"📊 Строк: {count} | Время: {duration:.2f} сек | Точность: {accuracy:.4f}")
+        results.append((count, duration, accuracy))
+
+    # 3. ПРИМЕНЕНИЕ ЛУЧШЕЙ МОДЕЛИ (обученной на 100%) К ДАННЫМ ИЗ HIVE
+    print("\n--- 🚀 Применение к данным из Hive (silver_comments) ---")
     try:
-        gold_df = spark.table("gold_comments").filter("text is not NULL")
-        print(f"📥 Загружено {gold_df.count()} комментариев из Gold слоя.")
+        # Читаем из Silver слоя
+        hive_df = spark.read.table(table_name)
+        # Модель ожидает колонку 'text', в silver это 'clean_text'
+        prediction_input = hive_df.withColumnRenamed("clean_text", "text")
 
-        # Предсказываем
-        final_predictions = model.transform(gold_df)
+        final_predictions = model.transform(prediction_input)
 
-        # Сохраняем результат в новую таблицу "Platinum Supervised"
-        print("💾 Сохранение результатов в 'platinum_supervised'...")
-        final_predictions.select("channel_id", "date_ts", "author_name", "text", "prediction") \
-            .write.mode("overwrite").saveAsTable("platinum_supervised")
+        # Сохраняем в таблицу Gold
+        spark.sql("DROP TABLE IF EXISTS gold_supervised_predictions")
+        final_predictions.select("author_name", "text", "prediction") \
+            .write.mode("overwrite") \
+            .option("path", "/user/hive/warehouse/gold_supervised_predictions") \
+            .saveAsTable("gold_supervised_predictions")
 
-        # Показываем статистику
-        print("📊 Результаты классификации наших данных:")
+        print("✅ Результаты сохранены в Hive: gold_supervised_predictions")
         final_predictions.groupBy("prediction").count().show()
 
     except Exception as e:
-        print(f"⚠️ Ошибка при обработке Gold данных: {e}")
+        print(f"⚠️ Ошибка при работе с Hive: {e}")
+
+    # Итоговая таблица для отчета
+    print("\n" + "=" * 30)
+    print("📈 ТАБЛИЦА МАСШТАБИРУЕМОСТИ")
+    print("=" * 30)
+    for c, d, a in results:
+        print(f"Объем: {c:<7} | Время: {d:.2f}с | Точность: {a:.44f}")
 
 
 if __name__ == "__main__":
-    run_supervised_learning()
+    run_supervised_experiment()
     spark.stop()
