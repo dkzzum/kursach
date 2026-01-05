@@ -129,5 +129,5 @@ def run_ml_experiment(table_name='silver_comments'):
 
 
 if __name__ == "__main__":
-    run_ml_experiment()
+    run_ml_experiment('gold_comments')
     spark.stop()

@@ -35,69 +35,84 @@ def run_supervised_experiment(table_name='silver_comments'):
         return
 
     # 2. Список объемов данных для эксперимента (Scalability Test)
-    # 0.1 (10%), 0.5 (50%), 1.0 (100%)
     fractions = [0.1, 0.5, 1.0]
     results = []
 
+    # Обучаем модель (код без изменений)
+    model = None
+    last_count = 0
+
     for frac in fractions:
         print(f"\n🔄 Тестирование объема: {int(frac * 100)}% данных...")
-
-        # Берем подвыборку
         sample_df = train_base_df.sample(False, frac, seed=42)
         count = sample_df.count()
 
-        # Пайплайн
         tokenizer = Tokenizer(inputCol="text", outputCol="words")
         hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=20000)
         idf = IDF(inputCol="rawFeatures", outputCol="features")
         lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=20)
         pipeline = Pipeline(stages=[tokenizer, hashingTF, idf, lr])
 
-        # Замеряем время
         start_time = time.time()
         (training_data, test_data) = sample_df.randomSplit([0.8, 0.2], seed=42)
         model = pipeline.fit(training_data)
         duration = time.time() - start_time
 
-        # Проверка точности
         predictions = model.transform(test_data)
         evaluator = MulticlassClassificationEvaluator(labelCol="label", metricName="accuracy")
         accuracy = evaluator.evaluate(predictions)
 
         print(f"📊 Строк: {count} | Время: {duration:.2f} сек | Точность: {accuracy:.4f}")
         results.append((count, duration, accuracy))
+        last_count = count
 
-    # 3. ПРИМЕНЕНИЕ ЛУЧШЕЙ МОДЕЛИ (обученной на 100%) К ДАННЫМ ИЗ HIVE
-    print("\n--- 🚀 Применение к данным из Hive (silver_comments) ---")
+    # 3. ПРИМЕНЕНИЕ К ДАННЫМ ИЗ HIVE
+    print(f"\n--- 🚀 Применение к данным из Hive ({table_name}) ---")
     try:
-        # Читаем из Silver слоя
-        hive_df = spark.read.table(table_name)
-        # Модель ожидает колонку 'text', в silver это 'clean_text'
-        prediction_input = hive_df.withColumnRenamed("clean_text", "text")
+        # Читаем таблицу и СРАЗУ убираем конфликт имен
+        hive_df = spark.read.table(table_name) \
+            .withColumnRenamed("text", "original_text")
+
+        # Теперь безопасно берем clean_text и называем его text (как ждет модель)
+        prediction_input = hive_df.withColumn("text", F.col("clean_text"))
 
         final_predictions = model.transform(prediction_input)
 
-        # Сохраняем в таблицу Gold
-        spark.sql("DROP TABLE IF EXISTS gold_supervised_predictions")
-        final_predictions.select("author_name", "text", "prediction") \
-            .write.mode("overwrite") \
-            .option("path", "/user/hive/warehouse/gold_supervised_predictions") \
-            .saveAsTable("gold_supervised_predictions")
+        # Формируем финальную выборку без лишних колонок
+        final_df = final_predictions.select(
+            "author_name",
+            "original_text",  # Сохраняем оригинальный текст для просмотра
+            "clean_text",
+            "prediction"
+        )
 
-        print("✅ Результаты сохранены в Hive: gold_supervised_predictions")
-        final_predictions.groupBy("prediction").count().show()
+        # Сохраняем в таблицу Gold
+        output_table = "gold_supervised_predictions"
+        spark.sql(f"DROP TABLE IF EXISTS {output_table}")
+
+        final_df.write.mode("overwrite") \
+            .option("path", f"/user/hive/warehouse/{output_table}") \
+            .saveAsTable(output_table)
+
+        print(f"✅ Результаты сохранены в Hive: {output_table}")
+
+        # Показываем статистику, чтобы убедиться, что не нули
+        toxic_count = final_df.filter("prediction = 1.0").count()
+        total_count = final_df.count()
+        print(f"📊 Итог: {total_count} строк, из них токсичных: {toxic_count}")
 
     except Exception as e:
         print(f"⚠️ Ошибка при работе с Hive: {e}")
 
-    # Итоговая таблица для отчета
+    # Итоговая таблица масштабируемости
     print("\n" + "=" * 30)
     print("📈 ТАБЛИЦА МАСШТАБИРУЕМОСТИ")
     print("=" * 30)
     for c, d, a in results:
-        print(f"Объем: {c:<7} | Время: {d:.2f}с | Точность: {a:.44f}")
+        print(f"Объем: {c:<7} | Время: {d:.2f}с | Точность: {a:.4f}")
 
 
 if __name__ == "__main__":
-    run_supervised_experiment()
+    # Используем gold_comments для большой нагрузки
+    run_supervised_experiment("gold_comments")
     spark.stop()

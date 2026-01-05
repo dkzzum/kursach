@@ -128,5 +128,5 @@ def run_big_training(table_name='silver_comments'):
 
 
 if __name__ == "__main__":
-    run_big_training()
+    run_big_training('gold_comments')
     spark.stop()

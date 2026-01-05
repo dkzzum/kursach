@@ -6,6 +6,7 @@ BLUE='\033[0;34m'
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
+CONTAINER="spark_master"
 
 echo -e "${GREEN}==============================================${NC}"
 echo -e "${GREEN}🚀 ЗАПУСК ENTERPRISE DATA PIPELINE (СХиОД)${NC}"
@@ -14,6 +15,7 @@ echo -e "${GREEN}==============================================${NC}"
 # 🛑 1. Очистка
 echo -e "\n${BLUE}[1/7] 🧹 Очистка старых контейнеров и метаданных...${NC}"
 docker-compose down
+# Удаляем локальные логи базы данных, если они есть
 rm -rf metastore_db derby.log
 
 # 🐳 2. Docker
@@ -25,25 +27,30 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo -e "⏳ Инициализация Spark (ждем 10 сек)..."
-sleep 10
+echo -e "⏳ Инициализация Spark и Hive (ждем 30 сек)..."
+sleep 30
 
 # 🏭 3. ETL (Первичная загрузка)
 echo -e "\n${BLUE}[3/7] 🏭 ETL: Загрузка исторических данных и генерация Big Data...${NC}"
-docker exec -i spark_processor python app/etl/bronze_to_silver.py
-docker exec -i spark_processor python app/etl/data_generator.py
+docker exec -it $CONTAINER python3 /app/etl/bronze_to_silver.py
+docker exec -it $CONTAINER python3 /app/etl/data_generator.py
 
-# 🧠 4. ML (Обучение)
+# 🧠 4. ML (Обучение всех моделей)
 echo -e "\n${BLUE}[4/7] 🧠 ML: Обучение эталонных моделей...${NC}"
-docker exec -i spark_processor python app/ml/toxic_classifier.py
-docker exec -i spark_processor python app/ml/train_big_dataset.py
+
+echo "   -> (A) Словарь (Rule-based)..."
+docker exec -it $CONTAINER python3 /app/ml/toxic_classifier.py
+
+echo "   -> (B) Supervised (Средняя нагрузка)..."
+docker exec -it $CONTAINER python3 /app/ml/supervised_job.py
+
+echo "   -> (C) Big Data (Максимальная нагрузка)..."
+docker exec -it $CONTAINER python3 /app/ml/train_big_dataset.py
 
 # 📊 5. Отчеты
-echo -e "\n${BLUE}[5/7] 📊 Analytics: Генерация первичных отчетов...${NC}"
-docker exec -i spark_processor python app/analytics/report_generator.py
-docker exec -i spark_processor python app/analytics/ml_report.py
-docker exec -i spark_processor python app/analytics/mega_report.py
-docker exec -i spark_processor python app/analytics/scalability_report.py
+echo -e "\n${BLUE}[5/7] 📊 Analytics: Генерация финальных отчетов...${NC}"
+# Запускаем один скрипт вместо четырех старых
+docker exec -it $CONTAINER python3 /app/analytics/final_dashboard.py
 
 # 📦 6. Проверка зависимостей хоста (для планировщика)
 echo -e "\n${BLUE}[6/7] 📦 Проверка окружения Python (Host)...${NC}"
@@ -51,7 +58,7 @@ echo -e "\n${BLUE}[6/7] 📦 Проверка окружения Python (Host)..
 pip3 show schedule > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo -e "${YELLOW}⚠️ Библиотека 'schedule' не найдена. Устанавливаем...${NC}"
-    pip3 install schedule pyrogram tgcrypto
+    pip3 install schedule
 else
     echo -e "✅ Необходимые библиотеки найдены."
 fi
@@ -63,5 +70,5 @@ echo -e "${GREEN}🔄 ПЕРЕХОД В РЕЖИМ АВТОМАТИЧЕСКОГ�
 echo -e "${YELLOW}(Нажмите Ctrl+C, чтобы остановить планировщик)${NC}"
 echo -e "${GREEN}==============================================${NC}"
 
-# Запускаем планировщик и передаем ему управление
+# Запускаем обновленный планировщик
 python3 scheduler.py
