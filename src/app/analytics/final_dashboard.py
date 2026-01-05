@@ -498,5 +498,6 @@ def generate_dashboard():
     print(f"\n✨ ВСЕ ОТЧЕТЫ СОХРАНЕНЫ В: {REPORT_DIR}")
     print("📊 Создано 15 визуализаций!")
 
+
 if __name__ == "__main__":
     generate_dashboard()

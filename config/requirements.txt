@@ -8,3 +8,4 @@ thinc<8.3.0
 matplotlib
 seaborn
 pandas
+dash-bootstrap-components

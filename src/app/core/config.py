@@ -17,5 +17,8 @@ def get_spark_session(app_name="TelegramToxicAnalysis"):
         .config("spark.hadoop.hive.metastore.uris", "thrift://hive-metastore:9083") \
         .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
         .config("spark.hadoop.javax.jdo.option.ConnectionURL", "jdbc:derby:;databaseName=/data/metastore_db;create=true") \
+        .config("spark.eventLog.enabled", "true") \
+        .config("spark.eventLog.dir", "file:///opt/spark/events") \
+        .config("spark.history.fs.logDirectory", "file:///opt/spark/events") \
         .enableHiveSupport() \
         .getOrCreate()
