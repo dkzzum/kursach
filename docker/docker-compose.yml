@@ -1,9 +1,30 @@
-version: '3'
+version: '3.8'
 
 services:
+  # --- 1. SCRAPER SERVICE (Сбор данных + Запуск скриптов) ---
+  scraper_service:
+    build:
+      context: ..
+      dockerfile: docker/app.Dockerfile
+    container_name: telegram_scraper
+    volumes:
+      # Data Land: общий доступ к данным
+      - ../data:/data
+      - ../data:/app/data
+      # Код
+      - ../src:/app/src
+      - warehouse_data:/user/hive/warehouse
+      - ../spark_events:/opt/spark/events
+    networks:
+      - data-network
+    # Бесконечный цикл, чтобы контейнер не падал
+    command: tail -f /dev/null
+
+  # --- 2. HIVE METASTORE DB (База данных) ---
   hive-metastore-db:
     image: postgres:13
     container_name: metastore_db
+    restart: unless-stopped
     environment:
       POSTGRES_DB: metastore_db
       POSTGRES_USER: hive
@@ -13,108 +34,80 @@ services:
     networks:
       - data-network
 
+  # --- 3. HIVE METASTORE (Каталог таблиц) ---
   hive-metastore:
     build:
       context: ..
       dockerfile: docker/hive.Dockerfile
     container_name: hive_metastore
+    restart: unless-stopped
     environment:
       SERVICE_NAME: metastore
       DB_DRIVER: postgres
       SERVICE_OPTS: "-Djavax.jdo.option.ConnectionDriverName=org.postgresql.Driver -Djavax.jdo.option.ConnectionURL=jdbc:postgresql://metastore_db:5432/metastore_db -Djavax.jdo.option.ConnectionUserName=hive -Djavax.jdo.option.ConnectionPassword=hive_password -Dhive.metastore.warehouse.dir=/user/hive/warehouse"
     ports:
       - "9083:9083"
-    volumes:
-      - warehouse_data:/user/hive/warehouse
     depends_on:
       - hive-metastore-db
     networks:
       - data-network
 
+  # --- 4. SPARK MASTER (Главный узел) ---
   spark-master:
-    build:
-      context: ..
-      dockerfile: docker/app.Dockerfile
+    # ИСПОЛЬЗУЕМ ОФИЦИАЛЬНЫЙ ОБРАЗ SPARK
+    image: apache/spark:3.5.0
     container_name: spark_master
     user: root
-    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
     environment:
-      - SPARK_MASTER_HOST=spark-master
-      - SPARK_MASTER_PORT=7077
-      - SPARK_MASTER_WEBUI_PORT=8080
-      - PYTHONPATH=/opt/application/src:/app
-      # --- FIX: Включаем запись истории ---
-      - SPARK_NO_DAEMONIZE=true
-      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=file:///opt/spark/events
+      - SPARK_CONF_DIR=/opt/spark/conf
+      - SPARK_PUBLIC_DNS=localhost
     ports:
-      - "8080:8080"
-      - "7077:7077"
-      - "8050:8050"
+      - "9090:8080" # Web UI
+      - "7077:7077" # Master Port
     volumes:
-      - ../src:/opt/application/src
-      - ../jobs:/opt/application/jobs
-      - ../src/app:/app
+      # Пробрасываем данные, чтобы Spark видел файлы JSON
       - ../data:/data
-      - warehouse_data:/user/hive/warehouse
-      # --- FIX: Монтируем общую папку для логов ---
+      - ../data:/opt/application/data
+      - ../src:/opt/application/src
       - ../spark_events:/opt/spark/events
+      - warehouse_data:/user/hive/warehouse
     working_dir: /opt/application
+    # Команда запуска для официального образа
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
     networks:
       - data-network
 
+  # --- 5. SPARK WORKER (Рабочий узел) ---
   spark-worker:
-    build:
-      context: ..
-      dockerfile: docker/app.Dockerfile
+    # ИСПОЛЬЗУЕМ ОФИЦИАЛЬНЫЙ ОБРАЗ SPARK
+    image: apache/spark:3.5.0
     container_name: spark_worker
     user: root
-    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
     environment:
       - SPARK_WORKER_CORES=2
       - SPARK_WORKER_MEMORY=2g
       - SPARK_WORKER_WEBUI_PORT=8081
-      - PYTHONPATH=/opt/application/src:/app
     ports:
       - "8081:8081"
     volumes:
-      - ../src:/opt/application/src
-      - ../jobs:/opt/application/jobs
-      - ../src/app:/app
+      # Те же пути, что у мастера
       - ../data:/data
-      - warehouse_data:/user/hive/warehouse
-      # --- FIX: Воркер тоже должен видеть эту папку ---
+      - ../data:/opt/application/data
+      - ../src:/opt/application/src
       - ../spark_events:/opt/spark/events
+      - warehouse_data:/user/hive/warehouse
     working_dir: /opt/application
     depends_on:
       - spark-master
-    networks:
-      - data-network
-
-  # --- НОВЫЙ СЕРВИС: HISTORY SERVER ---
-  spark-history-server:
-    build:
-      context: ..
-      dockerfile: docker/app.Dockerfile
-    container_name: spark_history
-    user: root
-    # Запускаем именно History Server
-    command: /opt/spark/bin/spark-class org.apache.spark.deploy.history.HistoryServer
-    environment:
-      # Указываем, где искать логи внутри контейнера
-      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=file:///opt/spark/events
-      - SPARK_NO_DAEMONIZE=true
-    ports:
-      - "18080:18080"
-    volumes:
-      # --- FIX: Читаем из той же папки ---
-      - ../spark_events:/opt/spark/events
+    # Команда запуска воркера
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
     networks:
       - data-network
 
 networks:
   data-network:
+    driver: bridge
 
 volumes:
   metastore_db_data:
   warehouse_data:
-  spark_events: # <--- Новый том

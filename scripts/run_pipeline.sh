@@ -18,14 +18,6 @@ docker exec -it $CONTAINER python3 src/app/etl/data_generator.py
 
 # 3. ML: Обучение моделей (Все 3 уровня)
 echo -e "\n🧠 [3/5] ML: Обучение моделей..."
-
-echo "   -> 3.1. Словарь (Baseline)..."
-docker exec -it $CONTAINER python3 src/app/ml/toxic_classifier.py
-
-echo "   -> 3.2. Supervised (Medium Data)..."
-docker exec -it $CONTAINER python3 src/app/ml/supervised_job.py
-
-echo "   -> 3.3. Big Data (FastText)..."
 docker exec -it $CONTAINER python3 src/app/ml/train_big_dataset.py
 
 # 4. Аналитика (Дашборд)

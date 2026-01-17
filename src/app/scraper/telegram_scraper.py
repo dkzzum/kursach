@@ -4,6 +4,7 @@ import logging
 import os
 import sys
 import time
+import uuid
 import datetime
 from typing import List, Dict, Any, Optional
 
@@ -55,21 +56,57 @@ class TelegramSparkParser:
 
         os.makedirs(self.data_path, exist_ok=True)
 
-    def _save_batch(self, data: List[Dict], prefix: str) -> None:
-        """Сохраняет накопленные данные в файл."""
+    def _save_batch(self, data: List[Dict], entity_name: str):
+        """
+        Сохраняет батч данных в Data Lake с партиционированием по дате.
+        Путь: data/raw/{entity_name}/date={YYYY-MM-DD}/{filename}.json
+        """
         if not data:
             return
 
-        unique_id = int(time.time() * 1000)
-        filename = f"{prefix}_{self.run_timestamp}_{unique_id}.json"
-        full_path = os.path.join(self.data_path, filename)
+        # 1. Группируем данные по дате (чтобы не валить 31 дек и 1 янв в одну папку)
+        grouped_data = {}
+        for item in data:
+            # Извлекаем дату. Предполагаем, что в telegram data поле date - это datetime или ISO строка
+            date_val = item.get("date")
 
-        try:
-            with open(full_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, default=str)
-            logger.info(f"💾 Saved BATCH: {filename} ({len(data)} records)")
-        except Exception as e:
-            logger.error(f"❌ Error saving batch {filename}: {e}")
+            if isinstance(date_val, str):
+                # Если строка "2024-03-01 12:00:00", берем первые 10 символов
+                date_str = date_val[:10]
+            elif isinstance(date_val, (int, float)):
+                # Если timestamp
+                date_str = datetime.datetime.fromtimestamp(date_val).strftime("%Y-%m-%d")
+            elif isinstance(date_val, datetime.datetime):
+                # Если объект datetime
+                date_str = date_val.strftime("%Y-%m-%d")
+            else:
+                # Fallback на сегодня
+                date_str = datetime.datetime.now().strftime("%Y-%m-%d")
+
+            if date_str not in grouped_data:
+                grouped_data[date_str] = []
+            grouped_data[date_str].append(item)
+
+        # 2. Сохраняем каждую группу в свою папку
+        for date_key, items_list in grouped_data.items():
+            # Формируем путь: data/raw/posts/date=2024-03-01/
+            partition_dir = os.path.join(self.data_path, entity_name, f"date={date_key}")
+            os.makedirs(partition_dir, exist_ok=True)
+
+            # Генерируем уникальное имя файла
+            # posts_1709283000_a1b2c3d4.json
+            timestamp = int(time.time())
+            unique_id = str(uuid.uuid4())[:8]
+            filename = f"{entity_name}_{timestamp}_{unique_id}.json"
+            full_path = os.path.join(partition_dir, filename)
+
+            try:
+                with open(full_path, "w", encoding="utf-8") as f:
+                    # Делаем default=str для сериализации datetime объектов, если они остались
+                    json.dump(items_list, f, ensure_ascii=False, indent=4, default=str)
+                logger.info(f"💾 Saved {len(items_list)} {entity_name} -> {full_path}")
+            except Exception as e:
+                logger.error(f"❌ Error saving batch: {e}")
 
     async def get_channel_list(self, app: Client) -> List[int]:
         """Получает список каналов."""
@@ -81,37 +118,35 @@ class TelegramSparkParser:
         logger.info(f"Found {len(group_ids)} channels.")
         return group_ids
 
-    async def process_channel(self, app: Client, chat_id: int, limit: int):
-        """Парсит канал и складывает посты в ОБЩИЙ буфер."""
-        logger.info(f"Processing channel {chat_id}...")
+    async def process_channel(self, client: Client, channel_id: int, limit: int = 1000):
+        # ... (твоя логика получения истории) ...
 
-        try:
-            async for message in app.get_chat_history(chat_id, limit=limit):
-                if not message.text and not message.caption:
-                    continue
+        posts_buffer = []
+        comments_buffer = []
+        batch_size = 50  # Сохраняем каждые 50 сообщений
 
-                post_data = {
-                    "post_id": message.id,
-                    "channel_id": chat_id,
-                    "date": message.date,
-                    "text": message.text or message.caption or "",
-                    "views": message.views if message.views else 0,
-                    "type": "post"
-                }
+        async for message in client.get_chat_history(channel_id, limit=limit):
+            # 1. Преобразуем сообщение в словарь
+            msg_dict = {
+                "id": message.id,
+                "chat_id": message.chat.id,
+                "date": message.date,  # datetime объект
+                "text": message.text or message.caption or "",
+                "views": message.views,
+                # ... любые другие поля ...
+            }
+            posts_buffer.append(msg_dict)
 
-                # Добавляем в общий котел
-                self.global_buffer.append(post_data)
+            # 2. Если буфер заполнился -> Сохраняем
+            if len(posts_buffer) >= batch_size:
+                self._save_batch(posts_buffer, "posts")
+                posts_buffer = []  # Очищаем буфер
 
-                # --- ИСПРАВЛЕНИЕ 2: Проверяем размер ОБЩЕГО буфера ---
-                if len(self.global_buffer) >= self.batch_size_posts:
-                    self._save_batch(self.global_buffer, "posts")
-                    self.global_buffer = []  # Очищаем после сохранения
+            # (Если есть логика для комментов, аналогично для comments_buffer)
 
-        except FloodWait as e:
-            logger.warning(f"⏳ FloodWait: sleeping {e.value} seconds...")
-            await asyncio.sleep(e.value)
-        except Exception as e:
-            logger.error(f"Error accessing channel {chat_id}: {e}")
+        # 3. ВАЖНО: Сохраняем остатки после выхода из цикла
+        if posts_buffer:
+            self._save_batch(posts_buffer, "posts")
 
     async def run(self, limit_per_channel: int = 100):
         """Основной цикл."""

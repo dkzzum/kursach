@@ -1,117 +1,106 @@
-# 🛡️ Big Data Pipeline: Анализ токсичности в Telegram
+# Telegram Toxicity Analyzer (Big Data & ML)
 
-Проект реализует полный цикл обработки данных (End-to-End Data Engineering Pipeline) для выявления и анализа деструктивного контента в комментариях Telegram.
+Проект по автоматизированному сбору, обработке и анализу токсичности комментариев в Telegram-каналах с использованием стека технологий Big Data.
 
-**Технологический стек:**
-* **Вычисления:** Apache Spark 3.5 (PySpark)
-* **Хранилище данных:** Apache Hive (Metastore) + PostgreSQL
-* **Инфраструктура:** Docker & Docker Compose
-* **ML:** Spark MLlib (Logistic Regression, TF-IDF)
-* **Визуализация:** Matplotlib, Seaborn
+## 🛠 Технологический стек
 
----
-
-## 📋 Предварительные требования
-
-Перед запуском убедитесь, что у вас установлены:
-1.  **Docker** и **Docker Compose**.
-2.  Свободно минимум **4-6 ГБ RAM** (для работы Spark с большими данными).
-3.  Исходные данные (JSON) должны лежать в папке `data/raw/posts` и `data/raw/comments`.
+* **Infrastructure**: Docker, Docker Compose
+* **Data Processing**: Apache Spark (PySpark)
+* **Storage**: Hive Metastore, PostgreSQL (Metastore DB), Parquet
+* **ML**: Spark MLlib (Logistic Regression)
+* **Visualization**: Matplotlib, Seaborn
 
 ---
 
-## 🚀 Быстрый старт (Пошаговая инструкция)
+## 🏗 Архитектура данных
 
-### Шаг 1: Запуск инфраструктуры
+Проект следует архитектуре **Medallion**:
 
-Сборка и запуск контейнеров (Spark Master, Workers, Hive Metastore, PostgreSQL).
+1. **Bronze**: Сырые JSON-данные из Telegram (скрепер).
+2. **Silver**: Очищенные данные в формате Parquet (удаление дублей, типизация).
+3. **Gold**: Размеченные данные с предсказаниями модели токсичности.
+
+---
+
+## 🚀 Запуск проекта
+
+### 1. Подготовка окружения
+
+Убедитесь, что у вас установлены Docker и Docker Compose. Создайте необходимые папки для логов:
 
 ```bash
-docker-compose up -d --build
-```
-⏳ Важно: Подождите 30-60 секунд после запуска, чтобы базы данных (Hive Metastore DB) успели инициализироваться.
+mkdir -p spark_events data/reports
 
-Проверьте статус контейнеров:
-
-```Bash
-docker-compose ps
 ```
 
-Все контейнеры должны иметь статус Up.
+### 2. Сборка и запуск контейнеров
 
-Шаг 2: ETL-процесс (Сырые данные -> Data Warehouse)
-2.1. Загрузка (Bronze -> Silver) Скрипт читает сырые JSON-файлы, очищает текст от мусора/ссылок, исправляет структуру и сохраняет в Hive (таблицы silver_posts, silver_comments).
+Запустите всю инфраструктуру (PostgreSQL, Hive, Spark Master, Spark Worker, Scraper):
 
-```Bash
-docker exec -it spark_master python3 /app/etl/bronze_to_silver.py
+```bash
+docker-compose -f docker/docker-compose.yml up -d --build
+
 ```
 
-2.2. Генерация Big Data (Silver -> Gold) Для нагрузочного тестирования мы генерируем синтетический набор данных ("раздуваем" исходные данные в 200 раз), получая >2.5 млн записей.
+### 3. Исправление прав доступа (Важно!)
 
-```Bash
-docker exec -it spark_master python3 /app/etl/data_generator.py
+Для корректной работы Hive и Spark необходимо дать права на запись в общие тома:
+
+```bash
+docker-compose -f docker/docker-compose.yml exec -u root spark-master chmod -R 777 /user/hive/warehouse
+docker-compose -f docker/docker-compose.yml exec -u root spark-master chmod -R 777 /data
+
 ```
 
-2.3. Проверка данных Убедимся, что таблицы созданы и заполнены.
+---
 
-```Bash
-docker exec -it spark_master python3 /app/etl/check_data.py
+## 🔄 Пайплайн обработки
+
+### Шаг 1: ETL (из Bronze в Silver)
+
+Преобразование сырых JSON-файлов постов и комментариев в очищенные Parquet-файлы:
+
+```bash
+docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/etl/bronze_to_silver.py
+
 ```
 
-Шаг 3: Машинное обучение (Machine Learning)
-Мы обучаем три разные модели для сравнения эффективности и масштабируемости.
+*Результат*: Файлы в `data/silver/posts` и `data/silver/comments`.
 
-3.1. Метод 1: Поиск по словарю (Baseline) Простой поиск по списку плохих слов. Самый быстрый, но наименее точный метод.
+### Шаг 2: Machine Learning (из Silver в Gold)
 
-```Bash
-docker exec -it spark_master python3 /app/ml/toxic_classifier.py
+Обучение модели Logistic Regression на размеченном сете и классификация собранных комментариев (650k+ записей):
+
+```bash
+docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/ml/train_log_regression_dataset.py
+
 ```
 
-3.2. Метод 2: Supervised Learning (Средняя нагрузка) Обучение на размеченном датасете (labeled.csv). Используется для теста масштабируемости (замер времени обучения при разном объеме данных).
+*Результат*: Размеченные данные в `data/gold/predictions`.
 
-```Bash
-docker exec -it spark_master python3 /app/ml/supervised_job.py
+### Шаг 3: Генерация отчетов
+
+Создание графиков частотного анализа токсичной лексики:
+
+```bash
+docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/analytics/dashboard_lr.py
+
 ```
 
-3.3. Метод 3: Big Data Model (Максимальная точность) Обучение на большом корпусе текстов (dataset.txt, 250k+ строк) и применение к миллионам записей в Hive.
+*Результат*: График `data/reports/toxic_words_chart.png`.
 
-```Bash
-docker exec -it spark_master python3 /app/ml/train_big_dataset.py
-```
+---
 
-Шаг 4: Аналитика и Отчеты
-Финальный этап. Скрипт собирает данные из всех таблиц Hive (silver_posts, gold_bigdata_predictions и др.) и строит графики.
+## 📊 Мониторинг
 
-```Bash
-docker exec -it spark_master python3 /app/analytics/final_dashboard.py
-```
+* **Spark Master UI**: [http://localhost:9090](https://www.google.com/search?q=http://localhost:9090)
+* **Spark History Server**: [http://localhost:18080](https://www.google.com/search?q=http://localhost:18080)
+* **Spark Worker UI**: [http://localhost:8081](https://www.google.com/search?q=http://localhost:8081)
 
-📊 Где искать результаты? Графики автоматически сохраняются в папку data/reports/ на вашем компьютере:
+---
 
-- 1_activity_dynamics.png — Динамика постов по времени.
+## ⚠️ Устранение неполадок
 
-- 2_top_toxic_users.png — Топ-10 авторов токсичного контента.
-
-- 3_destructive_ratio.png — Доля токсичности (Pie Chart).
-
-- 4_model_comparison.png — Сравнение точности разных методов.
-
-- 5_final_conclusion.png — Итоговая столбчатая диаграмма.
-
-- 6_scalability_time.png — График времени обучения от объема данных.
-
-🛠️ Полезные команды
-Очистка проекта (Полный сброс) Если нужно удалить все данные из базы и начать заново:
-
-```Bash
-docker exec -it spark_master rm -rf /user/hive/warehouse/*
-docker exec -it spark_master rm -rf /data/metastore_db
-```
-
-Ручной доступ к Spark SQL Посмотреть таблицы через консоль:
-
-```Bash
-docker exec -it spark_master pyspark
-# Внутри Python:
-spark.sql("SHOW TABLES").show()
-```
+* **Ошибка `VERSION is obsolete**`: Игнорируйте, это предупреждение новой версии Docker Compose.
+* **Ошибка `AnalysisException: [id] cannot be resolved**`: Проверьте маппинг колонок в ETL. Для постов это `post_id`, для комментариев — `comment_id`.
+* **Ошибка `Hive registration skipped**`: Если данные в папках `data/` появились, значит ETL прошел успешно. Ошибка регистрации метаданных не блокирует ML-процесс.

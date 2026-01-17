@@ -48,14 +48,6 @@ docker exec -it $CONTAINER python3 src/app/etl/data_generator.py
 
 # 🧠 4. ML (Обучение всех моделей)
 echo -e "\n${BLUE}[4/7] 🧠 ML: Обучение эталонных моделей...${NC}"
-
-echo "   -> (A) Словарь (Rule-based)..."
-docker exec -it $CONTAINER python3 src/app/ml/toxic_classifier.py
-
-echo "   -> (B) Supervised (Средняя нагрузка)..."
-docker exec -it $CONTAINER python3 src/app/ml/supervised_job.py
-
-echo "   -> (C) Big Data (Максимальная нагрузка)..."
 docker exec -it $CONTAINER python3 src/app/ml/train_big_dataset.py
 
 # 📊 5. Отчеты
@@ -63,25 +55,25 @@ echo -e "\n${BLUE}[5/7] 📊 Analytics: Генерация финальных о
 docker exec -it $CONTAINER python3 src/app/analytics/final_dashboard.py
 
 # 📦 6. Проверка зависимостей хоста (для планировщика)
-#echo -e "\n${BLUE}[6/7] 📦 Проверка окружения Python (Host)...${NC}"
-## Проверяем библиотеку schedule на хост-машине
-#pip3 show schedule > /dev/null 2>&1
-#if [ $? -ne 0 ]; then
-#    echo -e "${YELLOW}⚠️ Библиотека 'schedule' не найдена. Устанавливаем...${NC}"
-#    pip3 install schedule
-#else
-#    echo -e "✅ Необходимые библиотеки найдены."
-#fi
+echo -e "\n${BLUE}[6/7] 📦 Проверка окружения Python (Host)...${NC}"
+# Проверяем библиотеку schedule на хост-машине
+pip3 show schedule > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+    echo -e "${YELLOW}⚠️ Библиотека 'schedule' не найдена. Устанавливаем...${NC}"
+    pip3 install schedule
+else
+    echo -e "✅ Необходимые библиотеки найдены."
+fi
 
-# ⏰ 7. Запуск планировщика
-#echo -e "\n${BLUE}[7/7] ⏰ Запуск планировщика задач (Scheduler)...${NC}"
-#echo -e "ℹ️  Планировщик будет запускать ETL каждые 2 часа."
+ ⏰ 7. Запуск планировщика
+echo -e "\n${BLUE}[7/7] ⏰ Запуск планировщика задач (Scheduler)...${NC}"
+echo -e "ℹ️  Планировщик будет запускать ETL каждые 2 часа."
 
 # ИЗМЕНЕНИЕ: Scheduler теперь лежит в папке jobs
 # Убиваем старые процессы scheduler.py, если есть
-#pkill -f "python3 jobs/scheduler.py" > /dev/null 2>&1
-#
-#nohup python3 jobs/scheduler.py > scheduler.log 2>&1 &
+pkill -f "python3 jobs/scheduler.py" > /dev/null 2>&1
+
+nohup python3 jobs/scheduler.py > scheduler.log 2>&1 &
 
 echo -e "${GREEN}✅ ПРОЕКТ УСПЕШНО ЗАПУЩЕН!${NC}"
 echo -e "   📌 Дашборд доступен: http://localhost:8050"

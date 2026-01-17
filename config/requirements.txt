@@ -1,11 +1,29 @@
+# --- Telegram API & Scraper ---
+pyrogram
+tgcrypto
+
+# --- Data Processing (Pandas & Spark Client) ---
+pandas
+numpy
 pyspark==3.5.0
-pandas==2.0.3
-numpy==1.24.4
-pyarrow==14.0.1
-nltk==3.8.1
-spacy==3.7.5
-thinc<8.3.0
+
+# --- Machine Learning (Sklearn) ---
+scikit-learn
+scipy
+
+# --- NLP (Text Processing) ---
+# Библиотеки для анализа текста (токсичность и т.д.)
+nltk
+textblob
+
+# --- Visualization & Dashboard ---
 matplotlib
 seaborn
-pandas
-dash-bootstrap-components
+plotly
+streamlit
+altair
+
+# --- Utilities ---
+python-dotenv
+requests
+psycopg2-binary

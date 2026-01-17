@@ -1,97 +1,133 @@
-from pyspark.sql import functions as F
-from pyspark.sql.types import StringType
-import re
 import os
-import sys
-
-sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
-from app.core.config import get_spark_session
-
-
-def clean_text(text):
-    if text is None: return ""
-    text = re.sub(r'http\S+', '', text)
-    text = re.sub(r'[^а-яА-Яa-zA-Z0-9\s]', '', text)
-    return text.lower().strip()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, regexp_replace, trim
+from pyspark.sql.types import IntegerType, StringType
 
 
-def process_dataset(spark, source_path, table_name_bronze, table_name_silver, text_col_candidates):
-    """
-    Универсальная функция для обработки данных (Посты или Комментарии).
-    Загружает JSON, сохраняет в Bronze таблицу, очищает текст и сохраняет в Silver.
-    """
-    print(f"\n--- Обработка папки: {source_path} ---")
+class BronzeToSilverETL:
+    def __init__(self):
+        # Инициализация Spark с поддержкой Hive
+        self.spark = SparkSession.builder \
+            .appName("Telegram_Bronze_To_Silver") \
+            .master("spark://spark-master:7077") \
+            .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
+            .config("spark.hadoop.hive.metastore.uris", "thrift://hive-metastore:9083") \
+            .enableHiveSupport() \
+            .getOrCreate()
 
-    try:
-        # 1. Чтение данных
-        # multiline - для красивых JSON с отступами
-        # recursiveFileLookup - чтобы собрать файлы из всех подпапок date=...
-        df_raw = spark.read \
-            .option("recursiveFileLookup", "true") \
-            .option("multiline", "true") \
-            .json(source_path) \
-            .cache()
+        # Пути к данным
+        self.raw_path = "/data/raw"
 
-        # Проверка на наличие колонок (чтобы не упасть на пустых файлах)
-        valid_cols = [c for c in df_raw.columns if c != "_corrupt_record"]
-        if not valid_cols:
-            print(f"⚠️  В папке {source_path} не найдено валидных JSON данных.")
+    def process_posts(self):
+        """Обработка постов: Raw JSON -> Silver Parquet"""
+        print("🚀 Starting processing POSTS...")
+
+        input_path = os.path.join(self.raw_path, "posts")
+        # Сохраняем в нашу доступную папку data/silver
+        output_path = "/data/silver/posts"
+
+        try:
+            df = self.spark.read.option("multiLine", "true").json(input_path)
+        except Exception as e:
+            print(f"⚠️ Error reading path {input_path}: {e}")
             return
 
-    except Exception as e:
-        print(f"⚠️  Критическая ошибка при чтении: {str(e)}")
-        return
+        if not df.head(1):
+            print(f"⚠️ No data found in {input_path}")
+            return
 
-    count = df_raw.count()
-    print(f"✅ Успешно прочитано записей: {count}")
+        # 2. Трансформации
+        df_clean = df.select(
+            col("post_id").cast(IntegerType()).alias("id"),
+            col("channel_id").cast(IntegerType()).alias("chat_id"),
+            col("date").cast("string"),
+            col("text"),
+            col("views").cast(IntegerType())
+        )
 
-    # --- ЗАПИСЬ СЛОЯ BRONZE ---
-    # Сначала удаляем старые метаданные из Hive
-    spark.sql(f"DROP TABLE IF EXISTS {table_name_bronze}")
+        df_dedup = df_clean.dropDuplicates(['id'])
+        df_final = df_dedup.withColumn("text", trim(regexp_replace(col("text"), "[\n\r]", " ")))
 
-    # Записываем данные. Использование option("path", ...) делает таблицу External,
-    # что позволяет избежать ошибок блокировки локации.
-    df_raw.write.mode("overwrite") \
-        .option("path", f"/user/hive/warehouse/{table_name_bronze}") \
-        .saveAsTable(table_name_bronze)
-    print(f"✅ Таблица Hive '{table_name_bronze}' (Bronze) создана")
+        # 3. Запись в Silver (Parquet)
+        print(f"💾 Saving Parquet files to: {output_path}")
 
-    # --- ПОДГОТОВКА СЛОЯ SILVER (ОЧИСТКА) ---
-    clean_udf = F.udf(clean_text, StringType())
+        # Это действие сохранило данные на твой жесткий диск
+        df_final.write \
+            .mode("overwrite") \
+            .parquet(output_path)
 
-    # Ищем, как называется колонка с текстом в этом наборе данных
-    target_col = next((c for c in text_col_candidates if c in df_raw.columns), None)
+        print(f"✅ Parquet files saved successfully!")
 
-    if target_col:
-        print(f"ℹ️  Очистка текста в колонке '{target_col}'...")
+        # 4. Попытка регистрации в Hive (необязательно для работы)
+        try:
+            print("🏛 Attempting to register Hive table...")
+            self.spark.sql(f"DROP TABLE IF EXISTS silver_posts")
+            # Используем SQL синтаксис для внешних таблиц
+            self.spark.sql(f"""
+                CREATE TABLE silver_posts 
+                USING PARQUET 
+                LOCATION '{output_path}'
+            """)
+            print("✅ Hive table registered!")
+        except Exception as e:
+            print(f"ℹ️ Hive registration skipped (Metadata error), but DATA IS SAVED. Error: {e}")
 
-        # Создаем новую колонку clean_text и фильтруем пустые/короткие сообщения
-        df_silver = df_raw.withColumn("clean_text", clean_udf(F.col(target_col))) \
-            .filter(F.length(F.col("clean_text")) > 2)
+        print(f"🔥 Processed total: {df_final.count()} posts.")
 
-        # Удаляем старые метаданные Silver
-        spark.sql(f"DROP TABLE IF EXISTS {table_name_silver}")
+    def process_comments(self):
+        """Обработка комментариев: Raw JSON -> Silver Parquet"""
+        print("🚀 Starting processing COMMENTS...")
+        input_path = os.path.join(self.raw_path, "comments")
+        output_path = "/data/silver/comments"
 
-        # Записываем очищенные данные в Silver таблицу
-        df_silver.write.mode("overwrite") \
-            .option("path", f"/user/hive/warehouse/{table_name_silver}") \
-            .saveAsTable(table_name_silver)
-        print(f"✅ Таблица Hive '{table_name_silver}' (Silver) создана")
-    else:
-        print(f"❌ Текстовая колонка не найдена. Доступные колонки: {df_raw.columns}")
+        try:
+            df = self.spark.read.option("multiLine", "true").json(input_path)
+        except Exception:
+            print(f"⚠️ No comments data found yet in {input_path}")
+            return
 
+        if not df.head(1):
+            print("⚠️ JSON parsed but data is empty.")
+            return
 
-def run_etl():
-    spark = get_spark_session("ETL_Final_Fix")
+        # ТРАНСФОРМАЦИЯ под твои реальные колонки
+        print("🔧 Transforming comments data...")
+        df_clean = df.select(
+            col("comment_id").cast(IntegerType()).alias("id"),
+            col("post_id").cast(IntegerType()),
+            col("channel_id").cast(IntegerType()).alias("chat_id"),
+            col("author_name"),
+            col("date").cast("string"),
+            col("text")
+        )
 
-    # Обрабатываем Посты
-    process_dataset(spark, "/data/raw/posts", "bronze_posts", "silver_posts", ["message", "content", "text"])
+        # Удаляем дубликаты по id комментария
+        df_dedup = df_clean.dropDuplicates(['id'])
 
-    # Обрабатываем Комментарии
-    process_dataset(spark, "/data/raw/comments", "bronze_comments", "silver_comments", ["message", "text", "comment"])
+        # Очистка текста от переносов строк
+        df_final = df_dedup.withColumn("text", trim(regexp_replace(col("text"), "[\n\r]", " ")))
 
-    spark.stop()
+        # ЗАПИСЬ
+        print(f"💾 Saving Parquet comments to: {output_path}")
+        df_final.write.mode("overwrite").parquet(output_path)
+        print(f"✅ Comments Parquet saved successfully!")
+
+        # РЕГИСТРАЦИЯ В HIVE (пробуем, но не боимся ошибок)
+        try:
+            self.spark.sql(f"DROP TABLE IF EXISTS silver_comments")
+            self.spark.sql(f"CREATE TABLE silver_comments USING PARQUET LOCATION '{output_path}'")
+            print("✅ Hive table 'silver_comments' registered!")
+        except Exception:
+            print("ℹ️ Hive registration skipped, but DATA IS SAVED.")
+
+        print(f"🔥 Processed total: {df_final.count()} comments.")
+
+    def run(self):
+        self.process_posts()
+        self.process_comments() # Раскомментируй, когда будут комментарии
+        self.spark.stop()
 
 
 if __name__ == "__main__":
-    run_etl()
+    etl = BronzeToSilverETL()
+    etl.run()

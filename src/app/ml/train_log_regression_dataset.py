@@ -1,133 +1,129 @@
 import os
 import sys
-import time
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col
-from pyspark.sql.types import StructType, StructField, StringType, DoubleType
-from pyspark.ml.feature import Tokenizer, HashingTF, IDF
+from pyspark.sql.functions import col, udf, when
+from pyspark.sql.types import FloatType
+from pyspark.ml.feature import Tokenizer, StopWordsRemover, HashingTF, IDF
 from pyspark.ml.classification import LogisticRegression
 from pyspark.ml import Pipeline
-from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
-# Добавляем путь к корню проекта для импорта конфига
+# Добавляем пути для импортов
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
 from app.core.config import get_spark_session
 
-# Инициализируем сессию с поддержкой Hive через наш центральный конфиг
-spark = get_spark_session("ML_BigData_🦖_Training")
-spark.sparkContext.setLogLevel("WARN")
 
+def main():
+    print("🚀 START: Запуск обучения и классификации 650k комментариев...")
 
-def parse_fasttext_line(line):
-    """
-    Разбирает строку формата FastText: '__label__INSULT текст комментария'
-    """
-    if not line or len(line) < 5:
-        return None
-    try:
-        parts = line.strip().split(' ', 1)
-        if len(parts) < 2:
-            return None
-        labels_part, text = parts[0], parts[1]
+    # 1. Инициализация Spark
+    # Используем твой стандартный метод получения сессии
+    spark = get_spark_session("ToxicCommentLR_Production")
+    spark.sparkContext.setLogLevel("ERROR")
 
-        # Если есть метки оскорбления, угроз или мата — ставим 1.0 (Toxic)
-        is_toxic = 1.0 if any(lbl in labels_part for lbl in ["INSULT", "THREAT", "OBSCENITY"]) else 0.0
-        return (text, is_toxic)
-    except:
-        return None
+    # ==========================================
+    # ЭТАП 1: Обучение модели на dataset.csv
+    # ==========================================
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    dataset_path = os.path.join(current_dir, "dataset.csv")
 
+    if not os.path.exists(dataset_path):
+        print(f"❌ Файл датасета не найден: {dataset_path}")
+        return
 
-def run_big_training(table_name='silver_comments'):
-    print("\n" + "=" * 50)
-    print("--- 🦖 ЗАПУСК ОБУЧЕНИЯ НА БОЛЬШОМ ДАТАСЕТЕ ---")
-    print("=" * 50)
+    print(f"📖 Чтение обучающего датасета: {dataset_path}")
+    df_train_raw = spark.read.csv(dataset_path, header=True, inferSchema=True)
 
-    # 1. Читаем файл dataset.txt
-    txt_path = "/app/ml/dataset.txt"
-    if not os.path.exists(txt_path):
-        # Резервный путь для локального запуска
-        txt_path = os.path.join(os.path.dirname(__file__), "dataset.txt")
+    # Подготовка обучающих данных
+    train_data = df_train_raw.filter(col("text").isNotNull()) \
+        .withColumn("label", col("is_destructive").cast("double")) \
+        .select("text", "label")
 
-    print(f"📂 Загрузка и парсинг файла: {txt_path}")
-    raw_rdd = spark.sparkContext.textFile(txt_path)
-    parsed_rdd = raw_rdd.map(parse_fasttext_line).filter(lambda x: x is not None)
+    # --- Настройка пайплайна ---
+    tokenizer = Tokenizer(inputCol="text", outputCol="words_raw")
 
-    schema = StructType([
-        StructField("text", StringType(), True),
-        StructField("label", DoubleType(), True)
-    ])
+    stop_words = StopWordsRemover.loadDefaultStopWords("russian")
+    custom_stopwords = ["просто", "только", "вообще", "ну", "это", "как", "так", "в", "на", "и"]
+    stop_words.extend(custom_stopwords)
+    remover = StopWordsRemover(inputCol="words_raw", outputCol="words", stopWords=stop_words)
 
-    train_df = spark.createDataFrame(parsed_rdd, schema).cache()
-    total_count = train_df.count()
-    print(f"✅ Успешно загружено для обучения: {total_count} строк")
-
-    # 2. Настройка конвейера (Pipeline)
-    # Увеличиваем количество признаков до 50 000 для учета богатства языка
-    tokenizer = Tokenizer(inputCol="text", outputCol="words")
-    hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=50000)
+    hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=10000)
     idf = IDF(inputCol="rawFeatures", outputCol="features")
-    lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=15)
+    lr = LogisticRegression(labelCol="label", featuresCol="features", regParam=0.01)
 
-    pipeline = Pipeline(stages=[tokenizer, hashingTF, idf, lr])
+    pipeline = Pipeline(stages=[tokenizer, remover, hashingTF, idf, lr])
 
-    # 3. Обучение тяжелой модели
-    print("🧠 Тренировка модели Logistic Regression...")
-    start_time = time.time()
-    (training_data, test_data) = train_df.randomSplit([0.8, 0.2], seed=123)
-    model = pipeline.fit(training_data)
-    train_duration = time.time() - start_time
-    print(f"⏱ Время обучения: {train_duration:.2f} сек")
+    print("🧠 Обучение модели...")
+    model = pipeline.fit(train_data)
+    print("✅ Модель обучена!")
 
-    # 4. Проверка точности (Evaluation)
-    predictions = model.transform(test_data)
-    evaluator = MulticlassClassificationEvaluator(labelCol="label", predictionCol="prediction", metricName="accuracy")
-    accuracy = evaluator.evaluate(predictions)
-    print(f"🎯 Точность (Accuracy) на тесте: {accuracy:.4f}")
+    # ==========================================
+    # ЭТАП 2: Предсказание на реальных данных (Silver -> Gold)
+    # ==========================================
+    # ЧИТАЕМ НАПРЯМУЮ ИЗ PARQUET (обходя проблемы Hive)
+    silver_path = "/data/silver/comments"
+    gold_path = "/data/gold/predictions"
 
-    # 5. ПРИМЕНЕНИЕ К РЕАЛЬНЫМ ДАННЫМ ИЗ HIVE (Silver слой)
-    print("\n--- 🚀 КЛАССИФИКАЦИЯ ДАННЫХ ИЗ HIVE ---")
+    print(f"🔍 Загрузка данных Silver слоя: {silver_path}")
+
     try:
-        # Читаем таблицу и сразу переименовываем 'text', чтобы избежать AMBIGUOUS_REFERENCE
-        hive_df = spark.read.table(table_name) \
-            .withColumnRenamed("text", "original_text")
+        # Читаем сразу все 654к комментариев
+        silver_df = spark.read.parquet(silver_path)
 
-        # Подготавливаем вход: подаем очищенный текст (clean_text) в колонку 'text'
-        # так как модель ожидает именно имя 'text'
-        pred_input = hive_df.withColumn("text", col("clean_text"))
+        # Подготовка: маппинг колонок под твою реальную схему Silver
+        input_df = silver_df.select(
+            col("id"),
+            col("author_name"),
+            col("text").alias("original_content"),  # Для сохранения
+            col("text")  # Для модели
+        ).filter(col("text").isNotNull())
 
-        # Запускаем предсказание
-        final_predictions = model.transform(pred_input)
+        print(f"⚡ Запуск классификации для {input_df.count()} строк...")
+        predictions = model.transform(input_df)
 
-        # Выбираем только необходимые колонки для итоговой таблицы
-        final_df = final_predictions.select(
-            "author_name",
-            "original_text",
-            "clean_text",
-            "prediction"
+        # Извлекаем вероятность токсичности (второе значение в векторе probability)
+        extract_prob_udf = udf(lambda v: float(v[1]), FloatType())
+
+        final_df = predictions.select(
+            col("id"),
+            col("author_name"),
+            col("original_content"),
+            extract_prob_udf(col("probability")).alias("toxicity_score")
+        ).withColumn(
+            "is_toxic_pred",
+            when(col("toxicity_score") > 0.25, 1.0).otherwise(0.0)
         )
 
-        output_table = "gold_logic_regression_predictions"
-        output_table = "gold_bigdata_predictions"
+        # ==========================================
+        # ЭТАП 3: Сохранение результата (Gold Layer)
+        # ==========================================
+        print(f"💾 Сохранение результатов в Gold Layer: {gold_path}")
 
-        # Очищаем старые данные перед записью
-        spark.sql(f"DROP TABLE IF EXISTS {output_table}")
+        # Сохраняем как Parquet (физически на диск)
+        final_df.write \
+            .mode("overwrite") \
+            .parquet(gold_path)
 
-        # Записываем результат как Gold-таблицу в Hive
-        print(f"📤 Сохранение в Hive: {output_table}...")
-        final_df.write.mode("overwrite") \
-            .option("path", f"/user/hive/warehouse/{output_table}") \
-            .saveAsTable(output_table)
+        # Попытка регистрации в Hive (для порядка)
+        try:
+            spark.sql("DROP TABLE IF EXISTS gold_toxic_predictions")
+            spark.sql(f"CREATE TABLE gold_toxic_predictions USING PARQUET LOCATION '{gold_path}'")
+            print("🏛 Таблица зарегистрирована в Hive!")
+        except:
+            print("ℹ️ Регистрация в Hive пропущена, но файлы GOLD сохранены.")
 
-        print(f"✅ Анализ завершен успешно!")
+        # Вывод статистики
+        print("\n" + "=" * 30)
+        print("📊 СТАТИСТИКА АНАЛИЗА:")
+        final_df.groupBy("is_toxic_pred").count().show()
 
-        # Вывод статистики (0.0 - Нейтрально, 1.0 - Токсично)
-        print("\n📊 Статистика найденного контента:")
-        final_df.groupBy("prediction").count().show()
+        print("🚫 ТОП-10 САМЫХ ТОКСИЧНЫХ КОММЕНТАРИЕВ:")
+        final_df.filter("is_toxic_pred = 1") \
+            .sort(col("toxicity_score").desc()) \
+            .show(10, truncate=80)
+        print("=" * 30)
 
     except Exception as e:
-        print(f"❌ Ошибка при работе с Hive: {str(e)}")
+        print(f"❌ Ошибка при обработке: {e}")
 
 
 if __name__ == "__main__":
-    run_big_training('gold_comments')
-    spark.stop()
+    main()
