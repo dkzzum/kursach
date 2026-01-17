@@ -106,6 +106,7 @@ def run_big_training(table_name='silver_comments'):
             "prediction"
         )
 
+        output_table = "gold_logic_regression_predictions"
         output_table = "gold_bigdata_predictions"
 
         # Очищаем старые данные перед записью
