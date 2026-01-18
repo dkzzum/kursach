@@ -110,6 +110,55 @@ services:
     networks:
       - data-network
 
+    # --- 6. SPARK THRIFT SERVER (SQL Интерфейс для Superset) ---
+  spark-thrift-server:
+    build:
+      context: ..
+      dockerfile: docker/spark.Dockerfile
+    container_name: spark_thrift
+    user: root
+    depends_on:
+      - spark-master
+      - hive-metastore
+    environment:
+      - SPARK_PUBLIC_DNS=localhost
+      # Указываем, где метастор, чтобы видеть таблицы
+      - HIVE_METASTORE_URIS=thrift://hive-metastore:9083
+    ports:
+      - "10000:10000"  # JDBC порт
+      - "4040:4040"    # UI конкретно этого драйвера
+    volumes:
+      - ../data:/data
+      - ../jobs:/opt/application/jobs
+      - warehouse_data:/user/hive/warehouse
+    # Запускаем Thrift Server, подключенный к мастеру
+    command: >
+      /opt/spark/sbin/start-thriftserver.sh 
+      --master spark://spark-master:7077 
+      --hiveconf hive.server2.thrift.port=10000 
+      --hiveconf hive.server2.thrift.bind.host=0.0.0.0
+      --conf spark.sql.warehouse.dir=/user/hive/warehouse
+      --conf spark.hadoop.hive.metastore.uris=thrift://hive-metastore:9083
+    networks:
+      - data-network
+
+    # --- 7. APACHE SUPERSET (Визуализация) ---
+  superset:
+    build:
+      context: ..
+      dockerfile: docker/superset.Dockerfile
+    container_name: superset
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    environment:
+      # Секретный ключ обязателен для запуска (любая строка)
+      SUPERSET_SECRET_KEY: "my-secret-key-change-me-in-prod"
+    depends_on:
+      - spark-thrift-server
+    networks:
+      - data-network
+
 networks:
   data-network:
     driver: bridge
