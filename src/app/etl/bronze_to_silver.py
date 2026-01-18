@@ -20,32 +20,40 @@ class BronzeToSilverETL:
         self.silver_base_path = "/data/silver"
 
     def _save_and_register(self, df, table_name, folder_name):
-        """Универсальный метод: сохраняет Parquet и жестко региструет в Hive"""
+        """
+        Универсальный метод: сохраняет Parquet и региструет в Hive.
+        АДАПТИРОВАН ПОД КОНВЕЙЕР (Append mode).
+        """
         output_path = f"{self.silver_base_path}/{folder_name}"
 
-        print(f"💾 [1/2] Сохранение физических файлов в {output_path}...")
-        df.write.mode("overwrite").parquet(output_path)
-        print("✅ Файлы сохранены.")
+        print(f"💾 [1/2] Сохранение данных в {output_path}...")
 
-        print(f"🏛 [2/2] Регистрация таблицы {table_name} в Hive Metastore...")
+        # ВАЖНОЕ ИЗМЕНЕНИЕ: используем append, чтобы данные накапливались
+        df.write.mode("append").parquet(output_path)
+        print("✅ Файлы добавлены.")
+
+        print(f"🏛 [2/2] Проверка регистрации таблицы {table_name}...")
         try:
-            # 1. Удаляем старую запись
-            self.spark.sql(f"DROP TABLE IF EXISTS {table_name}")
+            # Если таблицы нет в Hive — создаем её.
+            # Если есть — ничего не делаем (данные уже лежат в папке, Hive их увидит)
+            if not self.spark.catalog.tableExists(table_name):
+                print(f"Таблица {table_name} не найдена. Создаем...")
+                query = f"""
+                    CREATE EXTERNAL TABLE {table_name}
+                    USING PARQUET
+                    LOCATION '{output_path}'
+                """
+                self.spark.sql(query)
+                print(f"✅ Таблица {table_name} создана.")
+            else:
+                # Для внешних таблиц Parquet иногда нужно обновить метаданные,
+                # но обычно Spark SQL видит новые файлы сразу.
+                # На всякий случай можно сделать refresh:
+                self.spark.sql(f"REFRESH TABLE {table_name}")
+                print(f"✅ Таблица {table_name} обновлена.")
 
-            # 2. Создаем ВНЕШНЮЮ таблицу
-            query = f"""
-                CREATE EXTERNAL TABLE {table_name}
-                USING PARQUET
-                LOCATION '{output_path}'
-            """
-            self.spark.sql(query)
-
-            # УБРАЛИ ЛИШНЮЮ СТРОКУ (MSCK REPAIR)
-            # Для не-партиционированных таблиц она вызывает ошибку.
-
-            print(f"✅ УСПЕХ! Таблица {table_name} доступна в Hive.")
         except Exception as e:
-            print(f"❌ Ошибка регистрации в Hive: {e}")
+            print(f"❌ Ошибка работы с Hive: {e}")
             raise e
 
     def process_posts(self):
