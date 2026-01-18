@@ -1,5 +1,6 @@
 import os
 import sys
+import shutil
 from pyspark.sql import functions as F
 from pyspark.sql.types import DateType
 
@@ -7,83 +8,124 @@ from pyspark.sql.types import DateType
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
 from app.core.config import get_spark_session
 
+def fix_path(path):
+    """Исправляет пути для Windows Git Bash и Linux"""
+    normalized = os.path.normpath(path).replace('\\', '/')
+    if normalized.startswith('//'):
+        normalized = '/' + normalized.lstrip('/')
+    return normalized
 
-def generate_gold_table(spark, source_table, target_table, multiplier):
-    print(f"\n--- 🔨 Генерация {target_table} (Умножение x{multiplier}) ---")
+def register_table_sql(spark, table_name, path, schema_df):
+    """
+    Регистрирует таблицу в Hive через чистый SQL.
+    Убрана команда MSCK REPAIR, так как таблица не партиционирована.
+    """
+    print(f"[INFO] Registering Hive table: {table_name}")
+    
+    # Формируем строку схемы (col_name TYPE, col_name TYPE)
+    schema_parts = []
+    for field in schema_df.schema:
+        dtype = field.dataType.simpleString()
+        schema_parts.append(f"{field.name} {dtype}")
+    schema_ddl = ", ".join(schema_parts)
 
-    # 1. Читаем исходную Silver-таблицу
     try:
-        df_source = spark.read.table(source_table)
-        base_count = df_source.count()
-        print(f"📉 Исходных записей ({source_table}): {base_count}")
-
-        if base_count == 0:
-            print("⚠️ Исходная таблица пуста, пропускаем.")
-            return
-
+        # 1. Удаляем старую ссылку
+        spark.sql(f"DROP TABLE IF EXISTS {table_name}")
+        
+        # 2. Создаем новую внешнюю таблицу
+        # Поскольку мы указываем LOCATION, Hive сразу увидит данные
+        sql = f"""
+            CREATE EXTERNAL TABLE {table_name} (
+                {schema_ddl}
+            )
+            STORED AS PARQUET
+            LOCATION '{path}'
+        """
+        spark.sql(sql)
+        
+        # 3. Проверка
+        count = spark.table(table_name).count()
+        print(f"[SUCCESS] Table '{table_name}' registered in Hive. Row count: {count}")
+        
     except Exception as e:
-        print(f"❌ Ошибка чтения {source_table}: {e}")
+        print(f"[ERROR] Could not register Hive table {table_name}: {e}")
+
+def process_multiplication(spark, source_path, target_path, target_table_name, multiplier):
+    print(f"\n[START] Processing {target_table_name} (x{multiplier})...")
+    
+    clean_source = fix_path(source_path)
+    clean_target = fix_path(target_path)
+
+    # 1. Читаем исходные данные (Silver)
+    if not os.path.exists(clean_source):
+        print(f"[ERROR] Source path does not exist: {clean_source}")
         return
 
-    # 2. Магия размножения (CrossJoin)
-    # Создаем маленький датафрейм с числами от 0 до multiplier
-    # Это позволит размножить каждую строку в multiplier раз
-    df_mult = spark.range(multiplier).withColumnRenamed("id", "copy_id")
+    df_source = spark.read.parquet(clean_source)
+    initial_count = df_source.count()
+    print(f"[INFO] Initial rows: {initial_count}")
 
-    # Умножаем данные
-    df_large = df_source.crossJoin(df_mult)
+    if initial_count == 0:
+        print("[WARN] Source is empty, skipping.")
+        return
 
-    # 3. Синтезация (делаем данные "уникальными")
-    # - Сдвигаем дату назад на случайное число дней (до 3 лет / 1000 дней)
-    # - Добавляем пометку is_synthetic
+    # 2. Умножаем данные
+    df_multiplier = spark.range(multiplier).withColumnRenamed("id", "idx")
+    df_multiplied = df_source.crossJoin(df_multiplier)
 
-    # Определяем колонку с датой (в silver это 'date')
-    date_col = "date" if "date" in df_source.columns else None
+    # 3. Уникализируем данные (сдвигаем даты)
+    cols = df_source.columns
+    date_col = None
+    if "date_ts" in cols: date_col = "date_ts"
+    elif "date" in cols: date_col = "date"
 
     if date_col:
-        print("🔄 Генерация смещения дат...")
-        gold_df = df_large \
-            .withColumn("rand_days", (F.rand() * 1000).cast("int")) \
-            .withColumn("date", F.date_sub(F.col(date_col).cast(DateType()), F.col("rand_days"))) \
-            .withColumn("is_synthetic", F.lit(True)) \
-            .drop("copy_id", "rand_days")
+        print(f"[INFO] Shifting dates in column '{date_col}' to verify uniqueness...")
+        df_final = df_multiplied.withColumn(
+            date_col, 
+            F.date_sub(F.col(date_col).cast(DateType()), F.col("idx").cast("int"))
+        )
     else:
-        print("⚠️ Колонка даты не найдена, просто дублируем данные.")
-        gold_df = df_large.withColumn("is_synthetic", F.lit(True)).drop("copy_id")
+        df_final = df_multiplied
+    
+    # Убираем служебную колонку и добавляем флаг синтетики
+    df_final = df_final.drop("idx").withColumn("is_synthetic", F.lit(True))
 
-    # 4. Сохраняем в Gold (Hive External Table)
-    # Используем нашу безопасную логику с удалением и путем
-    print(f"💾 Сохранение в Hive таблицу {target_table}...")
+    expected_count = initial_count * multiplier
+    print(f"[INFO] Expected rows after generation: {expected_count}")
 
-    spark.sql(f"DROP TABLE IF EXISTS {target_table}")
+    # 4. Сохраняем физически (Gold)
+    print(f"[INFO] Saving Parquet to: {clean_target}")
+    if os.path.exists(clean_target):
+        shutil.rmtree(clean_target, ignore_errors=True)
+    
+    df_final.write.mode("overwrite").parquet(clean_target)
 
-    gold_df.write \
-        .mode("overwrite") \
-        .option("path", f"/user/hive/warehouse/{target_table}") \
-        .saveAsTable(target_table)
+    # 5. Регистрируем в Hive
+    register_table_sql(spark, target_table_name, clean_target, df_final)
 
-    final_count = spark.read.table(target_table).count()
-    print(f"✅ Готово! В {target_table} теперь {final_count} записей.")
+def main():
+    print("=" * 60)
+    print("DATA GENERATOR (Parquet -> Hive Table)")
+    print("=" * 60)
 
+    spark = get_spark_session("HiveDataGenerator")
+    spark.sparkContext.setLogLevel("ERROR")
 
-def run_generation():
-    spark = get_spark_session("Data_Generator_Synthesizer")
-    spark.sparkContext.setLogLevel("WARN")
+    # --- КОНФИГУРАЦИЯ ---
+    
 
-    # У тебя сейчас ~12k записей.
-    # Чтобы получить "Big Data" (хотя бы 2.5 - 3 млн строк), нужно умножить на ~200-250.
-    # Для курсовой это будет выглядеть солидно.
+    process_multiplication(
+        spark,
+        source_path="/data/silver/comments",
+        target_path="/data/gold/synthetic_comments",
+        target_table_name="gold_synthetic_comments",
+        multiplier=5
+    )
 
-    # 1. Генерируем Посты (для графика активности)
-    generate_gold_table(spark, "silver_posts", "gold_posts", multiplier=5)
-
-    # 2. Генерируем Комментарии (для топа авторов)
-    # Здесь можно меньше множитель, если не хочешь ждать слишком долго,
-    # но для "Big Data ML" лучше тоже побольше.
-    generate_gold_table(spark, "silver_comments", "gold_comments", multiplier=5)
-
+    print("\n[DONE] Generation finished.")
     spark.stop()
 
-
 if __name__ == "__main__":
-    run_generation()
+    main()
