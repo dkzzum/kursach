@@ -6,6 +6,7 @@ tgcrypto
 pandas
 numpy
 pyspark==3.5.0
+pyhive
 
 # --- Machine Learning (Sklearn) ---
 scikit-learn

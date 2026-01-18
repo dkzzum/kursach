@@ -9,5 +9,7 @@ USER root
 # но обычно python3 там уже стоит.
 RUN pip install --no-cache-dir numpy pandas
 
+ADD https://jdbc.postgresql.org/download/postgresql-42.6.0.jar /opt/spark/jars/postgresql-42.6.0.jar
+
 # Возвращаем права стандартному пользователю Spark (UID 185)
 USER 185
