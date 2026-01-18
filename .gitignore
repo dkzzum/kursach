@@ -7,6 +7,8 @@ __pycache__/
 # IntelliJ / VSCode
 .idea/
 .vscode/
+data/gold/*
+data/silver/*
 
 # Telegram Session (СЕКРЕТНО!)
 #*.session
