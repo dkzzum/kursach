@@ -1,0 +1,62 @@
+[
+    {
+        "comment_id": 877707,
+        "post_id": 24826,
+        "channel_id": -1001043793945,
+        "text": "Как только их сраные рекламные пуши, выпадающие по десятку раз в день отвалились, они сразу обнову выпустили.\n\nХитрожопые. Скачивать не стану.",
+        "author_id": 115536884,
+        "author_name": "Anton",
+        "date": "2026-01-04",
+        "ts": 1767478753,
+        "reply_to_msg_id": 877648,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 877681,
+        "post_id": 24826,
+        "channel_id": -1001043793945,
+        "text": "Не костыль",
+        "author_id": 6649196,
+        "author_name": "Роман",
+        "date": "2026-01-04",
+        "ts": 1767477426,
+        "reply_to_msg_id": 877680,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 877680,
+        "post_id": 24826,
+        "channel_id": -1001043793945,
+        "text": "Я ж про то и говорю, что это костыль. Ждать, пока сайт загрузится.",
+        "author_id": 462934272,
+        "author_name": "Leo",
+        "date": "2026-01-04",
+        "ts": 1767477267,
+        "reply_to_msg_id": 877679,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 877679,
+        "post_id": 24826,
+        "channel_id": -1001043793945,
+        "text": "https://b.tbao.su/tpaybluetooth вот универсальная",
+        "author_id": 6649196,
+        "author_name": "Роман",
+        "date": "2026-01-04",
+        "ts": 1767477208,
+        "reply_to_msg_id": 877652,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 877823,
+        "post_id": 24825,
+        "channel_id": -1001043793945,
+        "text": "Согласен. Теперь из-за иконки поиска снизу промахиваюсь по переходу в настройки. Надо иметь слайдбар а у «звонков», чтобы можно было выключить",
+        "author_id": 228570766,
+        "author_name": "💨",
+        "date": "2026-01-04",
+        "ts": 1767484358,
+        "reply_to_msg_id": 877646,
+        "is_reply_to_user": true
+    }
+]

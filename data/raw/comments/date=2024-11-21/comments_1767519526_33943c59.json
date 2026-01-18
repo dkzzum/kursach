@@ -1,0 +1,62 @@
+[
+    {
+        "comment_id": 672952,
+        "post_id": 244,
+        "channel_id": -1001778020390,
+        "text": "Не заходит по ссылке",
+        "author_id": 698835703,
+        "author_name": "Dmitry",
+        "date": "2024-11-21",
+        "ts": 1732140015,
+        "reply_to_msg_id": 226648,
+        "is_reply_to_user": false
+    },
+    {
+        "comment_id": 672943,
+        "post_id": 244,
+        "channel_id": -1001778020390,
+        "text": "аналогично кстати",
+        "author_id": 7960604276,
+        "author_name": "misza dywan",
+        "date": "2024-11-21",
+        "ts": 1732139760,
+        "reply_to_msg_id": 672942,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 672939,
+        "post_id": 244,
+        "channel_id": -1001778020390,
+        "text": "Ооо хоть не забыли тема то имба.",
+        "author_id": 959464853,
+        "author_name": "Сергей",
+        "date": "2024-11-21",
+        "ts": 1732139051,
+        "reply_to_msg_id": 672938,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 672938,
+        "post_id": 244,
+        "channel_id": -1001778020390,
+        "text": "Скоро апгрейд статус пейджа будет, только я вам этого не говорил и вообще я в чате про это прочитал)",
+        "author_id": 1899288931,
+        "author_name": "🎧やit🅱️นℓℓ",
+        "date": "2024-11-21",
+        "ts": 1732139035,
+        "reply_to_msg_id": 672937,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 672937,
+        "post_id": 244,
+        "channel_id": -1001778020390,
+        "text": "А статус пейдж больше нет?",
+        "author_id": 959464853,
+        "author_name": "Сергей",
+        "date": "2024-11-21",
+        "ts": 1732138998,
+        "reply_to_msg_id": 226648,
+        "is_reply_to_user": false
+    }
+]

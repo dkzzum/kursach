@@ -1,0 +1,26 @@
+[
+    {
+        "comment_id": 2960766,
+        "post_id": 24166,
+        "channel_id": -1001007302005,
+        "text": "Глистон",
+        "author_id": 5458506216,
+        "author_name": "Coffeeyovskee",
+        "date": "2025-09-29",
+        "ts": 1759135811,
+        "reply_to_msg_id": 2960762,
+        "is_reply_to_user": true
+    },
+    {
+        "comment_id": 2960762,
+        "post_id": 24166,
+        "channel_id": -1001007302005,
+        "text": "Джек Глисон хорош",
+        "author_id": 353601243,
+        "author_name": "Митя",
+        "date": "2025-09-29",
+        "ts": 1759135787,
+        "reply_to_msg_id": 2949694,
+        "is_reply_to_user": false
+    }
+]

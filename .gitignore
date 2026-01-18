@@ -7,6 +7,8 @@ __pycache__/
 # IntelliJ / VSCode
 .idea/
 .vscode/
+
+# Данные паркета
 data/gold/*
 data/silver/*
 *.DS_Store
