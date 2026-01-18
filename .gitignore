@@ -11,9 +11,11 @@ __pycache__/
 # Данные паркета
 data/gold/*
 data/silver/*
+data/training_set/*
 *.DS_Store
 *.parquet
 *.crc
+*.csv
 
 # Telegram Session (СЕКРЕТНО!)
 #*.session
