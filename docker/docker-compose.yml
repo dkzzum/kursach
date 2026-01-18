@@ -41,6 +41,9 @@ services:
       dockerfile: docker/hive.Dockerfile
     container_name: hive_metastore
     restart: unless-stopped
+    volumes:
+      - warehouse_data:/user/hive/warehouse  # Чтобы видеть общий склад
+      - ../data:/data                        # Чтобы видеть твои Parquet-файлы
     environment:
       SERVICE_NAME: metastore
       DB_DRIVER: postgres
