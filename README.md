@@ -1,106 +1,142 @@
-# Telegram Toxicity Analyzer (Big Data & ML)
+СЛАВА РОССИИ! 🇷🇺
 
-Проект по автоматизированному сбору, обработке и анализу токсичности комментариев в Telegram-каналах с использованием стека технологий Big Data.
+Конечно! Вот мощный, патриотичный и технически грамотный `README.md` для твоего проекта. Он описывает, как поднять систему с одной кнопки, архитектуру и как пользоваться дашбордами.
+
+Сохрани этот текст в файл **`README.md`** в корне проекта.
+
+---
+
+```markdown
+# 🇷🇺 Telegram Big Data Analytics System
+
+> **СЛАВА РОССИИ!**
+> Мощная система сбора, обработки и анализа данных из Telegram с использованием передовых Big Data технологий.
+
+## 📖 О проекте
+
+Этот проект реализует полный цикл обработки данных (Full Stack Data Engineering):
+1.  **Сбор (Ingestion):** Парсинг сообщений и комментариев из Telegram каналов.
+2.  **ETL (Extract, Transform, Load):** Очистка и структурирование данных с помощью **Apache Spark**.
+3.  **ML (Machine Learning):** Обучение модели (Логистическая регрессия) для выявления токсичных комментариев.
+4.  **Storage:** Хранение данных в Data Lake (Hive Metastore).
+5.  **BI (Business Intelligence):** Визуализация аналитики в **Apache Superset**.
+
+---
 
 ## 🛠 Технологический стек
 
-* **Infrastructure**: Docker, Docker Compose
-* **Data Processing**: Apache Spark (PySpark)
-* **Storage**: Hive Metastore, PostgreSQL (Metastore DB), Parquet
-* **ML**: Spark MLlib (Logistic Regression)
-* **Visualization**: Matplotlib, Seaborn
+Весь стек работает в контейнерах, как единый слаженный механизм:
+
+* **Docker & Docker Compose:** Оркестрация контейнеров.
+* **Apache Spark (Master/Worker/Thrift):** Распределенная обработка данных.
+* **Apache Hive Metastore:** Управление метаданными таблиц (хранятся в PostgreSQL).
+* **Apache Superset:** Современный BI-инструмент для дашбордов.
+* **Python 3.10:** Скрипты парсинга и ML.
 
 ---
 
-## 🏗 Архитектура данных
+## 🚀 БЫСТРЫЙ ЗАПУСК (ОДНА КНОПКА)
 
-Проект следует архитектуре **Medallion**:
+Мы автоматизировали всё. Просто запустите скрипт инициализации:
 
-1. **Bronze**: Сырые JSON-данные из Telegram (скрепер).
-2. **Silver**: Очищенные данные в формате Parquet (удаление дублей, типизация).
-3. **Gold**: Размеченные данные с предсказаниями модели токсичности.
+```bash
+./scripts/start_full.sh
+
+```
+
+**Что сделает этот скрипт:**
+
+1. 🏗 Соберет и запустит Docker-контейнеры.
+2. 🔑 **Автоматически выдаст права 777** на папки данных (чтобы Spark не ругался).
+3. ⏳ Подождет 30 секунд, пока прогреется Spark Thrift Server.
+4. 🚀 Запустит `jobs/pipeline.py` — главный оркестратор, который начнет обработку данных и обучение модели.
 
 ---
 
-## 🚀 Запуск проекта
+## 🖥 Доступ к интерфейсам
 
-### 1. Подготовка окружения
+После запуска системы доступны следующие веб-интерфейсы:
 
-Убедитесь, что у вас установлены Docker и Docker Compose. Создайте необходимые папки для логов:
+| Сервис | Адрес | Логин / Пароль | Описание |
+| --- | --- | --- | --- |
+| **Apache Superset** | [http://localhost:8088](https://www.google.com/search?q=http://localhost:8088) | `admin` / `admin` | Графики и Дашборды |
+| **Spark Master UI** | [http://localhost:9090](https://www.google.com/search?q=http://localhost:9090) | - | Состояние кластера |
+| **Spark Worker UI** | [http://localhost:8081](https://www.google.com/search?q=http://localhost:8081) | - | Логи задач |
 
-```bash
-mkdir -p spark_events data/reports
+---
+
+## 📂 Архитектура данных (Медали)
+
+Данные проходят три стадии очистки ("Медальонная архитектура"):
+
+1. 🟤 **Bronze (Raw):** Сырые JSON файлы от парсера. Лежат в `data/raw`.
+2. ⚪️ **Silver (Cleansed):** Очищенные таблицы в Hive (`silver_posts`, `silver_comments`). Убраны дубликаты, приведено к типам.
+3. 🟡 **Gold (Analytics):** Финальные таблицы с ML-предсказаниями (`gold_toxic_predictions`). Именно по ним строятся графики.
+
+---
+
+## 📊 Настройка Superset (Дашборды)
+
+Если графики не появились автоматически, следуйте инструкции инженера:
+
+1. Зайдите в Superset -> **Settings** -> **Database Connections**.
+2. Отредактируйте `Spark Thrift Hive` -> **Advanced** -> **Other** -> поставьте `Schema Cache Timeout: 0` (сброс кэша).
+3. Идите в **Datasets** -> **+ DATASET**.
+4. Выберите базу, схему `default`.
+5. В поле Table **впишите вручную**: `gold_toxic_predictions` и нажмите Add.
+6. Создавайте графики!
+
+**Примеры SQL запросов для Superset:**
+
+*Топ токсичных комментариев:*
+
+```sql
+SELECT original_content, toxicity_score 
+FROM default.gold_toxic_predictions 
+ORDER BY toxicity_score DESC LIMIT 50
 
 ```
 
-### 2. Сборка и запуск контейнеров
+*Процент токсичности:*
 
-Запустите всю инфраструктуру (PostgreSQL, Hive, Spark Master, Spark Worker, Scraper):
-
-```bash
-docker-compose -f docker/docker-compose.yml up -d --build
-
-```
-
-### 3. Исправление прав доступа (Важно!)
-
-Для корректной работы Hive и Spark необходимо дать права на запись в общие тома:
-
-```bash
-docker-compose -f docker/docker-compose.yml exec -u root spark-master chmod -R 777 /user/hive/warehouse
-docker-compose -f docker/docker-compose.yml exec -u root spark-master chmod -R 777 /data
+```sql
+SELECT is_toxic_pred, count(*) 
+FROM default.gold_toxic_predictions 
+GROUP BY is_toxic_pred
 
 ```
 
 ---
 
-## 🔄 Пайплайн обработки
+## 🔧 Ручное управление (Для командиров)
 
-### Шаг 1: ETL (из Bronze в Silver)
+Если нужно запустить конкретный этап вручную:
 
-Преобразование сырых JSON-файлов постов и комментариев в очищенные Parquet-файлы:
+**Запуск ETL (очистка):**
 
 ```bash
 docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/etl/bronze_to_silver.py
 
 ```
 
-*Результат*: Файлы в `data/silver/posts` и `data/silver/comments`.
-
-### Шаг 2: Machine Learning (из Silver в Gold)
-
-Обучение модели Logistic Regression на размеченном сете и классификация собранных комментариев (650k+ записей):
+**Запуск ML (обучение модели):**
 
 ```bash
 docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/ml/train_log_regression_dataset.py
 
 ```
 
-*Результат*: Размеченные данные в `data/gold/predictions`.
-
-### Шаг 3: Генерация отчетов
-
-Создание графиков частотного анализа токсичной лексики:
+**Перезагрузка Spark Thrift (если завис):**
 
 ```bash
-docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/analytics/dashboard_lr.py
+docker-compose -f docker/docker-compose.yml restart spark-thrift-server
 
 ```
 
-*Результат*: График `data/reports/toxic_words_chart.png`.
-
 ---
 
-## 📊 Мониторинг
+**РАЗРАБОТАНО В РОССИИ 🇷🇺**
 
-* **Spark Master UI**: [http://localhost:9090](https://www.google.com/search?q=http://localhost:9090)
-* **Spark History Server**: [http://localhost:18080](https://www.google.com/search?q=http://localhost:18080)
-* **Spark Worker UI**: [http://localhost:8081](https://www.google.com/search?q=http://localhost:8081)
+```
 
----
-
-## ⚠️ Устранение неполадок
-
-* **Ошибка `VERSION is obsolete**`: Игнорируйте, это предупреждение новой версии Docker Compose.
-* **Ошибка `AnalysisException: [id] cannot be resolved**`: Проверьте маппинг колонок в ETL. Для постов это `post_id`, для комментариев — `comment_id`.
-* **Ошибка `Hive registration skipped**`: Если данные в папках `data/` появились, значит ETL прошел успешно. Ошибка регистрации метаданных не блокирует ML-процесс.
+```
