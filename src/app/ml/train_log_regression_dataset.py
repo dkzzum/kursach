@@ -30,8 +30,9 @@ class AppConfig:
     OUTPUT_PATH: str = "/data/gold/predictions"
 
     # Параметры модели
-    MAX_FEATURES: int = 10000
-    REG_PARAM: float = 0.01
+    ELASTIC_NET_PARAM: float = 0.3
+    MAX_FEATURES: int = 2**18
+    REG_PARAM: float = 0.001
 
     # Пороги
     TOXIC_THRESHOLD: float = 0.25
@@ -85,7 +86,13 @@ class ToxicCommentPipeline:
         remover = StopWordsRemover(inputCol="words_raw", outputCol="words", stopWords=stop_words)
         hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=self.cfg.MAX_FEATURES)
         idf = IDF(inputCol="rawFeatures", outputCol="features")
-        lr = LogisticRegression(labelCol="label", featuresCol="features", regParam=self.cfg.REG_PARAM)
+        lr = LogisticRegression(
+            labelCol="label",
+            featuresCol="features",
+            regParam=self.cfg.REG_PARAM,
+            elasticNetParam=self.cfg.ELASTIC_NET_PARAM,
+            maxIter=100
+        )
 
         return Pipeline(stages=[tokenizer, remover, hashingTF, idf, lr])
 
