@@ -56,34 +56,35 @@ services:
       - data-network
 
   # --- 4. SPARK MASTER (Главный узел) ---
+    # --- 4. SPARK MASTER (Главный узел) ---
   spark-master:
-    # ИСПОЛЬЗУЕМ ОФИЦИАЛЬНЫЙ ОБРАЗ SPARK
-    image: apache/spark:3.5.0
+    build:
+      context: ..
+      dockerfile: docker/spark.Dockerfile
     container_name: spark_master
     user: root
     environment:
       - SPARK_CONF_DIR=/opt/spark/conf
       - SPARK_PUBLIC_DNS=localhost
     ports:
-      - "9090:8080" # Web UI
-      - "7077:7077" # Master Port
+      - "9090:8080"
+      - "7077:7077"
     volumes:
-      # Пробрасываем данные, чтобы Spark видел файлы JSON
       - ../data:/data
       - ../data:/opt/application/data
       - ../src:/opt/application/src
       - ../spark_events:/opt/spark/events
       - warehouse_data:/user/hive/warehouse
     working_dir: /opt/application
-    # Команда запуска для официального образа
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
     networks:
       - data-network
 
-  # --- 5. SPARK WORKER (Рабочий узел) ---
+    # --- 5. SPARK WORKER (Рабочий узел) ---
   spark-worker:
-    # ИСПОЛЬЗУЕМ ОФИЦИАЛЬНЫЙ ОБРАЗ SPARK
-    image: apache/spark:3.5.0
+    build:
+      context: ..
+      dockerfile: docker/spark.Dockerfile
     container_name: spark_worker
     user: root
     environment:
@@ -93,7 +94,6 @@ services:
     ports:
       - "8081:8081"
     volumes:
-      # Те же пути, что у мастера
       - ../data:/data
       - ../data:/opt/application/data
       - ../src:/opt/application/src
@@ -102,7 +102,6 @@ services:
     working_dir: /opt/application
     depends_on:
       - spark-master
-    # Команда запуска воркера
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
     networks:
       - data-network

@@ -1,5 +1,5 @@
 # 1. Используем стабильный Debian 12 (Bookworm), где точно есть Java 17
-FROM python:3.9-slim-bookworm
+FROM python:3.8-slim-bookworm
 
 WORKDIR /app
 
