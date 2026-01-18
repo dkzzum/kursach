@@ -9,6 +9,9 @@ __pycache__/
 .vscode/
 data/gold/*
 data/silver/*
+*.DS_Store
+*.parquet
+*.crc
 
 # Telegram Session (СЕКРЕТНО!)
 #*.session
