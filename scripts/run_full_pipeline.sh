@@ -34,6 +34,8 @@ if [ "$($DC ps | grep spark-master | grep -c Up)" -eq 0 ]; then
 fi
 echo "Инфраструктура развернута."
 
+
+
 # 1. Бронза -> Серебро
 echo "[1/5] Запуск ETL: Bronze -> Silver..."
 $DC exec -T scraper_service python src/app/etl/bronze_to_silver.py
@@ -56,7 +58,28 @@ echo "Модель обучена и сохранена."
 
 # 5. Инициализация Superset
 echo "[5/5] Запуск и настройка Superset..."
-$DC exec -T superset bash scripts/init_superset.sh
+$DC exec -T superset bash -c "cat <<EOF > /tmp/init_superset_internal.sh
+#!/bin/bash
+set -e
+echo '--- Внутренняя настройка Superset ---'
+# Создаем админа
+superset fab create-admin \
+              --username admin \
+              --firstname admin \
+              --lastname admin \
+              --email admin@fab.org \
+              --password admin || echo 'Админ уже существует.'
+
+# Миграции БД
+superset db upgrade
+
+# Инициализация ролей
+superset init
+echo '--- Настройка завершена! ---'
+EOF"
+
+# Выполняем созданный файл
+$DC exec -T superset bash -c "chmod +x /tmp/init_superset_internal.sh && /tmp/init_superset_internal.sh"
 echo "Superset готов к работе."
 
 echo "========================================================"

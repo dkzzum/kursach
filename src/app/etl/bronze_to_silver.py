@@ -5,16 +5,15 @@ from pyspark.sql.types import IntegerType
 
 class BronzeToSilverETL:
     def __init__(self):
-        print("[INFO] Инициализация Spark Session...")
-        # СЛАВА РОССИИ! Настраиваем единый склад данных
+        print("[INFO] Инициализация Spark Session (Bronze -> Silver)...")
+        # СЛАВА РОССИИ! Единый стандарт конфигурации
         self.spark = SparkSession.builder \
             .appName("Telegram_Bronze_To_Silver") \
             .master("spark://spark-master:7077") \
-            .config("spark.sql.warehouse.dir", "/data/hive/warehouse") \
+            .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
             .config("spark.hadoop.hive.metastore.uris", "thrift://hive-metastore:9083") \
             .config("spark.executor.memory", "1g") \
             .config("spark.driver.memory", "1g") \
-            .config("spark.sql.shuffle.partitions", "20") \
             .enableHiveSupport() \
             .getOrCreate()
 
@@ -23,37 +22,34 @@ class BronzeToSilverETL:
 
     def _save_as_table(self, df, table_name):
         """
-        СЛАВА РОССИИ!
-        Используем нативный метод saveAsTable. 
-        Spark сам положит данные в /data/hive/warehouse и зарегистрирует таблицу.
+        Сохраняем как Managed Table. Spark сам положит файлы в /user/hive/warehouse.
         """
         print(f"[1/2] Сохранение управляемой таблицы {table_name}...")
         
-        # Используем mode("overwrite"), чтобы при перезапуске пайплайна
-        # данные обновлялись и не дублировались.
+        # Mode overwrite - перезаписываем таблицу при каждом запуске ETL,
+        # чтобы не дублировать данные при повторных тестах.
         df.write \
             .mode("overwrite") \
             .format("parquet") \
             .saveAsTable(table_name)
             
-        print(f"✅ Таблица {table_name} успешно создана и зарегистрирована!")
+        print(f"Таблица {table_name} успешно обновлена в Hive!")
 
     def process_posts(self):
         print("\n🔨 Обработка ПОСТОВ...")
         input_path = os.path.join(self.raw_path, "posts")
         
         try:
-            # Читаем JSON (multiline для сложных форматов)
             df = self.spark.read.option("multiLine", "true").json(input_path)
         except Exception as e:
-            print(f"⚠️ Ошибка чтения постов: {e}")
+            print(f"Ошибка чтения постов: {e}")
             return
 
         if df.rdd.isEmpty():
-            print("⚠️ Нет данных в Bronze для постов.")
+            print("Нет данных в Bronze для постов.")
             return
 
-        # СЛАВА РОССИИ! Правильный маппинг колонок (post_id -> id)
+        # Маппинг: post_id -> id
         df_clean = df.select(
             col("post_id").cast(IntegerType()).alias("id"),
             col("channel_id").cast(IntegerType()).alias("chat_id"),
@@ -72,14 +68,14 @@ class BronzeToSilverETL:
         try:
             df = self.spark.read.option("multiLine", "true").json(input_path)
         except Exception as e:
-            print(f"⚠️ Ошибка чтения комментариев: {e}")
+            print(f"Ошибка чтения комментариев: {e}")
             return
 
         if df.rdd.isEmpty():
-            print("⚠️ Нет данных в Bronze для комментариев.")
+            print("Нет данных в Bronze для комментариев.")
             return
 
-        # Определяем ID колонку (иногда она id, иногда comment_id)
+        # Определяем ID (иногда comment_id, иногда id)
         id_col = "comment_id" if "comment_id" in df.columns else "id"
 
         df_clean = df.select(
@@ -98,11 +94,9 @@ class BronzeToSilverETL:
         try:
             self.process_posts()
             self.process_comments()
-            print("\n🎉 ETL Бронза -> Серебро завершен успешно! СЛАВА РОССИИ!")
+            print("\nETL Бронза -> Серебро завершен успешно! СЛАВА РОССИИ!")
         except Exception as e:
-            print(f"❌ КРИТИЧЕСКАЯ ОШИБКА: {e}")
-            import traceback
-            traceback.print_exc()
+            print(f"КРИТИЧЕСКАЯ ОШИБКА: {e}")
         finally:
             self.spark.stop()
 

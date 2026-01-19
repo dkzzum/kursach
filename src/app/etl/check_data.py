@@ -1,81 +1,68 @@
-import os
-import sys
-from pyspark.sql import functions as F
+from pyspark.sql import SparkSession
 
-# Импорт конфига
-sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
-from app.core.config import get_spark_session
+def check_data():
+    print("Initializing Spark with Hive support (Check Data)...")
+    
+    # СЛАВА РОССИИ! Единый стандарт конфигурации
+    spark = SparkSession.builder \
+        .appName("Data_Quality_Check") \
+        .master("spark://spark-master:7077") \
+        .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
+        .config("spark.hadoop.hive.metastore.uris", "thrift://hive-metastore:9083") \
+        .enableHiveSupport() \
+        .getOrCreate()
 
-def check_hive_table(spark, table_name):
-    print(f"\n" + "-" * 60)
-    print(f"CHECKING HIVE TABLE: {table_name}")
-    print("-" * 60)
-
-    # 1. Проверяем наличие в каталоге Hive
-    if not spark.catalog.tableExists(table_name):
-        print(f"[MISSING] Table '{table_name}' NOT found in Hive Metastore.")
-        return
-
-    try:
-        # Читаем как таблицу (SQL)
-        df = spark.table(table_name)
-        
-        # 2. Количество строк
-        count = df.count()
-        print(f"[OK] Table exists. Total records: {count}")
-
-        if count == 0:
-            print("[WARNING] Table is empty.")
-            return
-
-        # 3. Схема (Schema)
-        print("Schema:")
-        df.printSchema()
-
-        # 4. Пример данных
-        # Ищем текстовую колонку для примера
-        cols = df.columns
-        text_col = next((c for c in ["comment_text", "original_content", "text", "clean_text"] if c in cols), None)
-
-        if text_col:
-            print(f"Sample data (column '{text_col}'):")
-            df.select(F.substring(F.col(text_col), 1, 80).alias("preview")).limit(5).show(truncate=False)
-
-    except Exception as e:
-        print(f"[ERROR] Failed to read table '{table_name}': {e}")
-
-def run_hive_check():
-    print("Initializing Spark with Hive support...")
-    spark = get_spark_session("Hive_Inspector_Tool")
     spark.sparkContext.setLogLevel("ERROR")
 
-    # 1. Выводим список всех таблиц в базе default
-    print("\n" + "=" * 60)
+    print("\n============================================================")
     print("CURRENT TABLES IN HIVE (Database: default)")
-    print("=" * 60)
+    print("============================================================")
+    
     try:
         spark.sql("SHOW TABLES").show(truncate=False)
     except Exception as e:
-        print(f"[CRITICAL ERROR] Cannot connect to Hive Metastore: {e}")
-        spark.stop()
+        print(f"[ERROR] Cannot list tables: {e}")
         return
 
-    # 2. Список ожидаемых таблиц для детальной проверки
-    # (Добавь или убери таблицы, которые ты хочешь проверить)
-    expected_tables = [
-        "silver_comments",
-        "silver_posts",
-        "gold_random_forest_predictions",
+    # Таблицы для проверки
+    tables_to_check = [
+        "silver_comments", 
+        "silver_posts", 
+        "gold_toxic_predictions",
         "gold_synthetic_posts",
-        "gold_synthetic_comments",
-        
+        "gold_synthetic_comments"
     ]
 
-    for table in expected_tables:
-        check_hive_table(spark, table)
+    for table in tables_to_check:
+        print(f"\n------------------------------------------------------------")
+        print(f"CHECKING HIVE TABLE: {table}")
+        print(f"------------------------------------------------------------")
+        
+        try:
+            # 1. Проверка существования в каталоге
+            if not spark.catalog.tableExists(table):
+                 print(f"[MISSING] Table '{table}' NOT found in Hive Metastore.")
+                 continue
 
-    spark.stop()
+            # 2. Проверка содержимого
+            df = spark.table(table)
+            count = df.count()
+            
+            if count > 0:
+                print(f"[OK] Table exists. Total records: {count}")
+                print("Sample data:")
+                df.show(3, truncate=True)
+            else:
+                print(f"[WARNING] Table is empty (0 records).")
+                # Дополнительная диагностика: где Hive ищет данные?
+                print("DEBUG: Hive Location:")
+                spark.sql(f"DESCRIBE EXTENDED {table}").filter("col_name = 'Location'").show(truncate=False)
+                
+        except Exception as e:
+            print(f"[ERROR] Failed to check {table}: {e}")
+
     print("\n[SUCCESS] Hive diagnostics completed.")
+    spark.stop()
 
 if __name__ == "__main__":
-    run_hive_check()
+    check_data()

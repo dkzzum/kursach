@@ -12,6 +12,7 @@ services:
       - ../jobs:/app/jobs
       - warehouse_data:/user/hive/warehouse
       - ../spark_events:/opt/spark/events
+      - ../data/hive-warehouse:/user/hive/warehouse
     networks:
       - data-network
     command: tail -f /dev/null
@@ -39,6 +40,7 @@ services:
     restart: unless-stopped
     volumes:
       - warehouse_data:/user/hive/warehouse
+      - ../data/hive-warehouse:/user/hive/warehouse
     depends_on:
       - hive-metastore-db
     environment:
@@ -68,6 +70,7 @@ services:
       - ../jobs:/opt/application/jobs
       - warehouse_data:/user/hive/warehouse
       - ../spark_events:/opt/spark/events
+      - ../data/hive-warehouse:/user/hive/warehouse
     networks:
       - data-network
     # 👇 ВОТ ЭТОЙ СТРОКИ НЕ ХВАТАЛО:
@@ -97,6 +100,7 @@ services:
       - ../jobs:/opt/application/jobs
       - warehouse_data:/user/hive/warehouse
       - ../spark_events:/opt/spark/events
+      - ../data/hive-warehouse:/user/hive/warehouse
     networks:
       - data-network
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
@@ -156,6 +160,8 @@ services:
       SUPERSET_SECRET_KEY: "my-secret-key-change-me-in-prod"
     depends_on:
       - spark-thrift-server
+    volumes:
+      - ./scripts:/app/scripts
     networks:
       - data-network
 
