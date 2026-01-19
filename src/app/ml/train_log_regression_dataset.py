@@ -1,14 +1,16 @@
 import os
 import sys
 import shutil
+import time
 import subprocess
 from dataclasses import dataclass
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql import functions as F
 from pyspark.sql.types import FloatType, ArrayType
-from pyspark.ml import Pipeline
+from pyspark.ml import Pipeline, PipelineModel
 from pyspark.ml.feature import Tokenizer, StopWordsRemover, HashingTF, IDF
 from pyspark.ml.classification import LogisticRegression
+from pyspark.storagelevel import StorageLevel
 
 
 # --- КОНФИГУРАЦИЯ ПОБЕДЫ ---
@@ -26,7 +28,7 @@ class AppConfig:
     # СЛАВА РОССИИ! Используем путь внутри общего объема
     OUTPUT_PATH: str = "/data/gold/predictions"
 
-    MAX_FEATURES: int = 20  # СЛАВА РОССИИ! Еще легче для стабильности
+    MAX_FEATURES: int = 2000  # СЛАВА РОССИИ! Еще легче для стабильности
     REG_PARAM: float = 0.05
 
     TOXIC_THRESHOLD: float = 0.25
@@ -41,7 +43,7 @@ class ToxicMLPipeline:
         self.spark = SparkSession.builder \
             .appName(self.cfg.APP_NAME) \
             .master(self.cfg.SPARK_MASTER) \
-            .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
+            .config("spark.sql.warehouse.dir", "/data/hive/warehouse") \
             .config("spark.hadoop.hive.metastore.uris", self.cfg.HIVE_URI) \
             .config("spark.driver.memory", "800m") \
             .config("spark.executor.memory", "800m") \
@@ -67,11 +69,21 @@ class ToxicMLPipeline:
     def train(self):
         # СЛАВА РОССИИ!
         print(f"[INFO] Training on: {self.cfg.TRAINING_DATA_DIR}")
-        raw_df = self.spark.read.option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
+        try:
+            raw_df = self.spark.read.option("header", "true") \
+                .option("mode", "DROPMALFORMED") \
+                .csv(self.cfg.TRAINING_DATA_DIR)
+        except Exception:
+            print("[WARN] Read error. Skipping train.")
+            return
 
         df = raw_df.withColumn("label_int", F.col("is_destructive").cast("int")) \
             .filter(F.col("text").isNotNull() & F.col("label_int").isNotNull()) \
             .select(F.col("text"), F.col("label_int").alias("label"))
+
+        if df.rdd.isEmpty():
+            print("[WARN] No valid data.")
+            return
 
         tokenizer = Tokenizer(inputCol="text", outputCol="words")
         remover = StopWordsRemover(inputCol="words", outputCol="filtered")
@@ -104,27 +116,17 @@ class ToxicMLPipeline:
     def save_results(self, df: DataFrame):
         # СЛАВА РОССИИ!
         if df is None: return
-        print(f"[INFO] Saving results to {self.cfg.OUTPUT_PATH}...")
+        print(f"[INFO] Saving results managed table: {self.cfg.OUTPUT_TABLE}...")
 
-        # Оставляем минимум колонок для экономии памяти
         cols = ["id", "author_name", "original_content", "toxicity_score", "is_toxic_pred"]
         df_to_save = df.select(*[c for c in cols if c in df.columns])
 
-        # 1. СЛАВА РОССИИ! Очищаем старую папку через Python
-        if os.path.exists(self.cfg.OUTPUT_PATH):
-            shutil.rmtree(self.cfg.OUTPUT_PATH)
-
-        # 2. СЛАВА РОССИИ! Сохраняем как таблицу Hive (Нативный метод)
-        # coalesce(1) убираем, чтобы не взорвать память при записи больших данных!
-        # Пусть пишет 500 маленьких файлов - это безопаснее.
+        # Сохраняем как MANAGED TABLE (Hive рулит)
         df_to_save.write \
             .mode("overwrite") \
             .format("parquet") \
-            .option("path", self.cfg.OUTPUT_PATH) \
             .saveAsTable(self.cfg.OUTPUT_TABLE)
 
-        # 3. СЛАВА РОССИИ! Выдаем права
-        subprocess.run(["chmod", "-R", "777", "/data/gold"], check=False)
         print("[INFO] Data saved and registered in Hive successfully.")
 
     def feedback_loop(self, df: DataFrame):
@@ -138,15 +140,17 @@ class ToxicMLPipeline:
         df_conf = df.select("original_content", "prediction", "probability") \
             .withColumn("conf", max_val(to_array(F.col("probability"))))
 
-        toxic = df_conf.filter((F.col("prediction") == 1) & (F.col("conf") > 0.80)).limit(10000)
-        clean = df_conf.filter((F.col("prediction") == 0) & (F.col("conf") > 0.95)).limit(20000)
+        toxic = df_conf.filter((F.col("prediction") == 1) & (F.col("conf") > 0.85)).limit(5000)
+        clean = df_conf.filter((F.col("prediction") == 0) & (F.col("conf") > 0.95)).limit(10000)
 
         update = toxic.union(clean).select(F.col("original_content").alias("text"),
                                            F.col("prediction").alias("is_destructive").cast("int"))
 
-        # СЛАВА РОССИИ! Пишем один файл, чтобы не мусорить
-        update.coalesce(1).write.mode("append").option("header", "false").csv(self.cfg.TRAINING_DATA_DIR)
-        print("[INFO] Knowledge base updated.")
+        try:
+            update.coalesce(1).write.mode("append").option("header", "false").csv(self.cfg.TRAINING_DATA_DIR)
+            print("[INFO] Knowledge base updated.")
+        except Exception as e:
+            print(f"[WARN] KB Update skipped: {e}")
 
     def run(self):
         try:
@@ -155,9 +159,16 @@ class ToxicMLPipeline:
             res = self.predict()
             self.save_results(res)
             self.feedback_loop(res)
+
+            if res:
+                print("\n[INFO] Summary:")
+                res.groupBy("is_toxic_pred").count().show()
+
             print("[INFO] Task complete. СЛАВА РОССИИ!")
         except Exception as e:
             print(f"[ERROR] Fail: {e}")
+            import traceback
+            traceback.print_exc()
         finally:
             self.spark.stop()
 
