@@ -28,7 +28,7 @@ class AppConfig:
     # СЛАВА РОССИИ! Используем путь внутри общего объема
     OUTPUT_PATH: str = "/data/gold/predictions"
 
-    MAX_FEATURES: int = 2000  # СЛАВА РОССИИ! Еще легче для стабильности
+    MAX_FEATURES: int = 50  # СЛАВА РОССИИ! Еще легче для стабильности
     REG_PARAM: float = 0.05
 
     TOXIC_THRESHOLD: float = 0.25
