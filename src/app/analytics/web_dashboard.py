@@ -53,5 +53,5 @@ app.layout = dbc.Container(
 
 if __name__ == '__main__':
     # Запускаем сервер на 0.0.0.0, чтобы он был доступен снаружи Docker
-    print(f"🚀 Запуск веб-сервера. Откройте http://localhost:8050")
+    print(f"Запуск веб-сервера. Откройте http://localhost:8050")
     app.run(debug=True, host='0.0.0.0', port=8050)

@@ -26,13 +26,13 @@ class BronzeToSilverETL:
         """
         output_path = f"{self.silver_base_path}/{folder_name}"
 
-        print(f"💾 [1/2] Сохранение данных в {output_path}...")
+        print(f"[1/2] Сохранение данных в {output_path}...")
 
         # ВАЖНОЕ ИЗМЕНЕНИЕ: используем append, чтобы данные накапливались
         df.write.mode("append").parquet(output_path)
-        print("✅ Файлы добавлены.")
+        print("Файлы добавлены.")
 
-        print(f"🏛 [2/2] Проверка регистрации таблицы {table_name}...")
+        print(f"[2/2] Проверка регистрации таблицы {table_name}...")
         try:
             # Если таблицы нет в Hive — создаем её.
             # Если есть — ничего не делаем (данные уже лежат в папке, Hive их увидит)
@@ -44,20 +44,20 @@ class BronzeToSilverETL:
                     LOCATION '{output_path}'
                 """
                 self.spark.sql(query)
-                print(f"✅ Таблица {table_name} создана.")
+                print(f"Таблица {table_name} создана.")
             else:
                 # Для внешних таблиц Parquet иногда нужно обновить метаданные,
                 # но обычно Spark SQL видит новые файлы сразу.
                 # На всякий случай можно сделать refresh:
                 self.spark.sql(f"REFRESH TABLE {table_name}")
-                print(f"✅ Таблица {table_name} обновлена.")
+                print(f"Таблица {table_name} обновлена.")
 
         except Exception as e:
-            print(f"❌ Ошибка работы с Hive: {e}")
+            print(f"Ошибка работы с Hive: {e}")
             raise e
 
     def process_posts(self):
-        print("🚀 Обработка ПОСТОВ...")
+        print("Обработка ПОСТОВ...")
         input_path = os.path.join(self.raw_path, "posts")
 
         try:
@@ -80,7 +80,7 @@ class BronzeToSilverETL:
         self._save_and_register(df_final, "silver_posts", "posts")
 
     def process_comments(self):
-        print("🚀 Обработка КОММЕНТАРИЕВ...")
+        print("Обработка КОММЕНТАРИЕВ...")
         input_path = os.path.join(self.raw_path, "comments")
 
         try:

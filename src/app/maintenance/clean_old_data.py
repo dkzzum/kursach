@@ -23,7 +23,7 @@ class DataCleaner:
 
     def clean_filesystem_raw(self):
         """Удаляет старые JSON файлы из папки Raw"""
-        print(f"🧹 [FS] Очистка папки {self.RAW_DIR} (старше {self.RETENTION_DAYS} дн)...")
+        print(f"[FS] Очистка папки {self.RAW_DIR} (старше {self.RETENTION_DAYS} дн)...")
 
         deleted_count = 0
         now = time.time()
@@ -39,16 +39,16 @@ class DataCleaner:
                         os.remove(fpath)
                         deleted_count += 1
                 except Exception as e:
-                    print(f"⚠️ Ошибка при удалении {fpath}: {e}")
+                    print(f"Ошибка при удалении {fpath}: {e}")
 
-        print(f"✅ [FS] Удалено {deleted_count} старых файлов.")
+        print(f"[FS] Удалено {deleted_count} старых файлов.")
 
     def clean_hive_table(self, table_name, date_col="date"):
         """Удаляет старые записи из таблицы Hive"""
-        print(f"🧹 [HIVE] Очистка таблицы {table_name}...")
+        print(f"[HIVE] Очистка таблицы {table_name}...")
 
         if not self.spark.catalog.tableExists(table_name):
-            print(f"⚠️ Таблица {table_name} не найдена, пропускаем.")
+            print(f"Таблица {table_name} не найдена, пропускаем.")
             return
 
         # 1. Читаем таблицу
@@ -66,14 +66,14 @@ class DataCleaner:
         deleted_rows = initial_count - final_count
 
         if deleted_rows > 0:
-            print(f"♻️ Обнаружено {deleted_rows} старых записей. Перезаписываем таблицу...")
+            print(f"Обнаружено {deleted_rows} старых записей. Перезаписываем таблицу...")
             # Перезаписываем таблицу только свежими данными
             df_clean.write \
                 .mode("overwrite") \
                 .saveAsTable(table_name)
-            print(f"✅ [HIVE] Таблица {table_name} обновлена. Текущий размер: {final_count}")
+            print(f"[HIVE] Таблица {table_name} обновлена. Текущий размер: {final_count}")
         else:
-            print(f"✅ [HIVE] Таблица {table_name} чиста (нет данных старше {self.RETENTION_DAYS} дн).")
+            print(f"[HIVE] Таблица {table_name} чиста (нет данных старше {self.RETENTION_DAYS} дн).")
 
     def run(self):
         # 1. Чистим файлы

@@ -13,10 +13,10 @@ from pyspark.ml.classification import LogisticRegression
 from pyspark.storagelevel import StorageLevel
 
 
-# --- КОНФИГУРАЦИЯ "РЕЖИМ ЗАЧИСТКИ" ---
+# --- КОНФИГУРАЦИЯ ПОБЕДЫ ---
 @dataclass
 class AppConfig:
-    APP_NAME: str = "Toxic_ML_Aggressive" # Сменили имя, чтобы видеть в логах
+    APP_NAME: str = "Toxic_ML_Stable_Final"
     SPARK_MASTER: str = "spark://spark-master:7077"
     HIVE_URI: str = "thrift://hive-metastore:9083"
 
@@ -25,16 +25,13 @@ class AppConfig:
 
     INPUT_TABLE: str = "silver_comments"
     OUTPUT_TABLE: str = "gold_toxic_predictions"
+    # СЛАВА РОССИИ! Используем путь внутри общего объема
     OUTPUT_PATH: str = "/data/gold/predictions"
 
-    # СЛАВА РОССИИ! Агрессивные настройки
-    MAX_FEATURES: int = 2500  # Знаем больше слов
-    REG_PARAM: float = 0.02   # Меньше скромности
-    TOXIC_THRESHOLD: float = 0.15 # Снизили порог: теперь ловим даже шепот врага!
+    MAX_FEATURES: int = 2000  # СЛАВА РОССИИ! Еще легче для стабильности
+    REG_PARAM: float = 0.05
 
-    # Пороги для самообучения оставляем высокими, чтобы не учиться на мусоре
-    AUTO_LABEL_THRESHOLD_TOXIC: float = 0.85
-    AUTO_LABEL_THRESHOLD_CLEAN: float = 0.95
+    TOXIC_THRESHOLD: float = 0.25
 
 
 class ToxicMLPipeline:

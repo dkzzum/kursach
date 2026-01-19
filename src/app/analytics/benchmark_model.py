@@ -78,7 +78,7 @@ class ModelBenchmark:
         results = []
 
         print("\n" + "=" * 40)
-        print("🚀 STARTING SCALABILITY TEST")
+        print("STARTING SCALABILITY TEST")
         print("=" * 40)
 
         for frac in fractions:
