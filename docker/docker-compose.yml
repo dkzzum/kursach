@@ -10,9 +10,9 @@ services:
       - ../data:/app/data
       - ../src:/app/src
       - ../jobs:/app/jobs
-      - warehouse_data:/user/hive/warehouse
+#      - warehouse_data:/user/hive/warehouse
       - ../spark_events:/opt/spark/events
-      - ../data/hive-warehouse:/user/hive/warehouse
+      - ../data/hive-warehouse:/opt/hive/data/warehouse
     networks:
       - data-network
     command: tail -f /dev/null
@@ -39,8 +39,9 @@ services:
     container_name: hive_metastore
     restart: unless-stopped
     volumes:
-      - warehouse_data:/user/hive/warehouse
-      - ../data/hive-warehouse:/user/hive/warehouse
+#      - warehouse_data:/user/hive/warehouse
+      - ../data/hive-warehouse:/opt/hive/data/warehouse
+      - ../spark_events:/opt/spark/events
     depends_on:
       - hive-metastore-db
     environment:
@@ -68,9 +69,9 @@ services:
     volumes:
       - ../data:/data
       - ../jobs:/opt/application/jobs
-      - warehouse_data:/user/hive/warehouse
+#      - warehouse_data:/user/hive/warehouse
+      - ../data/hive-warehouse:/opt/hive/data/warehouse
       - ../spark_events:/opt/spark/events
-      - ../data/hive-warehouse:/user/hive/warehouse
     networks:
       - data-network
     # 👇 ВОТ ЭТОЙ СТРОКИ НЕ ХВАТАЛО:
@@ -98,9 +99,9 @@ services:
     volumes:
       - ../data:/data
       - ../jobs:/opt/application/jobs
-      - warehouse_data:/user/hive/warehouse
+#      - warehouse_data:/user/hive/warehouse
       - ../spark_events:/opt/spark/events
-      - ../data/hive-warehouse:/user/hive/warehouse
+      - ../data/hive-warehouse:/opt/hive/data/warehouse
     networks:
       - data-network
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
@@ -124,7 +125,8 @@ services:
     volumes:
       - ../data:/data
       - ../jobs:/opt/application/jobs
-      - warehouse_data:/user/hive/warehouse
+      - ../data/hive-warehouse:/opt/hive/data/warehouse
+#      - warehouse_data:/user/hive/warehouse
     networks:
       - data-network
     # Ждем 30 секунд перед стартом, чтобы Hive успел проснуться

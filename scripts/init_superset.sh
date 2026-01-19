@@ -1,20 +1,26 @@
+echo "[5/5] Запуск и настройка Superset..."
+DOCKER_COMPOSE_FILE="docker/docker-compose.yml"
+DC="docker-compose -f $DOCKER_COMPOSE_FILE"
+$DC exec -T superset bash -c "cat <<EOF > /tmp/init_superset_internal.sh
 #!/bin/bash
-
-echo "Настройка Apache Superset..."
-
-# 1. Создаем админа (если уже есть, выдаст ошибку, это нормально)
-docker-compose -f docker/docker-compose.yml exec superset superset fab create-admin \
+set -e
+echo '--- Внутренняя настройка Superset ---'
+# Создаем админа
+superset fab create-admin \
               --username admin \
-              --firstname Admin \
-              --lastname User \
+              --firstname admin \
+              --lastname admin \
               --email admin@fab.org \
-              --password admin \
-              2>/dev/null || true
+              --password admin || echo 'Админ уже существует.'
 
-# 2. Обновляем структуру внутренней БД Superset
-docker-compose -f docker/docker-compose.yml exec superset superset db upgrade
+# Миграции БД
+superset db upgrade
 
-# 3. Инициализируем роли и права
-docker-compose -f docker/docker-compose.yml exec superset superset init
+# Инициализация ролей
+superset init
+echo '--- Настройка завершена! ---'
+EOF"
 
-echo "Superset готов: http://localhost:8088 (admin/admin)"
+# Выполняем созданный файл
+$DC exec -T superset bash -c "chmod +x /tmp/init_superset_internal.sh && /tmp/init_superset_internal.sh"
+echo "Superset готов к работе."
