@@ -1,142 +1,140 @@
-СЛАВА РОССИИ! 🇷🇺
+# Big Data Pipeline: Анализ Токсичности в Telegram
 
-Конечно! Вот мощный, патриотичный и технически грамотный `README.md` для твоего проекта. Он описывает, как поднять систему с одной кнопки, архитектуру и как пользоваться дашбордами.
+Комплексная система для сбора, процессинга, генерации и ML-анализа сообщений из Telegram. Проект демонстрирует полный цикл работы с большими данными: от ETL-процессов на Apache Spark до визуализации в Apache Superset.
 
-Сохрани этот текст в файл **`README.md`** в корне проекта.
+## Стек технологий
 
----
+* **Инфраструктура:** Docker, Docker Compose
+* **ETL & Processing:** Apache Spark (PySpark)
+* **Storage:** Apache Hive (Metastore + Warehouse)
+* **ML:** Spark MLlib (Logistic Regression, Random Forest)
+* **Analytics:** Apache Superset
+* **Language:** Python 3.9
 
-```markdown
-# 🇷🇺 Telegram Big Data Analytics System
+## Структура репозитория
 
-> **СЛАВА РОССИИ!**
-> Мощная система сбора, обработки и анализа данных из Telegram с использованием передовых Big Data технологий.
+```text
+├── config/             # Конфигурации и зависимости
+├── data/               # Локальное хранилище данных (Raw JSON, CSV)
+├── docker/             # Docker-файлы и docker-compose.yml
+├── scripts/            # Bash-скрипты для быстрого запуска
+├── src/
+│   └── app/
+│       ├── etl/        # Скрипты обработки данных (Bronze -> Silver)
+│       ├── ml/         # Обучение моделей и инференс
+│       ├── scraper/    # Сбор данных из Telegram (Telethon)
+│       └── analytics/  # Скрипты для дашбордов
+└── README.md
 
-## 📖 О проекте
+```
 
-Этот проект реализует полный цикл обработки данных (Full Stack Data Engineering):
-1.  **Сбор (Ingestion):** Парсинг сообщений и комментариев из Telegram каналов.
-2.  **ETL (Extract, Transform, Load):** Очистка и структурирование данных с помощью **Apache Spark**.
-3.  **ML (Machine Learning):** Обучение модели (Логистическая регрессия) для выявления токсичных комментариев.
-4.  **Storage:** Хранение данных в Data Lake (Hive Metastore).
-5.  **BI (Business Intelligence):** Визуализация аналитики в **Apache Superset**.
+## Установка и Запуск
 
----
+Все команды выполняются из корня репозитория.
 
-## 🛠 Технологический стек
-
-Весь стек работает в контейнерах, как единый слаженный механизм:
-
-* **Docker & Docker Compose:** Оркестрация контейнеров.
-* **Apache Spark (Master/Worker/Thrift):** Распределенная обработка данных.
-* **Apache Hive Metastore:** Управление метаданными таблиц (хранятся в PostgreSQL).
-* **Apache Superset:** Современный BI-инструмент для дашбордов.
-* **Python 3.10:** Скрипты парсинга и ML.
-
----
-
-## 🚀 БЫСТРЫЙ ЗАПУСК (ОДНА КНОПКА)
-
-Мы автоматизировали всё. Просто запустите скрипт инициализации:
+### 1. Запуск контейнеров
 
 ```bash
-./scripts/start_full.sh
+# Сборка и запуск в фоновом режиме
+docker-compose -f docker/docker-compose.yml up -d --build
 
 ```
 
-**Что сделает этот скрипт:**
+### 2. Настройка прав доступа (Обязательно)
 
-1. 🏗 Соберет и запустит Docker-контейнеры.
-2. 🔑 **Автоматически выдаст права 777** на папки данных (чтобы Spark не ругался).
-3. ⏳ Подождет 30 секунд, пока прогреется Spark Thrift Server.
-4. 🚀 Запустит `jobs/pipeline.py` — главный оркестратор, который начнет обработку данных и обучение модели.
+Для корректной записи данных в Hive необходимо выдать права на папку хранилища внутри контейнера.
 
----
-
-## 🖥 Доступ к интерфейсам
-
-После запуска системы доступны следующие веб-интерфейсы:
-
-| Сервис | Адрес | Логин / Пароль | Описание |
-| --- | --- | --- | --- |
-| **Apache Superset** | [http://localhost:8088](https://www.google.com/search?q=http://localhost:8088) | `admin` / `admin` | Графики и Дашборды |
-| **Spark Master UI** | [http://localhost:9090](https://www.google.com/search?q=http://localhost:9090) | - | Состояние кластера |
-| **Spark Worker UI** | [http://localhost:8081](https://www.google.com/search?q=http://localhost:8081) | - | Логи задач |
-
----
-
-## 📂 Архитектура данных (Медали)
-
-Данные проходят три стадии очистки ("Медальонная архитектура"):
-
-1. 🟤 **Bronze (Raw):** Сырые JSON файлы от парсера. Лежат в `data/raw`.
-2. ⚪️ **Silver (Cleansed):** Очищенные таблицы в Hive (`silver_posts`, `silver_comments`). Убраны дубликаты, приведено к типам.
-3. 🟡 **Gold (Analytics):** Финальные таблицы с ML-предсказаниями (`gold_toxic_predictions`). Именно по ним строятся графики.
-
----
-
-## 📊 Настройка Superset (Дашборды)
-
-Если графики не появились автоматически, следуйте инструкции инженера:
-
-1. Зайдите в Superset -> **Settings** -> **Database Connections**.
-2. Отредактируйте `Spark Thrift Hive` -> **Advanced** -> **Other** -> поставьте `Schema Cache Timeout: 0` (сброс кэша).
-3. Идите в **Datasets** -> **+ DATASET**.
-4. Выберите базу, схему `default`.
-5. В поле Table **впишите вручную**: `gold_toxic_predictions` и нажмите Add.
-6. Создавайте графики!
-
-**Примеры SQL запросов для Superset:**
-
-*Топ токсичных комментариев:*
-
-```sql
-SELECT original_content, toxicity_score 
-FROM default.gold_toxic_predictions 
-ORDER BY toxicity_score DESC LIMIT 50
-
-```
-
-*Процент токсичности:*
-
-```sql
-SELECT is_toxic_pred, count(*) 
-FROM default.gold_toxic_predictions 
-GROUP BY is_toxic_pred
-
-```
-
----
-
-## 🔧 Ручное управление (Для командиров)
-
-Если нужно запустить конкретный этап вручную:
-
-**Запуск ETL (очистка):**
+**Mac / Linux / Windows (Git Bash):**
 
 ```bash
-docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/etl/bronze_to_silver.py
-
-```
-
-**Запуск ML (обучение модели):**
-
-```bash
-docker-compose -f docker/docker-compose.yml exec scraper_service python src/app/ml/train_log_regression_dataset.py
-
-```
-
-**Перезагрузка Spark Thrift (если завис):**
-
-```bash
-docker-compose -f docker/docker-compose.yml restart spark-thrift-server
+docker-compose -f docker/docker-compose.yml exec -u 0 spark-master chmod -R 777 /user/hive/warehouse
 
 ```
 
 ---
 
-**РАЗРАБОТАНО В РОССИИ 🇷🇺**
+## Пайплайн обработки данных
+
+Ниже приведены команды для ручного запуска этапов пайплайна.
+
+> **Важно для пользователей Windows (Git Bash):** Обратите внимание на двойные слеши `//app/...` в путях к скриптам. Это предотвращает ошибку конвертации путей Git Bash'ем. На Mac/Linux это тоже будет работать корректно.
+
+### Шаг 1: ETL (Bronze -> Silver)
+
+Преобразование сырых JSON-файлов в формат Parquet и регистрация таблиц `silver_posts` и `silver_comments` в Hive.
+
+```bash
+docker-compose -f docker/docker-compose.yml exec -e JAVA_HOME=//usr/lib/jvm/java-17-openjdk-amd64 scraper_service python //app/src/app/etl/bronze_to_silver.py
 
 ```
+
+### Шаг 2: Генерация Big Data (Synthetic Gold)
+
+Генерация синтетических данных для нагрузочного тестирования и создания объема (миллионы строк).
+
+```bash
+docker-compose -f docker/docker-compose.yml exec -e JAVA_HOME=//usr/lib/jvm/java-17-openjdk-amd64 scraper_service python //app/src/app/etl/data_generator.py
+
+```
+
+### Шаг 3: Machine Learning (Inference)
+
+Запуск модели Логистической Регрессии. Скрипт обучает модель на `dataset.csv` и классифицирует данные из слоя Silver. Результат сохраняется в Hive таблицу `gold_logistic_predictions`.
+
+```bash
+docker-compose -f docker/docker-compose.yml exec -e JAVA_HOME=//usr/lib/jvm/java-17-openjdk-amd64 scraper_service python //app/src/app/ml/train_log_regression_dataset.py
+
+```
+
+### Шаг 4: Проверка данных
+
+Утилита для проверки наличия таблиц в Hive и подсчета строк.
+
+```bash
+docker-compose -f docker/docker-compose.yml exec -e JAVA_HOME=//usr/lib/jvm/java-17-openjdk-amd64 scraper_service python //app/src/app/etl/check_data.py
+
+```
+
+---
+
+## Аналитика (Apache Superset)
+
+1. **Инициализация:**
+Выполните скрипт для создания администратора и загрузки дефолтных настроек.
+```bash
+bash scripts/init_superset.sh
+
+```
+
+
+2. **Вход в систему:**
+Откройте браузер: [http://localhost:8088](https://www.google.com/search?q=http://localhost:8088)
+* **Логин:** `admin`
+* **Пароль:** `admin`
+
+
+3. **Подключение к Hive:**
+Используйте следующий SQLAlchemy URI для подключения базы данных:
+```text
+hive://hive-server:10000/default
+
+```
+
+
+
+## Управление контейнерами
+
+**Перезапуск всех сервисов (с удалением старых):**
+
+```bash
+docker-compose -f docker/docker-compose.yml down
+docker-compose -f docker/docker-compose.yml up -d
+
+```
+
+**Просмотр логов (например, Spark):**
+
+```bash
+docker-compose -f docker/docker-compose.yml logs -f spark-master
 
 ```
