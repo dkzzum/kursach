@@ -148,60 +148,70 @@ class ToxicCommentPipeline:
             when(col("toxicity_score") > self.cfg.TOXIC_THRESHOLD, 1.0).otherwise(0.0)
         )
 
-    def feedback_loop(self, predictions_df: DataFrame):
-        """САМООБУЧЕНИЕ С ДЕДУПЛИКАЦИЕЙ (ANTI JOIN)"""
-        print("\n🔄 FEEDBACK LOOP: Поиск УНИКАЛЬНЫХ данных для дообучения...")
+    def feedback_loop(self, df: DataFrame):
+        """
+        СЛАВА РОССИИ!
+        Умное самообучение с балансировкой классов.
+        Не даем 'мирным' данным задавить 'деструктивные'.
+        """
+        print("\n🔄 ЗАПУСК ЦИКЛА САМООБУЧЕНИЯ (С БАЛАНСИРОВКОЙ)...")
 
-        threshold = self.cfg.AUTO_LABEL_THRESHOLD
+        # 1. Выделяем уверенность модели (max probability)
+        # VectorUDT -> Array -> Max Value
+        from pyspark.sql.functions import udf, col, lit
+        from pyspark.sql.types import FloatType
 
-        # 1. Валидация
-        valid_predictions = predictions_df \
-            .filter(col("original_content").isNotNull()) \
-            .filter(~isnan(col("original_content"))) \
-            .filter(length(trim(col("original_content"))) > 1)
+        to_array = udf(lambda v: v.toArray().tolist(), "array<float>")
 
-        # 2. Отбор кандидатов
-        new_toxics = valid_predictions \
-            .filter(col("toxicity_score") > threshold) \
-            .select(col("original_content").alias("text"), lit(1).alias("is_destructive"))
+        df_probs = df.withColumn("probs_arr", to_array(col("probability"))) \
+            .withColumn("confidence",
+                        udf(lambda x: float(max(x)), FloatType())(col("probs_arr")))
 
-        new_safe = valid_predictions \
-            .filter(col("toxicity_score") < (1.0 - threshold)) \
-            .select(col("original_content").alias("text"), lit(0).alias("is_destructive"))
+        # 2. Отбираем ТОЛЬКО самых явных врагов и друзей
+        # Пороги жестче! Врагов ищем тщательно (>0.75), друзей берем только 100% (>0.90)
+        high_conf_toxic = df_probs.filter((col("prediction") == 1) & (col("confidence") > 0.75))
+        high_conf_clean = df_probs.filter((col("prediction") == 0) & (col("confidence") > 0.92))
 
-        # Все потенциальные новички
-        candidates_df = new_toxics.union(new_safe).distinct()  # distinct уберет дубликаты внутри текущего батча
+        count_toxic = high_conf_toxic.count()
+        count_clean = high_conf_clean.count()
 
-        # 3. ДЕДУПЛИКАЦИЯ С ДИСКОМ (Самое важное!)
-        # Читаем то, что УЖЕ лежит в папке обучения
-        existing_training_data = self.spark.read \
-            .option("header", "true") \
-            .option("mode", "DROPMALFORMED") \
-            .csv(self.cfg.TRAINING_DATA_DIR) \
-            .select("text")  # Нам нужен только текст для сверки
+        print(f"🧐 Найдено кандидатов: Токсик={count_toxic}, Мирных={count_clean}")
 
-        # LEFT ANTI JOIN: Оставь только тех кандидатов, чей текст НЕ НАЙДЕН в existing_training_data
-        # [Кандидаты] - [Существующие] = [Действительно Новые]
-        truly_unique_new_data = candidates_df.join(
-            existing_training_data,
-            on="text",
-            how="left_anti"
-        )
+        if count_toxic < 10:
+            print("⚠️ Слишком мало новых токсичных данных для обучения. Пропускаем цикл, чтобы не испортить модель.")
+            return
 
-        new_count = truly_unique_new_data.count()
+        # 3. БАЛАНСИРОВКА СИЛ (Самое важное!)
+        # Мы берем всех найденных токсиков, но ограничиваем количество мирных.
+        # Соотношение 1:2 (на 1 токсичного берем 2 мирных), чтобы не топить модель в позитиве.
 
-        if new_count > 0:
-            print(f"📈 Найдено {new_count} АБСОЛЮТНО НОВЫХ примеров (дубликаты отброшены).")
+        limit_clean = count_toxic * 2
 
-            # Сохраняем
-            timestamp = int(time.time())
-            truly_unique_new_data.coalesce(1).write \
-                .mode("append") \
-                .option("header", "true") \
-                .csv(self.cfg.TRAINING_DATA_DIR)
-            print(f"💾 Данные добавлены в: {self.cfg.TRAINING_DATA_DIR}")
-        else:
-            print("📉 Новых данных нет (либо низкая уверенность, либо такие данные уже есть в базе).")
+        if count_clean > limit_clean:
+            print(f"⚖️ Балансировка: Обрезаем мирные записи с {count_clean} до {limit_clean}...")
+            # Берем случайную выборку мирных, а не просто первые попавшиеся
+            fraction = limit_clean / count_clean
+            high_conf_clean = high_conf_clean.sample(withReplacement=False, fraction=fraction)
+
+        # 4. Объединяем и сохраняем
+        # Нам нужны только колонки text и is_destructive (которую мы берем из prediction)
+        new_data_toxic = high_conf_toxic.select(col("original_content").alias("text"),
+                                                col("prediction").alias("is_destructive").cast("int"))
+        new_data_clean = high_conf_clean.select(col("original_content").alias("text"),
+                                                col("prediction").alias("is_destructive").cast("int"))
+
+        final_training_update = new_data_toxic.union(new_data_clean)
+
+        total_new = final_training_update.count()
+        print(f"💾 Добавляем в базу знаний {total_new} записей (Сбалансировано).")
+
+        # Сохраняем в CSV (append mode)
+        final_training_update.write \
+            .mode("append") \
+            .option("header", "false") \
+            .csv(self.cfg.TRAINING_DATA_DIR)
+
+        print("✅ База знаний обновлена! Враг не пройдет!")
 
     def save_results(self, df: DataFrame):
         """Сохранение результатов в Gold"""
