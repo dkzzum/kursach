@@ -4,8 +4,8 @@ import shutil
 import time
 from dataclasses import dataclass
 from pyspark.sql import SparkSession, DataFrame
-from pyspark.sql.functions import col, udf, when, lit, isnan, length, trim
-from pyspark.sql.types import FloatType
+from pyspark.sql.functions import col, udf, when, lit, isnan, length, trim, max as spark_max
+from pyspark.sql.types import FloatType, ArrayType
 from pyspark.ml import Pipeline, PipelineModel
 from pyspark.ml.feature import Tokenizer, StopWordsRemover, HashingTF, IDF
 from pyspark.ml.classification import LogisticRegression
@@ -35,140 +35,174 @@ class AppConfig:
 
     # Пороги
     TOXIC_THRESHOLD: float = 0.25
-    AUTO_LABEL_THRESHOLD: float = 0.85
+    AUTO_LABEL_THRESHOLD_TOXIC: float = 0.85  # Уверенность для добавления в обучение (токсик)
+    AUTO_LABEL_THRESHOLD_CLEAN: float = 0.95  # Уверенность для добавления в обучение (чистый)
 
 
-class ToxicCommentPipeline:
-    def __init__(self, config: AppConfig):
-        self.cfg = config
-        self.spark = self._init_spark()
-        self.model = None
-
-    def _init_spark(self) -> SparkSession:
-        """Инициализация Spark сессии с поддержкой Hive"""
+class ToxicMLPipeline:
+    def __init__(self):
+        self.cfg = AppConfig()
         print(f"🔌 Инициализация Spark: {self.cfg.APP_NAME}")
-        session = SparkSession.builder \
+        self.spark = SparkSession.builder \
             .appName(self.cfg.APP_NAME) \
             .master(self.cfg.SPARK_MASTER) \
             .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
             .config("spark.hadoop.hive.metastore.uris", self.cfg.HIVE_URI) \
             .enableHiveSupport() \
             .getOrCreate()
-        session.sparkContext.setLogLevel("ERROR")
-        return session
+        self.spark.sparkContext.setLogLevel("WARN")
+        self.model = None
 
     def deploy_dataset_if_needed(self):
-        """Создает папку для обучения и кладет туда базовый датасет"""
-        print(f"🛠 Проверка структуры данных...")
+        """Проверяет наличие обучающих данных. Если нет - копирует базовый dataset.csv"""
+        print("🛠 Проверка структуры данных...")
 
-        if not os.path.exists(self.cfg.TRAINING_DATA_DIR):
+        # Если папки нет или она пустая - инициализируем
+        if not os.path.exists(self.cfg.TRAINING_DATA_DIR) or not os.listdir(self.cfg.TRAINING_DATA_DIR):
             print(f"📦 Создаю хранилище обучающих данных: {self.cfg.TRAINING_DATA_DIR}")
             os.makedirs(self.cfg.TRAINING_DATA_DIR, exist_ok=True)
 
-            initial_file_path = os.path.join(self.cfg.TRAINING_DATA_DIR, "initial_dataset.csv")
+            # Читаем исходный CSV и сохраняем как части (чтобы можно было легко дописывать)
             if os.path.exists(self.cfg.LOCAL_SOURCE_DATASET):
-                shutil.copy2(self.cfg.LOCAL_SOURCE_DATASET, initial_file_path)
-                print(f"✅ Базовый датасет скопирован.")
+                df_initial = self.spark.read.option("header", "true").csv(f"file://{self.cfg.LOCAL_SOURCE_DATASET}")
+
+                # Приводим к стандарту: text, is_destructive
+                # В исходном dataset.csv колонки: is_destructive, text (может быть в другом порядке)
+                df_initial = df_initial.select(col("text"), col("is_destructive"))
+
+                df_initial.write.mode("overwrite").option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
+                print("✅ Базовый датасет скопирован.")
             else:
-                raise FileNotFoundError(f"Исходный файл {self.cfg.LOCAL_SOURCE_DATASET} не найден!")
-        else:
-            print(f"✅ Папка с данными {self.cfg.TRAINING_DATA_DIR} уже существует. Используем накопленные данные.")
-
-    def _build_pipeline(self) -> Pipeline:
-        """Создает ML Pipeline"""
-        tokenizer = Tokenizer(inputCol="text", outputCol="words_raw")
-
-        stop_words = StopWordsRemover.loadDefaultStopWords("russian")
-        custom_stopwords = ["просто", "только", "вообще", "ну", "это", "как", "так", "в", "на", "и"]
-        stop_words.extend(custom_stopwords)
-
-        remover = StopWordsRemover(inputCol="words_raw", outputCol="words", stopWords=stop_words)
-        hashingTF = HashingTF(inputCol="words", outputCol="rawFeatures", numFeatures=self.cfg.MAX_FEATURES)
-        idf = IDF(inputCol="rawFeatures", outputCol="features")
-        lr = LogisticRegression(labelCol="label", featuresCol="features", regParam=self.cfg.REG_PARAM)
-
-        return Pipeline(stages=[tokenizer, remover, hashingTF, idf, lr])
+                print(f"❌ ОШИБКА: Не найден файл {self.cfg.LOCAL_SOURCE_DATASET}")
+                sys.exit(1)
 
     def train(self):
-        """Читает ВСЕ файлы из папки TRAINING_DATA_DIR и учится"""
+        """Обучение модели на ВСЕХ данных из папки"""
         print(f"🧠 Обучение на данных из папки: {self.cfg.TRAINING_DATA_DIR}")
 
-        # Читаем данные с защитой от битых строк
-        df_raw = self.spark.read \
-            .option("header", "true") \
-            .option("inferSchema", "true") \
-            .option("mode", "DROPMALFORMED") \
-            .csv(self.cfg.TRAINING_DATA_DIR)
+        # Читаем все CSV из папки
+        df = self.spark.read.option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
 
-        # 🛡️ ЗАЩИТА ПРИ ЧТЕНИИ
-        train_data = df_raw \
-            .filter(col("text").isNotNull()) \
-            .withColumn("label", col("is_destructive").cast("double")) \
-            .filter(col("label").isNotNull()) \
-            .filter(~isnan(col("label"))) \
+        # Очистка и приведение типов
+        df = df.filter(col("text").isNotNull() & (length(trim(col("text"))) > 0)) \
+            .withColumn("label", col("is_destructive").cast("int")) \
             .select("text", "label")
 
-        count = train_data.count()
+        count = df.count()
         print(f"📊 Валидный размер обучающей выборки: {count} строк")
 
-        if count == 0:
-            raise ValueError("❌ Ошибка: Обучающая выборка пуста!")
+        if count < 50:
+            print("❌ Слишком мало данных для обучения!")
+            return
 
-        pipeline = self._build_pipeline()
-        self.model = pipeline.fit(train_data)
+        # Пайплайн
+        tokenizer = Tokenizer(inputCol="text", outputCol="words")
+        remover = StopWordsRemover(inputCol="words", outputCol="filtered_words")
+        hashingTF = HashingTF(inputCol="filtered_words", outputCol="rawFeatures", numFeatures=self.cfg.MAX_FEATURES)
+        idf = IDF(inputCol="rawFeatures", outputCol="features")
+        lr = LogisticRegression(featuresCol="features", labelCol="label", regParam=self.cfg.REG_PARAM)
+
+        pipeline = Pipeline(stages=[tokenizer, remover, hashingTF, idf, lr])
+        self.model = pipeline.fit(df)
         print("✅ Модель успешно переобучена!")
 
     def predict(self) -> DataFrame:
-        """Предсказание на данных Silver"""
+        """Предсказание на новых данных из Hive"""
+        if not self.model:
+            print("⚠️ Модель не обучена.")
+            return None
+
         print(f"🔍 Чтение данных из Hive: {self.cfg.INPUT_TABLE}")
+        try:
+            input_df = self.spark.table(self.cfg.INPUT_TABLE)
+        except:
+            print("⚠️ Таблица silver_comments не найдена.")
+            return None
 
-        if not self.spark.catalog.tableExists(self.cfg.INPUT_TABLE):
-            raise Exception(f"Таблица {self.cfg.INPUT_TABLE} не найдена!")
+        # Очистка от пустых
+        df_clean = input_df.filter(col("text").isNotNull())
 
-        silver_df = self.spark.table(self.cfg.INPUT_TABLE)
+        # Предсказание
+        predictions = self.model.transform(df_clean)
 
-        input_df = silver_df.select(
-            col("id"),
-            col("author_name"),
-            col("text").alias("original_content"),
-            col("text")
-        ).filter(col("text").isNotNull())
-
-        predictions = self.model.transform(input_df)
-
+        # UDF для извлечения вероятности класса 1 (токсичность)
         extract_prob = udf(lambda v: float(v[1]), FloatType())
 
-        return predictions.select(
-            col("id"),
-            col("author_name"),
-            col("original_content"),
-            extract_prob(col("probability")).alias("toxicity_score")
-        ).withColumn(
-            "is_toxic_pred",
-            when(col("toxicity_score") > self.cfg.TOXIC_THRESHOLD, 1.0).otherwise(0.0)
-        )
+        # СЛАВА РОССИИ!
+        # ВАЖНО: Мы НЕ удаляем колонку 'probability', она нужна для самообучения!
+        # Мы просто добавляем toxicity_score
+
+        final_df = predictions.withColumn("toxicity_score", extract_prob(col("probability"))) \
+            .withColumn("is_toxic_pred", when(col("toxicity_score") > self.cfg.TOXIC_THRESHOLD, 1).otherwise(0)) \
+            .withColumnRenamed("text", "original_content")
+
+        # Возвращаем ВСЕ колонки, включая probability и prediction, чтобы feedback_loop мог работать
+        # Лишнее уберем в save_results
+        return final_df
+
+    def save_results(self, df: DataFrame):
+        """Сохранение результатов в Gold (только нужные колонки)"""
+        if df is None: return
+
+        print(f"💾 Сохранение результатов в {self.cfg.OUTPUT_PATH}...")
+
+        # Вот здесь мы выбираем только бизнес-колонки для аналитиков/Superset
+        # Чтобы не засорять Hive векторами
+        columns_to_save = [
+            "id",
+            "author_name",
+            "original_content",
+            "toxicity_score",
+            "is_toxic_pred"
+        ]
+
+        # Проверяем, есть ли такие колонки (на случай, если id нет в исходнике)
+        available_cols = [c for c in columns_to_save if c in df.columns]
+
+        df_to_save = df.select(*available_cols)
+
+        df_to_save.write.mode("overwrite").parquet(self.cfg.OUTPUT_PATH)
+
+        self.spark.sql(f"DROP TABLE IF EXISTS {self.cfg.OUTPUT_TABLE}")
+        self.spark.sql(f"""
+            CREATE EXTERNAL TABLE {self.cfg.OUTPUT_TABLE} (
+                id STRING,
+                author_name STRING,
+                original_content STRING,
+                toxicity_score FLOAT,
+                is_toxic_pred INT
+            )
+            STORED AS PARQUET
+            LOCATION '{self.cfg.OUTPUT_PATH}'
+        """)
+        print("✅ Данные сохранены в Hive.")
 
     def feedback_loop(self, df: DataFrame):
         """
-        СЛАВА РОССИИ!
-        Умное самообучение с балансировкой классов.
-        Не даем 'мирным' данным задавить 'деструктивные'.
-        """
+      СЛАВА РОССИИ!
+      Умное самообучение с балансировкой классов.
+      Не даем 'мирным' данным задавить 'деструктивные'.
+      """
+        if df is None: return
         print("\n🔄 ЗАПУСК ЦИКЛА САМООБУЧЕНИЯ (С БАЛАНСИРОВКОЙ)...")
 
         # 1. Выделяем уверенность модели (max probability)
         # VectorUDT -> Array -> Max Value
-        from pyspark.sql.functions import udf, col, lit
-        from pyspark.sql.types import FloatType
+        # ВАЖНО: df должен содержать колонку 'probability' (Vector)
 
-        to_array = udf(lambda v: v.toArray().tolist(), "array<float>")
+        # Проверка на наличие колонки (чтобы не упало как в прошлый раз)
+        if "probability" not in df.columns:
+            print("❌ ОШИБКА: Колонка 'probability' отсутствует в DataFrame. Самообучение невозможно.")
+            return
+
+        to_array = udf(lambda v: v.toArray().tolist(), ArrayType(FloatType()))
+        max_val = udf(lambda x: float(max(x)), FloatType())
 
         df_probs = df.withColumn("probs_arr", to_array(col("probability"))) \
-            .withColumn("confidence",
-                        udf(lambda x: float(max(x)), FloatType())(col("probs_arr")))
+            .withColumn("confidence", max_val(col("probs_arr")))
 
         # 2. Отбираем ТОЛЬКО самых явных врагов и друзей
-        # Пороги жестче! Врагов ищем тщательно (>0.75), друзей берем только 100% (>0.90)
+        # Пороги жестче! Врагов ищем тщательно (>0.75), друзей берем только 100% (>0.92)
         high_conf_toxic = df_probs.filter((col("prediction") == 1) & (col("confidence") > 0.75))
         high_conf_clean = df_probs.filter((col("prediction") == 0) & (col("confidence") > 0.92))
 
@@ -206,35 +240,29 @@ class ToxicCommentPipeline:
         print(f"💾 Добавляем в базу знаний {total_new} записей (Сбалансировано).")
 
         # Сохраняем в CSV (append mode)
-        final_training_update.write \
+        # coalesce(1) чтобы не плодить тысячи мелких файлов
+        final_training_update.coalesce(1).write \
             .mode("append") \
             .option("header", "false") \
             .csv(self.cfg.TRAINING_DATA_DIR)
 
         print("✅ База знаний обновлена! Враг не пройдет!")
 
-    def save_results(self, df: DataFrame):
-        """Сохранение результатов в Gold"""
-        print(f"💾 Сохранение результатов в {self.cfg.OUTPUT_PATH}...")
-        df.write.mode("overwrite").parquet(self.cfg.OUTPUT_PATH)
-
-        self.spark.sql(f"DROP TABLE IF EXISTS {self.cfg.OUTPUT_TABLE}")
-        self.spark.sql(f"""
-            CREATE EXTERNAL TABLE {self.cfg.OUTPUT_TABLE}
-            USING PARQUET LOCATION '{self.cfg.OUTPUT_PATH}'
-        """)
-        print("✅ Данные сохранены в Hive.")
-
     def run(self):
         try:
             self.deploy_dataset_if_needed()
             self.train()
             results_df = self.predict()
+
+            # Сначала сохраняем (для графиков)
             self.save_results(results_df)
+
+            # Потом учимся (используя неочищенный results_df с вероятностями)
             self.feedback_loop(results_df)
 
-            print("\n📊 ИТОГИ:")
-            results_df.groupBy("is_toxic_pred").count().show()
+            if results_df:
+                print("\n📊 ИТОГИ ПРЕДСКАЗАНИЯ:")
+                results_df.groupBy("is_toxic_pred").count().show()
 
         except Exception as e:
             print(f"\n❌ КРИТИЧЕСКАЯ ОШИБКА: {e}")
@@ -245,6 +273,5 @@ class ToxicCommentPipeline:
 
 
 if __name__ == "__main__":
-    config = AppConfig()
-    pipeline = ToxicCommentPipeline(config)
+    pipeline = ToxicMLPipeline()
     pipeline.run()
