@@ -1,21 +1,20 @@
 import os
 import sys
 import shutil
-import time
+import subprocess
 from dataclasses import dataclass
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql import functions as F
 from pyspark.sql.types import FloatType, ArrayType
-from pyspark.ml import Pipeline, PipelineModel
+from pyspark.ml import Pipeline
 from pyspark.ml.feature import Tokenizer, StopWordsRemover, HashingTF, IDF
 from pyspark.ml.classification import LogisticRegression
-from pyspark.storagelevel import StorageLevel
 
 
-# --- CONFIGURATION (LITE VERSION) ---
+# --- КОНФИГУРАЦИЯ ПОБЕДЫ ---
 @dataclass
 class AppConfig:
-    APP_NAME: str = "Toxic_ML_Lightweight"
+    APP_NAME: str = "Toxic_ML_Stable_Final"
     SPARK_MASTER: str = "spark://spark-master:7077"
     HIVE_URI: str = "thrift://hive-metastore:9083"
 
@@ -24,75 +23,60 @@ class AppConfig:
 
     INPUT_TABLE: str = "silver_comments"
     OUTPUT_TABLE: str = "gold_toxic_predictions"
+    # СЛАВА РОССИИ! Используем путь внутри общего объема
     OUTPUT_PATH: str = "/data/gold/predictions"
 
-    # СЛАВА РОССИИ! Снижаем сложность для экономии памяти
-    MAX_FEATURES: int = 3000  # Было 10000. Вектора станут в 3 раза легче.
-    REG_PARAM: float = 0.01
+    MAX_FEATURES: int = 20  # СЛАВА РОССИИ! Еще легче для стабильности
+    REG_PARAM: float = 0.05
 
     TOXIC_THRESHOLD: float = 0.25
-    AUTO_LABEL_THRESHOLD_TOXIC: float = 0.85
-    AUTO_LABEL_THRESHOLD_CLEAN: float = 0.95
 
 
 class ToxicMLPipeline:
     def __init__(self):
         self.cfg = AppConfig()
-        print(f"[INFO] Spark Init: {self.cfg.APP_NAME} (Low Memory Mode)")
+        print(f"[INFO] Spark Init: {self.cfg.APP_NAME}")
 
-        # НАСТРОЙКИ ДЛЯ СЛАБЫХ МАШИН (Anti-OOM 137)
+        # СЛАВА РОССИИ! Настройки сверхстабильности
         self.spark = SparkSession.builder \
             .appName(self.cfg.APP_NAME) \
             .master(self.cfg.SPARK_MASTER) \
             .config("spark.sql.warehouse.dir", "/user/hive/warehouse") \
             .config("spark.hadoop.hive.metastore.uris", self.cfg.HIVE_URI) \
-            .config("spark.driver.memory", "1g") \
-            .config("spark.executor.memory", "1g") \
+            .config("spark.driver.memory", "800m") \
+            .config("spark.executor.memory", "800m") \
             .config("spark.executor.cores", "1") \
             .config("spark.cores.max", "1") \
-            .config("spark.memory.fraction", "0.5") \
-            .config("spark.sql.shuffle.partitions", "20") \
+            .config("spark.sql.shuffle.partitions", "500") \
+            .config("spark.python.worker.memory", "400m") \
+            .config("spark.driver.maxResultSize", "512m") \
             .enableHiveSupport() \
             .getOrCreate()
 
-        self.spark.sparkContext.setLogLevel("WARN")
+        self.spark.sparkContext.setLogLevel("ERROR")
         self.model = None
 
     def deploy_dataset_if_needed(self):
-        print("[INFO] Checking data structure...")
+        # СЛАВА РОССИИ!
         if not os.path.exists(self.cfg.TRAINING_DATA_DIR) or not os.listdir(self.cfg.TRAINING_DATA_DIR):
-            print(f"[INFO] Creating training storage: {self.cfg.TRAINING_DATA_DIR}")
             os.makedirs(self.cfg.TRAINING_DATA_DIR, exist_ok=True)
-
             if os.path.exists(self.cfg.LOCAL_SOURCE_DATASET):
-                print(f"[INFO] Copying local file to shared volume...")
-                target_file = os.path.join(self.cfg.TRAINING_DATA_DIR, "initial_dataset.csv")
-                shutil.copy(self.cfg.LOCAL_SOURCE_DATASET, target_file)
-                print(f"[INFO] Dataset copied.")
-            else:
-                print(f"[ERROR] Source file not found: {self.cfg.LOCAL_SOURCE_DATASET}")
-                sys.exit(1)
+                shutil.copy(self.cfg.LOCAL_SOURCE_DATASET, os.path.join(self.cfg.TRAINING_DATA_DIR, "initial.csv"))
+                print("[INFO] Initial data deployed.")
 
     def train(self):
-        print(f"[INFO] Training on data from: {self.cfg.TRAINING_DATA_DIR}")
-        df = self.spark.read.option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
+        # СЛАВА РОССИИ!
+        print(f"[INFO] Training on: {self.cfg.TRAINING_DATA_DIR}")
+        raw_df = self.spark.read.option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
 
-        df = df.filter(F.col("text").isNotNull() & (F.length(F.trim(F.col("text"))) > 0)) \
-            .withColumn("label", F.col("is_destructive").cast("int")) \
-            .select("text", "label")
+        df = raw_df.withColumn("label_int", F.col("is_destructive").cast("int")) \
+            .filter(F.col("text").isNotNull() & F.col("label_int").isNotNull()) \
+            .select(F.col("text"), F.col("label_int").alias("label"))
 
-        count = df.count()
-        print(f"[INFO] Training set size: {count} rows")
-
-        if count < 50:
-            print("[WARN] Too little data for training!")
-            return
-
-        # Pipeline с уменьшенным HashingTF
         tokenizer = Tokenizer(inputCol="text", outputCol="words")
-        remover = StopWordsRemover(inputCol="words", outputCol="filtered_words")
-        hashingTF = HashingTF(inputCol="filtered_words", outputCol="rawFeatures", numFeatures=self.cfg.MAX_FEATURES)
-        idf = IDF(inputCol="rawFeatures", outputCol="features")
+        remover = StopWordsRemover(inputCol="words", outputCol="filtered")
+        hashingTF = HashingTF(inputCol="filtered", outputCol="raw", numFeatures=self.cfg.MAX_FEATURES)
+        idf = IDF(inputCol="raw", outputCol="features")
         lr = LogisticRegression(featuresCol="features", labelCol="label", regParam=self.cfg.REG_PARAM)
 
         pipeline = Pipeline(stages=[tokenizer, remover, hashingTF, idf, lr])
@@ -100,120 +84,80 @@ class ToxicMLPipeline:
         print("[INFO] Model trained successfully!")
 
     def predict(self) -> DataFrame:
-        if not self.model: return None
-
-        print(f"[INFO] Reading Hive table: {self.cfg.INPUT_TABLE}")
+        # СЛАВА РОССИИ!
+        print("[INFO] Predicting...")
         try:
             input_df = self.spark.table(self.cfg.INPUT_TABLE)
         except:
             return None
 
-        # Уменьшаем количество партиций до 20, чтобы не грузить диск
-        df_clean = input_df.filter(F.col("text").isNotNull()).repartition(20)
+        # Очистка и распределение
+        df_clean = input_df.filter(F.col("text").isNotNull()).repartition(500)
 
         predictions = self.model.transform(df_clean)
-        extract_prob = F.udf(lambda v: float(v[1]), FloatType())
+        get_score = F.udf(lambda v: float(v[1]), FloatType())
 
-        final_df = predictions.withColumn("toxicity_score", extract_prob(F.col("probability"))) \
+        return predictions.withColumn("toxicity_score", get_score(F.col("probability"))) \
             .withColumn("is_toxic_pred", F.when(F.col("toxicity_score") > self.cfg.TOXIC_THRESHOLD, 1).otherwise(0)) \
             .withColumnRenamed("text", "original_content")
 
-        return final_df
-
     def save_results(self, df: DataFrame):
+        # СЛАВА РОССИИ!
         if df is None: return
-
         print(f"[INFO] Saving results to {self.cfg.OUTPUT_PATH}...")
 
-        columns_to_save = ["id", "author_name", "original_content", "toxicity_score", "is_toxic_pred"]
-        available_cols = [c for c in columns_to_save if c in df.columns]
+        # Оставляем минимум колонок для экономии памяти
+        cols = ["id", "author_name", "original_content", "toxicity_score", "is_toxic_pred"]
+        df_to_save = df.select(*[c for c in cols if c in df.columns])
 
-        # DISK_ONLY - спасаем RAM любой ценой
-        df.persist(StorageLevel.DISK_ONLY)
+        # 1. СЛАВА РОССИИ! Очищаем старую папку через Python
+        if os.path.exists(self.cfg.OUTPUT_PATH):
+            shutil.rmtree(self.cfg.OUTPUT_PATH)
 
-        df_to_save = df.select(*available_cols)
-        df_to_save.write.mode("overwrite").parquet(self.cfg.OUTPUT_PATH)
+        # 2. СЛАВА РОССИИ! Сохраняем как таблицу Hive (Нативный метод)
+        # coalesce(1) убираем, чтобы не взорвать память при записи больших данных!
+        # Пусть пишет 500 маленьких файлов - это безопаснее.
+        df_to_save.write \
+            .mode("overwrite") \
+            .format("parquet") \
+            .option("path", self.cfg.OUTPUT_PATH) \
+            .saveAsTable(self.cfg.OUTPUT_TABLE)
 
-        self.spark.sql(f"DROP TABLE IF EXISTS {self.cfg.OUTPUT_TABLE}")
-        self.spark.sql(f"""
-            CREATE EXTERNAL TABLE {self.cfg.OUTPUT_TABLE} (
-                id STRING,
-                author_name STRING,
-                original_content STRING,
-                toxicity_score FLOAT,
-                is_toxic_pred INT
-            )
-            STORED AS PARQUET
-            LOCATION '{self.cfg.OUTPUT_PATH}'
-        """)
-        print("[INFO] Data saved to Hive.")
+        # 3. СЛАВА РОССИИ! Выдаем права
+        subprocess.run(["chmod", "-R", "777", "/data/gold"], check=False)
+        print("[INFO] Data saved and registered in Hive successfully.")
 
     def feedback_loop(self, df: DataFrame):
-        if df is None: return
-        print("\n[INFO] Starting Feedback Loop...")
-
-        if "probability" not in df.columns:
-            return
+        # СЛАВА РОССИИ!
+        print("[INFO] Starting Feedback Loop...")
+        if "probability" not in df.columns: return
 
         to_array = F.udf(lambda v: v.toArray().tolist(), ArrayType(FloatType()))
         max_val = F.udf(lambda x: float(max(x)), FloatType())
 
-        # Только нужные колонки
-        df_minimal = df.select("original_content", "prediction", "probability")
+        df_conf = df.select("original_content", "prediction", "probability") \
+            .withColumn("conf", max_val(to_array(F.col("probability"))))
 
-        df_probs = df_minimal.withColumn("probs_arr", to_array(F.col("probability"))) \
-            .withColumn("confidence", max_val(F.col("probs_arr")))
+        toxic = df_conf.filter((F.col("prediction") == 1) & (F.col("conf") > 0.80)).limit(10000)
+        clean = df_conf.filter((F.col("prediction") == 0) & (F.col("conf") > 0.95)).limit(20000)
 
-        high_conf_toxic = df_probs.filter((F.col("prediction") == 1) & (F.col("confidence") > 0.75))
-        high_conf_clean = df_probs.filter((F.col("prediction") == 0) & (F.col("confidence") > 0.92))
+        update = toxic.union(clean).select(F.col("original_content").alias("text"),
+                                           F.col("prediction").alias("is_destructive").cast("int"))
 
-        # Считаем количество без кэширования всего датасета
-        count_toxic = high_conf_toxic.count()
-        count_clean = high_conf_clean.count()
-
-        print(f"[INFO] Candidates: Toxic={count_toxic}, Clean={count_clean}")
-
-        if count_toxic < 10:
-            print("[INFO] Skipping update.")
-            return
-
-        limit_clean = count_toxic * 2
-        if count_clean > limit_clean:
-            fraction = limit_clean / count_clean
-            high_conf_clean = high_conf_clean.sample(withReplacement=False, fraction=fraction)
-
-        new_data_toxic = high_conf_toxic.select(F.col("original_content").alias("text"),
-                                                F.col("prediction").alias("is_destructive").cast("int"))
-        new_data_clean = high_conf_clean.select(F.col("original_content").alias("text"),
-                                                F.col("prediction").alias("is_destructive").cast("int"))
-
-        final_training_update = new_data_toxic.union(new_data_clean)
-
-        final_training_update.coalesce(1).write \
-            .mode("append") \
-            .option("header", "false") \
-            .csv(self.cfg.TRAINING_DATA_DIR)
-
-        print("[INFO] Knowledge base updated!")
+        # СЛАВА РОССИИ! Пишем один файл, чтобы не мусорить
+        update.coalesce(1).write.mode("append").option("header", "false").csv(self.cfg.TRAINING_DATA_DIR)
+        print("[INFO] Knowledge base updated.")
 
     def run(self):
         try:
             self.deploy_dataset_if_needed()
             self.train()
-            results_df = self.predict()
-
-            self.save_results(results_df)
-            self.feedback_loop(results_df)
-
-            if results_df:
-                print("\n[INFO] Prediction Summary:")
-                results_df.groupBy("is_toxic_pred").count().show()
-                results_df.unpersist()
-
+            res = self.predict()
+            self.save_results(res)
+            self.feedback_loop(res)
+            print("[INFO] Task complete. СЛАВА РОССИИ!")
         except Exception as e:
-            print(f"\n[ERROR] Critical Failure: {e}")
-            import traceback
-            traceback.print_exc()
+            print(f"[ERROR] Fail: {e}")
         finally:
             self.spark.stop()
 
