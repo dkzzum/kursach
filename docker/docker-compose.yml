@@ -74,7 +74,6 @@ services:
       - ../spark_events:/opt/spark/events
     networks:
       - data-network
-    # 👇 ВОТ ЭТОЙ СТРОКИ НЕ ХВАТАЛО:
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
 
   # --- 5. SPARK WORKER ---
@@ -89,7 +88,6 @@ services:
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark-master:7077
-      # 👇 ДАЕМ БОЛЬШЕ МОЩНОСТИ
       - SPARK_WORKER_MEMORY=2G
       - SPARK_WORKER_CORES=2
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
@@ -132,9 +130,9 @@ services:
     # Ждем 30 секунд перед стартом, чтобы Hive успел проснуться
     command: >
       /bin/bash -c "
-      echo '⏳ Ждем 30 сек пока проснется Hive Metastore...';
+      echo 'Ждем 30 сек пока проснется Hive Metastore...';
       sleep 30;
-      echo '🚀 Запускаем Spark Thrift Server...';
+      echo 'Запускаем Spark Thrift Server...';
       /opt/spark/bin/spark-submit
       --master spark://spark-master:7077
       --class org.apache.spark.sql.hive.thriftserver.HiveThriftServer2
