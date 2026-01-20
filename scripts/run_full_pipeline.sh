@@ -29,7 +29,7 @@ sleep 45
 
 # Проверка, что критические узлы живы
 if [ "$($DC ps | grep spark-master | grep -c Up)" -eq 0 ]; then
-    echo "❌ ОШИБКА: Spark Master не поднялся!"
+    echo "ОШИБКА: Spark Master не поднялся!"
     exit 1
 fi
 echo "Инфраструктура развернута."

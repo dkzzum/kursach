@@ -47,7 +47,7 @@ class ToxicRFPipeline:
 
     def _init_spark(self) -> SparkSession:
         """Инициализация Spark сессии с поддержкой Hive"""
-        print(f"🔌 Инициализация Spark: {self.cfg.APP_NAME}")
+        print(f" Инициализация Spark: {self.cfg.APP_NAME}")
         session = SparkSession.builder \
             .appName(self.cfg.APP_NAME) \
             .master(self.cfg.SPARK_MASTER) \
@@ -60,21 +60,21 @@ class ToxicRFPipeline:
 
     def deploy_dataset_if_needed(self):
         """Создает папку для обучения и кладет туда базовый датасет"""
-        print(f"🛠 Проверка структуры данных...")
+        print(f" Проверка структуры данных...")
 
         if not os.path.exists(self.cfg.TRAINING_DATA_DIR):
-            print(f"📦 Создаю хранилище обучающих данных: {self.cfg.TRAINING_DATA_DIR}")
+            print(f" Создаю хранилище обучающих данных: {self.cfg.TRAINING_DATA_DIR}")
             os.makedirs(self.cfg.TRAINING_DATA_DIR, exist_ok=True)
 
             initial_file_path = os.path.join(self.cfg.TRAINING_DATA_DIR, "initial_dataset.csv")
             if os.path.exists(self.cfg.LOCAL_SOURCE_DATASET):
                 shutil.copy2(self.cfg.LOCAL_SOURCE_DATASET, initial_file_path)
-                print(f"✅ Базовый датасет скопирован.")
+                print(f" Базовый датасет скопирован.")
             else:
                 raise FileNotFoundError(f"Исходный файл {self.cfg.LOCAL_SOURCE_DATASET} не найден!")
         else:
             print(
-                f"✅ Папка с данными {self.cfg.TRAINING_DATA_DIR} уже существует. RF будет учиться на накопленных данных.")
+                f" Папка с данными {self.cfg.TRAINING_DATA_DIR} уже существует. RF будет учиться на накопленных данных.")
 
     def _build_pipeline(self) -> Pipeline:
         """Создает ML Pipeline для Random Forest"""
@@ -99,7 +99,7 @@ class ToxicRFPipeline:
 
     def train(self):
         """Обучает модель на всей папке с данными"""
-        print(f"🧠 Начинаем обучение Random Forest на {self.cfg.TRAINING_DATA_DIR}...")
+        print(f" Начинаем обучение Random Forest на {self.cfg.TRAINING_DATA_DIR}...")
 
         # Читаем данные с защитой от битых строк
         df_raw = self.spark.read \
@@ -108,7 +108,7 @@ class ToxicRFPipeline:
             .option("mode", "DROPMALFORMED") \
             .csv(self.cfg.TRAINING_DATA_DIR)
 
-        # 🛡️ ВАЛИДАЦИЯ ДАННЫХ
+        #  ВАЛИДАЦИЯ ДАННЫХ
         train_data = df_raw \
             .filter(col("text").isNotNull()) \
             .withColumn("label", col("is_destructive").cast("double")) \
@@ -117,18 +117,18 @@ class ToxicRFPipeline:
             .select("text", "label")
 
         count = train_data.count()
-        print(f"📊 Валидный размер обучающей выборки: {count} строк")
+        print(f" Валидный размер обучающей выборки: {count} строк")
 
         if count == 0:
-            raise ValueError("❌ Ошибка: Обучающая выборка пуста!")
+            raise ValueError(" Ошибка: Обучающая выборка пуста!")
 
         pipeline = self._build_pipeline()
         self.model = pipeline.fit(train_data)
-        print("✅ Модель Random Forest успешно переобучена!")
+        print(" Модель Random Forest успешно переобучена!")
 
     def predict(self) -> DataFrame:
         """Применяет модель к данным из Hive"""
-        print(f"🔍 Чтение данных из Hive: {self.cfg.INPUT_TABLE}")
+        print(f" Чтение данных из Hive: {self.cfg.INPUT_TABLE}")
 
         if not self.spark.catalog.tableExists(self.cfg.INPUT_TABLE):
             raise Exception(f"Таблица {self.cfg.INPUT_TABLE} не найдена! Сначала запустите ETL.")
@@ -159,7 +159,7 @@ class ToxicRFPipeline:
 
     def feedback_loop(self, predictions_df: DataFrame):
         """САМООБУЧЕНИЕ С ДЕДУПЛИКАЦИЕЙ (ANTI JOIN)"""
-        print("\n🔄 FEEDBACK LOOP (Random Forest): Поиск УНИКАЛЬНЫХ данных...")
+        print("\n FEEDBACK LOOP (Random Forest): Поиск УНИКАЛЬНЫХ данных...")
 
         threshold = self.cfg.AUTO_LABEL_THRESHOLD
 
@@ -181,14 +181,12 @@ class ToxicRFPipeline:
         candidates_df = new_toxics.union(new_safe).distinct()
 
         # 3. ДЕДУПЛИКАЦИЯ С ДИСКОМ
-        # Читаем то, что УЖЕ лежит в папке обучения
         existing_training_data = self.spark.read \
             .option("header", "true") \
             .option("mode", "DROPMALFORMED") \
             .csv(self.cfg.TRAINING_DATA_DIR) \
             .select("text")
 
-        # Оставляем только тех, кого НЕТ в базе
         truly_unique_new_data = candidates_df.join(
             existing_training_data,
             on="text",
@@ -198,7 +196,7 @@ class ToxicRFPipeline:
         new_count = truly_unique_new_data.count()
 
         if new_count > 0:
-            print(f"📈 RF нашел {new_count} АБСОЛЮТНО НОВЫХ примеров.")
+            print(f" RF нашел {new_count} АБСОЛЮТНО НОВЫХ примеров.")
 
             timestamp = int(time.time())
             # Сохраняем с префиксом rf_, чтобы видеть, кто добавил данные
@@ -206,24 +204,24 @@ class ToxicRFPipeline:
                 .mode("append") \
                 .option("header", "true") \
                 .csv(self.cfg.TRAINING_DATA_DIR)
-            print(f"💾 Данные добавлены в общую базу: {self.cfg.TRAINING_DATA_DIR}")
+            print(f" Данные добавлены в общую базу: {self.cfg.TRAINING_DATA_DIR}")
         else:
-            print("📉 Новых уникальных данных для обучения не найдено.")
+            print(" Новых уникальных данных для обучения не найдено.")
 
     def save_results(self, df: DataFrame):
         """Сохраняет результаты и регистрирует таблицу"""
-        print(f"💾 Сохранение результатов в {self.cfg.OUTPUT_PATH}...")
+        print(f" Сохранение результатов в {self.cfg.OUTPUT_PATH}...")
 
         df.write.mode("overwrite").parquet(self.cfg.OUTPUT_PATH)
 
-        print(f"🏛 Обновление метаданных Hive для {self.cfg.OUTPUT_TABLE}...")
+        print(f" Обновление метаданных Hive для {self.cfg.OUTPUT_TABLE}...")
         self.spark.sql(f"DROP TABLE IF EXISTS {self.cfg.OUTPUT_TABLE}")
         self.spark.sql(f"""
             CREATE EXTERNAL TABLE {self.cfg.OUTPUT_TABLE}
             USING PARQUET
             LOCATION '{self.cfg.OUTPUT_PATH}'
         """)
-        print("✅ Данные сохранены и доступны через SQL.")
+        print(" Данные сохранены и доступны через SQL.")
 
     def run(self):
         """Оркестрация"""
@@ -236,11 +234,11 @@ class ToxicRFPipeline:
             # Запускаем самообучение
             self.feedback_loop(results_df)
 
-            print("\n📊 ИТОГИ (Random Forest):")
+            print("\n ИТОГИ (Random Forest):")
             results_df.groupBy("is_toxic_pred").count().show()
 
         except Exception as e:
-            print(f"\n❌ КРИТИЧЕСКАЯ ОШИБКА: {e}")
+            print(f"\n КРИТИЧЕСКАЯ ОШИБКА: {e}")
             import traceback
             traceback.print_exc()
         finally:

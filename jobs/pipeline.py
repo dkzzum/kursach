@@ -29,7 +29,7 @@ class DataPipeline:
     def run_scraper(self):
         self.log(f"STAGE 1: Сбор данных ({self.SCRAPER_DURATION} сек)...")
         if not os.path.exists(self.SCRAPER_SCRIPT):
-            self.log(f"❌ Ошибка: Скрипт парсера не найден: {self.SCRAPER_SCRIPT}")
+            self.log(f"Ошибка: Скрипт парсера не найден: {self.SCRAPER_SCRIPT}")
             return
 
         # Запускаем парсер фоном
@@ -45,33 +45,33 @@ class DataPipeline:
                 proc.wait(timeout=10)
             except:
                 proc.kill()
-            self.log("✅ Сбор данных завершен.")
+            self.log("Сбор данных завершен.")
 
     def run_task(self, script_path, task_name):
         self.log(f"STAGE {task_name}: Запуск...")
 
         if not os.path.exists(script_path):
-            self.log(f"❌ Ошибка: Скрипт не найден: {script_path}")
+            self.log(f"Ошибка: Скрипт не найден: {script_path}")
             return False
 
         # capture_output=False чтобы видеть логи (СЛАВА РОССИИ) в реальном времени
         result = subprocess.run(["python", script_path], capture_output=False)
 
         if result.returncode == 0:
-            self.log(f"✅ {task_name} успешно выполнен.")
+            self.log(f"{task_name} успешно выполнен.")
             return True
         else:
-            self.log(f"❌ {task_name} упал с кодом {result.returncode}.")
+            self.log(f"{task_name} упал с кодом {result.returncode}.")
             return False
 
     def start(self):
         mode_str = "DEMO (5 мин)" if self.DEMO_MODE else "PROD (24 часа)"
-        self.log(f"🚀 Запуск Патриотического Конвейера [{mode_str}]")
+        self.log(f"Запуск Патриотического Конвейера [{mode_str}]")
 
         while True:
             start_ts = time.time()
             self.log("=" * 50)
-            self.log("▶️ НАЧАЛО ЦИКЛА")
+            self.log("▶НАЧАЛО ЦИКЛА")
             self.log("=" * 50)
 
             # 1. СБОР (Парсинг Телеграма)
@@ -82,19 +82,19 @@ class DataPipeline:
 
                 # 3. ML (Обучение + Прогнозы + Hive Gold)
                 if self.run_task(self.ML_SCRIPT, "3 (ML & Analytics)"):
-                    self.log("📊 Данные в Superset обновлены!")
+                    self.log("Данные в Superset обновлены!")
 
                 # 4. ОЧИСТКА
                 self.run_task(self.CLEANUP_SCRIPT, "4 (Cleanup)")
 
             else:
-                self.log("⚠️ Пропуск ML из-за ошибки в ETL.")
+                self.log("⚠Пропуск ML из-за ошибки в ETL.")
 
             # СОН
             elapsed = time.time() - start_ts
             sleep_time = max(0, self.CYCLE_SLEEP - elapsed)
 
-            self.log(f"💤 Цикл завершен. Сон {int(sleep_time)} сек...")
+            self.log(f"Цикл завершен. Сон {int(sleep_time)} сек...")
             time.sleep(sleep_time)
 
 

@@ -64,7 +64,6 @@ class ToxicMLPipeline:
         # ML Pipeline (Оптимизирован для памяти)
         tokenizer = Tokenizer(inputCol="text", outputCol="words")
         remover = StopWordsRemover(inputCol="words", outputCol="filtered")
-        # Снижаем numFeatures с 2000 до 1000 для экономии памяти
         hashingTF = HashingTF(inputCol="filtered", outputCol="raw", numFeatures=1000)
         idf = IDF(inputCol="raw", outputCol="features")
         lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=5)
@@ -85,14 +84,13 @@ class ToxicMLPipeline:
         
         export_df = new_toxic_data.select(F.col("text"), F.lit(1).alias("is_destructive"))
         
-        # Лимит для безопасности
         count = export_df.count()
         print(f"[INFO] Найдено {count} новых примеров (сэмпл 10%).")
         
         if count > 0:
             print(f"[INFO] Дописываем данные в {self.cfg.TRAINING_DATA_DIR}...")
             export_df.write.mode("append").option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
-            print("[SUCCESS] ✅ Датасет расширен!")
+            print("[SUCCESS] Датасет расширен!")
         else:
             print("[INFO] Новых данных для дообучения нет.")
 
@@ -101,7 +99,7 @@ class ToxicMLPipeline:
         try:
             table_name = "gold_synthetic_comments"
             if not self.spark.catalog.tableExists(table_name):
-                print(f"❌ Таблица {table_name} не найдена!")
+                print(f" Таблица {table_name} не найдена!")
                 return
 
             comments_df = self.spark.table(table_name)
@@ -125,7 +123,7 @@ class ToxicMLPipeline:
             self.spark.sql(f"DROP TABLE IF EXISTS {target_table}")
             self.spark.sql(f"CREATE TABLE {target_table} USING parquet LOCATION '{target_path}'")
             self.spark.sql(f"REFRESH TABLE {target_table}")
-            print("[SUCCESS] ✅ Результаты предсказаний обновлены в Hive!")
+            print("[SUCCESS] Результаты предсказаний обновлены в Hive!")
 
             # Feedback Loop
             self.feedback_loop(final_df)

@@ -56,8 +56,6 @@ class DataCleaner:
         initial_count = df.count()
 
         # 2. Фильтруем (Оставляем только СВЕЖИЕ данные)
-        # date_col >= (сегодня - 7 дней)
-        # Важно: предполагаем, что date_col это строка или timestamp
         df_clean = df.filter(
             to_date(col(date_col)) >= date_sub(current_date(), self.RETENTION_DAYS)
         )

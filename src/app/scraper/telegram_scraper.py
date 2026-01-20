@@ -17,7 +17,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 try:
     from app.core.config import app_version, phone, lang_code, api_id, api_hash
 except ImportError:
-    print("⚠️ Config not found. Using placeholders.")
+    print(" Config not found. Using placeholders.")
     api_id = 123456
     api_hash = "your_hash_here"
     app_version = "1.0"
@@ -51,7 +51,6 @@ class TelegramSparkParser:
         # Генерируем ID запуска (один на весь скрипт)
         self.run_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
 
-        # --- ИСПРАВЛЕНИЕ 1: Глобальный буфер для всех каналов ---
         self.global_buffer = []
 
         os.makedirs(self.data_path, exist_ok=True)
@@ -89,7 +88,6 @@ class TelegramSparkParser:
 
         # 2. Сохраняем каждую группу в свою папку
         for date_key, items_list in grouped_data.items():
-            # Формируем путь: data/raw/posts/date=2024-03-01/
             partition_dir = os.path.join(self.data_path, entity_name, f"date={date_key}")
             os.makedirs(partition_dir, exist_ok=True)
 
@@ -104,9 +102,9 @@ class TelegramSparkParser:
                 with open(full_path, "w", encoding="utf-8") as f:
                     # Делаем default=str для сериализации datetime объектов, если они остались
                     json.dump(items_list, f, ensure_ascii=False, indent=4, default=str)
-                logger.info(f"💾 Saved {len(items_list)} {entity_name} -> {full_path}")
+                logger.info(f" Saved {len(items_list)} {entity_name} -> {full_path}")
             except Exception as e:
-                logger.error(f"❌ Error saving batch: {e}")
+                logger.error(f" Error saving batch: {e}")
 
     async def get_channel_list(self, app: Client) -> List[int]:
         """Получает список каналов."""
@@ -144,14 +142,12 @@ class TelegramSparkParser:
 
             # (Если есть логика для комментов, аналогично для comments_buffer)
 
-        # 3. ВАЖНО: Сохраняем остатки после выхода из цикла
         if posts_buffer:
             self._save_batch(posts_buffer, "posts")
 
     async def run(self, limit_per_channel: int = 100):
         """Основной цикл."""
 
-        # --- ИСПРАВЛЕНИЕ 3: Создаем Client ВНУТРИ цикла asyncio ---
         # Это решает ошибку 'attached to a different loop'
         app = Client(
             self.session_name,
@@ -169,14 +165,12 @@ class TelegramSparkParser:
             for gid in target_ids:
                 await self.process_channel(app, gid, limit=limit_per_channel)
 
-            # --- ИСПРАВЛЕНИЕ 4: Сохраняем остатки в конце ---
             # Если в буфере осталось 18 постов, их тоже надо сохранить перед выходом
             if self.global_buffer:
-                logger.info(f"🧹 Flushing remaining {len(self.global_buffer)} posts...")
+                logger.info(f" Flushing remaining {len(self.global_buffer)} posts...")
                 self._save_batch(self.global_buffer, "posts")
 
 
-# --- ЗАПУСК ---
 if __name__ == "__main__":
     # Определяем пути
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -184,7 +178,7 @@ if __name__ == "__main__":
     if not os.path.exists(data_output_path):
         data_output_path = "data/raw"
 
-    print(f"📂 Storage path: {os.path.abspath(data_output_path)}")
+    print(f" Storage path: {os.path.abspath(data_output_path)}")
 
     # Инициализируем парсер (без создания клиента, только конфиг)
     parser = TelegramSparkParser(
@@ -198,6 +192,6 @@ if __name__ == "__main__":
     try:
         # Запускаем асинхронный цикл
         asyncio.run(parser.run(limit_per_channel=50))
-        print("✅ Парсинг завершен успешно.")
+        print(" Парсинг завершен успешно.")
     except Exception as e:
-        print(f"❌ Критическая ошибка: {e}")
+        print(f" Критическая ошибка: {e}")

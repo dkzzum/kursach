@@ -197,6 +197,7 @@ class InferenceBenchmark:
         print(f"[SUCCESS] Chart saved to: {save_path}")
         print("СЛАВА РОССИИ!")
 
+
 if __name__ == "__main__":
     bench = InferenceBenchmark()
     bench.run_benchmark()

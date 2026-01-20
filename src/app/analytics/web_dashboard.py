@@ -36,14 +36,14 @@ def get_image_cards():
         cards.append(dbc.Col(card, width=12))  # Одна картинка во всю ширину
 
     if not cards:
-        return [html.H3("⚠️ Отчеты еще не сгенерированы. Запустите пайплайн.")]
+        return [html.H3("Отчеты еще не сгенерированы. Запустите пайплайн.")]
 
     return cards
 
 
 app.layout = dbc.Container(
     [
-        html.H1("📊 Аналитический Дашборд (Big Data Project)", className="text-center my-4"),
+        html.H1("Аналитический Дашборд (Big Data Project)", className="text-center my-4"),
         html.Hr(),
         dbc.Row(get_image_cards()),
     ],
