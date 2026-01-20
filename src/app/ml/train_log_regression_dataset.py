@@ -29,6 +29,8 @@ class ToxicMLPipeline:
             .config("spark.hadoop.hive.metastore.uris", self.cfg.HIVE_URI) \
             .config("spark.executor.memory", "1g") \
             .config("spark.driver.memory", "1g") \
+            .config("spark.memory.fraction", "0.6") \
+            .config("spark.sql.shuffle.partitions", "20") \
             .enableHiveSupport() \
             .getOrCreate()
             
@@ -37,22 +39,19 @@ class ToxicMLPipeline:
     def load_training_data(self):
         print(f"[INFO] Поиск данных в: {self.cfg.TRAINING_DATA_DIR}")
         try:
-            # Читаем все CSV в папке как единый датасет
             df = self.spark.read.option("header", "true") \
                 .option("mode", "DROPMALFORMED") \
                 .option("recursiveFileLookup", "true") \
                 .csv(self.cfg.TRAINING_DATA_DIR)
             
-            # Определяем имя колонки с меткой (обычно is_destructive в исходнике)
-            if "is_destructive" in df.columns:
-                self.label_col_name = "is_destructive"
-            else:
-                self.label_col_name = "label"
-
-            df_clean = df.withColumn("label_int", F.col(self.label_col_name).cast("int")) \
+            label_col = "is_destructive" if "is_destructive" in df.columns else "label"
+            
+            df_clean = df.withColumn("label_int", F.col(label_col).cast("int")) \
                          .filter(F.col("text").isNotNull() & F.col("label_int").isNotNull()) \
                          .select(F.col("text"), F.col("label_int").alias("label"))
             
+            # Кэшируем данные, чтобы не читать их с диска каждый раз
+            df_clean.cache()
             print(f"[INFO] Обучающая выборка: {df_clean.count()} строк.")
             return df_clean
         except Exception as e:
@@ -62,12 +61,13 @@ class ToxicMLPipeline:
     def train(self):
         df = self.load_training_data()
         
-        # ML Pipeline
+        # ML Pipeline (Оптимизирован для памяти)
         tokenizer = Tokenizer(inputCol="text", outputCol="words")
         remover = StopWordsRemover(inputCol="words", outputCol="filtered")
-        hashingTF = HashingTF(inputCol="filtered", outputCol="raw", numFeatures=2000)
+        # Снижаем numFeatures с 2000 до 1000 для экономии памяти
+        hashingTF = HashingTF(inputCol="filtered", outputCol="raw", numFeatures=1000)
         idf = IDF(inputCol="raw", outputCol="features")
-        lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=10)
+        lr = LogisticRegression(featuresCol="features", labelCol="label", maxIter=5)
 
         pipeline = Pipeline(stages=[tokenizer, remover, hashingTF, idf, lr])
         print("[INFO] Начало обучения модели...")
@@ -78,41 +78,23 @@ class ToxicMLPipeline:
         return model
 
     def feedback_loop(self, predictions_df):
-        """
-        Дописываем новые токсичные данные обратно в /data/training_set
-        """
         print("\n[INFO] Запуск Feedback Loop (Дообучение)...")
         
-        # 1. Отбираем токсичные (label=1)
-        new_toxic_data = predictions_df.filter(F.col("is_toxic_pred") == 1)
+        # Берем только 10% от найденных токсичных, чтобы не убить память при записи
+        new_toxic_data = predictions_df.filter(F.col("is_toxic_pred") == 1).sample(False, 0.1)
         
-        # 2. Приводим к формату исходного CSV: 'text', 'is_destructive'
-        export_df = new_toxic_data.select(
-            F.col("text"), 
-            F.lit(1).alias(self.label_col_name) # Ставим 1, так как мы верим модели
-        )
+        export_df = new_toxic_data.select(F.col("text"), F.lit(1).alias("is_destructive"))
         
-        # 3. ОПТИМИЗАЦИЯ ПАМЯТИ: Берем только 50k случайных примеров, чтобы не упал Docker
-        # Если строк слишком много, Spark может упасть с кодом 137 (OOM)
+        # Лимит для безопасности
         count = export_df.count()
-        print(f"[INFO] Найдено {count} потенциально новых примеров.")
+        print(f"[INFO] Найдено {count} новых примеров (сэмпл 10%).")
         
-        if count > 50000:
-            print("[WARN] Слишком много данных для одного раза. Берем сэмпл 50,000.")
-            export_df = export_df.limit(50000)
-
         if count > 0:
             print(f"[INFO] Дописываем данные в {self.cfg.TRAINING_DATA_DIR}...")
-            
-            # Mode 'append' просто добавит новые файлы part-0000X.csv в папку
-            export_df.write \
-                .mode("append") \
-                .option("header", "true") \
-                .csv(self.cfg.TRAINING_DATA_DIR)
-                
-            print(f"[SUCCESS] ✅ Датасет расширен! В следующий раз модель обучится на этих данных.")
+            export_df.write.mode("append").option("header", "true").csv(self.cfg.TRAINING_DATA_DIR)
+            print("[SUCCESS] ✅ Датасет расширен!")
         else:
-            print("[INFO] Новых токсичных данных не обнаружено.")
+            print("[INFO] Новых данных для дообучения нет.")
 
     def predict_and_save_to_hive(self, model):
         print("\n[INFO] Предсказание на данных из Hive (gold_synthetic_comments)...")
@@ -125,32 +107,27 @@ class ToxicMLPipeline:
             comments_df = self.spark.table(table_name)
             predictions = model.transform(comments_df)
             
-            # Сохраняем только нужные колонки для Hive
             final_df = predictions.select(
                 F.col("id"),
                 F.col("text"),
                 F.col("prediction").cast("int").alias("is_toxic_pred")
             )
 
-            # Сохраняем результаты предсказаний в Hive (перезапись)
             target_table = "gold_toxic_predictions"
             target_path = f"{self.cfg.HIVE_WAREHOUSE}/{target_table}"
             
             print(f"[INFO] Сохранение результатов в {target_path}...")
             
-            # Удаляем старое, чтобы не было конфликтов
-            self.spark.sql(f"DROP TABLE IF EXISTS {target_table}")
-            final_df.write.mode("overwrite").format("parquet").save(target_path)
+            # Прямая запись
+            final_df.write.mode("overwrite").parquet(target_path)
             
+            # Регистрация
+            self.spark.sql(f"DROP TABLE IF EXISTS {target_table}")
             self.spark.sql(f"CREATE TABLE {target_table} USING parquet LOCATION '{target_path}'")
             self.spark.sql(f"REFRESH TABLE {target_table}")
             print("[SUCCESS] ✅ Результаты предсказаний обновлены в Hive!")
 
-            # Статистика
-            print("\n--- СТАТИСТИКА ---")
-            final_df.groupBy("is_toxic_pred").count().show()
-            
-            # --- ЗАПУСК FEEDBACK LOOP ---
+            # Feedback Loop
             self.feedback_loop(final_df)
 
         except Exception as e:
